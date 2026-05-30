@@ -1,0 +1,131 @@
+<?xml version='1.0' encoding='utf-8'?>
+<graphml xmlns="http://graphml.graphdrawing.org/xmlns" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://graphml.graphdrawing.org/xmlns http://graphml.graphdrawing.org/xmlns/1.0/graphml.xsd">
+  <key id="d6" for="edge" attr.name="order" attr.type="long" />
+  <key id="d5" for="edge" attr.name="source_id" attr.type="string" />
+  <key id="d4" for="edge" attr.name="description" attr.type="string" />
+  <key id="d3" for="edge" attr.name="weight" attr.type="double" />
+  <key id="d2" for="node" attr.name="source_id" attr.type="string" />
+  <key id="d1" for="node" attr.name="description" attr.type="string" />
+  <key id="d0" for="node" attr.name="entity_type" attr.type="string" />
+  <graph edgedefault="undirected">
+    <node id="&quot;IMAGE_1&quot;">
+      <data key="d0">"ORI_IMG"</data>
+      <data key="d1">"The image captures a breathtaking natural landscape featuring an erupting geyser under a clear blue sky, highlighted by a vibrant rainbow. In the central foreground, a large geyser vigorously erupts, sending a towering column of dense, white steam and water vapor high into the air. The steam plume is thick and billows upwards, then spreads out and drifts towards the right side of the frame, forming a soft, cloud-like mass against the sky. The geyser emerges from a textured, light grey to off-white mineral formation, which appears rocky and uneven, indicative of geothermal deposits. The ground immediately surrounding the geyser is also a light, earthy tone, with scattered rocks and what appears to be wet or reflective patches, suggesting pools of water or damp soil. Arched gracefully through the rising steam and against the bright blue sky is a prominent and vivid rainbow. Its full spectrum of colors—red, orange, yellow, green, blue, and violet—is clearly visible, creating a striking contrast with the white steam and blue sky. The rainbow originates near the base of the steam column on the left and extends downwards towards the right, seemingly touching the distant tree line. In the mid-ground, a dense forest of dark green coniferous trees stretches across the horizon, forming a natural backdrop behind the geyser and the rainbow. The trees are tall and appear to be evergreen, providing a rich, dark contrast to the lighter elements of the geyser and sky. The sky itself is a brilliant, unblemished blue, with only faint, wispy clouds present, primarily interacting with the geyser's steam. The overall atmosphere of the image is one of natural wonder, power, and serene beauty, showcasing a unique and awe-inspiring moment where geothermal activity meets atmospheric optics."</data>
+      <data key="d2">test_runs/test_mmrag_working\images\image_1.jpg</data>
+    </node>
+    <node id="&quot;GEYSER&quot;">
+      <data key="d0">"GEO"</data>
+      <data key="d1">"A natural hot spring that periodically erupts, ejecting a powerful column of hot water and steam. It forms a prominent, light-colored, rocky cone-like structure in the foreground."</data>
+      <data key="d2">test_runs/test_mmrag_working\images\image_1.jpg</data>
+    </node>
+    <node id="&quot;STEAM PLUME&quot;">
+      <data key="d0">"OBJECT"</data>
+      <data key="d1">"A thick, towering column of white vapor vigorously erupting from the geyser, rising high into the blue sky and dispersing into clouds."</data>
+      <data key="d2">test_runs/test_mmrag_working\images\image_1.jpg</data>
+    </node>
+    <node id="&quot;RAINBOW&quot;">
+      <data key="d0">"OBJECT"</data>
+      <data key="d1">"A vibrant, multi-colored arc of light visible through or within the steam plume, extending from near the ground to higher in the sky."</data>
+      <data key="d2">test_runs/test_mmrag_working\images\image_1.jpg</data>
+    </node>
+    <node id="&quot;SKY&quot;">
+      <data key="d0">"GEO"</data>
+      <data key="d1">"A clear and bright blue sky, forming the upper background of the scene, with some faint white clouds formed by the dispersing steam."</data>
+      <data key="d2">test_runs/test_mmrag_working\images\image_1.jpg</data>
+    </node>
+    <node id="&quot;FOREST&quot;">
+      <data key="d0">"GEO"</data>
+      <data key="d1">"A dense line of dark green evergreen trees covering a distant ridge, forming the natural backdrop behind the geyser and extending across the middle ground."</data>
+      <data key="d2">test_runs/test_mmrag_working\images\image_1.jpg</data>
+    </node>
+    <node id="&quot;BARREN GROUND&quot;">
+      <data key="d0">"GEO"</data>
+      <data key="d1">"The light-colored, uneven, and rocky terrain immediately surrounding the geyser, appearing wet or mineral-rich from geothermic activity."</data>
+      <data key="d2">test_runs/test_mmrag_working\images\image_1.jpg</data>
+    </node>
+    <edge source="&quot;IMAGE_1&quot;" target="&quot;GEYSER&quot;">
+      <data key="d3">10.0</data>
+      <data key="d4">"Geyser是从image_1中提取的实体。"</data>
+      <data key="d5">test_runs/test_mmrag_working\images\image_1.jpg</data>
+      <data key="d6">1</data>
+    </edge>
+    <edge source="&quot;IMAGE_1&quot;" target="&quot;STEAM PLUME&quot;">
+      <data key="d3">10.0</data>
+      <data key="d4">"Steam Plume是从image_1中提取的实体。"</data>
+      <data key="d5">test_runs/test_mmrag_working\images\image_1.jpg</data>
+      <data key="d6">1</data>
+    </edge>
+    <edge source="&quot;IMAGE_1&quot;" target="&quot;RAINBOW&quot;">
+      <data key="d3">10.0</data>
+      <data key="d4">"Rainbow是从image_1中提取的实体。"</data>
+      <data key="d5">test_runs/test_mmrag_working\images\image_1.jpg</data>
+      <data key="d6">1</data>
+    </edge>
+    <edge source="&quot;IMAGE_1&quot;" target="&quot;SKY&quot;">
+      <data key="d3">10.0</data>
+      <data key="d4">"Sky是从image_1中提取的实体。"</data>
+      <data key="d5">test_runs/test_mmrag_working\images\image_1.jpg</data>
+      <data key="d6">1</data>
+    </edge>
+    <edge source="&quot;IMAGE_1&quot;" target="&quot;FOREST&quot;">
+      <data key="d3">10.0</data>
+      <data key="d4">"Forest是从image_1中提取的实体。"</data>
+      <data key="d5">test_runs/test_mmrag_working\images\image_1.jpg</data>
+      <data key="d6">1</data>
+    </edge>
+    <edge source="&quot;IMAGE_1&quot;" target="&quot;BARREN GROUND&quot;">
+      <data key="d3">10.0</data>
+      <data key="d4">"Barren Ground是从image_1中提取的实体。"</data>
+      <data key="d5">test_runs/test_mmrag_working\images\image_1.jpg</data>
+      <data key="d6">1</data>
+    </edge>
+    <edge source="&quot;GEYSER&quot;" target="&quot;STEAM PLUME&quot;">
+      <data key="d3">10.0</data>
+      <data key="d4">"The Geyser is actively erupting, producing the Steam Plume."</data>
+      <data key="d5">test_runs/test_mmrag_working\images\image_1.jpg</data>
+      <data key="d6">1</data>
+    </edge>
+    <edge source="&quot;GEYSER&quot;" target="&quot;BARREN GROUND&quot;">
+      <data key="d3">9.0</data>
+      <data key="d4">"The Geyser is situated on and emerges from the Barren Ground."</data>
+      <data key="d5">test_runs/test_mmrag_working\images\image_1.jpg</data>
+      <data key="d6">1</data>
+    </edge>
+    <edge source="&quot;GEYSER&quot;" target="&quot;SKY&quot;">
+      <data key="d3">8.0</data>
+      <data key="d4">"The Geyser's Steam Plume rises high into the Sky."</data>
+      <data key="d5">test_runs/test_mmrag_working\images\image_1.jpg</data>
+      <data key="d6">1</data>
+    </edge>
+    <edge source="&quot;STEAM PLUME&quot;" target="&quot;RAINBOW&quot;">
+      <data key="d3">9.0</data>
+      <data key="d4">"The Rainbow is formed by sunlight refracting through the water droplets in the Steam Plume."</data>
+      <data key="d5">test_runs/test_mmrag_working\images\image_1.jpg</data>
+      <data key="d6">1</data>
+    </edge>
+    <edge source="&quot;STEAM PLUME&quot;" target="&quot;SKY&quot;">
+      <data key="d3">9.0</data>
+      <data key="d4">"The Steam Plume rises and dissipates into the Sky."</data>
+      <data key="d5">test_runs/test_mmrag_working\images\image_1.jpg</data>
+      <data key="d6">1</data>
+    </edge>
+    <edge source="&quot;RAINBOW&quot;" target="&quot;SKY&quot;">
+      <data key="d3">8.0</data>
+      <data key="d4">"The Rainbow appears prominently against the clear blue Sky."</data>
+      <data key="d5">test_runs/test_mmrag_working\images\image_1.jpg</data>
+      <data key="d6">1</data>
+    </edge>
+    <edge source="&quot;SKY&quot;" target="&quot;FOREST&quot;">
+      <data key="d3">7.0</data>
+      <data key="d4">"The Forest is located beneath the clear blue Sky in the background."</data>
+      <data key="d5">test_runs/test_mmrag_working\images\image_1.jpg</data>
+      <data key="d6">1</data>
+    </edge>
+    <edge source="&quot;FOREST&quot;" target="&quot;BARREN GROUND&quot;">
+      <data key="d3">6.0</data>
+      <data key="d4">"The Barren Ground extends towards the distant Forest."</data>
+      <data key="d5">test_runs/test_mmrag_working\images\image_1.jpg</data>
+      <data key="d6">1</data>
+    </edge>
+  </graph>
+</graphml>

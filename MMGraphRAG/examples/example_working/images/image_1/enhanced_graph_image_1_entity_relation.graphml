@@ -1,0 +1,233 @@
+<?xml version='1.0' encoding='utf-8'?>
+<graphml xmlns="http://graphml.graphdrawing.org/xmlns" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://graphml.graphdrawing.org/xmlns http://graphml.graphdrawing.org/xmlns/1.0/graphml.xsd"><key id="d6" for="edge" attr.name="order" attr.type="long"/>
+<key id="d5" for="edge" attr.name="source_id" attr.type="string"/>
+<key id="d4" for="edge" attr.name="description" attr.type="string"/>
+<key id="d3" for="edge" attr.name="weight" attr.type="double"/>
+<key id="d2" for="node" attr.name="source_id" attr.type="string"/>
+<key id="d1" for="node" attr.name="description" attr.type="string"/>
+<key id="d0" for="node" attr.name="entity_type" attr.type="string"/>
+<graph edgedefault="undirected"><node id="&quot;IMAGE_1&quot;">
+  <data key="d0">"ORI_IMG"</data>
+  <data key="d1">"The image is a table labeled 'Table 1: Number of positive and negative examples and their ratios for different data-imbalanced NLP tasks.' The table presents statistical information about the number of negative (# neg), positive (# pos) examples, and their respective ratios for various natural language processing (NLP) tasks. It consists of five rows and four columns. The first column lists the tasks: CoNLL03 NER, OntoNotes5.0 NER, SQuAD 1.1 (Rajpurkar et al., 2016), SQuAD 2.0 (Rajpurkar et al., 2018), and QUOREF (Dasigi et al., 2019). The second column shows the number of negative examples: 170K for CoNLL03 NER, 1.96M for OntoNotes5.0 NER, 10.3M for SQuAD 1.1, 15.4M for SQuAD 2.0, and 6.52M for QUOREF. The third column displays the number of positive examples: 34K for CoNLL03 NER, 239K for OntoNotes5.0 NER, 175K for SQuAD 1.1, 188K for SQuAD 2.0, and 38.6K for QUOREF. The fourth column provides the ratio of negative to positive examples: 4.98 for CoNLL03 NER, 8.18 for OntoNotes5.0 NER, 55.9 for SQuAD 1.1, 82.0 for SQuAD 2.0, and 169 for QUOREF. The table highlights the increasing severity of data imbalance across these tasks, particularly in machine reading comprehension (MRC) tasks like SQuAD and QUOREF, where the ratio exceeds 50 and reaches as high as 169. This extreme imbalance reflects the nature of MRC tasks, where only a few tokens are labeled as positive (e.g., start or end of an answer span), while the vast majority are background (negative). The context emphasizes that such imbalance poses challenges in training models and motivates the use of specialized loss functions like Dice loss to improve performance."</data>
+  <data key="d2">examples/example_working/images/image_1.jpg</data>
+</node>
+<node id="&quot;CONLL03 NER&quot;">
+  <data key="d0">"EVENT"</data>
+  <data key="d1">"Named Entity Recognition task from CoNLL 2003 dataset with 170K negative and 34K positive instances, resulting in a ratio of 4.98."</data>
+  <data key="d2">examples/example_working/images/image_1.jpg</data>
+</node>
+<node id="&quot;ONTONOTES5.0 NER&quot;">
+  <data key="d0">"EVENT"</data>
+  <data key="d1">"Named Entity Recognition task from OntoNotes 5.0 dataset with 1.96M negative and 239K positive instances, resulting in a ratio of 8.18."</data>
+  <data key="d2">examples/example_working/images/image_1.jpg</data>
+</node>
+<node id="&quot;SQUAD 1.1 (RAJPURKAR ET AL., 2016)&quot;">
+  <data key="d0">"EVENT"</data>
+  <data key="d1">"Question Answering task from SQuAD 1.1 dataset with 10.3M negative and 175K positive instances, resulting in a ratio of 55.9."</data>
+  <data key="d2">examples/example_working/images/image_1.jpg</data>
+</node>
+<node id="&quot;SQUAD 2.0 (RAJPURKAR ET AL., 2018)&quot;">
+  <data key="d0">"EVENT"</data>
+  <data key="d1">"Question Answering task from SQuAD 2.0 dataset with 15.4M negative and 188K positive instances, resulting in a ratio of 82.0."</data>
+  <data key="d2">examples/example_working/images/image_1.jpg</data>
+</node>
+<node id="&quot;QUOREF (DASIGI ET AL., 2019)&quot;">
+  <data key="d0">"EVENT"</data>
+  <data key="d1">"Coreference Resolution task from QUOREF dataset with 6.52M negative and 38.6K positive instances, resulting in a ratio of 169."</data>
+  <data key="d2">examples/example_working/images/image_1.jpg</data>
+</node>
+<node id="&quot;TASK&quot;">
+  <data key="d0">"EVENT"</data>
+  <data key="d1">Column header in Table 1 of the paper 'Dice Loss for Data-imbalanced NLP Tasks' that specifies the natural language processing task being evaluated, such as Named Entity Recognition (NER), Machine Reading Comprehension (MRC), or part-of-speech tagging. These tasks are characterized by severe data imbalance between positive and negative examples.</data>
+  <data key="d2">examples/example_working/images/image_1.jpg</data>
+</node>
+<node id="&quot;# NEG&quot;">
+  <data key="d0">"EVENT"</data>
+  <data key="d1">Column header in Table 1 representing the number of negative instances (e.g., background tokens or non-entity tokens) in each dataset used for data-imbalanced NLP tasks. For example, in CoNLL03 NER, there are 170K negative examples, reflecting the dominance of non-entity tokens over entity tokens.</data>
+  <data key="d2">examples/example_working/images/image_1.jpg</data>
+</node>
+<node id="&quot;# POS&quot;">
+  <data key="d0">"EVENT"</data>
+  <data key="d1">Column header in Table 1 denoting the number of positive instances (e.g., tokens labeled as entities or relevant answer spans) in each dataset. In tasks like SQuAD 2.0, only 188K tokens are positive out of over 15 million total tokens, illustrating extreme data imbalance.</data>
+  <data key="d2">examples/example_working/images/image_1.jpg</data>
+</node>
+<node id="&quot;RATIO&quot;">
+  <data key="d0">"EVENT"</data>
+  <data key="d1">Column header in Table 1 indicating the ratio of negative to positive instances in each NLP dataset, highlighting the severity of data imbalance. Ratios range from approximately 5 in CoNLL03 NER to as high as 169 in QUOREF, underscoring the challenge of training models that perform well on minority (positive) classes.</data>
+  <data key="d2">examples/example_working/images/image_1.jpg</data>
+</node>
+<edge source="&quot;IMAGE_1&quot;" target="&quot;CONLL03 NER&quot;">
+  <data key="d3">10.0</data>
+  <data key="d4">"CoNLL03 NER是从image_1中提取的实体。"</data>
+  <data key="d5">examples/example_working/images/image_1.jpg</data>
+  <data key="d6">1</data>
+</edge>
+<edge source="&quot;IMAGE_1&quot;" target="&quot;ONTONOTES5.0 NER&quot;">
+  <data key="d3">10.0</data>
+  <data key="d4">"OntoNotes5.0 NER是从image_1中提取的实体。"</data>
+  <data key="d5">examples/example_working/images/image_1.jpg</data>
+  <data key="d6">1</data>
+</edge>
+<edge source="&quot;IMAGE_1&quot;" target="&quot;SQUAD 1.1 (RAJPURKAR ET AL., 2016)&quot;">
+  <data key="d3">10.0</data>
+  <data key="d4">"SQuAD 1.1 (Rajpurkar et al., 2016)是从image_1中提取的实体。"</data>
+  <data key="d5">examples/example_working/images/image_1.jpg</data>
+  <data key="d6">1</data>
+</edge>
+<edge source="&quot;IMAGE_1&quot;" target="&quot;SQUAD 2.0 (RAJPURKAR ET AL., 2018)&quot;">
+  <data key="d3">10.0</data>
+  <data key="d4">"SQuAD 2.0 (Rajpurkar et al., 2018)是从image_1中提取的实体。"</data>
+  <data key="d5">examples/example_working/images/image_1.jpg</data>
+  <data key="d6">1</data>
+</edge>
+<edge source="&quot;IMAGE_1&quot;" target="&quot;QUOREF (DASIGI ET AL., 2019)&quot;">
+  <data key="d3">10.0</data>
+  <data key="d4">"QUOREF (Dasigi et al., 2019)是从image_1中提取的实体。"</data>
+  <data key="d5">examples/example_working/images/image_1.jpg</data>
+  <data key="d6">1</data>
+</edge>
+<edge source="&quot;IMAGE_1&quot;" target="&quot;TASK&quot;">
+  <data key="d3">10.0</data>
+  <data key="d4">"Task是从image_1中提取的实体。"</data>
+  <data key="d5">examples/example_working/images/image_1.jpg</data>
+  <data key="d6">1</data>
+</edge>
+<edge source="&quot;IMAGE_1&quot;" target="&quot;# NEG&quot;">
+  <data key="d3">10.0</data>
+  <data key="d4">"# neg是从image_1中提取的实体。"</data>
+  <data key="d5">examples/example_working/images/image_1.jpg</data>
+  <data key="d6">1</data>
+</edge>
+<edge source="&quot;IMAGE_1&quot;" target="&quot;# POS&quot;">
+  <data key="d3">10.0</data>
+  <data key="d4">"# pos是从image_1中提取的实体。"</data>
+  <data key="d5">examples/example_working/images/image_1.jpg</data>
+  <data key="d6">1</data>
+</edge>
+<edge source="&quot;IMAGE_1&quot;" target="&quot;RATIO&quot;">
+  <data key="d3">10.0</data>
+  <data key="d4">"ratio是从image_1中提取的实体。"</data>
+  <data key="d5">examples/example_working/images/image_1.jpg</data>
+  <data key="d6">1</data>
+</edge>
+<edge source="&quot;CONLL03 NER&quot;" target="&quot;TASK&quot;">
+  <data key="d3">9.0</data>
+  <data key="d4">"CoNLL03 NER is a specific task listed under the 'Task' column."</data>
+  <data key="d5">examples/example_working/images/image_1.jpg</data>
+  <data key="d6">1</data>
+</edge>
+<edge source="&quot;CONLL03 NER&quot;" target="&quot;# NEG&quot;">
+  <data key="d3">8.0</data>
+  <data key="d4">"The number of negative instances for CoNLL03 NER is 170K as indicated in the '# neg' column."</data>
+  <data key="d5">examples/example_working/images/image_1.jpg</data>
+  <data key="d6">1</data>
+</edge>
+<edge source="&quot;CONLL03 NER&quot;" target="&quot;# POS&quot;">
+  <data key="d3">8.0</data>
+  <data key="d4">"The number of positive instances for CoNLL03 NER is 34K as indicated in the '# pos' column."</data>
+  <data key="d5">examples/example_working/images/image_1.jpg</data>
+  <data key="d6">1</data>
+</edge>
+<edge source="&quot;CONLL03 NER&quot;" target="&quot;RATIO&quot;">
+  <data key="d3">8.0</data>
+  <data key="d4">"The ratio of negative to positive instances for CoNLL03 NER is 4.98 as indicated in the 'ratio' column."</data>
+  <data key="d5">examples/example_working/images/image_1.jpg</data>
+  <data key="d6">1</data>
+</edge>
+<edge source="&quot;ONTONOTES5.0 NER&quot;" target="&quot;TASK&quot;">
+  <data key="d3">9.0</data>
+  <data key="d4">"OntoNotes5.0 NER is a specific task listed under the 'Task' column."</data>
+  <data key="d5">examples/example_working/images/image_1.jpg</data>
+  <data key="d6">1</data>
+</edge>
+<edge source="&quot;ONTONOTES5.0 NER&quot;" target="&quot;# NEG&quot;">
+  <data key="d3">8.0</data>
+  <data key="d4">"The number of negative instances for OntoNotes5.0 NER is 1.96M as indicated in the '# neg' column."</data>
+  <data key="d5">examples/example_working/images/image_1.jpg</data>
+  <data key="d6">1</data>
+</edge>
+<edge source="&quot;ONTONOTES5.0 NER&quot;" target="&quot;# POS&quot;">
+  <data key="d3">8.0</data>
+  <data key="d4">"The number of positive instances for OntoNotes5.0 NER is 239K as indicated in the '# pos' column."</data>
+  <data key="d5">examples/example_working/images/image_1.jpg</data>
+  <data key="d6">1</data>
+</edge>
+<edge source="&quot;ONTONOTES5.0 NER&quot;" target="&quot;RATIO&quot;">
+  <data key="d3">8.0</data>
+  <data key="d4">"The ratio of negative to positive instances for OntoNotes5.0 NER is 8.18 as indicated in the 'ratio' column."</data>
+  <data key="d5">examples/example_working/images/image_1.jpg</data>
+  <data key="d6">1</data>
+</edge>
+<edge source="&quot;SQUAD 1.1 (RAJPURKAR ET AL., 2016)&quot;" target="&quot;TASK&quot;">
+  <data key="d3">9.0</data>
+  <data key="d4">"SQuAD 1.1 is a specific task listed under the 'Task' column."</data>
+  <data key="d5">examples/example_working/images/image_1.jpg</data>
+  <data key="d6">1</data>
+</edge>
+<edge source="&quot;SQUAD 1.1 (RAJPURKAR ET AL., 2016)&quot;" target="&quot;# NEG&quot;">
+  <data key="d3">8.0</data>
+  <data key="d4">"The number of negative instances for SQuAD 1.1 is 10.3M as indicated in the '# neg' column."</data>
+  <data key="d5">examples/example_working/images/image_1.jpg</data>
+  <data key="d6">1</data>
+</edge>
+<edge source="&quot;SQUAD 1.1 (RAJPURKAR ET AL., 2016)&quot;" target="&quot;# POS&quot;">
+  <data key="d3">8.0</data>
+  <data key="d4">"The number of positive instances for SQuAD 1.1 is 175K as indicated in the '# pos' column."</data>
+  <data key="d5">examples/example_working/images/image_1.jpg</data>
+  <data key="d6">1</data>
+</edge>
+<edge source="&quot;SQUAD 1.1 (RAJPURKAR ET AL., 2016)&quot;" target="&quot;RATIO&quot;">
+  <data key="d3">8.0</data>
+  <data key="d4">"The ratio of negative to positive instances for SQuAD 1.1 is 55.9 as indicated in the 'ratio' column."</data>
+  <data key="d5">examples/example_working/images/image_1.jpg</data>
+  <data key="d6">1</data>
+</edge>
+<edge source="&quot;SQUAD 2.0 (RAJPURKAR ET AL., 2018)&quot;" target="&quot;TASK&quot;">
+  <data key="d3">9.0</data>
+  <data key="d4">"SQuAD 2.0 is a specific task listed under the 'Task' column."</data>
+  <data key="d5">examples/example_working/images/image_1.jpg</data>
+  <data key="d6">1</data>
+</edge>
+<edge source="&quot;SQUAD 2.0 (RAJPURKAR ET AL., 2018)&quot;" target="&quot;# NEG&quot;">
+  <data key="d3">8.0</data>
+  <data key="d4">"The number of negative instances for SQuAD 2.0 is 15.4M as indicated in the '# neg' column."</data>
+  <data key="d5">examples/example_working/images/image_1.jpg</data>
+  <data key="d6">1</data>
+</edge>
+<edge source="&quot;SQUAD 2.0 (RAJPURKAR ET AL., 2018)&quot;" target="&quot;# POS&quot;">
+  <data key="d3">8.0</data>
+  <data key="d4">"The number of positive instances for SQuAD 2.0 is 188K as indicated in the '# pos' column."</data>
+  <data key="d5">examples/example_working/images/image_1.jpg</data>
+  <data key="d6">1</data>
+</edge>
+<edge source="&quot;SQUAD 2.0 (RAJPURKAR ET AL., 2018)&quot;" target="&quot;RATIO&quot;">
+  <data key="d3">8.0</data>
+  <data key="d4">"The ratio of negative to positive instances for SQuAD 2.0 is 82.0 as indicated in the 'ratio' column."</data>
+  <data key="d5">examples/example_working/images/image_1.jpg</data>
+  <data key="d6">1</data>
+</edge>
+<edge source="&quot;QUOREF (DASIGI ET AL., 2019)&quot;" target="&quot;TASK&quot;">
+  <data key="d3">9.0</data>
+  <data key="d4">"QUOREF is a specific task listed under the 'Task' column."</data>
+  <data key="d5">examples/example_working/images/image_1.jpg</data>
+  <data key="d6">1</data>
+</edge>
+<edge source="&quot;QUOREF (DASIGI ET AL., 2019)&quot;" target="&quot;# NEG&quot;">
+  <data key="d3">8.0</data>
+  <data key="d4">"The number of negative instances for QUOREF is 6.52M as indicated in the '# neg' column."</data>
+  <data key="d5">examples/example_working/images/image_1.jpg</data>
+  <data key="d6">1</data>
+</edge>
+<edge source="&quot;QUOREF (DASIGI ET AL., 2019)&quot;" target="&quot;# POS&quot;">
+  <data key="d3">8.0</data>
+  <data key="d4">"The number of positive instances for QUOREF is 38.6K as indicated in the '# pos' column."</data>
+  <data key="d5">examples/example_working/images/image_1.jpg</data>
+  <data key="d6">1</data>
+</edge>
+<edge source="&quot;QUOREF (DASIGI ET AL., 2019)&quot;" target="&quot;RATIO&quot;">
+  <data key="d3">8.0</data>
+  <data key="d4">"The ratio of negative to positive instances for QUOREF is 169 as indicated in the 'ratio' column."</data>
+  <data key="d5">examples/example_working/images/image_1.jpg</data>
+  <data key="d6">1</data>
+</edge>
+</graph></graphml>

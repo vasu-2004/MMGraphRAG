@@ -1,0 +1,28 @@
+<?xml version='1.0' encoding='utf-8'?>
+<graphml xmlns="http://graphml.graphdrawing.org/xmlns" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://graphml.graphdrawing.org/xmlns http://graphml.graphdrawing.org/xmlns/1.0/graphml.xsd">
+  <key id="d6" for="edge" attr.name="order" attr.type="long" />
+  <key id="d5" for="edge" attr.name="source_id" attr.type="string" />
+  <key id="d4" for="edge" attr.name="description" attr.type="string" />
+  <key id="d3" for="edge" attr.name="weight" attr.type="double" />
+  <key id="d2" for="node" attr.name="source_id" attr.type="string" />
+  <key id="d1" for="node" attr.name="description" attr.type="string" />
+  <key id="d0" for="node" attr.name="entity_type" attr.type="string" />
+  <graph edgedefault="undirected">
+    <node id="&quot;IMAGE_10&quot;">
+      <data key="d0">"ORI_IMG"</data>
+      <data key="d1">"The image displays a stylized icon of an anchor, rendered in a light grey or white color against a solid black square background. The anchor is centrally positioned and occupies a significant portion of the frame. It features a classic design, including a vertical shank with a ring at the top, two curved arms extending outward from the bottom of the shank, and flukes at the end of each arm. The lines forming the anchor are clean and smooth, giving it a somewhat metallic or polished appearance against the dark backdrop. The overall impression is that of a simple, clear, and universally recognizable symbol."</data>
+      <data key="d2">test_runs/test_mmrag_working\images\image_10.jpg</data>
+    </node>
+    <node id="&quot;ANCHOR&quot;">
+      <data key="d0">"OBJECT"</data>
+      <data key="d1">A metallic, stylized anchor icon rendered in shades of gray and silver against a solid black background. It features a traditional design with a prominent shank, a ring at the top, and two flukes at the bottom, suggesting a solid, heavy object used for mooring a vessel.</data>
+      <data key="d2">test_runs/test_mmrag_working\images\image_10.jpg</data>
+    </node>
+    <edge source="&quot;IMAGE_10&quot;" target="&quot;ANCHOR&quot;">
+      <data key="d3">10.0</data>
+      <data key="d4">"Anchor是从image_10中提取的实体。"</data>
+      <data key="d5">test_runs/test_mmrag_working\images\image_10.jpg</data>
+      <data key="d6">1</data>
+    </edge>
+  </graph>
+</graphml>

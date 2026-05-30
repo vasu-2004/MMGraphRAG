@@ -1,0 +1,13 @@
+<?xml version='1.0' encoding='utf-8'?>
+<graphml xmlns="http://graphml.graphdrawing.org/xmlns" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://graphml.graphdrawing.org/xmlns http://graphml.graphdrawing.org/xmlns/1.0/graphml.xsd">
+  <key id="d2" for="node" attr.name="source_id" attr.type="string" />
+  <key id="d1" for="node" attr.name="description" attr.type="string" />
+  <key id="d0" for="node" attr.name="entity_type" attr.type="string" />
+  <graph edgedefault="undirected">
+    <node id="&quot;IMAGE_18&quot;">
+      <data key="d0">"ORI_IMG"</data>
+      <data key="d1">"The image is an extremely small, low-resolution, grayscale graphic or icon, heavily pixelated and blurry. It features two distinct, light-colored shapes against a dark, almost black, background. The shape on the left is vertically elongated, appearing somewhat rectangular or cylindrical with a slightly rounded or pointed top, rendered in white and light gray tones. To its right, there is a shorter, wider, light-colored shape that could be interpreted as an arch or a squat, distorted rectangle, also in white and light gray. The boundaries and internal details of these shapes are indistinct due to the severe pixelation and blur, making it impossible to identify specific objects or fine features. The overall impression is that of a highly abstract or stylized symbol, possibly a pictogram, but its exact meaning or represented object cannot be definitively identified from the image quality alone."</data>
+      <data key="d2">test_runs/test_mmrag_working\images\image_18.jpg</data>
+    </node>
+  </graph>
+</graphml>

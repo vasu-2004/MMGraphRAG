@@ -1,0 +1,25 @@
+<?xml version='1.0' encoding='utf-8'?>
+<graphml xmlns="http://graphml.graphdrawing.org/xmlns" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://graphml.graphdrawing.org/xmlns http://graphml.graphdrawing.org/xmlns/1.0/graphml.xsd"><key id="d6" for="edge" attr.name="order" attr.type="long"/>
+<key id="d5" for="edge" attr.name="source_id" attr.type="string"/>
+<key id="d4" for="edge" attr.name="description" attr.type="string"/>
+<key id="d3" for="edge" attr.name="weight" attr.type="double"/>
+<key id="d2" for="node" attr.name="source_id" attr.type="string"/>
+<key id="d1" for="node" attr.name="description" attr.type="string"/>
+<key id="d0" for="node" attr.name="entity_type" attr.type="string"/>
+<graph edgedefault="undirected"><node id="&quot;IMAGE_12&quot;">
+  <data key="d0">"ORI_IMG"</data>
+  <data key="d1">"The image displays a single, prominent character, which is the uppercase Greek letter Delta (Δ). The character is rendered in a light gray or white color, standing out against a dark gray or black rectangular background. The Delta symbol is depicted as an equilateral triangle with a flat base, its lines appearing somewhat thick and slightly blurred or pixelated, giving it a somewhat soft-edged or anti-aliased appearance. The overall aesthetic is simple and monochromatic, focusing solely on the geometric form of the letter."</data>
+  <data key="d2">C:/MMGraphRAG/MMGraphRAG/test_runs/api_working\images\image_12.jpg</data>
+</node>
+<node id="&quot;DELTA SYMBOL&quot;">
+  <data key="d0">"OBJECT"</data>
+  <data key="d1">A white, uppercase Greek letter Delta (Δ) with a triangular shape, centered on a solid black background. It appears as a mathematical or scientific symbol.</data>
+  <data key="d2">C:/MMGraphRAG/MMGraphRAG/test_runs/api_working\images\image_12.jpg</data>
+</node>
+<edge source="&quot;IMAGE_12&quot;" target="&quot;DELTA SYMBOL&quot;">
+  <data key="d3">10.0</data>
+  <data key="d4">"Delta Symbol是从image_12中提取的实体。"</data>
+  <data key="d5">C:/MMGraphRAG/MMGraphRAG/test_runs/api_working\images\image_12.jpg</data>
+  <data key="d6">1</data>
+</edge>
+</graph></graphml>

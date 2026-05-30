@@ -1,0 +1,170 @@
+{
+  "0": {
+    "chunk_key": "chunk-47639910c915bafe8d80a13752ccb8ee",
+    "entities": [
+      {
+        "entity_name": "\"YELLOWSTONE NATIONAL PARK\"",
+        "entity_type": "\"GEO\"",
+        "description": "\"Yellowstone National Park is the primary location described in the trip planner, known for its high altitude, unpredictable weather, busy roads, dangerous hydrothermal features, and diverse wildlife.\"",
+        "source_id": "chunk-47639910c915bafe8d80a13752ccb8ee"
+      }
+    ],
+    "relationships": []
+  },
+  "1": {
+    "chunk_key": "chunk-8f0e2c09fcd8882a570819d4a5395ca3",
+    "entities": [
+      {
+        "entity_name": "\"MAMMOTH HOT SPRINGS\"",
+        "entity_type": "\"GEO\"",
+        "description": "\"Mammoth Hot Springs is a specific location in Yellowstone National Park known for its hot springs and other hydrothermal features.\"",
+        "source_id": "chunk-8f0e2c09fcd8882a570819d4a5395ca3"
+      },
+      {
+        "entity_name": "\"NORRIS GEYSER BASIN\"",
+        "entity_type": "\"GEO\"",
+        "description": "\"Norris Geyser Basin is a specific location in Yellowstone National Park known for its geysers and other hydrothermal features.\"",
+        "source_id": "chunk-8f0e2c09fcd8882a570819d4a5395ca3"
+      }
+    ],
+    "relationships": []
+  },
+  "6": {
+    "chunk_key": "chunk-4c35ba44e693c85e6206ade502e115d5",
+    "entities": [
+      {
+        "entity_name": "\"XANTERRA PARKS AND RESORTS\"",
+        "entity_type": "\"ORGANIZATION\"",
+        "description": "\"An organization that manages reservations for Yellowstone National Park, providing contact details and a mailing address.\"",
+        "source_id": "chunk-4c35ba44e693c85e6206ade502e115d5"
+      },
+      {
+        "entity_name": "\"YELLOWSTONE NATIONAL PARK\"",
+        "entity_type": "\"GEO\"",
+        "description": "\"A national park located in Wyoming that requires reservations for certain group sizes and RV campsites. It is also the location for contact addresses of Xanterra Parks and Resorts and the National Park Service.\"",
+        "source_id": "chunk-4c35ba44e693c85e6206ade502e115d5"
+      },
+      {
+        "entity_name": "\"WYOMING\"",
+        "entity_type": "\"GEO\"",
+        "description": "\"A U.S. state where Yellowstone National Park is situated, and the location from which official mail is processed.\"",
+        "source_id": "chunk-4c35ba44e693c85e6206ade502e115d5"
+      },
+      {
+        "entity_name": "\"UNITED STATES DEPARTMENT OF THE INTERIOR\"",
+        "entity_type": "\"ORGANIZATION\"",
+        "description": "\"A U.S. federal department that oversees the National Park Service, as indicated by its association with the Yellowstone Trip Planner document.\"",
+        "source_id": "chunk-4c35ba44e693c85e6206ade502e115d5"
+      },
+      {
+        "entity_name": "\"NATIONAL PARK SERVICE\"",
+        "entity_type": "\"ORGANIZATION\"",
+        "description": "\"An organization responsible for managing Yellowstone National Park, providing an official address within the park and maintaining its website for updates.\"",
+        "source_id": "chunk-4c35ba44e693c85e6206ade502e115d5"
+      },
+      {
+        "entity_name": "\"REVISED NOV 2009\"",
+        "entity_type": "\"EVENT\"",
+        "description": "\"The date in November 2009 when the Yellowstone Trip Planner document was updated or revised.\"",
+        "source_id": "chunk-4c35ba44e693c85e6206ade502e115d5"
+      }
+    ],
+    "relationships": [
+      {
+        "src_id": "\"XANTERRA PARKS AND RESORTS\"",
+        "tgt_id": "\"YELLOWSTONE NATIONAL PARK\"",
+        "weight": 9.0,
+        "description": "\"Xanterra Parks and Resorts handles reservations and provides services for Yellowstone National Park.\"",
+        "source_id": "chunk-4c35ba44e693c85e6206ade502e115d5"
+      },
+      {
+        "src_id": "\"YELLOWSTONE NATIONAL PARK\"",
+        "tgt_id": "\"WYOMING\"",
+        "weight": 9.0,
+        "description": "\"Yellowstone National Park is geographically located within the state of Wyoming.\"",
+        "source_id": "chunk-4c35ba44e693c85e6206ade502e115d5"
+      },
+      {
+        "src_id": "\"NATIONAL PARK SERVICE\"",
+        "tgt_id": "\"YELLOWSTONE NATIONAL PARK\"",
+        "weight": 10.0,
+        "description": "\"The National Park Service is the managing authority for Yellowstone National Park and has an official presence there.\"",
+        "source_id": "chunk-4c35ba44e693c85e6206ade502e115d5"
+      },
+      {
+        "src_id": "\"UNITED STATES DEPARTMENT OF THE INTERIOR\"",
+        "tgt_id": "\"NATIONAL PARK SERVICE\"",
+        "weight": 9.0,
+        "description": "\"The National Park Service operates under the purview of the United States Department of the Interior.\"",
+        "source_id": "chunk-4c35ba44e693c85e6206ade502e115d5"
+      },
+      {
+        "src_id": "\"NATIONAL PARK SERVICE\"",
+        "tgt_id": "\"REVISED NOV 2009\"",
+        "weight": 7.0,
+        "description": "\"A document associated with the National Park Service (the Yellowstone Trip Planner) was revised in November 2009.\"",
+        "source_id": "chunk-4c35ba44e693c85e6206ade502e115d5"
+      }
+    ]
+  },
+  "2": {
+    "chunk_key": "chunk-7351b12b3e5ac87b530aa3bf02ecf8cc",
+    "entities": [
+      {
+        "entity_name": "\"YELLOWSTONE NATIONAL PARK\"",
+        "entity_type": "\"ORGANIZATION\"",
+        "description": "\"Yellowstone National Park is an organization and a geographic location, providing visitor information, activities, and road schedules. It is the first national park in America.\"",
+        "source_id": "chunk-7351b12b3e5ac87b530aa3bf02ecf8cc"
+      }
+    ],
+    "relationships": []
+  },
+  "3": {
+    "chunk_key": "chunk-88e5c2ce20f231e3a806b09b6cab2c4d",
+    "entities": [
+      {
+        "entity_name": "\"YELLOWSTONE NATIONAL PARK\"",
+        "entity_type": "\"GEO\"",
+        "description": "\"Yellowstone National Park is a major national park in the US, providing various services and subject to specific road schedules and closures.\"",
+        "source_id": "chunk-88e5c2ce20f231e3a806b09b6cab2c4d"
+      }
+    ],
+    "relationships": []
+  },
+  "5": {
+    "chunk_key": "chunk-2b3cdc79954b41510d5ae0999ef6daf3",
+    "entities": [
+      {
+        "entity_name": "\"YELLOWSTONE NATIONAL PARK\"",
+        "entity_type": "\"GEO\"",
+        "description": "\"Yellowstone National Park is a federal recreation site where entrance fees are charged, offering various pass options, camping facilities, and subject to seasonal weather changes and visitor access reviews.\"",
+        "source_id": "chunk-2b3cdc79954b41510d5ae0999ef6daf3"
+      },
+      {
+        "entity_name": "\"USGS\"",
+        "entity_type": "\"ORGANIZATION\"",
+        "description": "\"USGS (U.S. Geological Survey",
+        "source_id": "chunk-2b3cdc79954b41510d5ae0999ef6daf3"
+      }
+    ],
+    "relationships": []
+  },
+  "4": {
+    "chunk_key": "chunk-e22ff6904de7a8eef70b8467d191a104",
+    "entities": [
+      {
+        "entity_name": "\"COAST GUARD\"",
+        "entity_type": "\"ORGANIZATION\"",
+        "description": "\"The Coast Guard is a federal organization whose approval is required for personal flotation devices for boating.\"",
+        "source_id": "chunk-e22ff6904de7a8eef70b8467d191a104"
+      },
+      {
+        "entity_name": "\"YELLOWSTONE NATIONAL PARK\"",
+        "entity_type": "\"GEO\"",
+        "description": "\"Yellowstone National Park is a national park with specific regulations for visitors, including fishing, boating, and camping.\"",
+        "source_id": "chunk-e22ff6904de7a8eef70b8467d191a104"
+      }
+    ],
+    "relationships": []
+  }
+}

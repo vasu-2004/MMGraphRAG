@@ -1,0 +1,128 @@
+<?xml version='1.0' encoding='utf-8'?>
+<graphml xmlns="http://graphml.graphdrawing.org/xmlns" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://graphml.graphdrawing.org/xmlns http://graphml.graphdrawing.org/xmlns/1.0/graphml.xsd"><key id="d6" for="edge" attr.name="order" attr.type="long"/>
+<key id="d5" for="edge" attr.name="source_id" attr.type="string"/>
+<key id="d4" for="edge" attr.name="description" attr.type="string"/>
+<key id="d3" for="edge" attr.name="weight" attr.type="double"/>
+<key id="d2" for="node" attr.name="source_id" attr.type="string"/>
+<key id="d1" for="node" attr.name="description" attr.type="string"/>
+<key id="d0" for="node" attr.name="entity_type" attr.type="string"/>
+<graph edgedefault="undirected"><node id="&quot;IMAGE_22&quot;">
+  <data key="d0">"ORI_IMG"</data>
+  <data key="d1">"The image is a table labeled 'Table 9: The effect of DL and DSC on sentiment classification tasks.' It presents experimental results comparing the performance of different training objectives when fine-tuning BERT on two versions of the Stanford Sentiment Treebank (SST) datasets: SST-2 and SST-5. The table has three columns: 'Model', 'SST-2 Acc', and 'SST-5 Acc'. The rows list three models: 'BERT+CE', 'BERT+DL', and 'BERT+DSC'. For SST-2, the accuracy values are as follows: BERT+CE achieves 94.90, BERT+DL achieves 94.37, and BERT+DSC achieves 94.84. For SST-5, the accuracy values are: BERT+CE achieves 55.57, BERT+DL achieves 54.63, and BERT+DSC achieves 55.19. The highest accuracy in both SST-2 and SST-5 is achieved by BERT+CE, with 94.90 and 55.57 respectively. The other two models (BERT+DL and BERT+DSC) show slightly lower performance, indicating that the proposed dice-based losses (DL and DSC) perform worse than the cross-entropy (CE) objective in accuracy-oriented tasks. This supports the claim in the context that dice loss is not accuracy-oriented and should be avoided for tasks where accuracy is the primary metric. The table uses bold formatting to emphasize the best-performing value in each column (94.90 and 55.57)."</data>
+  <data key="d2">examples/example_working/images/image_22.jpg</data>
+</node>
+<node id="&quot;SST-2&quot;">
+  <data key="d0">"GEO"</data>
+  <data key="d1">"A benchmark dataset for binary sentiment classification, used to evaluate model accuracy in the table."</data>
+  <data key="d2">examples/example_working/images/image_22.jpg</data>
+</node>
+<node id="&quot;SST-5&quot;">
+  <data key="d0">"GEO"</data>
+  <data key="d1">"A benchmark dataset for five-class sentiment classification, used to evaluate model accuracy in the table."</data>
+  <data key="d2">examples/example_working/images/image_22.jpg</data>
+</node>
+<node id="&quot;BERT+CE&quot;">
+  <data key="d0">"ORGANIZATION"</data>
+  <data key="d1">"A model configuration combining BERT with Cross-Entropy loss, achieving 94.90% accuracy on SST-2 and 55.57% on SST-5."</data>
+  <data key="d2">examples/example_working/images/image_22.jpg</data>
+</node>
+<node id="&quot;BERT+DL&quot;">
+  <data key="d0">"ORGANIZATION"</data>
+  <data key="d1">"A model configuration combining BERT with Distillation Loss, achieving 94.37% accuracy on SST-2 and 54.63% on SST-5."</data>
+  <data key="d2">examples/example_working/images/image_22.jpg</data>
+</node>
+<node id="&quot;BERT+DSC&quot;">
+  <data key="d0">"ORGANIZATION"</data>
+  <data key="d1">"A model configuration combining BERT with Deep Supervision Classification, achieving 94.84% accuracy on SST-2 and 55.19% on SST-5."</data>
+  <data key="d2">examples/example_working/images/image_22.jpg</data>
+</node>
+<node id="&quot;Accuracy (SST-2/SST-5)&quot;">
+  <data key="d0">"GEO"</data>
+  <data key="d1">Accuracy is a performance metric used to evaluate the correctness of predictions in sentiment classification tasks, particularly on the Stanford Sentiment Treebank datasets SST-2 (binary sentiment) and SST-5 (fine-grained five-class sentiment). In the context of the provided text, accuracy is shown to be better optimized by cross-entropy (CE) loss compared to dice-based losses like DL (Dice Loss) and DSC (Dice-Sørensen Coefficient). For instance, BERT+CE achieves 94.90% accuracy on SST-2 and 55.57% on SST-5, outperforming BERT+DL and BERT+DSC, which suggests that dice-based objectives are less suited for accuracy-oriented tasks.</data>
+  <data key="d2">examples/example_working/images/image_22.jpg</data>
+</node>
+<edge source="&quot;IMAGE_22&quot;" target="&quot;SST-2&quot;">
+  <data key="d3">10.0</data>
+  <data key="d4">"SST-2是从image_22中提取的实体。"</data>
+  <data key="d5">examples/example_working/images/image_22.jpg</data>
+  <data key="d6">1</data>
+</edge>
+<edge source="&quot;IMAGE_22&quot;" target="&quot;SST-5&quot;">
+  <data key="d3">10.0</data>
+  <data key="d4">"SST-5是从image_22中提取的实体。"</data>
+  <data key="d5">examples/example_working/images/image_22.jpg</data>
+  <data key="d6">1</data>
+</edge>
+<edge source="&quot;IMAGE_22&quot;" target="&quot;BERT+CE&quot;">
+  <data key="d3">10.0</data>
+  <data key="d4">"BERT+CE是从image_22中提取的实体。"</data>
+  <data key="d5">examples/example_working/images/image_22.jpg</data>
+  <data key="d6">1</data>
+</edge>
+<edge source="&quot;IMAGE_22&quot;" target="&quot;BERT+DL&quot;">
+  <data key="d3">10.0</data>
+  <data key="d4">"BERT+DL是从image_22中提取的实体。"</data>
+  <data key="d5">examples/example_working/images/image_22.jpg</data>
+  <data key="d6">1</data>
+</edge>
+<edge source="&quot;IMAGE_22&quot;" target="&quot;BERT+DSC&quot;">
+  <data key="d3">10.0</data>
+  <data key="d4">"BERT+DSC是从image_22中提取的实体。"</data>
+  <data key="d5">examples/example_working/images/image_22.jpg</data>
+  <data key="d6">1</data>
+</edge>
+<edge source="&quot;IMAGE_22&quot;" target="&quot;Accuracy (SST-2/SST-5)&quot;">
+  <data key="d3">10.0</data>
+  <data key="d4">"Accuracy是从image_22中提取的实体。"</data>
+  <data key="d5">examples/example_working/images/image_22.jpg</data>
+  <data key="d6">1</data>
+</edge>
+<edge source="&quot;SST-2&quot;" target="&quot;BERT+CE&quot;">
+  <data key="d3">9.0</data>
+  <data key="d4">"BERT+CE achieves an accuracy of 94.90% on the SST-2 dataset."</data>
+  <data key="d5">examples/example_working/images/image_22.jpg</data>
+  <data key="d6">1</data>
+</edge>
+<edge source="&quot;SST-2&quot;" target="&quot;BERT+DL&quot;">
+  <data key="d3">9.0</data>
+  <data key="d4">"BERT+DL achieves an accuracy of 94.37% on the SST-2 dataset."</data>
+  <data key="d5">examples/example_working/images/image_22.jpg</data>
+  <data key="d6">1</data>
+</edge>
+<edge source="&quot;SST-2&quot;" target="&quot;BERT+DSC&quot;">
+  <data key="d3">9.0</data>
+  <data key="d4">"BERT+DSC achieves an accuracy of 94.84% on the SST-2 dataset."</data>
+  <data key="d5">examples/example_working/images/image_22.jpg</data>
+  <data key="d6">1</data>
+</edge>
+<edge source="&quot;SST-2&quot;" target="&quot;Accuracy (SST-2/SST-5)&quot;">
+  <data key="d3">10.0</data>
+  <data key="d4">"The accuracy values for all models are reported on the SST-2 dataset."</data>
+  <data key="d5">examples/example_working/images/image_22.jpg</data>
+  <data key="d6">1</data>
+</edge>
+<edge source="&quot;SST-5&quot;" target="&quot;BERT+CE&quot;">
+  <data key="d3">9.0</data>
+  <data key="d4">"BERT+CE achieves an accuracy of 55.57% on the SST-5 dataset."</data>
+  <data key="d5">examples/example_working/images/image_22.jpg</data>
+  <data key="d6">1</data>
+</edge>
+<edge source="&quot;SST-5&quot;" target="&quot;BERT+DL&quot;">
+  <data key="d3">9.0</data>
+  <data key="d4">"BERT+DL achieves an accuracy of 54.63% on the SST-5 dataset."</data>
+  <data key="d5">examples/example_working/images/image_22.jpg</data>
+  <data key="d6">1</data>
+</edge>
+<edge source="&quot;SST-5&quot;" target="&quot;BERT+DSC&quot;">
+  <data key="d3">9.0</data>
+  <data key="d4">"BERT+DSC achieves an accuracy of 55.19% on the SST-5 dataset."</data>
+  <data key="d5">examples/example_working/images/image_22.jpg</data>
+  <data key="d6">1</data>
+</edge>
+<edge source="&quot;SST-5&quot;" target="&quot;Accuracy (SST-2/SST-5)&quot;">
+  <data key="d3">10.0</data>
+  <data key="d4">"The accuracy values for all models are reported on the SST-5 dataset."</data>
+  <data key="d5">examples/example_working/images/image_22.jpg</data>
+  <data key="d6">1</data>
+</edge>
+</graph></graphml>

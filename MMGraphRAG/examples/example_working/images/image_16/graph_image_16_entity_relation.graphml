@@ -1,0 +1,319 @@
+<?xml version='1.0' encoding='utf-8'?>
+<graphml xmlns="http://graphml.graphdrawing.org/xmlns" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://graphml.graphdrawing.org/xmlns http://graphml.graphdrawing.org/xmlns/1.0/graphml.xsd"><key id="d6" for="edge" attr.name="order" attr.type="long"/>
+<key id="d5" for="edge" attr.name="source_id" attr.type="string"/>
+<key id="d4" for="edge" attr.name="description" attr.type="string"/>
+<key id="d3" for="edge" attr.name="weight" attr.type="double"/>
+<key id="d2" for="node" attr.name="source_id" attr.type="string"/>
+<key id="d1" for="node" attr.name="description" attr.type="string"/>
+<key id="d0" for="node" attr.name="entity_type" attr.type="string"/>
+<graph edgedefault="undirected"><node id="&quot;IMAGE_16&quot;">
+  <data key="d0">"ORI_IMG"</data>
+  <data key="d1">"The image is a table labeled 'Table 3: Experimental results for Chinese POS datasets including CTB5, CTB6 and UD1.4.' The table compares the performance of various models on three Chinese part-of-speech (POS) tagging datasets: CTB5, CTB6, and UD1.4. Each dataset has three evaluation metrics: Precision (Prec.), Recall (Rec.), and F1-score (F1). The rows represent different models, with their respective citations provided in parentheses. The models listed are: Joint-POS(Sig)(Shao et al., 2017), Joint-POS(Ens)(Shao et al., 2017), Lattice-LSTM(Zhang and Yang, 2018), BERT-Tagger(Devlin et al., 2018), BERT+FL, BERT+DL, and BERT+DSC. For each model, the table reports the Prec., Rec., and F1 values across the three datasets. Notably, some entries are marked with a dash (-), indicating missing or unavailable data. The BERT-based models show incremental improvements over baseline models. Specifically, BERT+FL improves upon BERT-Tagger by +0.70 in F1 on CTB5, +0.67 on CTB6, and +2.02 on UD1.4. BERT+DL shows further gains: +1.75 on CTB5, +0.32 on CTB6, and +2.15 on UD1.4. The best-performing model, BERT+DSC, achieves an F1 score of 97.92 on CTB5 (+1.86 improvement), 96.57 on CTB6 (+1.80), and 96.98 on UD1.4 (+2.19). These values are highlighted in bold to emphasize their superiority. The table uses consistent formatting with clear column headers and aligned numerical values. The overall layout is clean and structured, facilitating comparison across models and datasets."</data>
+  <data key="d2">examples/example_working/images/image_16.jpg</data>
+</node>
+<node id="&quot;JOINT-POS(SIG)&quot;">
+  <data key="d0">"ORGANIZATION"</data>
+  <data key="d1">"A model proposed by Shao et al. in 2017, focusing on joint part-of-speech tagging with a sigmoid-based approach, achieving precision of 93.68, recall of 94.47, and F1 score of 94.07 on CTB5."</data>
+  <data key="d2">examples/example_working/images/image_16.jpg</data>
+</node>
+<node id="&quot;JOINT-POS(ENS)&quot;">
+  <data key="d0">"ORGANIZATION"</data>
+  <data key="d1">"A model proposed by Shao et al. in 2017, focusing on joint part-of-speech tagging with an ensemble method, achieving precision of 93.95, recall of 94.81, and F1 score of 94.38 on CTB5."</data>
+  <data key="d2">examples/example_working/images/image_16.jpg</data>
+</node>
+<node id="&quot;LATTICE-LSTM&quot;">
+  <data key="d0">"ORGANIZATION"</data>
+  <data key="d1">"A model proposed by Zhang and Yang in 2018, utilizing lattice LSTM architecture for sequence labeling, achieving precision of 94.77, recall of 95.51, and F1 score of 95.14 on CTB5."</data>
+  <data key="d2">examples/example_working/images/image_16.jpg</data>
+</node>
+<node id="&quot;BERT-TAGGER&quot;">
+  <data key="d0">"ORGANIZATION"</data>
+  <data key="d1">"A model based on BERT (Devlin et al., 2018) for tagging tasks, achieving precision of 95.86, recall of 96.26, and F1 score of 96.06 on CTB5."</data>
+  <data key="d2">examples/example_working/images/image_16.jpg</data>
+</node>
+<node id="&quot;BERT+FL&quot;">
+  <data key="d0">"ORGANIZATION"</data>
+  <data key="d1">"An enhanced BERT-based model with feature learning (FL), improving upon BERT-Tagger with gains of +0.70 in F1 on CTB5, achieving 96.76 F1 score."</data>
+  <data key="d2">examples/example_working/images/image_16.jpg</data>
+</node>
+<node id="&quot;BERT+DL&quot;">
+  <data key="d0">"ORGANIZATION"</data>
+  <data key="d1">"An enhanced BERT-based model with deep learning (DL) techniques, showing improvements over BERT-Tagger with gains of +1.75 in F1 on CTB5, achieving 97.81 F1 score."</data>
+  <data key="d2">examples/example_working/images/image_16.jpg</data>
+</node>
+<node id="&quot;BERT+DSC&quot;">
+  <data key="d0">"ORGANIZATION"</data>
+  <data key="d1">"An enhanced BERT-based model using dynamic state control (DSC), achieving the highest performance with 97.92 F1 on CTB5, +1.86 improvement over BERT-Tagger."</data>
+  <data key="d2">examples/example_working/images/image_16.jpg</data>
+</node>
+<node id="&quot;CTB5&quot;">
+  <data key="d0">"GEO"</data>
+  <data key="d1">"A dataset used for evaluating models, specifically Chinese Treebank 5, where models are assessed on precision, recall, and F1 scores."</data>
+  <data key="d2">examples/example_working/images/image_16.jpg</data>
+</node>
+<node id="&quot;CTB6&quot;">
+  <data key="d0">"GEO"</data>
+  <data key="d1">"A dataset used for evaluating models, specifically Chinese Treebank 6, where models are assessed on precision, recall, and F1 scores."</data>
+  <data key="d2">examples/example_working/images/image_16.jpg</data>
+</node>
+<node id="&quot;UD1.4&quot;">
+  <data key="d0">"GEO"</data>
+  <data key="d1">"A dataset used for evaluating models, specifically Universal Dependencies version 1.4, where models are assessed on precision, recall, and F1 scores."</data>
+  <data key="d2">examples/example_working/images/image_16.jpg</data>
+</node>
+<node id="&quot;SHAO ET AL., 2017&quot;">
+  <data key="d0">"ORGANIZATION"</data>
+  <data key="d1">"The authors and publication year associated with the Joint-POS(Sig) and Joint-POS(Ens) models."</data>
+  <data key="d2">examples/example_working/images/image_16.jpg</data>
+</node>
+<node id="&quot;ZHANG AND YANG, 2018&quot;">
+  <data key="d0">"ORGANIZATION"</data>
+  <data key="d1">"The authors and publication year associated with the Lattice-LSTM model."</data>
+  <data key="d2">examples/example_working/images/image_16.jpg</data>
+</node>
+<node id="&quot;DEVLIN ET AL., 2018&quot;">
+  <data key="d0">"ORGANIZATION"</data>
+  <data key="d1">"The authors and publication year associated with the BERT-Tagger model."</data>
+  <data key="d2">examples/example_working/images/image_16.jpg</data>
+</node>
+<edge source="&quot;IMAGE_16&quot;" target="&quot;JOINT-POS(SIG)&quot;">
+  <data key="d3">10.0</data>
+  <data key="d4">"Joint-POS(Sig)是从image_16中提取的实体。"</data>
+  <data key="d5">examples/example_working/images/image_16.jpg</data>
+  <data key="d6">1</data>
+</edge>
+<edge source="&quot;IMAGE_16&quot;" target="&quot;JOINT-POS(ENS)&quot;">
+  <data key="d3">10.0</data>
+  <data key="d4">"Joint-POS(Ens)是从image_16中提取的实体。"</data>
+  <data key="d5">examples/example_working/images/image_16.jpg</data>
+  <data key="d6">1</data>
+</edge>
+<edge source="&quot;IMAGE_16&quot;" target="&quot;LATTICE-LSTM&quot;">
+  <data key="d3">10.0</data>
+  <data key="d4">"Lattice-LSTM是从image_16中提取的实体。"</data>
+  <data key="d5">examples/example_working/images/image_16.jpg</data>
+  <data key="d6">1</data>
+</edge>
+<edge source="&quot;IMAGE_16&quot;" target="&quot;BERT-TAGGER&quot;">
+  <data key="d3">10.0</data>
+  <data key="d4">"BERT-Tagger是从image_16中提取的实体。"</data>
+  <data key="d5">examples/example_working/images/image_16.jpg</data>
+  <data key="d6">1</data>
+</edge>
+<edge source="&quot;IMAGE_16&quot;" target="&quot;BERT+FL&quot;">
+  <data key="d3">10.0</data>
+  <data key="d4">"BERT+FL是从image_16中提取的实体。"</data>
+  <data key="d5">examples/example_working/images/image_16.jpg</data>
+  <data key="d6">1</data>
+</edge>
+<edge source="&quot;IMAGE_16&quot;" target="&quot;BERT+DL&quot;">
+  <data key="d3">10.0</data>
+  <data key="d4">"BERT+DL是从image_16中提取的实体。"</data>
+  <data key="d5">examples/example_working/images/image_16.jpg</data>
+  <data key="d6">1</data>
+</edge>
+<edge source="&quot;IMAGE_16&quot;" target="&quot;BERT+DSC&quot;">
+  <data key="d3">10.0</data>
+  <data key="d4">"BERT+DSC是从image_16中提取的实体。"</data>
+  <data key="d5">examples/example_working/images/image_16.jpg</data>
+  <data key="d6">1</data>
+</edge>
+<edge source="&quot;IMAGE_16&quot;" target="&quot;CTB5&quot;">
+  <data key="d3">10.0</data>
+  <data key="d4">"CTB5是从image_16中提取的实体。"</data>
+  <data key="d5">examples/example_working/images/image_16.jpg</data>
+  <data key="d6">1</data>
+</edge>
+<edge source="&quot;IMAGE_16&quot;" target="&quot;CTB6&quot;">
+  <data key="d3">10.0</data>
+  <data key="d4">"CTB6是从image_16中提取的实体。"</data>
+  <data key="d5">examples/example_working/images/image_16.jpg</data>
+  <data key="d6">1</data>
+</edge>
+<edge source="&quot;IMAGE_16&quot;" target="&quot;UD1.4&quot;">
+  <data key="d3">10.0</data>
+  <data key="d4">"UD1.4是从image_16中提取的实体。"</data>
+  <data key="d5">examples/example_working/images/image_16.jpg</data>
+  <data key="d6">1</data>
+</edge>
+<edge source="&quot;IMAGE_16&quot;" target="&quot;SHAO ET AL., 2017&quot;">
+  <data key="d3">10.0</data>
+  <data key="d4">"Shao et al., 2017是从image_16中提取的实体。"</data>
+  <data key="d5">examples/example_working/images/image_16.jpg</data>
+  <data key="d6">1</data>
+</edge>
+<edge source="&quot;IMAGE_16&quot;" target="&quot;ZHANG AND YANG, 2018&quot;">
+  <data key="d3">10.0</data>
+  <data key="d4">"Zhang and Yang, 2018是从image_16中提取的实体。"</data>
+  <data key="d5">examples/example_working/images/image_16.jpg</data>
+  <data key="d6">1</data>
+</edge>
+<edge source="&quot;IMAGE_16&quot;" target="&quot;DEVLIN ET AL., 2018&quot;">
+  <data key="d3">10.0</data>
+  <data key="d4">"Devlin et al., 2018是从image_16中提取的实体。"</data>
+  <data key="d5">examples/example_working/images/image_16.jpg</data>
+  <data key="d6">1</data>
+</edge>
+<edge source="&quot;JOINT-POS(SIG)&quot;" target="&quot;SHAO ET AL., 2017&quot;">
+  <data key="d3">9.0</data>
+  <data key="d4">"Joint-POS(Sig) is a model proposed by Shao et al. in 2017."</data>
+  <data key="d5">examples/example_working/images/image_16.jpg</data>
+  <data key="d6">1</data>
+</edge>
+<edge source="&quot;JOINT-POS(SIG)&quot;" target="&quot;CTB5&quot;">
+  <data key="d3">7.0</data>
+  <data key="d4">"Joint-POS(Sig) is evaluated on the CTB5 dataset."</data>
+  <data key="d5">examples/example_working/images/image_16.jpg</data>
+  <data key="d6">1</data>
+</edge>
+<edge source="&quot;JOINT-POS(SIG)&quot;" target="&quot;CTB6&quot;">
+  <data key="d3">6.0</data>
+  <data key="d4">"Joint-POS(Sig) is evaluated on the CTB6 dataset, though only F1 score is reported."</data>
+  <data key="d5">examples/example_working/images/image_16.jpg</data>
+  <data key="d6">1</data>
+</edge>
+<edge source="&quot;JOINT-POS(SIG)&quot;" target="&quot;UD1.4&quot;">
+  <data key="d3">7.0</data>
+  <data key="d4">"Joint-POS(Sig) is evaluated on the UD1.4 dataset."</data>
+  <data key="d5">examples/example_working/images/image_16.jpg</data>
+  <data key="d6">1</data>
+</edge>
+<edge source="&quot;JOINT-POS(ENS)&quot;" target="&quot;SHAO ET AL., 2017&quot;">
+  <data key="d3">9.0</data>
+  <data key="d4">"Joint-POS(Ens) is a model proposed by Shao et al. in 2017."</data>
+  <data key="d5">examples/example_working/images/image_16.jpg</data>
+  <data key="d6">1</data>
+</edge>
+<edge source="&quot;JOINT-POS(ENS)&quot;" target="&quot;CTB5&quot;">
+  <data key="d3">7.0</data>
+  <data key="d4">"Joint-POS(Ens) is evaluated on the CTB5 dataset."</data>
+  <data key="d5">examples/example_working/images/image_16.jpg</data>
+  <data key="d6">1</data>
+</edge>
+<edge source="&quot;JOINT-POS(ENS)&quot;" target="&quot;UD1.4&quot;">
+  <data key="d3">7.0</data>
+  <data key="d4">"Joint-POS(Ens) is evaluated on the UD1.4 dataset."</data>
+  <data key="d5">examples/example_working/images/image_16.jpg</data>
+  <data key="d6">1</data>
+</edge>
+<edge source="&quot;LATTICE-LSTM&quot;" target="&quot;ZHANG AND YANG, 2018&quot;">
+  <data key="d3">9.0</data>
+  <data key="d4">"Lattice-LSTM is a model proposed by Zhang and Yang in 2018."</data>
+  <data key="d5">examples/example_working/images/image_16.jpg</data>
+  <data key="d6">1</data>
+</edge>
+<edge source="&quot;LATTICE-LSTM&quot;" target="&quot;CTB5&quot;">
+  <data key="d3">7.0</data>
+  <data key="d4">"Lattice-LSTM is evaluated on the CTB5 dataset."</data>
+  <data key="d5">examples/example_working/images/image_16.jpg</data>
+  <data key="d6">1</data>
+</edge>
+<edge source="&quot;LATTICE-LSTM&quot;" target="&quot;CTB6&quot;">
+  <data key="d3">7.0</data>
+  <data key="d4">"Lattice-LSTM is evaluated on the CTB6 dataset."</data>
+  <data key="d5">examples/example_working/images/image_16.jpg</data>
+  <data key="d6">1</data>
+</edge>
+<edge source="&quot;LATTICE-LSTM&quot;" target="&quot;UD1.4&quot;">
+  <data key="d3">7.0</data>
+  <data key="d4">"Lattice-LSTM is evaluated on the UD1.4 dataset."</data>
+  <data key="d5">examples/example_working/images/image_16.jpg</data>
+  <data key="d6">1</data>
+</edge>
+<edge source="&quot;BERT-TAGGER&quot;" target="&quot;DEVLIN ET AL., 2018&quot;">
+  <data key="d3">9.0</data>
+  <data key="d4">"BERT-Tagger is based on the BERT model introduced by Devlin et al. in 2018."</data>
+  <data key="d5">examples/example_working/images/image_16.jpg</data>
+  <data key="d6">1</data>
+</edge>
+<edge source="&quot;BERT-TAGGER&quot;" target="&quot;BERT+FL&quot;">
+  <data key="d3">8.0</data>
+  <data key="d4">"BERT+FL is an enhancement of BERT-Tagger with feature learning techniques."</data>
+  <data key="d5">examples/example_working/images/image_16.jpg</data>
+  <data key="d6">1</data>
+</edge>
+<edge source="&quot;BERT-TAGGER&quot;" target="&quot;BERT+DL&quot;">
+  <data key="d3">8.0</data>
+  <data key="d4">"BERT+DL is an enhancement of BERT-Tagger with deep learning methods."</data>
+  <data key="d5">examples/example_working/images/image_16.jpg</data>
+  <data key="d6">1</data>
+</edge>
+<edge source="&quot;BERT-TAGGER&quot;" target="&quot;BERT+DSC&quot;">
+  <data key="d3">8.0</data>
+  <data key="d4">"BERT+DSC is an enhancement of BERT-Tagger using dynamic state control."</data>
+  <data key="d5">examples/example_working/images/image_16.jpg</data>
+  <data key="d6">1</data>
+</edge>
+<edge source="&quot;BERT-TAGGER&quot;" target="&quot;CTB5&quot;">
+  <data key="d3">7.0</data>
+  <data key="d4">"BERT-Tagger is evaluated on the CTB5 dataset."</data>
+  <data key="d5">examples/example_working/images/image_16.jpg</data>
+  <data key="d6">1</data>
+</edge>
+<edge source="&quot;BERT-TAGGER&quot;" target="&quot;CTB6&quot;">
+  <data key="d3">7.0</data>
+  <data key="d4">"BERT-Tagger is evaluated on the CTB6 dataset."</data>
+  <data key="d5">examples/example_working/images/image_16.jpg</data>
+  <data key="d6">1</data>
+</edge>
+<edge source="&quot;BERT-TAGGER&quot;" target="&quot;UD1.4&quot;">
+  <data key="d3">7.0</data>
+  <data key="d4">"BERT-Tagger is evaluated on the UD1.4 dataset."</data>
+  <data key="d5">examples/example_working/images/image_16.jpg</data>
+  <data key="d6">1</data>
+</edge>
+<edge source="&quot;BERT+FL&quot;" target="&quot;CTB5&quot;">
+  <data key="d3">7.0</data>
+  <data key="d4">"BERT+FL is evaluated on the CTB5 dataset."</data>
+  <data key="d5">examples/example_working/images/image_16.jpg</data>
+  <data key="d6">1</data>
+</edge>
+<edge source="&quot;BERT+FL&quot;" target="&quot;CTB6&quot;">
+  <data key="d3">7.0</data>
+  <data key="d4">"BERT+FL is evaluated on the CTB6 dataset."</data>
+  <data key="d5">examples/example_working/images/image_16.jpg</data>
+  <data key="d6">1</data>
+</edge>
+<edge source="&quot;BERT+FL&quot;" target="&quot;UD1.4&quot;">
+  <data key="d3">7.0</data>
+  <data key="d4">"BERT+FL is evaluated on the UD1.4 dataset."</data>
+  <data key="d5">examples/example_working/images/image_16.jpg</data>
+  <data key="d6">1</data>
+</edge>
+<edge source="&quot;BERT+DL&quot;" target="&quot;CTB5&quot;">
+  <data key="d3">7.0</data>
+  <data key="d4">"BERT+DL is evaluated on the CTB5 dataset."</data>
+  <data key="d5">examples/example_working/images/image_16.jpg</data>
+  <data key="d6">1</data>
+</edge>
+<edge source="&quot;BERT+DL&quot;" target="&quot;CTB6&quot;">
+  <data key="d3">7.0</data>
+  <data key="d4">"BERT+DL is evaluated on the CTB6 dataset."</data>
+  <data key="d5">examples/example_working/images/image_16.jpg</data>
+  <data key="d6">1</data>
+</edge>
+<edge source="&quot;BERT+DL&quot;" target="&quot;UD1.4&quot;">
+  <data key="d3">7.0</data>
+  <data key="d4">"BERT+DL is evaluated on the UD1.4 dataset."</data>
+  <data key="d5">examples/example_working/images/image_16.jpg</data>
+  <data key="d6">1</data>
+</edge>
+<edge source="&quot;BERT+DSC&quot;" target="&quot;CTB5&quot;">
+  <data key="d3">7.0</data>
+  <data key="d4">"BERT+DSC is evaluated on the CTB5 dataset."</data>
+  <data key="d5">examples/example_working/images/image_16.jpg</data>
+  <data key="d6">1</data>
+</edge>
+<edge source="&quot;BERT+DSC&quot;" target="&quot;CTB6&quot;">
+  <data key="d3">7.0</data>
+  <data key="d4">"BERT+DSC is evaluated on the CTB6 dataset."</data>
+  <data key="d5">examples/example_working/images/image_16.jpg</data>
+  <data key="d6">1</data>
+</edge>
+<edge source="&quot;BERT+DSC&quot;" target="&quot;UD1.4&quot;">
+  <data key="d3">7.0</data>
+  <data key="d4">"BERT+DSC is evaluated on the UD1.4 dataset."</data>
+  <data key="d5">examples/example_working/images/image_16.jpg</data>
+  <data key="d6">1</data>
+</edge>
+</graph></graphml>

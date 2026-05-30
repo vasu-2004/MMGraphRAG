@@ -1,0 +1,313 @@
+<?xml version='1.0' encoding='utf-8'?>
+<graphml xmlns="http://graphml.graphdrawing.org/xmlns" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://graphml.graphdrawing.org/xmlns http://graphml.graphdrawing.org/xmlns/1.0/graphml.xsd"><key id="d6" for="edge" attr.name="order" attr.type="long"/>
+<key id="d5" for="edge" attr.name="source_id" attr.type="string"/>
+<key id="d4" for="edge" attr.name="description" attr.type="string"/>
+<key id="d3" for="edge" attr.name="weight" attr.type="double"/>
+<key id="d2" for="node" attr.name="source_id" attr.type="string"/>
+<key id="d1" for="node" attr.name="description" attr.type="string"/>
+<key id="d0" for="node" attr.name="entity_type" attr.type="string"/>
+<graph edgedefault="undirected"><node id="&quot;IMAGE_19&quot;">
+  <data key="d0">"ORI_IMG"</data>
+  <data key="d1">"Image description generation timed out."</data>
+  <data key="d2">examples/example_working/images/image_19.jpg</data>
+</node>
+<node id="&quot;QANET (YU ET AL., 2018B)&quot;">
+  <data key="d0">"ORGANIZATION"</data>
+  <data key="d1">"A model introduced by Yu et al. in 2018, achieving EM of 73.6 and F1 of 82.7 on SQuAD v1.1, with no results reported for SQuAD v2.0, and EM of 34.41 and F1 of 38.26 on QuoRef."</data>
+  <data key="d2">examples/example_working/images/image_19.jpg</data>
+</node>
+<node id="&quot;BERT (DEVLIN ET AL., 2018)&quot;">
+  <data key="d0">"ORGANIZATION"</data>
+  <data key="d1">"A language model introduced by Devlin et al. in 2018, achieving EM of 84.1 and F1 of 90.9 on SQuAD v1.1, EM of 78.7 and F1 of 81.9 on SQuAD v2.0, and EM of 58.44 and F1 of 64.95 on QuoRef."</data>
+  <data key="d2">examples/example_working/images/image_19.jpg</data>
+</node>
+<node id="&quot;BERT+FL&quot;">
+  <data key="d0">"ORGANIZATION"</data>
+  <data key="d1">BERT+FL refers to a variant of the BERT model enhanced with Fine-tuning (FL). It achieves strong performance on machine reading comprehension benchmarks: Exact Match (EM) of 84.67 and F1 score of 91.25 on SQuAD v1.1, EM of 78.92 and F1 of 82.20 on SQuAD v2.0, and EM of 60.78 and F1 of 66.19 on QuoRef. In paraphrase identification tasks, it scores 88.43 F1 on MRPC and 91.86 F1 on QQP, showing consistent improvements over the base BERT model.</data>
+  <data key="d2">examples/example_working/images/image_19.jpg</data>
+</node>
+<node id="&quot;BERT+DL&quot;">
+  <data key="d0">"ORGANIZATION"</data>
+  <data key="d1">BERT+DL is a distilled version of BERT using knowledge distillation (DL). It demonstrates improved results across multiple natural language understanding tasks: EM of 84.83 and F1 of 91.86 on SQuAD v1.1, EM of 78.99 and F1 of 82.88 on SQuAD v2.0, and EM of 62.03 and F1 of 66.88 on QuoRef. On paraphrase identification benchmarks, it achieves 88.71 F1 on MRPC and 91.92 F1 on QQP, outperforming both standard BERT and BERT+FL in several metrics.</data>
+  <data key="d2">examples/example_working/images/image_19.jpg</data>
+</node>
+<node id="&quot;BERT+DSC&quot;">
+  <data key="d0">"ORGANIZATION"</data>
+  <data key="d1">"An enhanced version of BERT with DSC (Discriminative Self-Correction), achieving EM of 85.34 and F1 of 91.97 on SQuAD v1.1, EM of 79.02 and F1 of 82.95 on SQuAD v2.0, and EM of 62.44 and F1 of 67.52 on QuoRef."</data>
+  <data key="d2">examples/example_working/images/image_19.jpg</data>
+</node>
+<node id="&quot;XLNET (YANG ET AL., 2019)&quot;">
+  <data key="d0">"ORGANIZATION"</data>
+  <data key="d1">"A model introduced by Yang et al. in 2019, achieving EM of 88.95 and F1 of 94.52 on SQuAD v1.1, EM of 86.12 and F1 of 88.79 on SQuAD v2.0, and EM of 64.52 and F1 of 71.49 on QuoRef."</data>
+  <data key="d2">examples/example_working/images/image_19.jpg</data>
+</node>
+<node id="&quot;XLNet+FL&quot;">
+  <data key="d0">"ORGANIZATION"</data>
+  <data key="d1">XLNet+FL is an extension of the XLNet architecture enhanced through fine-tuning (FL). It delivers state-of-the-art results on machine reading comprehension: EM of 88.90 and F1 of 94.55 on SQuAD v1.1, EM of 87.04 and F1 of 89.32 on SQuAD v2.0, and EM of 65.19 and F1 of 72.34 on QuoRef. In paraphrase identification, it achieves 89.25 F1 on MRPC and 92.31 F1 on QQP, reflecting its robustness across diverse NLP tasks.</data>
+  <data key="d2">examples/example_working/images/image_19.jpg</data>
+</node>
+<node id="&quot;XLNet+DL&quot;">
+  <data key="d0">"ORGANIZATION"</data>
+  <data key="d1">XLNet+DL applies knowledge distillation (DL) to the XLNet model, yielding further performance gains. It achieves EM of 89.13 and F1 of 95.36 on SQuAD v1.1, EM of 87.22 and F1 of 89.44 on SQuAD v2.0, and EM of 65.77 and F1 of 72.85 on QuoRef. On paraphrase identification tasks, it scores 89.33 F1 on MRPC and 92.39 F1 on QQP, consistently surpassing both the original XLNet and its fine-tuned counterpart in several key metrics.</data>
+  <data key="d2">examples/example_working/images/image_19.jpg</data>
+</node>
+<node id="&quot;XLNET+DSC&quot;">
+  <data key="d0">"ORGANIZATION"</data>
+  <data key="d1">"An enhanced version of XLNet with DSC (Discriminative Self-Correction), achieving EM of 89.79 and F1 of 95.77 on SQuAD v1.1, EM of 87.65 and F1 of 89.51 on SQuAD v2.0, and EM of 65.98 and F1 of 72.90 on QuoRef."</data>
+  <data key="d2">examples/example_working/images/image_19.jpg</data>
+</node>
+<node id="&quot;SQUAD V1.1&quot;">
+  <data key="d0">"EVENT"</data>
+  <data key="d1">"A reading comprehension dataset used to evaluate models, with metrics EM and F1 reported for various models."</data>
+  <data key="d2">examples/example_working/images/image_19.jpg</data>
+</node>
+<node id="&quot;SQUAD V2.0&quot;">
+  <data key="d0">"EVENT"</data>
+  <data key="d1">"An updated version of the SQuAD dataset that includes unanswerable questions, evaluated using EM and F1 scores."</data>
+  <data key="d2">examples/example_working/images/image_19.jpg</data>
+</node>
+<node id="&quot;QUOREF&quot;">
+  <data key="d0">"EVENT"</data>
+  <data key="d1">"A reference resolution dataset used to evaluate models' ability to handle coreference, measured using EM and F1 scores."</data>
+  <data key="d2">examples/example_working/images/image_19.jpg</data>
+</node>
+<node id="&quot;TABLE 6&quot;">
+  <data key="d0">"EVENT"</data>
+  <data key="d1">"Table 6 displays experimental results for the Machine Reading Comprehension (MRC) task across three datasets: SQuAD v1.1, SQuAD v2.0, and Quoref."</data>
+  <data key="d2">examples/example_working/images/image_19.jpg</data>
+</node>
+<edge source="&quot;IMAGE_19&quot;" target="&quot;QANET (YU ET AL., 2018B)&quot;">
+  <data key="d3">10.0</data>
+  <data key="d4">"QANet (Yu et al., 2018b)是从image_19中提取的实体。"</data>
+  <data key="d5">examples/example_working/images/image_19.jpg</data>
+  <data key="d6">1</data>
+</edge>
+<edge source="&quot;IMAGE_19&quot;" target="&quot;BERT (DEVLIN ET AL., 2018)&quot;">
+  <data key="d3">10.0</data>
+  <data key="d4">"BERT (Devlin et al., 2018)是从image_19中提取的实体。"</data>
+  <data key="d5">examples/example_working/images/image_19.jpg</data>
+  <data key="d6">1</data>
+</edge>
+<edge source="&quot;IMAGE_19&quot;" target="&quot;BERT+FL&quot;">
+  <data key="d3">10.0</data>
+  <data key="d4">"BERT+FL是从image_19中提取的实体。"</data>
+  <data key="d5">examples/example_working/images/image_19.jpg</data>
+  <data key="d6">1</data>
+</edge>
+<edge source="&quot;IMAGE_19&quot;" target="&quot;BERT+DL&quot;">
+  <data key="d3">10.0</data>
+  <data key="d4">"BERT+DL是从image_19中提取的实体。"</data>
+  <data key="d5">examples/example_working/images/image_19.jpg</data>
+  <data key="d6">1</data>
+</edge>
+<edge source="&quot;IMAGE_19&quot;" target="&quot;BERT+DSC&quot;">
+  <data key="d3">10.0</data>
+  <data key="d4">"BERT+DSC是从image_19中提取的实体。"</data>
+  <data key="d5">examples/example_working/images/image_19.jpg</data>
+  <data key="d6">1</data>
+</edge>
+<edge source="&quot;IMAGE_19&quot;" target="&quot;XLNET (YANG ET AL., 2019)&quot;">
+  <data key="d3">10.0</data>
+  <data key="d4">"XLNet (Yang et al., 2019)是从image_19中提取的实体。"</data>
+  <data key="d5">examples/example_working/images/image_19.jpg</data>
+  <data key="d6">1</data>
+</edge>
+<edge source="&quot;IMAGE_19&quot;" target="&quot;XLNet+FL&quot;">
+  <data key="d3">10.0</data>
+  <data key="d4">"XLNet+FL是从image_19中提取的实体。"</data>
+  <data key="d5">examples/example_working/images/image_19.jpg</data>
+  <data key="d6">1</data>
+</edge>
+<edge source="&quot;IMAGE_19&quot;" target="&quot;XLNet+DL&quot;">
+  <data key="d3">10.0</data>
+  <data key="d4">"XLNet+DL是从image_19中提取的实体。"</data>
+  <data key="d5">examples/example_working/images/image_19.jpg</data>
+  <data key="d6">1</data>
+</edge>
+<edge source="&quot;IMAGE_19&quot;" target="&quot;XLNET+DSC&quot;">
+  <data key="d3">10.0</data>
+  <data key="d4">"XLNet+DSC是从image_19中提取的实体。"</data>
+  <data key="d5">examples/example_working/images/image_19.jpg</data>
+  <data key="d6">1</data>
+</edge>
+<edge source="&quot;IMAGE_19&quot;" target="&quot;SQUAD V1.1&quot;">
+  <data key="d3">10.0</data>
+  <data key="d4">"SQuAD v1.1是从image_19中提取的实体。"</data>
+  <data key="d5">examples/example_working/images/image_19.jpg</data>
+  <data key="d6">1</data>
+</edge>
+<edge source="&quot;IMAGE_19&quot;" target="&quot;SQUAD V2.0&quot;">
+  <data key="d3">10.0</data>
+  <data key="d4">"SQuAD v2.0是从image_19中提取的实体。"</data>
+  <data key="d5">examples/example_working/images/image_19.jpg</data>
+  <data key="d6">1</data>
+</edge>
+<edge source="&quot;IMAGE_19&quot;" target="&quot;QUOREF&quot;">
+  <data key="d3">10.0</data>
+  <data key="d4">"QuoRef是从image_19中提取的实体。"</data>
+  <data key="d5">examples/example_working/images/image_19.jpg</data>
+  <data key="d6">1</data>
+</edge>
+<edge source="&quot;IMAGE_19&quot;" target="&quot;TABLE 6&quot;">
+  <data key="d3">10.0</data>
+  <data key="d4">"IMAGE_19" is the image of "TABLE 6".</data>
+  <data key="d5">examples/example_working/images/image_19.jpg</data>
+  <data key="d6">1</data>
+</edge>
+<edge source="&quot;QANET (YU ET AL., 2018B)&quot;" target="&quot;SQUAD V1.1&quot;">
+  <data key="d3">8.0</data>
+  <data key="d4">"QANet achieved EM of 73.6 and F1 of 82.7 on SQuAD v1.1."</data>
+  <data key="d5">examples/example_working/images/image_19.jpg</data>
+  <data key="d6">1</data>
+</edge>
+<edge source="&quot;QANET (YU ET AL., 2018B)&quot;" target="&quot;QUOREF&quot;">
+  <data key="d3">7.0</data>
+  <data key="d4">"QANet achieved EM of 34.41 and F1 of 38.26 on QuoRef."</data>
+  <data key="d5">examples/example_working/images/image_19.jpg</data>
+  <data key="d6">1</data>
+</edge>
+<edge source="&quot;BERT (DEVLIN ET AL., 2018)&quot;" target="&quot;SQUAD V1.1&quot;">
+  <data key="d3">9.0</data>
+  <data key="d4">"BERT achieved EM of 84.1 and F1 of 90.9 on SQuAD v1.1."</data>
+  <data key="d5">examples/example_working/images/image_19.jpg</data>
+  <data key="d6">1</data>
+</edge>
+<edge source="&quot;BERT (DEVLIN ET AL., 2018)&quot;" target="&quot;SQUAD V2.0&quot;">
+  <data key="d3">8.0</data>
+  <data key="d4">"BERT achieved EM of 78.7 and F1 of 81.9 on SQuAD v2.0."</data>
+  <data key="d5">examples/example_working/images/image_19.jpg</data>
+  <data key="d6">1</data>
+</edge>
+<edge source="&quot;BERT (DEVLIN ET AL., 2018)&quot;" target="&quot;QUOREF&quot;">
+  <data key="d3">8.0</data>
+  <data key="d4">"BERT achieved EM of 58.44 and F1 of 64.95 on QuoRef."</data>
+  <data key="d5">examples/example_working/images/image_19.jpg</data>
+  <data key="d6">1</data>
+</edge>
+<edge source="&quot;BERT+FL&quot;" target="&quot;SQUAD V1.1&quot;">
+  <data key="d3">8.0</data>
+  <data key="d4">"BERT+FL improved upon BERT with EM of 84.67 and F1 of 91.25 on SQuAD v1.1."</data>
+  <data key="d5">examples/example_working/images/image_19.jpg</data>
+  <data key="d6">1</data>
+</edge>
+<edge source="&quot;BERT+FL&quot;" target="&quot;SQUAD V2.0&quot;">
+  <data key="d3">7.0</data>
+  <data key="d4">"BERT+FL improved upon BERT with EM of 78.92 and F1 of 82.20 on SQuAD v2.0."</data>
+  <data key="d5">examples/example_working/images/image_19.jpg</data>
+  <data key="d6">1</data>
+</edge>
+<edge source="&quot;BERT+FL&quot;" target="&quot;QUOREF&quot;">
+  <data key="d3">7.0</data>
+  <data key="d4">"BERT+FL improved upon BERT with EM of 60.78 and F1 of 66.19 on QuoRef."</data>
+  <data key="d5">examples/example_working/images/image_19.jpg</data>
+  <data key="d6">1</data>
+</edge>
+<edge source="&quot;BERT+DL&quot;" target="&quot;SQUAD V1.1&quot;">
+  <data key="d3">8.0</data>
+  <data key="d4">"BERT+DL improved upon BERT with EM of 84.83 and F1 of 91.86 on SQuAD v1.1."</data>
+  <data key="d5">examples/example_working/images/image_19.jpg</data>
+  <data key="d6">1</data>
+</edge>
+<edge source="&quot;BERT+DL&quot;" target="&quot;SQUAD V2.0&quot;">
+  <data key="d3">7.0</data>
+  <data key="d4">"BERT+DL improved upon BERT with EM of 78.99 and F1 of 82.88 on SQuAD v2.0."</data>
+  <data key="d5">examples/example_working/images/image_19.jpg</data>
+  <data key="d6">1</data>
+</edge>
+<edge source="&quot;BERT+DL&quot;" target="&quot;QUOREF&quot;">
+  <data key="d3">7.0</data>
+  <data key="d4">"BERT+DL improved upon BERT with EM of 62.03 and F1 of 66.88 on QuoRef."</data>
+  <data key="d5">examples/example_working/images/image_19.jpg</data>
+  <data key="d6">1</data>
+</edge>
+<edge source="&quot;BERT+DSC&quot;" target="&quot;SQUAD V1.1&quot;">
+  <data key="d3">9.0</data>
+  <data key="d4">"BERT+DSC improved upon BERT with EM of 85.34 and F1 of 91.97 on SQuAD v1.1."</data>
+  <data key="d5">examples/example_working/images/image_19.jpg</data>
+  <data key="d6">1</data>
+</edge>
+<edge source="&quot;BERT+DSC&quot;" target="&quot;SQUAD V2.0&quot;">
+  <data key="d3">8.0</data>
+  <data key="d4">"BERT+DSC improved upon BERT with EM of 79.02 and F1 of 82.95 on SQuAD v2.0."</data>
+  <data key="d5">examples/example_working/images/image_19.jpg</data>
+  <data key="d6">1</data>
+</edge>
+<edge source="&quot;BERT+DSC&quot;" target="&quot;QUOREF&quot;">
+  <data key="d3">9.0</data>
+  <data key="d4">"BERT+DSC improved upon BERT with EM of 62.44 and F1 of 67.52 on QuoRef."</data>
+  <data key="d5">examples/example_working/images/image_19.jpg</data>
+  <data key="d6">1</data>
+</edge>
+<edge source="&quot;XLNET (YANG ET AL., 2019)&quot;" target="&quot;SQUAD V1.1&quot;">
+  <data key="d3">9.0</data>
+  <data key="d4">"XLNet achieved EM of 88.95 and F1 of 94.52 on SQuAD v1.1."</data>
+  <data key="d5">examples/example_working/images/image_19.jpg</data>
+  <data key="d6">1</data>
+</edge>
+<edge source="&quot;XLNET (YANG ET AL., 2019)&quot;" target="&quot;SQUAD V2.0&quot;">
+  <data key="d3">8.0</data>
+  <data key="d4">"XLNet achieved EM of 86.12 and F1 of 88.79 on SQuAD v2.0."</data>
+  <data key="d5">examples/example_working/images/image_19.jpg</data>
+  <data key="d6">1</data>
+</edge>
+<edge source="&quot;XLNET (YANG ET AL., 2019)&quot;" target="&quot;QUOREF&quot;">
+  <data key="d3">8.0</data>
+  <data key="d4">"XLNet achieved EM of 64.52 and F1 of 71.49 on QuoRef."</data>
+  <data key="d5">examples/example_working/images/image_19.jpg</data>
+  <data key="d6">1</data>
+</edge>
+<edge source="&quot;XLNet+FL&quot;" target="&quot;SQUAD V1.1&quot;">
+  <data key="d3">7.0</data>
+  <data key="d4">"XLNet+FL slightly improved upon XLNet with EM of 88.90 and F1 of 94.55 on SQuAD v1.1."</data>
+  <data key="d5">examples/example_working/images/image_19.jpg</data>
+  <data key="d6">1</data>
+</edge>
+<edge source="&quot;XLNet+FL&quot;" target="&quot;SQUAD V2.0&quot;">
+  <data key="d3">7.0</data>
+  <data key="d4">"XLNet+FL improved upon XLNet with EM of 87.04 and F1 of 89.32 on SQuAD v2.0."</data>
+  <data key="d5">examples/example_working/images/image_19.jpg</data>
+  <data key="d6">1</data>
+</edge>
+<edge source="&quot;XLNet+FL&quot;" target="&quot;QUOREF&quot;">
+  <data key="d3">7.0</data>
+  <data key="d4">"XLNet+FL improved upon XLNet with EM of 65.19 and F1 of 72.34 on QuoRef."</data>
+  <data key="d5">examples/example_working/images/image_19.jpg</data>
+  <data key="d6">1</data>
+</edge>
+<edge source="&quot;XLNet+DL&quot;" target="&quot;SQUAD V1.1&quot;">
+  <data key="d3">8.0</data>
+  <data key="d4">"XLNet+DL improved upon XLNet with EM of 89.13 and F1 of 95.36 on SQuAD v1.1."</data>
+  <data key="d5">examples/example_working/images/image_19.jpg</data>
+  <data key="d6">1</data>
+</edge>
+<edge source="&quot;XLNet+DL&quot;" target="&quot;SQUAD V2.0&quot;">
+  <data key="d3">7.0</data>
+  <data key="d4">"XLNet+DL improved upon XLNet with EM of 87.22 and F1 of 89.44 on SQuAD v2.0."</data>
+  <data key="d5">examples/example_working/images/image_19.jpg</data>
+  <data key="d6">1</data>
+</edge>
+<edge source="&quot;XLNet+DL&quot;" target="&quot;QUOREF&quot;">
+  <data key="d3">7.0</data>
+  <data key="d4">"XLNet+DL improved upon XLNet with EM of 65.77 and F1 of 72.85 on QuoRef."</data>
+  <data key="d5">examples/example_working/images/image_19.jpg</data>
+  <data key="d6">1</data>
+</edge>
+<edge source="&quot;XLNET+DSC&quot;" target="&quot;SQUAD V1.1&quot;">
+  <data key="d3">9.0</data>
+  <data key="d4">"XLNet+DSC improved upon XLNet with EM of 89.79 and F1 of 95.77 on SQuAD v1.1."</data>
+  <data key="d5">examples/example_working/images/image_19.jpg</data>
+  <data key="d6">1</data>
+</edge>
+<edge source="&quot;XLNET+DSC&quot;" target="&quot;SQUAD V2.0&quot;">
+  <data key="d3">8.0</data>
+  <data key="d4">"XLNet+DSC improved upon XLNet with EM of 87.65 and F1 of 89.51 on SQuAD v2.0."</data>
+  <data key="d5">examples/example_working/images/image_19.jpg</data>
+  <data key="d6">1</data>
+</edge>
+<edge source="&quot;XLNET+DSC&quot;" target="&quot;QUOREF&quot;">
+  <data key="d3">8.0</data>
+  <data key="d4">"XLNet+DSC improved upon XLNet with EM of 65.98 and F1 of 72.90 on QuoRef."</data>
+  <data key="d5">examples/example_working/images/image_19.jpg</data>
+  <data key="d6">1</data>
+</edge>
+</graph></graphml>

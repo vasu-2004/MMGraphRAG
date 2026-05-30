@@ -1,0 +1,16 @@
+langchain-google-genai
+google-cloud-aiplatform
+python-dotenv
+sentence-transformers
+networkx
+numpy
+scikit-learn
+Pillow
+tqdm
+tiktoken
+ultralytics
+opencv-python
+fastapi
+uvicorn
+python-multipart
+pymupdf

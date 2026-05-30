@@ -1,0 +1,127 @@
+<?xml version='1.0' encoding='utf-8'?>
+<graphml xmlns="http://graphml.graphdrawing.org/xmlns" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://graphml.graphdrawing.org/xmlns http://graphml.graphdrawing.org/xmlns/1.0/graphml.xsd"><key id="d6" for="edge" attr.name="order" attr.type="long"/>
+<key id="d5" for="edge" attr.name="source_id" attr.type="string"/>
+<key id="d4" for="edge" attr.name="description" attr.type="string"/>
+<key id="d3" for="edge" attr.name="weight" attr.type="double"/>
+<key id="d2" for="node" attr.name="source_id" attr.type="string"/>
+<key id="d1" for="node" attr.name="description" attr.type="string"/>
+<key id="d0" for="node" attr.name="entity_type" attr.type="string"/>
+<graph edgedefault="undirected"><node id="&quot;IMAGE_9&quot;">
+  <data key="d0">"ORI_IMG"</data>
+  <data key="d1">"The image displays a mathematical formula representing the Dice Loss (DL) used in machine learning, particularly in segmentation tasks. The formula is written in LaTeX-style mathematical notation and reads: \[ \mathrm{DL} = \frac{1}{N} \sum_{i} \left[ 1 - \frac{2p_{i1}y_{i1} + \gamma}{p_{i1}^2 + y_{i1}^2 + \gamma} \right] \]This equation computes the average loss across N samples, where each term in the summation corresponds to a single sample i. The variables involved are:- \( p_{i1} \): predicted probability for class 1 of sample i,- \( y_{i1} \): true label (binary) for class 1 of sample i,- \( \gamma \): a small positive constant (smoothing factor) added to avoid division by zero and stabilize training.The numerator contains the product of predictions and labels scaled by 2, plus the smoothing term \( \gamma \), while the denominator uses the sum of squares of both prediction and label values, also including \( \gamma \). This formulation is a modified version of the standard Dice coefficient loss, designed to improve convergence speed by using squared terms in the denominator, as suggested by Milletari et al. (2016). The context indicates that this form of DL allows negative examples (where \( y_{i1} = 0 \)) to contribute meaningfully to training, with their DSC contribution being \( \frac{\gamma}{p_{i1} + \gamma} \). The overall structure of the formula emphasizes its use in optimizing models for binary segmentation tasks, such as medical image analysis or object detection, where balanced performance between foreground and background is critical."</data>
+  <data key="d2">examples/example_working/images/image_9.jpg</data>
+</node>
+<node id="&quot;DL&quot;">
+  <data key="d0">"ORGANIZATION"</data>
+  <data key="d1">"The term 'DL' represents a mathematical expression, likely denoting a loss function used in machine learning or statistical modeling."</data>
+  <data key="d2">examples/example_working/images/image_9.jpg</data>
+</node>
+<node id="&quot;N (Total Number of Samples)&quot;">
+  <data key="d0">"ORGANIZATION"</data>
+  <data key="d1">In the context of machine learning and statistical modeling, 'N' denotes the total number of data points or samples in the training dataset. As shown in the provided text, N appears in loss function formulations such as Cross Entropy Loss and Dice Loss, where it serves as a normalization factor—e.g., in the equation CE = -1/N ∑ᵢ∑ⱼ yᵢⱼ log pᵢⱼ—to ensure the loss is averaged over all samples.</data>
+  <data key="d2">examples/example_working/images/image_9.jpg</data>
+</node>
+<node id="&quot;Γ&quot;">
+  <data key="d0">"ORGANIZATION"</data>
+  <data key="d1">"The symbol 'γ' (gamma</data>
+  <data key="d2">examples/example_working/images/image_9.jpg</data>
+</node>
+<node id="&quot;π₁ (pi1)&quot;">
+  <data key="d2">examples/example_working/images/image_9.jpg</data>
+  <data key="d1">The symbol 'π₁' (pi1) appears to be an extracted mathematical entity from image_9, though it is not explicitly referenced or defined in the provided chunk_text. Given the context of the document—which discusses probabilistic predictions, class imbalances, and loss functions—it may potentially represent a class prior probability, a weighting factor, or a model parameter, but no direct mention confirms its role in this excerpt.</data>
+  <data key="d0">"UNKNOWN"</data>
+</node>
+<node id="&quot;yᵢ₁ (yi1)&quot;">
+  <data key="d2">examples/example_working/images/image_9.jpg</data>
+  <data key="d1">The symbol 'yᵢ₁' (yi1) refers to the ground-truth binary label for class 1 of the i-th training instance in a binary classification setting, as clearly defined in Section 3.1 of the chunk_text. Specifically, each instance xᵢ has a label vector yᵢ = [yᵢ₀, yᵢ₁], where yᵢ₁ ∈ {0, 1} indicates whether the instance belongs to the positive class. This notation is central to the formulation of loss functions like Cross Entropy and Dice Loss discussed in the text.</data>
+  <data key="d0">"UNKNOWN"</data>
+</node>
+<node id="&quot;Σ (Summation Operator)&quot;">
+  <data key="d2">examples/example_working/images/image_9.jpg</data>
+  <data key="d1">The symbol 'Σ' (sigma) is the mathematical summation operator, frequently used throughout the chunk_text in equations defining loss functions. For example, in the Cross Entropy Loss formula CE = -1/N ∑ᵢ ∑ⱼ yᵢⱼ log pᵢⱼ, Σ aggregates contributions across all samples (i) and classes (j). It also appears in Dice Loss formulations that sum over predicted and true labels across the dataset. Its presence in image_9 likely reflects its use in these core mathematical expressions related to model training and evaluation.</data>
+  <data key="d0">"UNKNOWN"</data>
+</node>
+<node id="&quot;DICE LOSS (DL)&quot;">
+  <data key="d0">"CONCEPT"</data>
+  <data key="d1">"Dice Loss (DL) is a loss function derived from the Dice Coefficient, used in training machine learning models, particularly in segmentation tasks. It exists in individual-sample and set-level formulations and often includes a smoothing factor γ."</data>
+  <data key="d2">examples/example_working/images/image_9.jpg</data>
+</node>
+<edge source="&quot;IMAGE_9&quot;" target="&quot;DL&quot;">
+  <data key="d3">10.0</data>
+  <data key="d4">"DL是从image_9中提取的实体。"</data>
+  <data key="d5">examples/example_working/images/image_9.jpg</data>
+  <data key="d6">1</data>
+</edge>
+<edge source="&quot;IMAGE_9&quot;" target="&quot;N (Total Number of Samples)&quot;">
+  <data key="d3">10.0</data>
+  <data key="d4">"N是从image_9中提取的实体。"</data>
+  <data key="d5">examples/example_working/images/image_9.jpg</data>
+  <data key="d6">1</data>
+</edge>
+<edge source="&quot;IMAGE_9&quot;" target="&quot;π₁ (pi1)&quot;">
+  <data key="d3">10.0</data>
+  <data key="d4">"pi1是从image_9中提取的实体。"</data>
+  <data key="d5">examples/example_working/images/image_9.jpg</data>
+  <data key="d6">1</data>
+</edge>
+<edge source="&quot;IMAGE_9&quot;" target="&quot;yᵢ₁ (yi1)&quot;">
+  <data key="d3">10.0</data>
+  <data key="d4">"yi1是从image_9中提取的实体。"</data>
+  <data key="d5">examples/example_working/images/image_9.jpg</data>
+  <data key="d6">1</data>
+</edge>
+<edge source="&quot;IMAGE_9&quot;" target="&quot;Γ&quot;">
+  <data key="d3">10.0</data>
+  <data key="d4">"γ是从image_9中提取的实体。"</data>
+  <data key="d5">examples/example_working/images/image_9.jpg</data>
+  <data key="d6">1</data>
+</edge>
+<edge source="&quot;IMAGE_9&quot;" target="&quot;Σ (Summation Operator)&quot;">
+  <data key="d3">10.0</data>
+  <data key="d4">"Σ是从image_9中提取的实体。"</data>
+  <data key="d5">examples/example_working/images/image_9.jpg</data>
+  <data key="d6">1</data>
+</edge>
+<edge source="&quot;IMAGE_9&quot;" target="&quot;DICE LOSS (DL)&quot;">
+  <data key="d3">10.0</data>
+  <data key="d4">"IMAGE_9" is the image of "DICE LOSS (DL)".</data>
+  <data key="d5">examples/example_working/images/image_9.jpg</data>
+  <data key="d6">1</data>
+</edge>
+<edge source="&quot;DL&quot;" target="&quot;N (Total Number of Samples)&quot;">
+  <data key="d3">9.0</data>
+  <data key="d4">"DL is computed as an average over N data points, so N directly affects the normalization of the loss value."</data>
+  <data key="d5">examples/example_working/images/image_9.jpg</data>
+  <data key="d6">1</data>
+</edge>
+<edge source="&quot;DL&quot;" target="&quot;π₁ (pi1)&quot;">
+  <data key="d3">8.0</data>
+  <data key="d4">"DL depends on pi1 because pi1 appears in the numerator and denominator of the fraction inside the summation."</data>
+  <data key="d5">examples/example_working/images/image_9.jpg</data>
+  <data key="d6">1</data>
+</edge>
+<edge source="&quot;DL&quot;" target="&quot;yᵢ₁ (yi1)&quot;">
+  <data key="d3">8.0</data>
+  <data key="d4">"DL depends on yi1 because it is part of the numerator in the fraction within the summation."</data>
+  <data key="d5">examples/example_working/images/image_9.jpg</data>
+  <data key="d6">1</data>
+</edge>
+<edge source="&quot;DL&quot;" target="&quot;Γ&quot;">
+  <data key="d3">7.0</data>
+  <data key="d4">"DL includes γ to ensure numerical stability by preventing division by zero when pi1 and yi1 are both zero."</data>
+  <data key="d5">examples/example_working/images/image_9.jpg</data>
+  <data key="d6">1</data>
+</edge>
+<edge source="&quot;DL&quot;" target="&quot;Σ (Summation Operator)&quot;">
+  <data key="d3">9.0</data>
+  <data key="d4">"DL is defined using the summation operator Σ, which aggregates the individual terms across all data points."</data>
+  <data key="d5">examples/example_working/images/image_9.jpg</data>
+  <data key="d6">1</data>
+</edge>
+<edge source="&quot;π₁ (pi1)&quot;" target="&quot;yᵢ₁ (yi1)&quot;">
+  <data key="d3">8.0</data>
+  <data key="d4">"pi1 and yi1 are paired in the formula, indicating their roles in comparing predicted values against actual labels."</data>
+  <data key="d5">examples/example_working/images/image_9.jpg</data>
+  <data key="d6">1</data>
+</edge>
+</graph></graphml>

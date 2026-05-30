@@ -1,0 +1,127 @@
+<?xml version='1.0' encoding='utf-8'?>
+<graphml xmlns="http://graphml.graphdrawing.org/xmlns" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://graphml.graphdrawing.org/xmlns http://graphml.graphdrawing.org/xmlns/1.0/graphml.xsd"><key id="d6" for="edge" attr.name="order" attr.type="long"/>
+<key id="d5" for="edge" attr.name="source_id" attr.type="string"/>
+<key id="d4" for="edge" attr.name="description" attr.type="string"/>
+<key id="d3" for="edge" attr.name="weight" attr.type="double"/>
+<key id="d2" for="node" attr.name="source_id" attr.type="string"/>
+<key id="d1" for="node" attr.name="description" attr.type="string"/>
+<key id="d0" for="node" attr.name="entity_type" attr.type="string"/>
+<graph edgedefault="undirected"><node id="&quot;IMAGE_11&quot;">
+  <data key="d0">"ORI_IMG"</data>
+  <data key="d1">"The image displays a mathematical formula for the Tversky Index (TI), which is used to measure the similarity between two sets, A and B. The formula is presented in a clean, centered LaTeX-style typeset format. It reads: TI = \frac{|A \cap B|}{|A \cap B| + \alpha |A \setminus B| + \beta |B \setminus A|}The numerator represents the size of the intersection of sets A and B, denoted as |A ∩ B|. The denominator includes the same intersection term plus weighted terms for the set differences: α times the size of A minus B (|A \ B|), and β times the size of B minus A (|B \ A|). The parameters α and β are weighting factors that allow control over the penalty for false positives and false negatives, respectively. When α = β = 0.5, the Tversky Index reduces to the Dice Similarity Coefficient (DSC). This formula is commonly used in machine learning, particularly in segmentation tasks, where it serves as a loss function or evaluation metric. The context explains that this index generalizes the Dice coefficient and offers flexibility in balancing false positives and false negatives, making it suitable for scenarios requiring nuanced similarity measures."</data>
+  <data key="d2">examples/example_working/images/image_11.jpg</data>
+</node>
+<node id="&quot;TI&quot;">
+  <data key="d0">"OBJECT"</data>
+  <data key="d1">"The symbol 'TI' represents a mathematical measure, likely the Jaccard Index or a similar similarity metric, used to quantify the relationship between two sets A and B.""</data>
+  <data key="d2">examples/example_working/images/image_11.jpg</data>
+</node>
+<node id="&quot;A ∩ B&quot;">
+  <data key="d0">"OBJECT"</data>
+  <data key="d1">"The intersection of sets A and B, representing elements common to both sets. This term appears in the numerator of the formula.""</data>
+  <data key="d2">examples/example_working/images/image_11.jpg</data>
+</node>
+<node id="&quot;A \ B&quot;">
+  <data key="d0">"OBJECT"</data>
+  <data key="d1">"The set difference of A minus B, representing elements in A that are not in B. This term appears in the denominator with a coefficient α.""</data>
+  <data key="d2">examples/example_working/images/image_11.jpg</data>
+</node>
+<node id="&quot;B \ A&quot;">
+  <data key="d0">"OBJECT"</data>
+  <data key="d1">"The set difference of B minus A, representing elements in B that are not in A. This term appears in the denominator with a coefficient β.""</data>
+  <data key="d2">examples/example_working/images/image_11.jpg</data>
+</node>
+<node id="&quot;Α&quot;">
+  <data key="d0">"OBJECT"</data>
+  <data key="d1">"A scalar coefficient weighting the contribution of the set difference A \ B in the denominator of the formula.""</data>
+  <data key="d2">examples/example_working/images/image_11.jpg</data>
+</node>
+<node id="&quot;Β&quot;">
+  <data key="d0">"OBJECT"</data>
+  <data key="d1">"A scalar coefficient weighting the contribution of the set difference B \ A in the denominator of the formula.""</data>
+  <data key="d2">examples/example_working/images/image_11.jpg</data>
+</node>
+<node id="&quot;FORMULA&quot;">
+  <data key="d0">"OBJECT"</data>
+  <data key="d1">"Mathematical expression defining the measure 'TI' as a ratio involving the intersection and set differences of two sets A and B, scaled by coefficients α and β.""</data>
+  <data key="d2">examples/example_working/images/image_11.jpg</data>
+</node>
+<edge source="&quot;IMAGE_11&quot;" target="&quot;TI&quot;">
+  <data key="d3">10.0</data>
+  <data key="d4">"TI是从image_11中提取的实体。"</data>
+  <data key="d5">examples/example_working/images/image_11.jpg</data>
+  <data key="d6">1</data>
+</edge>
+<edge source="&quot;IMAGE_11&quot;" target="&quot;A ∩ B&quot;">
+  <data key="d3">10.0</data>
+  <data key="d4">"A ∩ B是从image_11中提取的实体。"</data>
+  <data key="d5">examples/example_working/images/image_11.jpg</data>
+  <data key="d6">1</data>
+</edge>
+<edge source="&quot;IMAGE_11&quot;" target="&quot;A \ B&quot;">
+  <data key="d3">10.0</data>
+  <data key="d4">"A \ B是从image_11中提取的实体。"</data>
+  <data key="d5">examples/example_working/images/image_11.jpg</data>
+  <data key="d6">1</data>
+</edge>
+<edge source="&quot;IMAGE_11&quot;" target="&quot;B \ A&quot;">
+  <data key="d3">10.0</data>
+  <data key="d4">"B \ A是从image_11中提取的实体。"</data>
+  <data key="d5">examples/example_working/images/image_11.jpg</data>
+  <data key="d6">1</data>
+</edge>
+<edge source="&quot;IMAGE_11&quot;" target="&quot;Α&quot;">
+  <data key="d3">10.0</data>
+  <data key="d4">"α是从image_11中提取的实体。"</data>
+  <data key="d5">examples/example_working/images/image_11.jpg</data>
+  <data key="d6">1</data>
+</edge>
+<edge source="&quot;IMAGE_11&quot;" target="&quot;Β&quot;">
+  <data key="d3">10.0</data>
+  <data key="d4">"β是从image_11中提取的实体。"</data>
+  <data key="d5">examples/example_working/images/image_11.jpg</data>
+  <data key="d6">1</data>
+</edge>
+<edge source="&quot;IMAGE_11&quot;" target="&quot;FORMULA&quot;">
+  <data key="d3">10.0</data>
+  <data key="d4">"Formula是从image_11中提取的实体。"</data>
+  <data key="d5">examples/example_working/images/image_11.jpg</data>
+  <data key="d6">1</data>
+</edge>
+<edge source="&quot;TI&quot;" target="&quot;A ∩ B&quot;">
+  <data key="d3">9.0</data>
+  <data key="d4">"TI is directly proportional to the size of the intersection of sets A and B, which forms the numerator of the formula."</data>
+  <data key="d5">examples/example_working/images/image_11.jpg</data>
+  <data key="d6">1</data>
+</edge>
+<edge source="&quot;TI&quot;" target="&quot;A \ B&quot;">
+  <data key="d3">8.0</data>
+  <data key="d4">"TI is inversely related to the size of A \ B, modulated by the coefficient α, contributing to the denominator."</data>
+  <data key="d5">examples/example_working/images/image_11.jpg</data>
+  <data key="d6">1</data>
+</edge>
+<edge source="&quot;TI&quot;" target="&quot;B \ A&quot;">
+  <data key="d3">8.0</data>
+  <data key="d4">"TI is inversely related to the size of B \ A, modulated by the coefficient β, contributing to the denominator."</data>
+  <data key="d5">examples/example_working/images/image_11.jpg</data>
+  <data key="d6">1</data>
+</edge>
+<edge source="&quot;TI&quot;" target="&quot;Α&quot;">
+  <data key="d3">7.0</data>
+  <data key="d4">"The coefficient α scales the influence of A \ B on the value of the measure TI."</data>
+  <data key="d5">examples/example_working/images/image_11.jpg</data>
+  <data key="d6">1</data>
+</edge>
+<edge source="&quot;TI&quot;" target="&quot;Β&quot;">
+  <data key="d3">7.0</data>
+  <data key="d4">"The coefficient β scales the influence of B \ A on the value of the measure TI."</data>
+  <data key="d5">examples/example_working/images/image_11.jpg</data>
+  <data key="d6">1</data>
+</edge>
+<edge source="&quot;TI&quot;" target="&quot;FORMULA&quot;">
+  <data key="d3">10.0</data>
+  <data key="d4">"TI is defined by the Formula, which specifies how the sets A and B and their relationships contribute to the final value."</data>
+  <data key="d5">examples/example_working/images/image_11.jpg</data>
+  <data key="d6">1</data>
+</edge>
+</graph></graphml>

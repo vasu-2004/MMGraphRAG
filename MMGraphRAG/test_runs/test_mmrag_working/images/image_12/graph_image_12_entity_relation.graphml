@@ -1,0 +1,28 @@
+<?xml version='1.0' encoding='utf-8'?>
+<graphml xmlns="http://graphml.graphdrawing.org/xmlns" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://graphml.graphdrawing.org/xmlns http://graphml.graphdrawing.org/xmlns/1.0/graphml.xsd">
+  <key id="d6" for="edge" attr.name="order" attr.type="long" />
+  <key id="d5" for="edge" attr.name="source_id" attr.type="string" />
+  <key id="d4" for="edge" attr.name="description" attr.type="string" />
+  <key id="d3" for="edge" attr.name="weight" attr.type="double" />
+  <key id="d2" for="node" attr.name="source_id" attr.type="string" />
+  <key id="d1" for="node" attr.name="description" attr.type="string" />
+  <key id="d0" for="node" attr.name="entity_type" attr.type="string" />
+  <graph edgedefault="undirected">
+    <node id="&quot;IMAGE_12&quot;">
+      <data key="d0">"ORI_IMG"</data>
+      <data key="d1">"The image displays a single, prominent character, which is the uppercase Greek letter Delta (Δ). The character is rendered in a grayscale or metallic-looking texture, giving it a somewhat three-dimensional and slightly reflective appearance. It is set against a dark, possibly black, background, which provides strong contrast and makes the white/gray character stand out clearly. The symbol itself is a triangle with its base at the bottom and its apex pointing upwards, characteristic of the Delta symbol. The edges of the symbol appear somewhat blurred or softened, suggesting a slight glow or a low-resolution rendering."</data>
+      <data key="d2">test_runs/test_mmrag_working\images\image_12.jpg</data>
+    </node>
+    <node id="&quot;DELTA SYMBOL&quot;">
+      <data key="d0">"OBJECT"</data>
+      <data key="d1">"A white, stylized capital Greek letter Delta (Δ) displayed prominently on a dark, possibly black, background. It has a triangular shape with a horizontal base and two converging sides forming an apex."</data>
+      <data key="d2">test_runs/test_mmrag_working\images\image_12.jpg</data>
+    </node>
+    <edge source="&quot;IMAGE_12&quot;" target="&quot;DELTA SYMBOL&quot;">
+      <data key="d3">10.0</data>
+      <data key="d4">"Delta symbol是从image_12中提取的实体。"</data>
+      <data key="d5">test_runs/test_mmrag_working\images\image_12.jpg</data>
+      <data key="d6">1</data>
+    </edge>
+  </graph>
+</graphml>

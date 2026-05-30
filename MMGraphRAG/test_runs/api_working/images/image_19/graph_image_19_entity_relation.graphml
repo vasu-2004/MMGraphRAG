@@ -1,0 +1,65 @@
+<?xml version='1.0' encoding='utf-8'?>
+<graphml xmlns="http://graphml.graphdrawing.org/xmlns" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://graphml.graphdrawing.org/xmlns http://graphml.graphdrawing.org/xmlns/1.0/graphml.xsd"><key id="d6" for="edge" attr.name="order" attr.type="long"/>
+<key id="d5" for="edge" attr.name="source_id" attr.type="string"/>
+<key id="d4" for="edge" attr.name="description" attr.type="string"/>
+<key id="d3" for="edge" attr.name="weight" attr.type="double"/>
+<key id="d2" for="node" attr.name="source_id" attr.type="string"/>
+<key id="d1" for="node" attr.name="description" attr.type="string"/>
+<key id="d0" for="node" attr.name="entity_type" attr.type="string"/>
+<graph edgedefault="undirected"><node id="&quot;IMAGE_19&quot;">
+  <data key="d0">"ORI_IMG"</data>
+  <data key="d1">"The image is a very low-resolution, grayscale graphic depicting a stylized representation of two hands. The hands are rendered in white or light gray against a dark, almost black background. The forms are somewhat abstract and blocky due to the pixelation. The left hand appears to be positioned to the left, and the right hand to the right, with their main forms or 'fingers' pointing towards the center, suggesting an interaction or communication gesture, commonly associated with sign language or interpretation services. The overall shape is compact and iconic."</data>
+  <data key="d2">C:/MMGraphRAG/MMGraphRAG/test_runs/api_working\images\image_19.jpg</data>
+</node>
+<node id="&quot;ABSTRACT WHITE FORM 1&quot;">
+  <data key="d0">"OBJECT"</data>
+  <data key="d1">"A blurry, white, abstract form located on the left side of the image. It has an irregular, somewhat rounded shape with a dark, central void, resembling a stylized letter or symbol against a black background."</data>
+  <data key="d2">C:/MMGraphRAG/MMGraphRAG/test_runs/api_working\images\image_19.jpg</data>
+</node>
+<node id="&quot;ABSTRACT WHITE FORM 2&quot;">
+  <data key="d0">"OBJECT"</data>
+  <data key="d1">"A blurry, white, abstract form located on the right side of the image, largely mirroring the appearance of Abstract White Form 1. It also features an irregular, rounded shape with a central dark void and partially overlaps Abstract White Form 1."</data>
+  <data key="d2">C:/MMGraphRAG/MMGraphRAG/test_runs/api_working\images\image_19.jpg</data>
+</node>
+<node id="&quot;BLACK BACKGROUND&quot;">
+  <data key="d0">"OBJECT"</data>
+  <data key="d1">"The solid, dark black area that constitutes the majority of the image, providing a stark contrast to the two bright white abstract forms."</data>
+  <data key="d2">C:/MMGraphRAG/MMGraphRAG/test_runs/api_working\images\image_19.jpg</data>
+</node>
+<edge source="&quot;IMAGE_19&quot;" target="&quot;ABSTRACT WHITE FORM 1&quot;">
+  <data key="d3">10.0</data>
+  <data key="d4">"Abstract White Form 1是从image_19中提取的实体。"</data>
+  <data key="d5">C:/MMGraphRAG/MMGraphRAG/test_runs/api_working\images\image_19.jpg</data>
+  <data key="d6">1</data>
+</edge>
+<edge source="&quot;IMAGE_19&quot;" target="&quot;ABSTRACT WHITE FORM 2&quot;">
+  <data key="d3">10.0</data>
+  <data key="d4">"Abstract White Form 2是从image_19中提取的实体。"</data>
+  <data key="d5">C:/MMGraphRAG/MMGraphRAG/test_runs/api_working\images\image_19.jpg</data>
+  <data key="d6">1</data>
+</edge>
+<edge source="&quot;IMAGE_19&quot;" target="&quot;BLACK BACKGROUND&quot;">
+  <data key="d3">10.0</data>
+  <data key="d4">"Black Background是从image_19中提取的实体。"</data>
+  <data key="d5">C:/MMGraphRAG/MMGraphRAG/test_runs/api_working\images\image_19.jpg</data>
+  <data key="d6">1</data>
+</edge>
+<edge source="&quot;ABSTRACT WHITE FORM 1&quot;" target="&quot;ABSTRACT WHITE FORM 2&quot;">
+  <data key="d3">8.0</data>
+  <data key="d4">"Abstract White Form 1 is positioned immediately to the left of and slightly overlaps Abstract White Form 2, and both forms share a similar abstract design."</data>
+  <data key="d5">C:/MMGraphRAG/MMGraphRAG/test_runs/api_working\images\image_19.jpg</data>
+  <data key="d6">1</data>
+</edge>
+<edge source="&quot;ABSTRACT WHITE FORM 1&quot;" target="&quot;BLACK BACKGROUND&quot;">
+  <data key="d3">9.0</data>
+  <data key="d4">"Abstract White Form 1 is prominently displayed against the Black Background, which serves to define its outline."</data>
+  <data key="d5">C:/MMGraphRAG/MMGraphRAG/test_runs/api_working\images\image_19.jpg</data>
+  <data key="d6">1</data>
+</edge>
+<edge source="&quot;ABSTRACT WHITE FORM 2&quot;" target="&quot;BLACK BACKGROUND&quot;">
+  <data key="d3">9.0</data>
+  <data key="d4">"Abstract White Form 2 is prominently displayed against the Black Background, which serves to define its outline."</data>
+  <data key="d5">C:/MMGraphRAG/MMGraphRAG/test_runs/api_working\images\image_19.jpg</data>
+  <data key="d6">1</data>
+</edge>
+</graph></graphml>

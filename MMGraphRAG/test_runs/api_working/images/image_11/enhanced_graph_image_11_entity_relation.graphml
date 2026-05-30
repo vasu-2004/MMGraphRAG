@@ -1,0 +1,25 @@
+<?xml version='1.0' encoding='utf-8'?>
+<graphml xmlns="http://graphml.graphdrawing.org/xmlns" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://graphml.graphdrawing.org/xmlns http://graphml.graphdrawing.org/xmlns/1.0/graphml.xsd"><key id="d6" for="edge" attr.name="order" attr.type="long"/>
+<key id="d5" for="edge" attr.name="source_id" attr.type="string"/>
+<key id="d4" for="edge" attr.name="description" attr.type="string"/>
+<key id="d3" for="edge" attr.name="weight" attr.type="double"/>
+<key id="d2" for="node" attr.name="source_id" attr.type="string"/>
+<key id="d1" for="node" attr.name="description" attr.type="string"/>
+<key id="d0" for="node" attr.name="entity_type" attr.type="string"/>
+<graph edgedefault="undirected"><node id="&quot;IMAGE_11&quot;">
+  <data key="d0">"ORI_IMG"</data>
+  <data key="d1">"The image features a dark, horizontally oriented rectangular shape with significantly rounded corners, almost resembling a squircle or a pill shape. Inside this dark, uniform background, two uppercase letters, 'FS', are prominently displayed. The letters are rendered in a light grey or silver color, exhibiting a gradient effect that gives them a metallic, glossy, or embossed appearance. The 'F' is positioned to the left of the 'S', and both letters are bold and centrally aligned within the dark shape. The overall design suggests a stylized logo or an icon."</data>
+  <data key="d2">C:/MMGraphRAG/MMGraphRAG/test_runs/api_working\images\image_11.jpg</data>
+</node>
+<node id="&quot;FS LOGO&quot;">
+  <data key="d0">"OBJECT"</data>
+  <data key="d1">A stylized logo featuring the letters 'FS' in a bold, sans-serif font. The letters appear metallic or silver with a gradient effect, set within a dark, rounded rectangular or oval shape that has a subtle border. The overall appearance is sleek and modern, suggesting a brand or organization's emblem.</data>
+  <data key="d2">C:/MMGraphRAG/MMGraphRAG/test_runs/api_working\images\image_11.jpg</data>
+</node>
+<edge source="&quot;IMAGE_11&quot;" target="&quot;FS LOGO&quot;">
+  <data key="d3">10.0</data>
+  <data key="d4">"FS Logo是从image_11中提取的实体。"</data>
+  <data key="d5">C:/MMGraphRAG/MMGraphRAG/test_runs/api_working\images\image_11.jpg</data>
+  <data key="d6">1</data>
+</edge>
+</graph></graphml>

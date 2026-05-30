@@ -1,0 +1,172 @@
+<?xml version='1.0' encoding='utf-8'?>
+<graphml xmlns="http://graphml.graphdrawing.org/xmlns" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://graphml.graphdrawing.org/xmlns http://graphml.graphdrawing.org/xmlns/1.0/graphml.xsd"><key id="d6" for="edge" attr.name="order" attr.type="long"/>
+<key id="d5" for="edge" attr.name="source_id" attr.type="string"/>
+<key id="d4" for="edge" attr.name="description" attr.type="string"/>
+<key id="d3" for="edge" attr.name="weight" attr.type="double"/>
+<key id="d2" for="node" attr.name="source_id" attr.type="string"/>
+<key id="d1" for="node" attr.name="description" attr.type="string"/>
+<key id="d0" for="node" attr.name="entity_type" attr.type="string"/>
+<graph edgedefault="undirected"><node id="&quot;IMAGE_2&quot;">
+  <data key="d0">"ORI_IMG"</data>
+  <data key="d1">"The image displays a mathematical formula representing the cross-entropy (CE) loss function used in binary classification tasks. The formula is written in LaTeX-style notation and reads: CE = -\frac{1}{N} \sum_{i} \sum_{j \in \{0,1\}} y_{ij} \log p_{ij}. This equation computes the average cross-entropy loss over N training instances. For each instance i, the sum is taken over the two possible class labels j ∈ {0,1}, where y_ij represents the true label (either 0 or 1) and p_ij denotes the predicted probability for class j. The logarithm of the predicted probability is weighted by the true label, ensuring that only the log-probability of the correct class contributes to the loss. The negative sign ensures the loss is positive, and dividing by N normalizes the total loss across all samples. The context explains that this formulation applies to binary classification with one-hot encoded labels and can be extended to multi-class settings. It also mentions that each training instance contributes equally to the final objective, and strategies like class weighting or resampling are used when unequal treatment of instances is desired."</data>
+  <data key="d2">examples/example_working/images/image_2.jpg</data>
+</node>
+<node id="&quot;Cross-Entropy Loss (CE)&quot;">
+  <data key="d0">"ORGANIZATION"</data>
+  <data key="d1">Cross-Entropy Loss (CE), also referred to as the maximum likelihood estimation (MLE) objective, is a standard loss function used in machine learning for classification tasks, especially in natural language processing. It is defined as CE = -1/N ∑_i ∑_{j∈{0,1}} y_ij log p_ij, where N is the total number of samples, y_ij is the true label for sample i and class j, and p_ij is the predicted probability. CE treats all training examples equally in the objective function, which can lead to poor performance on imbalanced datasets due to bias toward the majority class and the overwhelming influence of easy-negative examples.</data>
+  <data key="d2">examples/example_working/images/image_2.jpg</data>
+</node>
+<node id="&quot;Total Number of Samples (N)&quot;">
+  <data key="d0">"ORGANIZATION"</data>
+  <data key="d1">N represents the total number of samples in the dataset. In the context of cross-entropy loss and other classification objectives, it serves as a normalization factor to average the loss across all data points, ensuring scale invariance with respect to dataset size.</data>
+  <data key="d2">examples/example_working/images/image_2.jpg</data>
+</node>
+<node id="&quot;Sample Index (i)&quot;">
+  <data key="d0">"ORGANIZATION"</data>
+  <data key="d1">The index variable i denotes an individual sample in the dataset, ranging from 1 to N. It is used in summations over the dataset to compute aggregate metrics such as loss functions, where each sample contributes to the overall objective based on its true label and predicted probabilities.</data>
+  <data key="d2">examples/example_working/images/image_2.jpg</data>
+</node>
+<node id="&quot;Class Label Index (j)&quot;">
+  <data key="d0">"ORGANIZATION"</data>
+  <data key="d1">The index variable j represents class labels in a classification task. In binary classification, j takes values in the set {0, 1}, where 0 typically denotes the negative class and 1 the positive class. This index is used in inner summations over classes when computing per-sample losses like cross-entropy.</data>
+  <data key="d2">examples/example_working/images/image_2.jpg</data>
+</node>
+<node id="&quot;True Label (y_ij)&quot;">
+  <data key="d0">"ORGANIZATION"</data>
+  <data key="d1">y_ij denotes the ground-truth label for sample i and class j. In binary classification, y_ij is 1 if sample i belongs to class j, and 0 otherwise. These binary indicators are essential in computing supervised learning objectives such as cross-entropy loss and Dice-based losses, as they define the target distribution the model aims to approximate.</data>
+  <data key="d2">examples/example_working/images/image_2.jpg</data>
+</node>
+<node id="&quot;Predicted Probability (p_ij)&quot;">
+  <data key="d0">"ORGANIZATION"</data>
+  <data key="d1">p_ij is the predicted probability that sample i belongs to class j, typically generated by a softmax or sigmoid activation function in neural networks. These probabilities must satisfy p_i0 + p_i1 = 1 in binary classification and are used alongside true labels y_ij to compute various loss functions including cross-entropy, Dice loss, and Tversky loss.</data>
+  <data key="d2">examples/example_working/images/image_2.jpg</data>
+</node>
+<node id="&quot;Natural Logarithm (log)&quot;">
+  <data key="d0">"ORGANIZATION"</data>
+  <data key="d1">The natural logarithm function, denoted as log, is applied to predicted probabilities p_ij in the cross-entropy loss formulation. It penalizes incorrect predictions more severely—the closer p_ij is to 0 when y_ij = 1, the larger the penalty—thus encouraging the model to assign higher probabilities to correct classes.</data>
+  <data key="d2">examples/example_working/images/image_2.jpg</data>
+</node>
+<node id="&quot;Summation Over Samples (∑_i)&quot;">
+  <data key="d0">"ORGANIZATION"</data>
+  <data key="d1">The outer summation over i aggregates contributions from all N samples in the dataset. In loss functions like cross-entropy, this ensures that the total loss reflects performance across the entire dataset, with each sample contributing equally unless modified by weighting schemes.</data>
+  <data key="d2">examples/example_working/images/image_2.jpg</data>
+</node>
+<node id="&quot;Summation Over Classes (∑_j)&quot;">
+  <data key="d0">"ORGANIZATION"</data>
+  <data key="d1">The inner summation over j iterates through all possible class labels (e.g., j ∈ {0, 1} in binary classification) for each sample i. This allows loss functions to account for multi-class predictions by summing the contribution of each class based on its true label and predicted probability.</data>
+  <data key="d2">examples/example_working/images/image_2.jpg</data>
+</node>
+<node id="Cross Entropy Loss">
+  <data key="d0">IMG_ENTITY</data>
+  <data key="d1">The cross-entropy (CE) loss function used in binary classification tasks, as represented by the mathematical formula CE = -1/N ∑∑ y_ij log p_ij. This formula computes the average cross-entropy loss over N training instances, where y_ij is the true label and p_ij is the predicted probability for class j ∈ {0,1}. The image corresponds to the formal definition of this loss function, which is discussed in the text as a standard training objective in data-imbalanced NLP tasks.</data>
+  <data key="d2">examples/example_working/images/image_2.jpg</data>
+</node>
+<edge source="&quot;IMAGE_2&quot;" target="&quot;Cross-Entropy Loss (CE)&quot;">
+  <data key="d3">10.0</data>
+  <data key="d4">"CE是从image_2中提取的实体。"</data>
+  <data key="d5">examples/example_working/images/image_2.jpg</data>
+  <data key="d6">1</data>
+</edge>
+<edge source="&quot;IMAGE_2&quot;" target="&quot;Total Number of Samples (N)&quot;">
+  <data key="d3">10.0</data>
+  <data key="d4">"N是从image_2中提取的实体。"</data>
+  <data key="d5">examples/example_working/images/image_2.jpg</data>
+  <data key="d6">1</data>
+</edge>
+<edge source="&quot;IMAGE_2&quot;" target="&quot;Sample Index (i)&quot;">
+  <data key="d3">10.0</data>
+  <data key="d4">"i是从image_2中提取的实体。"</data>
+  <data key="d5">examples/example_working/images/image_2.jpg</data>
+  <data key="d6">1</data>
+</edge>
+<edge source="&quot;IMAGE_2&quot;" target="&quot;Class Label Index (j)&quot;">
+  <data key="d3">10.0</data>
+  <data key="d4">"j是从image_2中提取的实体。"</data>
+  <data key="d5">examples/example_working/images/image_2.jpg</data>
+  <data key="d6">1</data>
+</edge>
+<edge source="&quot;IMAGE_2&quot;" target="&quot;True Label (y_ij)&quot;">
+  <data key="d3">10.0</data>
+  <data key="d4">"y_ij是从image_2中提取的实体。"</data>
+  <data key="d5">examples/example_working/images/image_2.jpg</data>
+  <data key="d6">1</data>
+</edge>
+<edge source="&quot;IMAGE_2&quot;" target="&quot;Predicted Probability (p_ij)&quot;">
+  <data key="d3">10.0</data>
+  <data key="d4">"p_ij是从image_2中提取的实体。"</data>
+  <data key="d5">examples/example_working/images/image_2.jpg</data>
+  <data key="d6">1</data>
+</edge>
+<edge source="&quot;IMAGE_2&quot;" target="&quot;Natural Logarithm (log)&quot;">
+  <data key="d3">10.0</data>
+  <data key="d4">"log是从image_2中提取的实体。"</data>
+  <data key="d5">examples/example_working/images/image_2.jpg</data>
+  <data key="d6">1</data>
+</edge>
+<edge source="&quot;IMAGE_2&quot;" target="&quot;Summation Over Samples (∑_i)&quot;">
+  <data key="d3">10.0</data>
+  <data key="d4">"Summation over i是从image_2中提取的实体。"</data>
+  <data key="d5">examples/example_working/images/image_2.jpg</data>
+  <data key="d6">1</data>
+</edge>
+<edge source="&quot;IMAGE_2&quot;" target="&quot;Summation Over Classes (∑_j)&quot;">
+  <data key="d3">10.0</data>
+  <data key="d4">"Summation over j是从image_2中提取的实体。"</data>
+  <data key="d5">examples/example_working/images/image_2.jpg</data>
+  <data key="d6">1</data>
+</edge>
+<edge source="&quot;IMAGE_2&quot;" target="Cross Entropy Loss">
+  <data key="d3">10.0</data>
+  <data key="d4">"IMAGE_2" is the image of Cross Entropy Loss.</data>
+  <data key="d5">examples/example_working/images/image_2.jpg</data>
+  <data key="d6">1</data>
+</edge>
+<edge source="&quot;Cross-Entropy Loss (CE)&quot;" target="&quot;Total Number of Samples (N)&quot;">
+  <data key="d3">9.0</data>
+  <data key="d4">"The cross-entropy loss is normalized by dividing by N, the total number of samples."</data>
+  <data key="d5">examples/example_working/images/image_2.jpg</data>
+  <data key="d6">1</data>
+</edge>
+<edge source="&quot;Cross-Entropy Loss (CE)&quot;" target="&quot;True Label (y_ij)&quot;">
+  <data key="d3">8.0</data>
+  <data key="d4">"The true labels y_ij are used to compute the cross-entropy loss."</data>
+  <data key="d5">examples/example_working/images/image_2.jpg</data>
+  <data key="d6">1</data>
+</edge>
+<edge source="&quot;Cross-Entropy Loss (CE)&quot;" target="&quot;Predicted Probability (p_ij)&quot;">
+  <data key="d3">8.0</data>
+  <data key="d4">"The predicted probabilities p_ij are directly used in the computation of cross-entropy."</data>
+  <data key="d5">examples/example_working/images/image_2.jpg</data>
+  <data key="d6">1</data>
+</edge>
+<edge source="&quot;Cross-Entropy Loss (CE)&quot;" target="&quot;Natural Logarithm (log)&quot;">
+  <data key="d3">7.0</data>
+  <data key="d4">"The logarithm function is applied to p_ij to measure the uncertainty in predictions."</data>
+  <data key="d5">examples/example_working/images/image_2.jpg</data>
+  <data key="d6">1</data>
+</edge>
+<edge source="&quot;Total Number of Samples (N)&quot;" target="&quot;Summation Over Samples (∑_i)&quot;">
+  <data key="d3">8.0</data>
+  <data key="d4">"The outer summation runs over all N samples."</data>
+  <data key="d5">examples/example_working/images/image_2.jpg</data>
+  <data key="d6">1</data>
+</edge>
+<edge source="&quot;Class Label Index (j)&quot;" target="&quot;Summation Over Classes (∑_j)&quot;">
+  <data key="d3">9.0</data>
+  <data key="d4">"The inner summation iterates over the two possible class labels, j ∈ {0,1}."</data>
+  <data key="d5">examples/example_working/images/image_2.jpg</data>
+  <data key="d6">1</data>
+</edge>
+<edge source="&quot;True Label (y_ij)&quot;" target="&quot;Predicted Probability (p_ij)&quot;">
+  <data key="d3">8.0</data>
+  <data key="d4">"The true labels y_ij and predicted probabilities p_ij are paired in the formula to evaluate prediction accuracy."</data>
+  <data key="d5">examples/example_working/images/image_2.jpg</data>
+  <data key="d6">1</data>
+</edge>
+<edge source="&quot;Summation Over Samples (∑_i)&quot;" target="&quot;Summation Over Classes (∑_j)&quot;">
+  <data key="d3">9.0</data>
+  <data key="d4">"The inner summation over j is nested within the outer summation over i, indicating per-sample evaluation across classes."</data>
+  <data key="d5">examples/example_working/images/image_2.jpg</data>
+  <data key="d6">1</data>
+</edge>
+</graph></graphml>

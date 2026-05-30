@@ -1,0 +1,122 @@
+<?xml version='1.0' encoding='utf-8'?>
+<graphml xmlns="http://graphml.graphdrawing.org/xmlns" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://graphml.graphdrawing.org/xmlns http://graphml.graphdrawing.org/xmlns/1.0/graphml.xsd"><key id="d6" for="edge" attr.name="order" attr.type="long"/>
+<key id="d5" for="edge" attr.name="source_id" attr.type="string"/>
+<key id="d4" for="edge" attr.name="description" attr.type="string"/>
+<key id="d3" for="edge" attr.name="weight" attr.type="double"/>
+<key id="d2" for="node" attr.name="source_id" attr.type="string"/>
+<key id="d1" for="node" attr.name="description" attr.type="string"/>
+<key id="d0" for="node" attr.name="entity_type" attr.type="string"/>
+<graph edgedefault="undirected"><node id="&quot;IMAGE_8&quot;">
+  <data key="d0">"ORI_IMG"</data>
+  <data key="d1">"The image displays a mathematical formula representing the Dice Similarity Coefficient (DSC) for a given sample \( x_i \). The formula is written in LaTeX-style mathematical notation and reads: \[ \text{DSC}(x_i) = \frac{2p_{i1}y_{i1} + \gamma}{p_{i1} + y_{i1} + \gamma} \]Here, \( p_{i1} \) represents the predicted probability of the positive class for sample \( x_i \), \( y_{i1} \) is the true label (typically binary, with 1 indicating the positive class), and \( \gamma \) is a small smoothing constant added to prevent division by zero and improve numerical stability. This formulation is commonly used in medical image segmentation tasks where class imbalance is prevalent. The numerator includes twice the product of the prediction and ground truth, emphasizing agreement between them, while the denominator sums all relevant values, ensuring normalization. The context provided indicates that this DSC is part of a broader discussion on loss functions, particularly in relation to Dice Loss (DL), and notes that adding a constant (like +1) ensures positivity in certain loss formulations. Additionally, it references Milletari et al. (2016), who proposed modifying the denominator to a squared form for faster convergence, though this specific variant uses a linear denominator. The image contains no visual elements beyond the mathematical expression; it is purely symbolic and analytical."</data>
+  <data key="d2">examples/example_working/images/image_8.jpg</data>
+</node>
+<node id="&quot;DSC&quot;">
+  <data key="d0">"ORGANIZATION"</data>
+  <data key="d1">"Dice Similarity Coefficient, a metric used in image segmentation to measure the similarity between two sets of pixels."</data>
+  <data key="d2">examples/example_working/images/image_8.jpg</data>
+</node>
+<node id="&quot;x_i&quot;">
+  <data key="d0">"GEO"</data>
+  <data key="d1">A pixel or region in an image, represented as a variable in segmentation or classification formulas. In the context of binary classification tasks, x_i denotes an individual training instance (e.g., a pixel) for which predictions and ground truth labels are defined.</data>
+  <data key="d2">examples/example_working/images/image_8.jpg</data>
+</node>
+<node id="&quot;p_{i1}&quot;">
+  <data key="d0">"GEO"</data>
+  <data key="d1">The predicted probability assigned by a model to the positive class for pixel or instance x_i. In binary segmentation or classification, p_{i1} ∈ [0, 1] represents the model's confidence that x_i belongs to the foreground or positive class, with p_{i0} = 1 − p_{i1} for the negative class.</data>
+  <data key="d2">examples/example_working/images/image_8.jpg</data>
+</node>
+<node id="&quot;y_{i1}&quot;">
+  <data key="d0">"GEO"</data>
+  <data key="d1">The true binary label (ground truth) for pixel or instance x_i, indicating whether it belongs to the positive class. y_{i1} ∈ {0, 1}, where 1 denotes a positive (foreground) label and 0 denotes a negative (background) label. This is used alongside predicted probabilities in loss functions like Dice Loss and Cross Entropy.</data>
+  <data key="d2">examples/example_working/images/image_8.jpg</data>
+</node>
+<node id="&quot;γ (gamma)&quot;">
+  <data key="d0">"GEO"</data>
+  <data key="d1">A small smoothing constant (often set to 1) added to both the numerator and denominator in Dice-based loss functions to ensure numerical stability and prevent division by zero. It also allows negative examples to contribute to the loss during training, improving gradient flow for imbalanced datasets.</data>
+  <data key="d2">examples/example_working/images/image_8.jpg</data>
+</node>
+<node id="&quot;DICE COEFFICIENT&quot;">
+  <data key="d0">"CONCEPT"</data>
+  <data key="d1">"The Dice Coefficient (DSC) is an F1-oriented statistic used to measure the similarity between two sets, commonly applied in evaluating model predictions against ground truth in machine learning contexts. It is mathematically defined and discussed with variants including smoothing and loss formulations."</data>
+  <data key="d2">examples/example_working/images/image_8.jpg</data>
+</node>
+<edge source="&quot;IMAGE_8&quot;" target="&quot;DSC&quot;">
+  <data key="d3">10.0</data>
+  <data key="d4">"DSC是从image_8中提取的实体。"</data>
+  <data key="d5">examples/example_working/images/image_8.jpg</data>
+  <data key="d6">1</data>
+</edge>
+<edge source="&quot;IMAGE_8&quot;" target="&quot;x_i&quot;">
+  <data key="d3">10.0</data>
+  <data key="d4">"x_i是从image_8中提取的实体。"</data>
+  <data key="d5">examples/example_working/images/image_8.jpg</data>
+  <data key="d6">1</data>
+</edge>
+<edge source="&quot;IMAGE_8&quot;" target="&quot;p_{i1}&quot;">
+  <data key="d3">10.0</data>
+  <data key="d4">"p_i1是从image_8中提取的实体。"</data>
+  <data key="d5">examples/example_working/images/image_8.jpg</data>
+  <data key="d6">1</data>
+</edge>
+<edge source="&quot;IMAGE_8&quot;" target="&quot;y_{i1}&quot;">
+  <data key="d3">10.0</data>
+  <data key="d4">"y_i1是从image_8中提取的实体。"</data>
+  <data key="d5">examples/example_working/images/image_8.jpg</data>
+  <data key="d6">1</data>
+</edge>
+<edge source="&quot;IMAGE_8&quot;" target="&quot;γ (gamma)&quot;">
+  <data key="d3">10.0</data>
+  <data key="d4">"γ是从image_8中提取的实体。"</data>
+  <data key="d5">examples/example_working/images/image_8.jpg</data>
+  <data key="d6">1</data>
+</edge>
+<edge source="&quot;IMAGE_8&quot;" target="&quot;DICE COEFFICIENT&quot;">
+  <data key="d3">10.0</data>
+  <data key="d4">"IMAGE_8" is the image of "DICE COEFFICIENT".</data>
+  <data key="d5">examples/example_working/images/image_8.jpg</data>
+  <data key="d6">1</data>
+</edge>
+<edge source="&quot;DSC&quot;" target="&quot;x_i&quot;">
+  <data key="d3">9.0</data>
+  <data key="d4">"DSC is a function that evaluates the similarity for a specific pixel or region x_i."</data>
+  <data key="d5">examples/example_working/images/image_8.jpg</data>
+  <data key="d6">1</data>
+</edge>
+<edge source="&quot;DSC&quot;" target="&quot;p_{i1}&quot;">
+  <data key="d3">8.0</data>
+  <data key="d4">"DSC uses p_i1, the predicted value, as part of its numerator and denominator to compute similarity."</data>
+  <data key="d5">examples/example_working/images/image_8.jpg</data>
+  <data key="d6">1</data>
+</edge>
+<edge source="&quot;DSC&quot;" target="&quot;y_{i1}&quot;">
+  <data key="d3">8.0</data>
+  <data key="d4">"DSC uses y_i1, the true label, as part of its numerator and denominator to compute similarity."</data>
+  <data key="d5">examples/example_working/images/image_8.jpg</data>
+  <data key="d6">1</data>
+</edge>
+<edge source="&quot;DSC&quot;" target="&quot;γ (gamma)&quot;">
+  <data key="d3">7.0</data>
+  <data key="d4">"DSC incorporates γ to ensure numerical stability when computing the similarity score."</data>
+  <data key="d5">examples/example_working/images/image_8.jpg</data>
+  <data key="d6">1</data>
+</edge>
+<edge source="&quot;p_{i1}&quot;" target="&quot;y_{i1}&quot;">
+  <data key="d3">9.0</data>
+  <data key="d4">"p_i1 and y_i1 are paired values representing predicted and true labels for the same pixel x_i."</data>
+  <data key="d5">examples/example_working/images/image_8.jpg</data>
+  <data key="d6">1</data>
+</edge>
+<edge source="&quot;p_{i1}&quot;" target="&quot;γ (gamma)&quot;">
+  <data key="d3">7.0</data>
+  <data key="d4">"γ is added to p_i1 in both numerator and denominator to avoid division by zero."</data>
+  <data key="d5">examples/example_working/images/image_8.jpg</data>
+  <data key="d6">1</data>
+</edge>
+<edge source="&quot;y_{i1}&quot;" target="&quot;γ (gamma)&quot;">
+  <data key="d3">7.0</data>
+  <data key="d4">"γ is added to y_i1 in both numerator and denominator to avoid division by zero."</data>
+  <data key="d5">examples/example_working/images/image_8.jpg</data>
+  <data key="d6">1</data>
+</edge>
+</graph></graphml>

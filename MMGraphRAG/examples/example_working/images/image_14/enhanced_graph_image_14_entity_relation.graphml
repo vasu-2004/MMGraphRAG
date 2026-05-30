@@ -1,0 +1,148 @@
+<?xml version='1.0' encoding='utf-8'?>
+<graphml xmlns="http://graphml.graphdrawing.org/xmlns" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://graphml.graphdrawing.org/xmlns http://graphml.graphdrawing.org/xmlns/1.0/graphml.xsd"><key id="d6" for="edge" attr.name="order" attr.type="long"/>
+<key id="d5" for="edge" attr.name="source_id" attr.type="string"/>
+<key id="d4" for="edge" attr.name="description" attr.type="string"/>
+<key id="d3" for="edge" attr.name="weight" attr.type="double"/>
+<key id="d2" for="node" attr.name="source_id" attr.type="string"/>
+<key id="d1" for="node" attr.name="description" attr.type="string"/>
+<key id="d0" for="node" attr.name="entity_type" attr.type="string"/>
+<graph edgedefault="undirected"><node id="&quot;GRAPH&quot;">
+  <data key="d0">"GEO"</data>
+  <data key="d1">"A 2D line graph plotting derivatives on the y-axis against the probability of the ground-truth label divided by p̂i on the x-axis, ranging from 0 to 1. The graph contains four distinct curves representing different loss functions."</data>
+  <data key="d2">examples/example_working/images/image_14.jpg</data>
+</node>
+<node id="&quot;∇ FL(Γ=1)&quot;">
+  <data key="d0">"OBJECT"</data>
+  <data key="d1">"A blue curve representing the derivative of Focal Loss with γ=1, starting at approximately -2 when the probability is 0 and increasing to near 0 as the probability approaches 1."</data>
+  <data key="d2">examples/example_working/images/image_14.jpg</data>
+</node>
+<node id="&quot;∇ DL(Γ=1)&quot;">
+  <data key="d0">"OBJECT"</data>
+  <data key="d1">"An orange curve representing the derivative of Dice Loss with γ=1, starting at -1 when the probability is 0 and gradually increasing to cross zero around 0.85 probability."</data>
+  <data key="d2">examples/example_working/images/image_14.jpg</data>
+</node>
+<node id="&quot;∇ TL(Β=0.5)&quot;">
+  <data key="d0">"OBJECT"</data>
+  <data key="d1">"A yellow curve representing the derivative of Tversky Loss with β=0.5, starting at -2 when the probability is 0 and rising smoothly to cross zero around 0.7 probability."</data>
+  <data key="d2">examples/example_working/images/image_14.jpg</data>
+</node>
+<node id="&quot;∇ DSC&quot;">
+  <data key="d0">"OBJECT"</data>
+  <data key="d1">"A purple curve representing the derivative of Dice Similarity Coefficient (DSC), starting at -1 when the probability is 0 and steadily increasing to reach approximately 1 when the probability is 1."</data>
+  <data key="d2">examples/example_working/images/image_14.jpg</data>
+</node>
+<node id="&quot;Legend&quot;">
+  <data key="d0">"OBJECT"</data>
+  <data key="d1">A box typically positioned in the top-right corner of the graph that provides color-coded labels corresponding to the derivatives of different loss functions: blue for ∇ FL(γ=1) (Focal Loss), orange for ∇ DL(γ=1) (Dice Loss), yellow for ∇ TL(β=0.5) (Tversky Loss with β=0.5), and purple for ∇ DSC (Dice Coefficient loss). These visual cues help distinguish how each loss function's gradient behaves with respect to prediction probability.</data>
+  <data key="d2">examples/example_working/images/image_14.jpg</data>
+</node>
+<node id="&quot;X-Axis&quot;">
+  <data key="d0">"GEO"</data>
+  <data key="d1">The horizontal axis of the graph, labeled 'Probability of the ground-truth label / p̂i', which spans from 0 to 1 with tick marks at intervals of 0.1. This axis represents the model's predicted probability for the true class of a given sample, illustrating how loss function derivatives respond across the full range of confidence levels—from completely uncertain (0) to fully confident (1).</data>
+  <data key="d2">examples/example_working/images/image_14.jpg</data>
+</node>
+<node id="&quot;Y-Axis&quot;">
+  <data key="d0">"GEO"</data>
+  <data key="d1">The vertical axis of the graph, labeled 'Derivatives', ranging from -2 to 2 with tick marks at intervals of 0.5. It depicts the gradient (derivative) of various loss functions with respect to the predicted probability, showing how strongly each loss pushes the model to adjust its predictions—especially critical near decision boundaries like p = 0.5, where behaviors of DSC, FL, DL, and TL diverge significantly.</data>
+  <data key="d2">examples/example_working/images/image_14.jpg</data>
+</node>
+<node id="&quot;IMAGE_14&quot;">
+  <data key="d0">"ORI_IMG"</data>
+  <data key="d1">IMAGE_14 is a line graph that visualizes the derivatives of four distinct loss functions with respect to the probability of the ground-truth label, denoted as \( \bar{p}_i \), which varies from 0 to 1 along the x-axis. The y-axis, labeled "Derivatives," spans from -2 to 2. Each curve corresponds to a specific loss function, as identified in the legend: blue for ∇ FL(γ=1) (Focal Loss with γ=1), orange for ∇ DL(γ=1) (Dice Loss with γ=1), yellow for ∇ TL(β=0.5) (Tversky Loss with β=0.5), and purple for ∇ DSC (Dice Similarity Coefficient).
+
+The blue curve (∇ FL) starts at approximately -2 when \( \bar{p}_i = 0 \), remains relatively flat near this value until around \( \bar{p}_i = 0.5 \), and then rises sharply to reach about 0.5 at \( \bar{p}_i = 1 \). The orange curve (∇ DL) begins at -1 when \( \bar{p}_i = 0 \), increases gradually, crosses zero near \( \bar{p}_i = 0.7 \), and plateaus at approximately 0.5 when \( \bar{p}_i = 1 \). The yellow curve (∇ TL) originates at -2 at \( \bar{p}_i = 0 \), rises slowly, crosses zero around \( \bar{p}_i = 0.6 \), and reaches roughly 0.4 at \( \bar{p}_i = 1 \). The purple curve (∇ DSC) starts at -1 when \( \bar{p}_i = 0 \), increases steadily, crosses zero near \( \bar{p}_i = 0.6 \), and attains a value of approximately 1 at \( \bar{p}_i = 1 \).
+
+All curves are smooth and continuous, illustrating how each loss function’s gradient responds to varying levels of prediction confidence. The graph underscores the heightened sensitivity of Focal Loss (blue) to low-confidence predictions—evident from its steep derivative increase after \( \bar{p}_i = 0.5 \)—and provides insight into the distinct</data>
+  <data key="d2">examples/example_working/images/image_14.jpg</data>
+</node>
+<edge source="&quot;GRAPH&quot;" target="&quot;IMAGE_14&quot;">
+  <data key="d3">10.0</data>
+  <data key="d4">"Graph是从image_14中提取的实体。"</data>
+  <data key="d5">examples/example_working/images/image_14.jpg</data>
+  <data key="d6">1</data>
+</edge>
+<edge source="&quot;GRAPH&quot;" target="&quot;∇ FL(Γ=1)&quot;">
+  <data key="d3">9.0</data>
+  <data key="d4">"The blue curve is part of the graph, showing the derivative behavior of Focal Loss."</data>
+  <data key="d5">examples/example_working/images/image_14.jpg</data>
+  <data key="d6">1</data>
+</edge>
+<edge source="&quot;GRAPH&quot;" target="&quot;∇ DL(Γ=1)&quot;">
+  <data key="d3">9.0</data>
+  <data key="d4">"The orange curve is part of the graph, showing the derivative behavior of Dice Loss."</data>
+  <data key="d5">examples/example_working/images/image_14.jpg</data>
+  <data key="d6">1</data>
+</edge>
+<edge source="&quot;GRAPH&quot;" target="&quot;∇ TL(Β=0.5)&quot;">
+  <data key="d3">9.0</data>
+  <data key="d4">"The yellow curve is part of the graph, showing the derivative behavior of Tversky Loss."</data>
+  <data key="d5">examples/example_working/images/image_14.jpg</data>
+  <data key="d6">1</data>
+</edge>
+<edge source="&quot;GRAPH&quot;" target="&quot;∇ DSC&quot;">
+  <data key="d3">9.0</data>
+  <data key="d4">"The purple curve is part of the graph, showing the derivative behavior of Dice Similarity Coefficient."</data>
+  <data key="d5">examples/example_working/images/image_14.jpg</data>
+  <data key="d6">1</data>
+</edge>
+<edge source="&quot;GRAPH&quot;" target="&quot;Legend&quot;">
+  <data key="d3">8.0</data>
+  <data key="d4">"The legend is located within the graph to explain the meaning of each colored curve."</data>
+  <data key="d5">examples/example_working/images/image_14.jpg</data>
+  <data key="d6">1</data>
+</edge>
+<edge source="&quot;GRAPH&quot;" target="&quot;X-Axis&quot;">
+  <data key="d3">9.0</data>
+  <data key="d4">"The X-axis forms the horizontal baseline of the graph, defining the input variable."</data>
+  <data key="d5">examples/example_working/images/image_14.jpg</data>
+  <data key="d6">1</data>
+</edge>
+<edge source="&quot;GRAPH&quot;" target="&quot;Y-Axis&quot;">
+  <data key="d3">9.0</data>
+  <data key="d4">"The Y-axis forms the vertical baseline of the graph, defining the output variable."</data>
+  <data key="d5">examples/example_working/images/image_14.jpg</data>
+  <data key="d6">1</data>
+</edge>
+<edge source="&quot;∇ FL(Γ=1)&quot;" target="&quot;IMAGE_14&quot;">
+  <data key="d3">10.0</data>
+  <data key="d4">"∇ FL(γ=1)是从image_14中提取的实体。"</data>
+  <data key="d5">examples/example_working/images/image_14.jpg</data>
+  <data key="d6">1</data>
+</edge>
+<edge source="&quot;∇ DL(Γ=1)&quot;" target="&quot;IMAGE_14&quot;">
+  <data key="d3">10.0</data>
+  <data key="d4">"∇ DL(γ=1)是从image_14中提取的实体。"</data>
+  <data key="d5">examples/example_working/images/image_14.jpg</data>
+  <data key="d6">1</data>
+</edge>
+<edge source="&quot;∇ TL(Β=0.5)&quot;" target="&quot;IMAGE_14&quot;">
+  <data key="d3">10.0</data>
+  <data key="d4">"∇ TL(β=0.5)是从image_14中提取的实体。"</data>
+  <data key="d5">examples/example_working/images/image_14.jpg</data>
+  <data key="d6">1</data>
+</edge>
+<edge source="&quot;∇ DSC&quot;" target="&quot;IMAGE_14&quot;">
+  <data key="d3">10.0</data>
+  <data key="d4">"∇ DSC是从image_14中提取的实体。"</data>
+  <data key="d5">examples/example_working/images/image_14.jpg</data>
+  <data key="d6">1</data>
+</edge>
+<edge source="&quot;Legend&quot;" target="&quot;IMAGE_14&quot;">
+  <data key="d3">10.0</data>
+  <data key="d4">"Legend是从image_14中提取的实体。"</data>
+  <data key="d5">examples/example_working/images/image_14.jpg</data>
+  <data key="d6">1</data>
+</edge>
+<edge source="&quot;X-Axis&quot;" target="&quot;IMAGE_14&quot;">
+  <data key="d3">10.0</data>
+  <data key="d4">"X-axis是从image_14中提取的实体。"</data>
+  <data key="d5">examples/example_working/images/image_14.jpg</data>
+  <data key="d6">1</data>
+</edge>
+<edge source="&quot;Y-Axis&quot;" target="&quot;IMAGE_14&quot;">
+  <data key="d3">10.0</data>
+  <data key="d4">"Y-axis是从image_14中提取的实体。"</data>
+  <data key="d5">examples/example_working/images/image_14.jpg</data>
+  <data key="d6">1</data>
+</edge>
+</graph></graphml>

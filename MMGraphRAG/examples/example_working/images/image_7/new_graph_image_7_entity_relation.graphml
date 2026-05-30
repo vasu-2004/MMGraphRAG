@@ -1,0 +1,213 @@
+<?xml version='1.0' encoding='utf-8'?>
+<graphml xmlns="http://graphml.graphdrawing.org/xmlns" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://graphml.graphdrawing.org/xmlns http://graphml.graphdrawing.org/xmlns/1.0/graphml.xsd"><key id="d6" for="edge" attr.name="order" attr.type="long"/>
+<key id="d5" for="edge" attr.name="source_id" attr.type="string"/>
+<key id="d4" for="edge" attr.name="description" attr.type="string"/>
+<key id="d3" for="edge" attr.name="weight" attr.type="double"/>
+<key id="d2" for="node" attr.name="source_id" attr.type="string"/>
+<key id="d1" for="node" attr.name="description" attr.type="string"/>
+<key id="d0" for="node" attr.name="entity_type" attr.type="string"/>
+<graph edgedefault="undirected"><node id="&quot;Loss Functions in Machine Learning&quot;">
+  <data key="d0">"ORGANIZATION"</data>
+  <data key="d1">A category encompassing various loss functions used in machine learning models, especially for classification tasks. These functions quantify the discrepancy between predicted outputs and true labels, guiding model optimization. Common types include Cross-Entropy (CE), Weighted Cross-Entropy (WCE), Dice Loss (DL), Tversky Loss (TL), and Focal Loss-inspired variants, each designed to address specific challenges such as class imbalance, easy-negative dominance, or optimization stability.</data>
+  <data key="d2">examples/example_working/images/image_7.jpg</data>
+</node>
+<node id="&quot;Cross-Entropy Loss (CE)&quot;">
+  <data key="d0">"ORGANIZATION"</data>
+  <data key="d1">Cross-Entropy Loss (CE) is a standard loss function for classification tasks that measures the performance of a model whose output is a probability distribution over classes. It is defined as the negative average over samples of the sum of true binary labels y_ij multiplied by the logarithm of predicted probabilities p_ij. CE treats all samples equally, which can be problematic under class imbalance. Modifications like weighting factors or resampling are often introduced to mitigate this limitation.</data>
+  <data key="d2">examples/example_working/images/image_7.jpg</data>
+</node>
+<node id="&quot;Weighted Cross-Entropy Loss (WCE)&quot;">
+  <data key="d0">"ORGANIZATION"</data>
+  <data key="d1">Weighted Cross-Entropy Loss (WCE) extends the standard Cross-Entropy Loss by introducing a sample-specific or class-specific weighting factor α_i to adjust the contribution of each instance during training. This is particularly useful in imbalanced datasets, where minority classes are assigned higher weights—often computed using inverse class frequency or formulas like log((n − n_t)/n_t + K), where n_t is the count of class t and n is the total number of samples. While effective, improper weighting can bias the model toward rare classes.</data>
+  <data key="d2">examples/example_working/images/image_7.jpg</data>
+</node>
+<node id="&quot;DL&quot;">
+  <data key="d0">"ORGANIZATION"</data>
+  <data key="d1">"Dice Loss function, defined as 1 minus a fraction involving predicted probabilities p_i1, true labels y_i1, and a smoothing term γ. Designed to improve segmentation accuracy by focusing on overlap between predicted and ground truth regions."</data>
+  <data key="d2">examples/example_working/images/image_7.jpg</data>
+</node>
+<node id="&quot;TL&quot;">
+  <data key="d0">"ORGANIZATION"</data>
+  <data key="d1">"Tversky Loss function, a generalization of Dice Loss incorporating two weighting parameters α and β to control the sensitivity to false positives and false negatives. The formula includes terms for both positive and negative predictions adjusted by γ."</data>
+  <data key="d2">examples/example_working/images/image_7.jpg</data>
+</node>
+<node id="&quot;DSC&quot;">
+  <data key="d0">"ORGANIZATION"</data>
+  <data key="d1">"Dice Similarity Coefficient loss, defined as 1 minus a fraction involving (1-p_i1), p_i1, y_i1, and γ. It measures the similarity between predicted and actual segmentations, commonly used in medical image analysis."</data>
+  <data key="d2">examples/example_working/images/image_7.jpg</data>
+</node>
+<node id="&quot;FL&quot;">
+  <data key="d0">"ORGANIZATION"</data>
+  <data key="d1">"Focal Loss function, designed to address class imbalance by down-weighting easy examples and focusing more on hard-to-classify samples. It uses a modulating factor (1-p_ij) raised to the power γ, multiplied by the log probability."</data>
+  <data key="d2">examples/example_working/images/image_7.jpg</data>
+</node>
+<node id="&quot;Loss Function Formula (One Sample x_i)&quot;">
+  <data key="d0">"ORGANIZATION"</data>
+  <data key="d1">This refers to the mathematical formulation of various loss functions applied to a single training instance x_i. These formulas typically involve predicted probabilities p_ij, ground-truth binary labels y_ij, and optional hyperparameters such as weighting coefficients (α, β), smoothing constants (γ), or adaptive terms like (1 − p_ij). Examples include CE: −∑ y_ij log p_ij; WCE: −α_i ∑ y_ij log p_ij; Dice Loss (DL): 1 − (2 p_i1 y_i1 + γ)/(p_i1² + y_i1² + γ); and Tversky Loss (TL): 1 − (p_i1 y_i1 + γ)/(p_i1 y_i1 + α p_i1 y_i0 + β p_i0 y_i1 + γ). These expressions enable fine-grained control over how individual samples influence model learning, especially in contexts like class imbalance or hard example mining.</data>
+  <data key="d2">examples/example_working/images/image_7.jpg</data>
+</node>
+<node id="&quot;IMAGE_7&quot;">
+  <data key="d0">"ORI_IMG"</data>
+  <data key="d1">IMAGE_7 is a table titled "Table 2: Different losses and their formulas," which presents six loss functions commonly used in machine learning classification tasks, along with their corresponding mathematical formulations for a single sample \( x_i \). The table consists of two columns: the first lists the abbreviations of the loss functions—CE (Cross-Entropy), WCE (Weighted Cross-Entropy), DL (Dice Loss), TL (Tversky Loss), DSC (Dice Similarity Coefficient Loss), and FL (Focal Loss)—while the second column provides their respective formulas. These formulas involve variables such as \( y_{ij} \) (the true label), \( p_{ij} \) (the predicted probability), and hyperparameters or smoothing factors denoted by \( \alpha \), \( \beta \), and \( \gamma \).
+
+Specifically:
+- **CE** is defined as \( -\sum_{j\in\{0,1\}} y_{ij} \log p_{ij} \).
+- **WCE** introduces a weighting factor \( \alpha_i \): \( -\alpha_i \sum_{j\in\{0,1\}} y_{ij} \log p_{ij} \).
+- **DL** is given by \( 1 - \frac{2p_{i1}y_{i1} + \gamma}{p_{i1}^2 + y_{i1}^2 + \gamma} \).
+- **TL** incorporates asymmetric penalties via \( \alpha \) and \( \beta \): \( 1 - \frac{p_{i1}y_{i1} + \gamma}{p_{i1}y_{i1} + \alpha p_{i1}y_{i0} + \beta p_{i0}y_{i1} + \gamma} \).
+- **DSC** uses a modified form: \( 1 - \frac{2(1-p_{i1})p_{i1}y_{i1} + \gamma}{(1-p_{i1})p_{i1} + y_{i1} + \gamma} \).
+- **FL** adds a modulating factor to focus on hard examples: \( -\alpha_i \sum_{j\in\{0,1\}} (1 - p_{ij})^\gamma \log p_{ij} \).
+
+The</data>
+  <data key="d2">examples/example_working/images/image_7.jpg</data>
+</node>
+<node id="&quot;TABLE 2&quot;">
+  <data key="d0">"TABLE"</data>
+  <data key="d1">"Table 2 presents a comparison of different loss functions and their mathematical formulas, including CE, WCE, DL, TL, and DSC FL, with notes on smoothing and positivity adjustments."</data>
+  <data key="d2">examples/example_working/images/image_7.jpg</data>
+</node>
+<edge source="&quot;Loss Functions in Machine Learning&quot;" target="&quot;IMAGE_7&quot;">
+  <data key="d3">10.0</data>
+  <data key="d4">"Loss是从image_7中提取的实体。"</data>
+  <data key="d5">examples/example_working/images/image_7.jpg</data>
+  <data key="d6">1</data>
+</edge>
+<edge source="&quot;Loss Functions in Machine Learning&quot;" target="&quot;Cross-Entropy Loss (CE)&quot;">
+  <data key="d3">9.0</data>
+  <data key="d4">"CE is a type of loss function within the broader category of loss functions."</data>
+  <data key="d5">examples/example_working/images/image_7.jpg</data>
+  <data key="d6">1</data>
+</edge>
+<edge source="&quot;Loss Functions in Machine Learning&quot;" target="&quot;Weighted Cross-Entropy Loss (WCE)&quot;">
+  <data key="d3">8.0</data>
+  <data key="d4">"WCE is a variant of the loss function family, specifically a weighted version of cross-entropy."</data>
+  <data key="d5">examples/example_working/images/image_7.jpg</data>
+  <data key="d6">1</data>
+</edge>
+<edge source="&quot;Loss Functions in Machine Learning&quot;" target="&quot;DL&quot;">
+  <data key="d3">8.0</data>
+  <data key="d4">"DL is a type of loss function focused on improving segmentation through dice-based metrics."</data>
+  <data key="d5">examples/example_working/images/image_7.jpg</data>
+  <data key="d6">1</data>
+</edge>
+<edge source="&quot;Loss Functions in Machine Learning&quot;" target="&quot;TL&quot;">
+  <data key="d3">8.0</data>
+  <data key="d4">"TL is a generalized form of loss function that extends the concept of DL with tunable parameters."</data>
+  <data key="d5">examples/example_working/images/image_7.jpg</data>
+  <data key="d6">1</data>
+</edge>
+<edge source="&quot;Loss Functions in Machine Learning&quot;" target="&quot;DSC&quot;">
+  <data key="d3">8.0</data>
+  <data key="d4">"DSC is a specific loss formulation derived from the Dice coefficient, used to evaluate segmentation quality."</data>
+  <data key="d5">examples/example_working/images/image_7.jpg</data>
+  <data key="d6">1</data>
+</edge>
+<edge source="&quot;Loss Functions in Machine Learning&quot;" target="&quot;FL&quot;">
+  <data key="d3">8.0</data>
+  <data key="d4">"FL is a specialized loss function designed to handle class imbalance issues in classification tasks."</data>
+  <data key="d5">examples/example_working/images/image_7.jpg</data>
+  <data key="d6">1</data>
+</edge>
+<edge source="&quot;Cross-Entropy Loss (CE)&quot;" target="&quot;IMAGE_7&quot;">
+  <data key="d3">10.0</data>
+  <data key="d4">"CE是从image_7中提取的实体。"</data>
+  <data key="d5">examples/example_working/images/image_7.jpg</data>
+  <data key="d6">1</data>
+</edge>
+<edge source="&quot;Cross-Entropy Loss (CE)&quot;" target="&quot;Weighted Cross-Entropy Loss (WCE)&quot;">
+  <data key="d3">7.0</data>
+  <data key="d4">"WCE builds upon CE by introducing a weight α_i to adjust the influence of individual samples, making it suitable for imbalanced datasets."</data>
+  <data key="d5">examples/example_working/images/image_7.jpg</data>
+  <data key="d6">1</data>
+</edge>
+<edge source="&quot;Cross-Entropy Loss (CE)&quot;" target="&quot;Loss Function Formula (One Sample x_i)&quot;">
+  <data key="d3">9.0</data>
+  <data key="d4">"The formula for CE is expressed using the summation over binary labels and log probabilities, which is part of the general structure described under Formula (one sample x_i)."</data>
+  <data key="d5">examples/example_working/images/image_7.jpg</data>
+  <data key="d6">1</data>
+</edge>
+<edge source="&quot;Weighted Cross-Entropy Loss (WCE)&quot;" target="&quot;IMAGE_7&quot;">
+  <data key="d3">10.0</data>
+  <data key="d4">"WCE是从image_7中提取的实体。"</data>
+  <data key="d5">examples/example_working/images/image_7.jpg</data>
+  <data key="d6">1</data>
+</edge>
+<edge source="&quot;Weighted Cross-Entropy Loss (WCE)&quot;" target="&quot;Loss Function Formula (One Sample x_i)&quot;">
+  <data key="d3">8.0</data>
+  <data key="d4">"The WCE formula incorporates α_i into the CE framework, fitting within the overall formula structure for one sample."</data>
+  <data key="d5">examples/example_working/images/image_7.jpg</data>
+  <data key="d6">1</data>
+</edge>
+<edge source="&quot;DL&quot;" target="&quot;IMAGE_7&quot;">
+  <data key="d3">10.0</data>
+  <data key="d4">"DL是从image_7中提取的实体。"</data>
+  <data key="d5">examples/example_working/images/image_7.jpg</data>
+  <data key="d6">1</data>
+</edge>
+<edge source="&quot;DL&quot;" target="&quot;TL&quot;">
+  <data key="d3">7.0</data>
+  <data key="d4">"TL generalizes DL by incorporating additional parameters α and β to balance false positives and false negatives."</data>
+  <data key="d5">examples/example_working/images/image_7.jpg</data>
+  <data key="d6">1</data>
+</edge>
+<edge source="&quot;DL&quot;" target="&quot;DSC&quot;">
+  <data key="d3">7.0</data>
+  <data key="d4">"DSC is closely related to DL, as both are based on the Dice coefficient but may differ slightly in implementation or normalization."</data>
+  <data key="d5">examples/example_working/images/image_7.jpg</data>
+  <data key="d6">1</data>
+</edge>
+<edge source="&quot;DL&quot;" target="&quot;Loss Function Formula (One Sample x_i)&quot;">
+  <data key="d3">8.0</data>
+  <data key="d4">"The DL formula uses p_i1, y_i1, and γ in a fractional form consistent with the general format provided for one sample."</data>
+  <data key="d5">examples/example_working/images/image_7.jpg</data>
+  <data key="d6">1</data>
+</edge>
+<edge source="&quot;TL&quot;" target="&quot;IMAGE_7&quot;">
+  <data key="d3">10.0</data>
+  <data key="d4">"TL是从image_7中提取的实体。"</data>
+  <data key="d5">examples/example_working/images/image_7.jpg</data>
+  <data key="d6">1</data>
+</edge>
+<edge source="&quot;TL&quot;" target="&quot;Loss Function Formula (One Sample x_i)&quot;">
+  <data key="d3">8.0</data>
+  <data key="d4">"The TL formula expands on DL with extra parameters α and β, still adhering to the same per-sample computational pattern."</data>
+  <data key="d5">examples/example_working/images/image_7.jpg</data>
+  <data key="d6">1</data>
+</edge>
+<edge source="&quot;DSC&quot;" target="&quot;IMAGE_7&quot;">
+  <data key="d3">10.0</data>
+  <data key="d4">"DSC是从image_7中提取的实体。"</data>
+  <data key="d5">examples/example_working/images/image_7.jpg</data>
+  <data key="d6">1</data>
+</edge>
+<edge source="&quot;DSC&quot;" target="&quot;Loss Function Formula (One Sample x_i)&quot;">
+  <data key="d3">8.0</data>
+  <data key="d4">"The DSC formula follows the same structural pattern as other losses, applying a transformation based on p_i1, y_i1, and γ."</data>
+  <data key="d5">examples/example_working/images/image_7.jpg</data>
+  <data key="d6">1</data>
+</edge>
+<edge source="&quot;FL&quot;" target="&quot;IMAGE_7&quot;">
+  <data key="d3">10.0</data>
+  <data key="d4">"FL是从image_7中提取的实体。"</data>
+  <data key="d5">examples/example_working/images/image_7.jpg</data>
+  <data key="d6">1</data>
+</edge>
+<edge source="&quot;FL&quot;" target="&quot;Loss Function Formula (One Sample x_i)&quot;">
+  <data key="d3">8.0</data>
+  <data key="d4">"The FL formula introduces a focal term (1-p_ij)^γ, modifying the standard log probability term while remaining consistent with the per-sample formula style."</data>
+  <data key="d5">examples/example_working/images/image_7.jpg</data>
+  <data key="d6">1</data>
+</edge>
+<edge source="&quot;Loss Function Formula (One Sample x_i)&quot;" target="&quot;IMAGE_7&quot;">
+  <data key="d3">10.0</data>
+  <data key="d4">"Formula (one sample x_i)是从image_7中提取的实体。"</data>
+  <data key="d5">examples/example_working/images/image_7.jpg</data>
+  <data key="d6">1</data>
+</edge>
+<edge source="&quot;IMAGE_7&quot;" target="&quot;TABLE 2&quot;">
+  <data key="d3">10.0</data>
+  <data key="d4">"IMAGE_7" is the image of "TABLE 2".</data>
+  <data key="d5">examples/example_working/images/image_7.jpg</data>
+  <data key="d6">1</data>
+</edge>
+</graph></graphml>

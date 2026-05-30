@@ -1,0 +1,114 @@
+<?xml version='1.0' encoding='utf-8'?>
+<graphml xmlns="http://graphml.graphdrawing.org/xmlns" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://graphml.graphdrawing.org/xmlns http://graphml.graphdrawing.org/xmlns/1.0/graphml.xsd"><key id="d6" for="edge" attr.name="order" attr.type="long"/>
+<key id="d5" for="edge" attr.name="source_id" attr.type="string"/>
+<key id="d4" for="edge" attr.name="description" attr.type="string"/>
+<key id="d3" for="edge" attr.name="weight" attr.type="double"/>
+<key id="d2" for="node" attr.name="source_id" attr.type="string"/>
+<key id="d1" for="node" attr.name="description" attr.type="string"/>
+<key id="d0" for="node" attr.name="entity_type" attr.type="string"/>
+<graph edgedefault="undirected"><node id="&quot;IMAGE_21_BIRD-0.JPG&quot;">
+  <data key="d0">"IMG"</data>
+  <data key="d1">"The category of this image feature block is 'organism'. The entity features are as follows:Organism Features:- **Species/Type:** The organism appears to be a large water bird, likely a cormorant or similar species, characterized by its dark plumage, long neck, and elongated body.- **Color:** The bird is predominantly dark-colored, appearing black or very dark blue/green, with a slight sheen or highlight on its feathers. There is a noticeable lighter, possibly yellowish or tan, patch on the underside of its beak and throat area.- **Shape:** It has a streamlined body, a long and slender neck, and a relatively small head with a distinct, pointed beak. Its legs are visible as two sturdy, dark vertical structures.- **Posture:** The bird is standing upright, with its long neck stretched almost vertically upwards. Its beak is open and pointed towards the sky, suggesting it might be calling, performing a display, or simply stretching. Its wings are folded against its body.- **Structural Characteristics:** The bird exhibits the typical features of a diving waterbird, with a strong, elongated neck and a robust body. The beak appears to be long and slightly hooked, though the detail is limited."</data>
+  <data key="d2">C:/MMGraphRAG/MMGraphRAG/test_runs/api_working\images\image_21.jpg</data>
+</node>
+<node id="&quot;IMAGE_21_BIRD-1.JPG&quot;">
+  <data key="d0">"IMG"</data>
+  <data key="d1">"The category of this image feature block is 'organism'. The entity features are as follows:Organism Features:- **Type:** Two birds, likely wading birds such as cranes or storks, characterized by their slender build.- **Color:** Their bodies appear very dark, almost black or deep grey/brown. Their beaks and possibly parts of their heads are a lighter, yellowish-brown or sandy color.- **Shape:** Both birds have long, elegant necks, elongated bodies, and long, thin legs.- **Posture:** They are standing upright, with their long necks extended upwards and their heads tilted slightly back, or their beaks pointing skyward. They are positioned very close to each other, almost mirroring each other's pose.- **Interaction:** The synchronized posture suggests they might be engaged in a courtship ritual, a display, or a synchronized movement.- **Number:** There are two distinct birds visible."</data>
+  <data key="d2">C:/MMGraphRAG/MMGraphRAG/test_runs/api_working\images\image_21.jpg</data>
+</node>
+<node id="&quot;IMAGE_21&quot;">
+  <data key="d0">"ORI_IMG"</data>
+  <data key="d1">"The image captures a serene and majestic natural scene, featuring four large birds, likely cranes or similar waterfowl, presented as dark silhouettes against a shimmering, golden body of water. The warm, radiant hues of the water suggest either sunrise or sunset, with colors ranging from bright golden yellow to soft orange, creating a tranquil and reflective surface. Three of the birds, positioned centrally and towards the right, stand tall with their long necks elegantly extended upwards, their beaks pointing towards the sky, conveying a sense of calling or observation. The fourth bird, located on the far left, has its head lowered, possibly engaging in preening or foraging in the shallow water. All four birds are standing in the water, which beautifully reflects their dark forms and the ambient golden light, with subtle ripples visible around their slender legs. The background is entirely composed of this luminous, reflective water, enhancing the dramatic silhouette effect of the birds. Across the very top of the image, a horizontal reddish-brown band contains the white, uppercase sans-serif text "ANNUAL PASS", suggesting the image might be part of a promotional material or a pass card."</data>
+  <data key="d2">C:/MMGraphRAG/MMGraphRAG/test_runs/api_working\images\image_21.jpg</data>
+</node>
+<node id="&quot;Annual Pass&quot;">
+  <data key="d0">"OBJECT"</data>
+  <data key="d1">White text displayed prominently on a dark red banner, indicating a type of entry or membership pass for national parks. The Yellowstone National Park offers various annual passes, including the Yellowstone–Grand Teton Pass ($50, valid for one year), the America the Beautiful Pass—National Parks and Federal Recreational Lands Pass ($80, valid for one year), a Senior Pass ($10 for U.S. citizens 62 or older), and a free Access Pass for permanently disabled U.S. citizens or residents. These passes provide access to federal recreation sites.</data>
+  <data key="d2">C:/MMGraphRAG/MMGraphRAG/test_runs/api_working\images\image_21.jpg</data>
+</node>
+<node id="&quot;Dark Red Banner&quot;">
+  <data key="d0">"OBJECT"</data>
+  <data key="d1">A dark red rectangular banner positioned at the top of the image, serving as a header for the 'Annual Pass' text. This visual element typically highlights important information or offers within the context of a park guide or promotional material.</data>
+  <data key="d2">C:/MMGraphRAG/MMGraphRAG/test_runs/api_working\images\image_21.jpg</data>
+</node>
+<node id="&quot;Silhouetted Cranes in Shallow Water&quot;">
+  <data key="d0">"OBJECT"</data>
+  <data key="d1">A group of four silhouetted cranes, dark in color, standing in shallow, golden, shimmering water. Three of the cranes have their heads raised, appearing to call, while one has its head lower. These birds are the central subject of the image, depicted in a natural setting. Within national parks like Yellowstone, wildlife observation is encouraged, but regulations prohibit actions such as calling to attract wildlife or feeding animals to maintain natural behaviors and safety.</data>
+  <data key="d2">C:/MMGraphRAG/MMGraphRAG/test_runs/api_working\images\image_21.jpg</data>
+</node>
+<node id="&quot;Golden Shimmering Shallow Water&quot;">
+  <data key="d0">"GEO"</data>
+  <data key="d1">A body of shallow water, appearing golden and shimmering, likely reflecting light. The cranes are standing in this water. In Yellowstone National Park, swimming, bathing, and wading are generally discouraged due to extremely cold water and are strictly illegal in hydrothermal features or streams flowing from them, emphasizing the park's unique and often hazardous aquatic environments.</data>
+  <data key="d2">C:/MMGraphRAG/MMGraphRAG/test_runs/api_working\images\image_21.jpg</data>
+</node>
+<node id="&quot;Dark Elongated Reflections of Cranes&quot;">
+  <data key="d0">"OBJECT"</data>
+  <data key="d1">Dark, elongated mirror images of the cranes visible in the golden water beneath them, enhancing the visual depth and tranquility of the scene.</data>
+  <data key="d2">C:/MMGraphRAG/MMGraphRAG/test_runs/api_working\images\image_21.jpg</data>
+</node>
+<node id="&quot;Background Light&quot;">
+  <data key="d2">C:/MMGraphRAG/MMGraphRAG/test_runs/api_working\images\image_21.jpg</data>
+  <data key="d1">Background Light is an entity extracted from the image, suggesting a source of illumination behind the main subjects, contributing to the overall visual atmosphere.</data>
+  <data key="d0">"UNKNOWN"</data>
+</node>
+<edge source="&quot;IMAGE_21_BIRD-0.JPG&quot;" target="&quot;Silhouetted Cranes in Shallow Water&quot;">
+  <data key="d3">9.0</data>
+  <data key="d4">"The image feature block image_21_bird-0.jpg is a picture of Cranes."</data>
+  <data key="d5">C:/MMGraphRAG/MMGraphRAG/test_runs/api_working\images\image_21.jpg</data>
+  <data key="d6">1</data>
+</edge>
+<edge source="&quot;IMAGE_21_BIRD-0.JPG&quot;" target="&quot;IMAGE_21&quot;">
+  <data key="d3">10.0</data>
+  <data key="d4">"image_21_bird-0.jpg是image_21的图像特征块。"</data>
+  <data key="d5">C:/MMGraphRAG/MMGraphRAG/test_runs/api_working\images\image_21.jpg</data>
+  <data key="d6">1</data>
+</edge>
+<edge source="&quot;IMAGE_21_BIRD-1.JPG&quot;" target="&quot;Silhouetted Cranes in Shallow Water&quot;">
+  <data key="d3">9.0</data>
+  <data key="d4">"The image feature block image_21_bird-1.jpg is a picture of cranes."</data>
+  <data key="d5">C:/MMGraphRAG/MMGraphRAG/test_runs/api_working\images\image_21.jpg</data>
+  <data key="d6">1</data>
+</edge>
+<edge source="&quot;IMAGE_21_BIRD-1.JPG&quot;" target="&quot;IMAGE_21&quot;">
+  <data key="d3">10.0</data>
+  <data key="d4">"image_21_bird-1.jpg是image_21的图像特征块。"</data>
+  <data key="d5">C:/MMGraphRAG/MMGraphRAG/test_runs/api_working\images\image_21.jpg</data>
+  <data key="d6">1</data>
+</edge>
+<edge source="&quot;IMAGE_21&quot;" target="&quot;Annual Pass&quot;">
+  <data key="d3">10.0</data>
+  <data key="d4">"Annual Pass是从image_21中提取的实体。"</data>
+  <data key="d5">C:/MMGraphRAG/MMGraphRAG/test_runs/api_working\images\image_21.jpg</data>
+  <data key="d6">1</data>
+</edge>
+<edge source="&quot;IMAGE_21&quot;" target="&quot;Dark Red Banner&quot;">
+  <data key="d3">10.0</data>
+  <data key="d4">"Banner是从image_21中提取的实体。"</data>
+  <data key="d5">C:/MMGraphRAG/MMGraphRAG/test_runs/api_working\images\image_21.jpg</data>
+  <data key="d6">1</data>
+</edge>
+<edge source="&quot;IMAGE_21&quot;" target="&quot;Silhouetted Cranes in Shallow Water&quot;">
+  <data key="d3">10.0</data>
+  <data key="d4">"Cranes是从image_21中提取的实体。"</data>
+  <data key="d5">C:/MMGraphRAG/MMGraphRAG/test_runs/api_working\images\image_21.jpg</data>
+  <data key="d6">1</data>
+</edge>
+<edge source="&quot;IMAGE_21&quot;" target="&quot;Golden Shimmering Shallow Water&quot;">
+  <data key="d3">10.0</data>
+  <data key="d4">"Water是从image_21中提取的实体。"</data>
+  <data key="d5">C:/MMGraphRAG/MMGraphRAG/test_runs/api_working\images\image_21.jpg</data>
+  <data key="d6">1</data>
+</edge>
+<edge source="&quot;IMAGE_21&quot;" target="&quot;Dark Elongated Reflections of Cranes&quot;">
+  <data key="d3">10.0</data>
+  <data key="d4">"Reflections是从image_21中提取的实体。"</data>
+  <data key="d5">C:/MMGraphRAG/MMGraphRAG/test_runs/api_working\images\image_21.jpg</data>
+  <data key="d6">1</data>
+</edge>
+<edge source="&quot;IMAGE_21&quot;" target="&quot;Background Light&quot;">
+  <data key="d3">10.0</data>
+  <data key="d4">"Background Light是从image_21中提取的实体。"</data>
+  <data key="d5">C:/MMGraphRAG/MMGraphRAG/test_runs/api_working\images\image_21.jpg</data>
+  <data key="d6">1</data>
+</edge>
+</graph></graphml>

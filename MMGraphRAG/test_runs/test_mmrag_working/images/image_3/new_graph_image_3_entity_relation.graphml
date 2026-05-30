@@ -1,0 +1,125 @@
+<?xml version='1.0' encoding='utf-8'?>
+<graphml xmlns="http://graphml.graphdrawing.org/xmlns" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://graphml.graphdrawing.org/xmlns http://graphml.graphdrawing.org/xmlns/1.0/graphml.xsd">
+  <key id="d6" for="edge" attr.name="order" attr.type="long" />
+  <key id="d5" for="edge" attr.name="source_id" attr.type="string" />
+  <key id="d4" for="edge" attr.name="description" attr.type="string" />
+  <key id="d3" for="edge" attr.name="weight" attr.type="double" />
+  <key id="d2" for="node" attr.name="source_id" attr.type="string" />
+  <key id="d1" for="node" attr.name="description" attr.type="string" />
+  <key id="d0" for="node" attr.name="entity_type" attr.type="string" />
+  <graph edgedefault="undirected">
+    <node id="&quot;IMAGE_3&quot;">
+      <data key="d0">"ORI_IMG"</data>
+      <data key="d1">"The image is a black and white photograph depicting a grand and powerful waterfall cascading down a rugged, mountainous landscape. Dominating the center of the frame, the waterfall appears as a bright, frothy torrent of water, plunging from a high cliff face into a misty pool below. The force of the water creates a visible spray at its base, contributing to the ethereal quality of the scene in grayscale. The waterfall is flanked by steep, heavily forested slopes. On the right side, a prominent, jagged rock formation with distinct vertical striations rises sharply, providing a dramatic contrast to the smooth flow of the water. On the left, dense coniferous trees cling to the rocky terrain, extending upwards and receding into the background, hinting at a vast wilderness. At the very bottom of the gorge, partially obscured by the mist and surrounding foliage, a winding river or stream can be faintly discerned. The overall perspective suggests the photograph was taken from a high vantage point, looking down into the deep canyon. The grayscale palette enhances the dramatic contrast between the bright, dynamic water and the dark, textured rocks and dense foliage, conveying a sense of immense natural power and untamed beauty."</data>
+      <data key="d2">test_runs/test_mmrag_working\images\image_3.jpg</data>
+    </node>
+    <node id="&quot;Yellowstone River Waterfall&quot;">
+      <data key="d0">"GEO"</data>
+      <data key="d1">A large, powerful cascade of water falling from a significant height within the Grand Canyon of the Yellowstone, appearing bright white in the grayscale image due to its rapid movement. This includes the notable Upper and Lower Falls of the Yellowstone River, a key highlight of Yellowstone National Park.</data>
+      <data key="d2">test_runs/test_mmrag_working\images\image_3.jpg</data>
+    </node>
+    <node id="&quot;Grand Canyon of the Yellowstone&quot;">
+      <data key="d0">"GEO"</data>
+      <data key="d1">A spectacular, deep, narrow valley with steep, rugged sides, formed by geological erosion, encompassing the Yellowstone River waterfalls and the surrounding landscape. This prominent feature of Yellowstone National Park can be viewed from overlooks and trails in the Canyon Village area, as well as from Tower Fall and Calcite Springs overlooks. Climbing in the Grand Canyon is illegal due to loose, crumbly rock.</data>
+      <data key="d2">test_runs/test_mmrag_working\images\image_3.jpg</data>
+    </node>
+    <node id="&quot;Canyon Cliffs&quot;">
+      <data key="d0">"GEO"</data>
+      <data key="d1">Steep, dark rock formations that form the rugged sides of the Grand Canyon of the Yellowstone, framing the waterfall and showing vertical textures. These geological features contribute to the spectacular scenery of Yellowstone National Park, though climbing on them is generally not recommended due to safety concerns like loose rock.</data>
+      <data key="d2">test_runs/test_mmrag_working\images\image_3.jpg</data>
+    </node>
+    <node id="&quot;Yellowstone Forest&quot;">
+      <data key="d0">"GEO"</data>
+      <data key="d1">Dense, dark evergreen trees covering the slopes and tops of the cliffs and hills within the canyon, indicating a wild, natural environment characteristic of Yellowstone National Park. These forested areas provide crucial habitat for a variety of wildlife, including large mammals like grizzly and black bears, wolves, elk, and bison, which are abundant in the park.</data>
+      <data key="d2">test_runs/test_mmrag_working\images\image_3.jpg</data>
+    </node>
+    <node id="&quot;Yellowstone River&quot;">
+      <data key="d0">"GEO"</data>
+      <data key="d1">A significant body of water flowing at the base of the waterfalls and winding through the Grand Canyon of the Yellowstone, continuing the flow of the cascade downstream. This river is a central feature of Yellowstone National Park, creating the iconic Upper and Lower Falls, and is distinct from other park rivers like the Lewis River where non-motorized boating is permitted.</data>
+      <data key="d2">test_runs/test_mmrag_working\images\image_3.jpg</data>
+    </node>
+    <node id="Lower Falls of the Yellowstone River">
+      <data key="d0">IMG_ENTITY</data>
+      <data key="d1">The image is a black and white photograph showcasing a grand and powerful waterfall, which is identified in the text as the Lower Falls of the Yellowstone River, a spectacular highlight within the Grand Canyon of the Yellowstone National Park.</data>
+      <data key="d2">test_runs/test_mmrag_working\images\image_3.jpg</data>
+    </node>
+    <edge source="&quot;IMAGE_3&quot;" target="&quot;Yellowstone River Waterfall&quot;">
+      <data key="d3">10.0</data>
+      <data key="d4">"Waterfall是从image_3中提取的实体。"</data>
+      <data key="d5">test_runs/test_mmrag_working\images\image_3.jpg</data>
+      <data key="d6">1</data>
+    </edge>
+    <edge source="&quot;IMAGE_3&quot;" target="&quot;Grand Canyon of the Yellowstone&quot;">
+      <data key="d3">10.0</data>
+      <data key="d4">"Canyon是从image_3中提取的实体。"</data>
+      <data key="d5">test_runs/test_mmrag_working\images\image_3.jpg</data>
+      <data key="d6">1</data>
+    </edge>
+    <edge source="&quot;IMAGE_3&quot;" target="&quot;Canyon Cliffs&quot;">
+      <data key="d3">10.0</data>
+      <data key="d4">"Cliffs是从image_3中提取的实体。"</data>
+      <data key="d5">test_runs/test_mmrag_working\images\image_3.jpg</data>
+      <data key="d6">1</data>
+    </edge>
+    <edge source="&quot;IMAGE_3&quot;" target="&quot;Yellowstone Forest&quot;">
+      <data key="d3">10.0</data>
+      <data key="d4">"Forest是从image_3中提取的实体。"</data>
+      <data key="d5">test_runs/test_mmrag_working\images\image_3.jpg</data>
+      <data key="d6">1</data>
+    </edge>
+    <edge source="&quot;IMAGE_3&quot;" target="&quot;Yellowstone River&quot;">
+      <data key="d3">10.0</data>
+      <data key="d4">"River是从image_3中提取的实体。"</data>
+      <data key="d5">test_runs/test_mmrag_working\images\image_3.jpg</data>
+      <data key="d6">1</data>
+    </edge>
+    <edge source="&quot;IMAGE_3&quot;" target="Lower Falls of the Yellowstone River">
+      <data key="d3">10.0</data>
+      <data key="d4">"IMAGE_3" is the image of Lower Falls of the Yellowstone River.</data>
+      <data key="d5">test_runs/test_mmrag_working\images\image_3.jpg</data>
+      <data key="d6">1</data>
+    </edge>
+    <edge source="&quot;Yellowstone River Waterfall&quot;" target="&quot;Grand Canyon of the Yellowstone&quot;">
+      <data key="d3">9.0</data>
+      <data key="d4">"The waterfall is a prominent natural feature located within the deep canyon."</data>
+      <data key="d5">test_runs/test_mmrag_working\images\image_3.jpg</data>
+      <data key="d6">1</data>
+    </edge>
+    <edge source="&quot;Yellowstone River Waterfall&quot;" target="&quot;Yellowstone River&quot;">
+      <data key="d3">9.0</data>
+      <data key="d4">"The river is the continuation of the water flowing from the base of the waterfall."</data>
+      <data key="d5">test_runs/test_mmrag_working\images\image_3.jpg</data>
+      <data key="d6">1</data>
+    </edge>
+    <edge source="&quot;Yellowstone River Waterfall&quot;" target="&quot;Canyon Cliffs&quot;">
+      <data key="d3">8.0</data>
+      <data key="d4">"The waterfall is framed and contained by the steep cliffs on either side."</data>
+      <data key="d5">test_runs/test_mmrag_working\images\image_3.jpg</data>
+      <data key="d6">1</data>
+    </edge>
+    <edge source="&quot;Grand Canyon of the Yellowstone&quot;" target="&quot;Canyon Cliffs&quot;">
+      <data key="d3">9.0</data>
+      <data key="d4">"The cliffs constitute the steep, rocky sides of the canyon."</data>
+      <data key="d5">test_runs/test_mmrag_working\images\image_3.jpg</data>
+      <data key="d6">1</data>
+    </edge>
+    <edge source="&quot;Grand Canyon of the Yellowstone&quot;" target="&quot;Yellowstone Forest&quot;">
+      <data key="d3">8.0</data>
+      <data key="d4">"The forest densely covers the slopes and upper edges of the canyon."</data>
+      <data key="d5">test_runs/test_mmrag_working\images\image_3.jpg</data>
+      <data key="d6">1</data>
+    </edge>
+    <edge source="&quot;Grand Canyon of the Yellowstone&quot;" target="&quot;Yellowstone River&quot;">
+      <data key="d3">8.0</data>
+      <data key="d4">"The river flows through the bottom of the canyon, carving its path."</data>
+      <data key="d5">test_runs/test_mmrag_working\images\image_3.jpg</data>
+      <data key="d6">1</data>
+    </edge>
+    <edge source="&quot;Canyon Cliffs&quot;" target="&quot;Yellowstone Forest&quot;">
+      <data key="d3">7.0</data>
+      <data key="d4">"The forest grows on and along the rugged surfaces of the cliffs."</data>
+      <data key="d5">test_runs/test_mmrag_working\images\image_3.jpg</data>
+      <data key="d6">1</data>
+    </edge>
+  </graph>
+</graphml>

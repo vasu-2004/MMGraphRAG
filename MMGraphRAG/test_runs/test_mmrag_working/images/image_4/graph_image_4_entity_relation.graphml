@@ -1,0 +1,170 @@
+<?xml version='1.0' encoding='utf-8'?>
+<graphml xmlns="http://graphml.graphdrawing.org/xmlns" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://graphml.graphdrawing.org/xmlns http://graphml.graphdrawing.org/xmlns/1.0/graphml.xsd">
+  <key id="d6" for="edge" attr.name="order" attr.type="long" />
+  <key id="d5" for="edge" attr.name="source_id" attr.type="string" />
+  <key id="d4" for="edge" attr.name="description" attr.type="string" />
+  <key id="d3" for="edge" attr.name="weight" attr.type="double" />
+  <key id="d2" for="node" attr.name="source_id" attr.type="string" />
+  <key id="d1" for="node" attr.name="description" attr.type="string" />
+  <key id="d0" for="node" attr.name="entity_type" attr.type="string" />
+  <graph edgedefault="undirected">
+    <node id="&quot;IMAGE_4_PERSON-0.JPG&quot;">
+      <data key="d0">"IMG"</data>
+      <data key="d1">"The category of this image feature block is 'person'. The entity features are as follows:Person Features:- Gender: Indeterminate (viewed from the back with a hood)- Hairstyle: Not visible (covered by a hood)- Clothing: Wearing a dark-colored, possibly gray or black, hooded jacket or coat. The hood is up and covers the head. A darker garment, possibly trousers or another layer, is visible around the waist/hip area.- Facial expression: Not visible (viewed from the back)- Age: Appears to be an adult or older youth, but difficult to determine precisely.- Posture: Standing or walking, viewed from the back, with the body slightly turned to the left. The left arm is bent at the elbow."</data>
+      <data key="d2">test_runs/test_mmrag_working\images\image_4.jpg</data>
+    </node>
+    <node id="&quot;IMAGE_4_PERSON-1.JPG&quot;">
+      <data key="d0">"IMG"</data>
+      <data key="d1">"The category of this image feature block is 'person'. The entity features are as follows:Person Features:- **Gender:** Appears to be female.- **Skin Color:** Cannot be determined as the image is in grayscale.- **Hairstyle:** Long, dark hair, possibly tied back or in a ponytail, with some strands falling over the shoulders. There is a distinct, light-colored, curved element on top of the head, which could be part of a hairstyle (like a high bun or elaborate hair clip) or a head accessory.- **Clothing:** Wearing a dark, short-sleeved top (possibly a t-shirt) and dark shorts. There appears to be a lighter-colored band or trim at the bottom edge of the shorts.- **Facial Expression:** The face is mostly obscured by the angle and hair, so the expression cannot be determined.- **Age:** Appears to be a young adult or teenager.- **Posture:** The person is leaning forward with knees slightly bent, and both arms are extended forward, hands clasped together, palms facing each other. This posture suggests an athletic action, such as preparing to receive or hit a ball (e.g., in volleyball).- **Body Part Visibility:** The upper body from the waist up is clearly visible, along with parts of the upper legs."</data>
+      <data key="d2">test_runs/test_mmrag_working\images\image_4.jpg</data>
+    </node>
+    <node id="&quot;IMAGE_4_PERSON-3.JPG&quot;">
+      <data key="d0">"IMG"</data>
+      <data key="d1">"The category of this image feature block is 'person'. The entity features are as follows:Person Features:- **Gender:** Indeterminate from the silhouette, but the broad shoulders and general build might suggest a masculine figure.- **Hairstyle:** Not discernible due to the silhouette.- **Clothing:** Appears to be wearing a top with a collar and sleeves. The outline suggests a jacket or a sturdy shirt.- **Facial Expression:** Not discernible.- **Age:** Appears to be an adult.- **Posture:** The upper body of a person is shown in profile. The head is facing towards the viewer's right. Both arms are slightly raised and bent at the elbows, extending outwards from the torso, suggesting a pose or engagement in an activity. The posture appears upright and engaged."</data>
+      <data key="d2">test_runs/test_mmrag_working\images\image_4.jpg</data>
+    </node>
+    <node id="&quot;IMAGE_4&quot;">
+      <data key="d0">"ORI_IMG"</data>
+      <data key="d1">"The image is a black and white photograph depicting an indoor scene with a young child interacting with a large, dark, spherical sculpture or fountain. The child, positioned on the right side of the frame, appears to be a young girl, dressed in a dark short-sleeved top and light-colored shorts or pants, with a cap or hat on her head. She is leaning forward, extending both hands to touch the surface of the large sphere. The sphere itself is perfectly round, very dark in tone (appearing black or dark grey in the monochrome image), and has a somewhat reflective surface, suggesting it might be wet or highly polished. It rests on a cylindrical or drum-shaped base, which is lighter in tone and appears to be made of stone or concrete. Around the base of the sphere, there are visible indications of water, possibly flowing or bubbling, creating a fountain effect. The sphere is quite large, reaching approximately chest height for the child. In the soft-focused background, several other people are visible, mostly adults, suggesting a public indoor setting such as a museum, science center, or visitor center. The overall atmosphere is one of curiosity and engagement, common in an interactive exhibit."</data>
+      <data key="d2">test_runs/test_mmrag_working\images\image_4.jpg</data>
+    </node>
+    <node id="&quot;GIRL&quot;">
+      <data key="d0">"PERSON"</data>
+      <data key="d1">"A young girl, wearing a cap, a dark t-shirt, and light-colored shorts. She is actively touching the large, dark sphere with both hands, showing engagement with the exhibit."</data>
+      <data key="d2">test_runs/test_mmrag_working\images\image_4.jpg</data>
+    </node>
+    <node id="&quot;LARGE SPHERE&quot;">
+      <data key="d0">"OBJECT"</data>
+      <data key="d1">"A prominent, dark, glossy spherical object, likely made of polished stone or a similar material. Water flows around its base, suggesting it is an interactive fountain or a scientific exhibit."</data>
+      <data key="d2">test_runs/test_mmrag_working\images\image_4.jpg</data>
+    </node>
+    <node id="&quot;WATER&quot;">
+      <data key="d0">"OBJECT"</data>
+      <data key="d1">"Clear liquid flowing downwards around the base of the large sphere, creating a shimmering effect and indicating a functional water feature."</data>
+      <data key="d2">test_runs/test_mmrag_working\images\image_4.jpg</data>
+    </node>
+    <node id="&quot;PEDESTAL&quot;">
+      <data key="d0">"OBJECT"</data>
+      <data key="d1">"A sturdy, cylindrical, grey-colored base, likely made of stone or concrete, providing support for the large sphere and containing the water feature."</data>
+      <data key="d2">test_runs/test_mmrag_working\images\image_4.jpg</data>
+    </node>
+    <node id="&quot;CROWD&quot;">
+      <data key="d0">"PERSON"</data>
+      <data key="d1">"Several indistinct figures of people in the background, some observing the main exhibit, others moving through the indoor space, contributing to the bustling atmosphere."</data>
+      <data key="d2">test_runs/test_mmrag_working\images\image_4.jpg</data>
+    </node>
+    <node id="&quot;INDOOR EXHIBIT HALL&quot;">
+      <data key="d0">"GEO"</data>
+      <data key="d1">"An interior space, likely a museum or science center, characterized by artificial lighting and other structural elements in the background, serving as the setting for the interactive sphere."</data>
+      <data key="d2">test_runs/test_mmrag_working\images\image_4.jpg</data>
+    </node>
+    <edge source="&quot;IMAGE_4_PERSON-0.JPG&quot;" target="&quot;GIRL&quot;">
+      <data key="d3">8.0</data>
+      <data key="d4">"The image feature block image_4_person-0.jpg is a picture of a girl."</data>
+      <data key="d5">test_runs/test_mmrag_working\images\image_4.jpg</data>
+      <data key="d6">1</data>
+    </edge>
+    <edge source="&quot;IMAGE_4_PERSON-0.JPG&quot;" target="&quot;IMAGE_4&quot;">
+      <data key="d3">10.0</data>
+      <data key="d4">"image_4_person-0.jpg是image_4的图像特征块。"</data>
+      <data key="d5">test_runs/test_mmrag_working\images\image_4.jpg</data>
+      <data key="d6">1</data>
+    </edge>
+    <edge source="&quot;IMAGE_4_PERSON-1.JPG&quot;" target="&quot;GIRL&quot;">
+      <data key="d3">9.0</data>
+      <data key="d4">"The image feature block image_4_person-1.jpg is a picture of a girl."</data>
+      <data key="d5">test_runs/test_mmrag_working\images\image_4.jpg</data>
+      <data key="d6">1</data>
+    </edge>
+    <edge source="&quot;IMAGE_4_PERSON-1.JPG&quot;" target="&quot;IMAGE_4&quot;">
+      <data key="d3">10.0</data>
+      <data key="d4">"image_4_person-1.jpg是image_4的图像特征块。"</data>
+      <data key="d5">test_runs/test_mmrag_working\images\image_4.jpg</data>
+      <data key="d6">1</data>
+    </edge>
+    <edge source="&quot;IMAGE_4_PERSON-3.JPG&quot;" target="&quot;GIRL&quot;">
+      <data key="d3">8.0</data>
+      <data key="d4">"The image feature block image_4_person-3.jpg is a picture of a girl."</data>
+      <data key="d5">test_runs/test_mmrag_working\images\image_4.jpg</data>
+      <data key="d6">1</data>
+    </edge>
+    <edge source="&quot;IMAGE_4_PERSON-3.JPG&quot;" target="&quot;IMAGE_4&quot;">
+      <data key="d3">10.0</data>
+      <data key="d4">"image_4_person-3.jpg是image_4的图像特征块。"</data>
+      <data key="d5">test_runs/test_mmrag_working\images\image_4.jpg</data>
+      <data key="d6">1</data>
+    </edge>
+    <edge source="&quot;IMAGE_4&quot;" target="&quot;GIRL&quot;">
+      <data key="d3">10.0</data>
+      <data key="d4">"Girl是从image_4中提取的实体。"</data>
+      <data key="d5">test_runs/test_mmrag_working\images\image_4.jpg</data>
+      <data key="d6">1</data>
+    </edge>
+    <edge source="&quot;IMAGE_4&quot;" target="&quot;LARGE SPHERE&quot;">
+      <data key="d3">10.0</data>
+      <data key="d4">"Large Sphere是从image_4中提取的实体。"</data>
+      <data key="d5">test_runs/test_mmrag_working\images\image_4.jpg</data>
+      <data key="d6">1</data>
+    </edge>
+    <edge source="&quot;IMAGE_4&quot;" target="&quot;WATER&quot;">
+      <data key="d3">10.0</data>
+      <data key="d4">"Water是从image_4中提取的实体。"</data>
+      <data key="d5">test_runs/test_mmrag_working\images\image_4.jpg</data>
+      <data key="d6">1</data>
+    </edge>
+    <edge source="&quot;IMAGE_4&quot;" target="&quot;PEDESTAL&quot;">
+      <data key="d3">10.0</data>
+      <data key="d4">"Pedestal是从image_4中提取的实体。"</data>
+      <data key="d5">test_runs/test_mmrag_working\images\image_4.jpg</data>
+      <data key="d6">1</data>
+    </edge>
+    <edge source="&quot;IMAGE_4&quot;" target="&quot;CROWD&quot;">
+      <data key="d3">10.0</data>
+      <data key="d4">"Crowd是从image_4中提取的实体。"</data>
+      <data key="d5">test_runs/test_mmrag_working\images\image_4.jpg</data>
+      <data key="d6">1</data>
+    </edge>
+    <edge source="&quot;IMAGE_4&quot;" target="&quot;INDOOR EXHIBIT HALL&quot;">
+      <data key="d3">10.0</data>
+      <data key="d4">"Indoor Exhibit Hall是从image_4中提取的实体。"</data>
+      <data key="d5">test_runs/test_mmrag_working\images\image_4.jpg</data>
+      <data key="d6">1</data>
+    </edge>
+    <edge source="&quot;GIRL&quot;" target="&quot;LARGE SPHERE&quot;">
+      <data key="d3">9.0</data>
+      <data key="d4">"The girl is actively touching and interacting with the large sphere, indicating her engagement with the exhibit."</data>
+      <data key="d5">test_runs/test_mmrag_working\images\image_4.jpg</data>
+      <data key="d6">1</data>
+    </edge>
+    <edge source="&quot;GIRL&quot;" target="&quot;INDOOR EXHIBIT HALL&quot;">
+      <data key="d3">8.0</data>
+      <data key="d4">"The girl is located inside the indoor exhibit hall, participating in the activities within."</data>
+      <data key="d5">test_runs/test_mmrag_working\images\image_4.jpg</data>
+      <data key="d6">1</data>
+    </edge>
+    <edge source="&quot;LARGE SPHERE&quot;" target="&quot;WATER&quot;">
+      <data key="d3">9.0</data>
+      <data key="d4">"Water is flowing around the base of the large sphere, indicating that the sphere is part of a water feature or fountain."</data>
+      <data key="d5">test_runs/test_mmrag_working\images\image_4.jpg</data>
+      <data key="d6">1</data>
+    </edge>
+    <edge source="&quot;LARGE SPHERE&quot;" target="&quot;PEDESTAL&quot;">
+      <data key="d3">9.0</data>
+      <data key="d4">"The large sphere is resting on and supported by the sturdy pedestal."</data>
+      <data key="d5">test_runs/test_mmrag_working\images\image_4.jpg</data>
+      <data key="d6">1</data>
+    </edge>
+    <edge source="&quot;LARGE SPHERE&quot;" target="&quot;CROWD&quot;">
+      <data key="d3">7.0</data>
+      <data key="d4">"Some members of the crowd in the background appear to be observing or standing near the large sphere exhibit."</data>
+      <data key="d5">test_runs/test_mmrag_working\images\image_4.jpg</data>
+      <data key="d6">1</data>
+    </edge>
+    <edge source="&quot;CROWD&quot;" target="&quot;INDOOR EXHIBIT HALL&quot;">
+      <data key="d3">8.0</data>
+      <data key="d4">"The crowd of people are present within the indoor exhibit hall, observing or moving through the space."</data>
+      <data key="d5">test_runs/test_mmrag_working\images\image_4.jpg</data>
+      <data key="d6">1</data>
+    </edge>
+  </graph>
+</graphml>

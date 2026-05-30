@@ -1,0 +1,146 @@
+<?xml version='1.0' encoding='utf-8'?>
+<graphml xmlns="http://graphml.graphdrawing.org/xmlns" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://graphml.graphdrawing.org/xmlns http://graphml.graphdrawing.org/xmlns/1.0/graphml.xsd"><key id="d6" for="edge" attr.name="order" attr.type="long"/>
+<key id="d5" for="edge" attr.name="source_id" attr.type="string"/>
+<key id="d4" for="edge" attr.name="description" attr.type="string"/>
+<key id="d3" for="edge" attr.name="weight" attr.type="double"/>
+<key id="d2" for="node" attr.name="source_id" attr.type="string"/>
+<key id="d1" for="node" attr.name="description" attr.type="string"/>
+<key id="d0" for="node" attr.name="entity_type" attr.type="string"/>
+<graph edgedefault="undirected"><node id="&quot;IMAGE_20&quot;">
+  <data key="d0">"ORI_IMG"</data>
+  <data key="d1">"The image is a table labeled 'Table 7: Experimental results for PI task.' It presents performance comparisons of various models on two natural language understanding benchmarks: MRPC (Microsoft Research Paraphrase Corpus) and QQP (Quora Question Pairs). The table has three columns: 'Model', 'MRPC F1', and 'QQP F1'. Each row corresponds to a model configuration, with the base models being BERT (Devlin et al., 2018) and XLNet (Yang et al., 2019), followed by their variants enhanced with different techniques: FL (Focal Loss), DL (Denoising Loss), and DSC (Dual Soft Constraint loss).The first section lists BERT-based models. BERT achieves an F1 score of 88.0 on MRPC and 91.3 on QQP. Adding FL improves the scores to 88.43 (+0.43) and 91.86 (+0.56), respectively. BERT+DL yields 88.71 (+0.71) and 91.92 (+0.62). The best-performing BERT variant is BERT+DSC, achieving 88.92 (+0.92) on MRPC and 92.11 (+0.81) on QQP.The second section presents XLNet-based models. XLNet alone achieves 89.2 on MRPC and 91.8 on QQP. With FL, it improves to 89.25 (+0.05) and 92.31 (+0.51). XLNet+DL reaches 89.33 (+0.13) and 92.39 (+0.59). The top-performing model in this group is XLNet+DSC, scoring 89.78 (+0.58) on MRPC and 92.60 (+0.79) on QQP.All values are presented in black text on a white background, with clear horizontal lines separating rows. The table uses bold formatting for the highest scores in each column (BERT+DSC and XLNet+DSC). The improvement values in parentheses indicate absolute gains over the base model. The overall trend shows that the DSC method consistently provides the largest performance boost across both datasets and base models, suggesting its effectiveness in enhancing model performance on paraphrase identification tasks."</data>
+  <data key="d2">examples/example_working/images/image_20.jpg</data>
+</node>
+<node id="&quot;BERT&quot;">
+  <data key="d0">"ORGANIZATION"</data>
+  <data key="d1">"A pre-trained language model introduced by Devlin et al. in 2018, used as a baseline for comparison in the table.""</data>
+  <data key="d2">examples/example_working/images/image_20.jpg</data>
+</node>
+<node id="&quot;BERT+FL&quot;">
+  <data key="d0">"ORGANIZATION"</data>
+  <data key="d1">BERT+FL is an enhanced variant of the BERT model that incorporates a Fine-tuning Layer (FL). Experimental results on tasks such as Machine Reading Comprehension (MRC), Named Entity Recognition (NER), and Paraphrase Identification (PI) demonstrate consistent performance improvements over the base BERT model. For instance, on the MRPC dataset, it achieves an F1 score of 88.43 (+0.43 over BERT), and on SQuAD v1.1, it scores 91.25 F1 (+0.35 improvement).</data>
+  <data key="d2">examples/example_working/images/image_20.jpg</data>
+</node>
+<node id="&quot;BERT+DL&quot;">
+  <data key="d0">"ORGANIZATION"</data>
+  <data key="d1">BERT+DL is a BERT-based model enhanced with Discriminative Learning (DL). It shows notable gains across multiple benchmarks: on MRPC, it reaches 88.71 F1 (+0.71 over BERT); on QQP, 91.92 F1 (+0.62); and on SQuAD v1.1, it achieves 91.86 F1 (+0.96). The DL approach contributes to more robust fine-tuning by leveraging discriminative training objectives.</data>
+  <data key="d2">examples/example_working/images/image_20.jpg</data>
+</node>
+<node id="&quot;BERT+DSC&quot;">
+  <data key="d0">"ORGANIZATION"</data>
+  <data key="d1">BERT+DSC integrates Discriminative Self-Consistency (DSC) into the BERT architecture, replacing the standard maximum likelihood estimation (MLE) loss with a DSC loss function. This variant achieves the highest performance among BERT-enhanced models across multiple tasks: 88.92 F1 on MRPC (+0.92), 92.11 F1 on QQP (+0.81), and 91.97 F1 on SQuAD v1.1 (+1.07). It also sets new state-of-the-art results on NER datasets like OntoNotes4.0 with a +2.36 F1 gain over BERT-MRC.</data>
+  <data key="d2">examples/example_working/images/image_20.jpg</data>
+</node>
+<node id="&quot;XLNET&quot;">
+  <data key="d0">"ORGANIZATION"</data>
+  <data key="d1">"A pre-trained language model introduced by Yang et al. in 2019, serving as another baseline model in the comparison.""</data>
+  <data key="d2">examples/example_working/images/image_20.jpg</data>
+</node>
+<node id="&quot;XLNet+FL&quot;">
+  <data key="d0">"ORGANIZATION"</data>
+  <data key="d1">XLNet+FL enhances the XLNet model (Yang et al., 2019) with a Fine-tuning Layer (FL). It yields marginal to moderate improvements over base XLNet: on MRPC, it scores 89.25 F1 (+0.05); on QQP, 92.31 F1 (+0.51); and on SQuAD v2.0, it achieves 89.32 F1 (+0.53). Notably, on SQuAD v1.1 EM, it slightly underperforms (-0.05) but improves in F1 (+0.03).</data>
+  <data key="d2">examples/example_working/images/image_20.jpg</data>
+</node>
+<node id="&quot;XLNet+DL&quot;">
+  <data key="d0">"ORGANIZATION"</data>
+  <data key="d1">XLNet+DL combines XLNet with Discriminative Learning (DL), resulting in consistent performance gains. It achieves 89.33 F1 on MRPC (+0.13 over XLNet), 92.39 F1 on QQP (+0.59), and 95.36 F1 on SQuAD v1.1 (+0.84). On QuoRef, it scores 72.85 F1 (+1.36), demonstrating the effectiveness of DL in improving contextual representation learning.</data>
+  <data key="d2">examples/example_working/images/image_20.jpg</data>
+</node>
+<node id="&quot;XLNet+DSC&quot;">
+  <data key="d0">"ORGANIZATION"</data>
+  <data key="d1">XLNet+DSC applies Discriminative Self-Consistency (DSC) to the XLNet framework, achieving the best results among all XLNet variants. It obtains 89.78 F1 on MRPC (+0.58), 92.60 F1 on QQP (+0.79), 95.77 F1 on SQuAD v1.1 (+1.25), and 72.90 F1 on QuoRef (+1.41). These results highlight DSC’s ability to significantly boost performance even on top of strong pre-trained models like XLNet.</data>
+  <data key="d2">examples/example_working/images/image_20.jpg</data>
+</node>
+<node id="&quot;MRPC F1&quot;">
+  <data key="d0">"EVENT"</data>
+  <data key="d1">MRPC F1 refers to the F1 score used to evaluate model performance on the Microsoft Research Paraphrase Corpus (MRPC) task, which assesses a system's ability to determine whether two sentences are paraphrases of each other. In the experiments, BERT+DSC achieves 88.92 F1 and XLNet+DSC reaches 89.78 F1, representing significant improvements over their base models.</data>
+  <data key="d2">examples/example_working/images/image_20.jpg</data>
+</node>
+<node id="&quot;QQP F1&quot;">
+  <data key="d0">"EVENT"</data>
+  <data key="d1">QQP F1 is the F1 score metric for the Quora Question Pairs (QQP) dataset, used to evaluate paraphrase identification systems by measuring how well a model identifies whether two questions are semantically equivalent. The best-performing variant, XLNet+DSC, achieves 92.60 F1 (+0.79 over base XLNet), while BERT+DSC scores 92.11 F1 (+0.81 over base BERT).</data>
+  <data key="d2">examples/example_working/images/image_20.jpg</data>
+</node>
+<node id="&quot;DEVLIN ET AL., 2018&quot;">
+  <data key="d0">"ORGANIZATION"</data>
+  <data key="d1">"The authors and year of publication for the BERT paper, indicating the source of the original BERT model.""</data>
+  <data key="d2">examples/example_working/images/image_20.jpg</data>
+</node>
+<node id="&quot;Yang et al., 2019&quot;">
+  <data key="d0">"ORGANIZATION"</data>
+  <data key="d1">Yang et al., 2019 refers to the research paper that introduced XLNet, a generalized autoregressive pretraining method capable of learning bidirectional contexts. This work serves as the foundation for the XLNet baseline used in the experiments. The paper is cited in evaluations across Machine Reading Comprehension, Paraphrase Identification, and other NLP tasks, where XLNet and its enhanced variants (e.g., XLNet+DSC) are benchmarked.</data>
+  <data key="d2">examples/example_working/images/image_20.jpg</data>
+</node>
+<edge source="&quot;IMAGE_20&quot;" target="&quot;BERT&quot;">
+  <data key="d3">10.0</data>
+  <data key="d4">"BERT是从image_20中提取的实体。"</data>
+  <data key="d5">examples/example_working/images/image_20.jpg</data>
+  <data key="d6">1</data>
+</edge>
+<edge source="&quot;IMAGE_20&quot;" target="&quot;BERT+FL&quot;">
+  <data key="d3">10.0</data>
+  <data key="d4">"BERT+FL是从image_20中提取的实体。"</data>
+  <data key="d5">examples/example_working/images/image_20.jpg</data>
+  <data key="d6">1</data>
+</edge>
+<edge source="&quot;IMAGE_20&quot;" target="&quot;BERT+DL&quot;">
+  <data key="d3">10.0</data>
+  <data key="d4">"BERT+DL是从image_20中提取的实体。"</data>
+  <data key="d5">examples/example_working/images/image_20.jpg</data>
+  <data key="d6">1</data>
+</edge>
+<edge source="&quot;IMAGE_20&quot;" target="&quot;BERT+DSC&quot;">
+  <data key="d3">10.0</data>
+  <data key="d4">"BERT+DSC是从image_20中提取的实体。"</data>
+  <data key="d5">examples/example_working/images/image_20.jpg</data>
+  <data key="d6">1</data>
+</edge>
+<edge source="&quot;IMAGE_20&quot;" target="&quot;XLNET&quot;">
+  <data key="d3">10.0</data>
+  <data key="d4">"XLNet是从image_20中提取的实体。"</data>
+  <data key="d5">examples/example_working/images/image_20.jpg</data>
+  <data key="d6">1</data>
+</edge>
+<edge source="&quot;IMAGE_20&quot;" target="&quot;XLNet+FL&quot;">
+  <data key="d3">10.0</data>
+  <data key="d4">"XLNet+FL是从image_20中提取的实体。"</data>
+  <data key="d5">examples/example_working/images/image_20.jpg</data>
+  <data key="d6">1</data>
+</edge>
+<edge source="&quot;IMAGE_20&quot;" target="&quot;XLNet+DL&quot;">
+  <data key="d3">10.0</data>
+  <data key="d4">"XLNet+DL是从image_20中提取的实体。"</data>
+  <data key="d5">examples/example_working/images/image_20.jpg</data>
+  <data key="d6">1</data>
+</edge>
+<edge source="&quot;IMAGE_20&quot;" target="&quot;XLNet+DSC&quot;">
+  <data key="d3">10.0</data>
+  <data key="d4">"XLNet+DSC是从image_20中提取的实体。"</data>
+  <data key="d5">examples/example_working/images/image_20.jpg</data>
+  <data key="d6">1</data>
+</edge>
+<edge source="&quot;IMAGE_20&quot;" target="&quot;MRPC F1&quot;">
+  <data key="d3">10.0</data>
+  <data key="d4">"MRPC F1是从image_20中提取的实体。"</data>
+  <data key="d5">examples/example_working/images/image_20.jpg</data>
+  <data key="d6">1</data>
+</edge>
+<edge source="&quot;IMAGE_20&quot;" target="&quot;QQP F1&quot;">
+  <data key="d3">10.0</data>
+  <data key="d4">"QQP F1是从image_20中提取的实体。"</data>
+  <data key="d5">examples/example_working/images/image_20.jpg</data>
+  <data key="d6">1</data>
+</edge>
+<edge source="&quot;IMAGE_20&quot;" target="&quot;DEVLIN ET AL., 2018&quot;">
+  <data key="d3">10.0</data>
+  <data key="d4">"Devlin et al., 2018是从image_20中提取的实体。"</data>
+  <data key="d5">examples/example_working/images/image_20.jpg</data>
+  <data key="d6">1</data>
+</edge>
+<edge source="&quot;IMAGE_20&quot;" target="&quot;Yang et al., 2019&quot;">
+  <data key="d3">10.0</data>
+  <data key="d4">"Yang et al., 2019是从image_20中提取的实体。"</data>
+  <data key="d5">examples/example_working/images/image_20.jpg</data>
+  <data key="d6">1</data>
+</edge>
+</graph></graphml>

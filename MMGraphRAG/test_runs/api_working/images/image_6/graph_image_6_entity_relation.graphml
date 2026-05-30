@@ -1,0 +1,129 @@
+<?xml version='1.0' encoding='utf-8'?>
+<graphml xmlns="http://graphml.graphdrawing.org/xmlns" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://graphml.graphdrawing.org/xmlns http://graphml.graphdrawing.org/xmlns/1.0/graphml.xsd"><key id="d6" for="edge" attr.name="order" attr.type="long"/>
+<key id="d5" for="edge" attr.name="source_id" attr.type="string"/>
+<key id="d4" for="edge" attr.name="description" attr.type="string"/>
+<key id="d3" for="edge" attr.name="weight" attr.type="double"/>
+<key id="d2" for="node" attr.name="source_id" attr.type="string"/>
+<key id="d1" for="node" attr.name="description" attr.type="string"/>
+<key id="d0" for="node" attr.name="entity_type" attr.type="string"/>
+<graph edgedefault="undirected"><node id="&quot;IMAGE_6&quot;">
+  <data key="d0">"ORI_IMG"</data>
+  <data key="d1">"The image displays a collection of five grayscale books or guides, likely related to national parks, arranged against a plain white background. All items are oriented vertically, with their covers facing the viewer, and are slightly overlapping, creating a sense of a casual display of literature. Starting from the top left, a small, folded brochure or map is partially visible, appearing to be white with some dark text and graphic elements, though the specific content is indistinct due to its partial view and the grayscale conversion.Below and slightly to the right of the brochure, at the bottom left, is a book or guide with a dark, possibly black or dark blue, spine and a cover featuring a landscape image. The image appears to depict mountains or a natural vista, possibly with water. Part of the title is visible, starting with letters that could be 'CRATER' or similar, in a lighter font.In the middle-left, a taller, narrower guide stands prominently. Its cover is light-colored, possibly white or light gray, and features a distinct black and white photograph of a geyser or hot spring erupting, with steam rising. The title, clearly legible, reads "YELLOWSTONE AND GRAND TETON NATIONAL PARKS Road Guide" in dark, bold lettering.Dominating the center-right and positioned slightly behind the other items is the largest book. Its cover is light gray or white, with the prominent title "YELLOWSTONE" in large, dark, sans-serif font at the top. Below this, smaller text reads "THE OFFICIAL GUIDE TO AMERICA'S FIRST NATIONAL PARK". The bottom portion of the cover features a silhouette graphic of several bison or similar large wildlife, adding to the park theme.Finally, on the far right, another book or guide is visible. Its cover is darker, possibly black or a very dark gray, and features an image of several animals, possibly elk or deer, in a natural setting. The title is partially obscured but appears to include words like 'FAUNA' or 'FLORA' and mentions 'YELLOWSTONE'.The overall arrangement suggests a selection of informational or educational materials available for national park visitors, consistent with the provided context mentioning "YellowstoneAssociation.org" for ordering."</data>
+  <data key="d2">C:/MMGraphRAG/MMGraphRAG/test_runs/api_working\images\image_6.jpg</data>
+</node>
+<node id="&quot;YELLOWSTONE: THE AMERICAN GUIDE NATIONAL PARK BOOK&quot;">
+  <data key="d0">"OBJECT"</data>
+  <data key="d1">"A large, light-colored book or guide with the prominent title 'YELLOWSTONE' and 'THE AMERICAN GUIDE TO ITS NATIONAL PARK'. The bottom features an illustration of several bison. It appears to be a comprehensive guide to Yellowstone National Park."</data>
+  <data key="d2">C:/MMGraphRAG/MMGraphRAG/test_runs/api_working\images\image_6.jpg</data>
+</node>
+<node id="&quot;YELLOWSTONE AND GRAND TETON NATIONAL PARKS ROAD GUIDE&quot;">
+  <data key="d0">"OBJECT"</data>
+  <data key="d1">"A vertical, light-colored book titled 'Yellowstone and Grand Teton National Parks Road Guide'. It features an image of a geyser or hot spring erupting, suggesting it's a travel guide for these specific national parks."</data>
+  <data key="d2">C:/MMGraphRAG/MMGraphRAG/test_runs/api_working\images\image_6.jpg</data>
+</node>
+<node id="&quot;FAME'S YOSEMITE BOOK&quot;">
+  <data key="d0">"OBJECT"</data>
+  <data key="d1">"A dark-covered book with the partially visible title 'FAME'S' and 'YOSEMITE'. It features a landscape image, likely of Yosemite National Park, indicating it is a guide or pictorial book about the park."</data>
+  <data key="d2">C:/MMGraphRAG/MMGraphRAG/test_runs/api_working\images\image_6.jpg</data>
+</node>
+<node id="&quot;MONTANA GUIDEBOOK&quot;">
+  <data key="d0">"OBJECT"</data>
+  <data key="d1">"A vertical book with a dark cover, partially visible, featuring a landscape image with mountains and trees. The visible text mentions 'MONTANA' and 'TRAILS', suggesting it's a guide or book about Montana trails or parks."</data>
+  <data key="d2">C:/MMGraphRAG/MMGraphRAG/test_runs/api_working\images\image_6.jpg</data>
+</node>
+<node id="&quot;SMALL BROCHURE&quot;">
+  <data key="d0">"OBJECT"</data>
+  <data key="d1">"A small, folded brochure or map, partially visible at the top left corner of the image. It has some text and graphics, but the details are indistinguishable."</data>
+  <data key="d2">C:/MMGraphRAG/MMGraphRAG/test_runs/api_working\images\image_6.jpg</data>
+</node>
+<edge source="&quot;IMAGE_6&quot;" target="&quot;YELLOWSTONE: THE AMERICAN GUIDE NATIONAL PARK BOOK&quot;">
+  <data key="d3">10.0</data>
+  <data key="d4">"Yellowstone: The American Guide National Park Book是从image_6中提取的实体。"</data>
+  <data key="d5">C:/MMGraphRAG/MMGraphRAG/test_runs/api_working\images\image_6.jpg</data>
+  <data key="d6">1</data>
+</edge>
+<edge source="&quot;IMAGE_6&quot;" target="&quot;YELLOWSTONE AND GRAND TETON NATIONAL PARKS ROAD GUIDE&quot;">
+  <data key="d3">10.0</data>
+  <data key="d4">"Yellowstone and Grand Teton National Parks Road Guide是从image_6中提取的实体。"</data>
+  <data key="d5">C:/MMGraphRAG/MMGraphRAG/test_runs/api_working\images\image_6.jpg</data>
+  <data key="d6">1</data>
+</edge>
+<edge source="&quot;IMAGE_6&quot;" target="&quot;FAME'S YOSEMITE BOOK&quot;">
+  <data key="d3">10.0</data>
+  <data key="d4">"Fame's Yosemite Book是从image_6中提取的实体。"</data>
+  <data key="d5">C:/MMGraphRAG/MMGraphRAG/test_runs/api_working\images\image_6.jpg</data>
+  <data key="d6">1</data>
+</edge>
+<edge source="&quot;IMAGE_6&quot;" target="&quot;MONTANA GUIDEBOOK&quot;">
+  <data key="d3">10.0</data>
+  <data key="d4">"Montana Guidebook是从image_6中提取的实体。"</data>
+  <data key="d5">C:/MMGraphRAG/MMGraphRAG/test_runs/api_working\images\image_6.jpg</data>
+  <data key="d6">1</data>
+</edge>
+<edge source="&quot;IMAGE_6&quot;" target="&quot;SMALL BROCHURE&quot;">
+  <data key="d3">10.0</data>
+  <data key="d4">"Small Brochure是从image_6中提取的实体。"</data>
+  <data key="d5">C:/MMGraphRAG/MMGraphRAG/test_runs/api_working\images\image_6.jpg</data>
+  <data key="d6">1</data>
+</edge>
+<edge source="&quot;YELLOWSTONE: THE AMERICAN GUIDE NATIONAL PARK BOOK&quot;" target="&quot;YELLOWSTONE AND GRAND TETON NATIONAL PARKS ROAD GUIDE&quot;">
+  <data key="d3">8.0</data>
+  <data key="d4">"Both books are guides related to Yellowstone National Park, with the latter also covering Grand Teton National Park, indicating a common theme of national park exploration."</data>
+  <data key="d5">C:/MMGraphRAG/MMGraphRAG/test_runs/api_working\images\image_6.jpg</data>
+  <data key="d6">1</data>
+</edge>
+<edge source="&quot;YELLOWSTONE: THE AMERICAN GUIDE NATIONAL PARK BOOK&quot;" target="&quot;FAME'S YOSEMITE BOOK&quot;">
+  <data key="d3">7.0</data>
+  <data key="d4">"Both are books about U.S. National Parks (Yellowstone and Yosemite, respectively), suggesting a collection of national park literature."</data>
+  <data key="d5">C:/MMGraphRAG/MMGraphRAG/test_runs/api_working\images\image_6.jpg</data>
+  <data key="d6">1</data>
+</edge>
+<edge source="&quot;YELLOWSTONE: THE AMERICAN GUIDE NATIONAL PARK BOOK&quot;" target="&quot;MONTANA GUIDEBOOK&quot;">
+  <data key="d3">6.0</data>
+  <data key="d4">"Both are guides related to natural landscapes and potentially national parks or regions, with Yellowstone being near Montana."</data>
+  <data key="d5">C:/MMGraphRAG/MMGraphRAG/test_runs/api_working\images\image_6.jpg</data>
+  <data key="d6">1</data>
+</edge>
+<edge source="&quot;YELLOWSTONE: THE AMERICAN GUIDE NATIONAL PARK BOOK&quot;" target="&quot;SMALL BROCHURE&quot;">
+  <data key="d3">5.0</data>
+  <data key="d4">"The small brochure is part of the same collection of travel and park-related literature as the Yellowstone book."</data>
+  <data key="d5">C:/MMGraphRAG/MMGraphRAG/test_runs/api_working\images\image_6.jpg</data>
+  <data key="d6">1</data>
+</edge>
+<edge source="&quot;YELLOWSTONE AND GRAND TETON NATIONAL PARKS ROAD GUIDE&quot;" target="&quot;FAME'S YOSEMITE BOOK&quot;">
+  <data key="d3">7.0</data>
+  <data key="d4">"Both books are guides or pictorials about U.S. National Parks (Yellowstone/Grand Teton and Yosemite, respectively)."</data>
+  <data key="d5">C:/MMGraphRAG/MMGraphRAG/test_runs/api_working\images\image_6.jpg</data>
+  <data key="d6">1</data>
+</edge>
+<edge source="&quot;YELLOWSTONE AND GRAND TETON NATIONAL PARKS ROAD GUIDE&quot;" target="&quot;MONTANA GUIDEBOOK&quot;">
+  <data key="d3">7.0</data>
+  <data key="d4">"Both are regional guides for natural areas, with Grand Teton and Yellowstone being adjacent to Montana, implying a geographical and thematic connection."</data>
+  <data key="d5">C:/MMGraphRAG/MMGraphRAG/test_runs/api_working\images\image_6.jpg</data>
+  <data key="d6">1</data>
+</edge>
+<edge source="&quot;YELLOWSTONE AND GRAND TETON NATIONAL PARKS ROAD GUIDE&quot;" target="&quot;SMALL BROCHURE&quot;">
+  <data key="d3">5.0</data>
+  <data key="d4">"The small brochure is part of the same collection of travel and park-related literature as the Yellowstone and Grand Teton guide."</data>
+  <data key="d5">C:/MMGraphRAG/MMGraphRAG/test_runs/api_working\images\image_6.jpg</data>
+  <data key="d6">1</data>
+</edge>
+<edge source="&quot;FAME'S YOSEMITE BOOK&quot;" target="&quot;MONTANA GUIDEBOOK&quot;">
+  <data key="d3">6.0</data>
+  <data key="d4">"Both are books related to natural landscapes and potentially national parks or outdoor activities, though they cover different geographical regions."</data>
+  <data key="d5">C:/MMGraphRAG/MMGraphRAG/test_runs/api_working\images\image_6.jpg</data>
+  <data key="d6">1</data>
+</edge>
+<edge source="&quot;FAME'S YOSEMITE BOOK&quot;" target="&quot;SMALL BROCHURE&quot;">
+  <data key="d3">5.0</data>
+  <data key="d4">"The small brochure is part of the same collection of travel and park-related literature as the Yosemite book."</data>
+  <data key="d5">C:/MMGraphRAG/MMGraphRAG/test_runs/api_working\images\image_6.jpg</data>
+  <data key="d6">1</data>
+</edge>
+<edge source="&quot;MONTANA GUIDEBOOK&quot;" target="&quot;SMALL BROCHURE&quot;">
+  <data key="d3">5.0</data>
+  <data key="d4">"The small brochure is part of the same collection of travel and park-related literature as the Montana guidebook."</data>
+  <data key="d5">C:/MMGraphRAG/MMGraphRAG/test_runs/api_working\images\image_6.jpg</data>
+  <data key="d6">1</data>
+</edge>
+</graph></graphml>

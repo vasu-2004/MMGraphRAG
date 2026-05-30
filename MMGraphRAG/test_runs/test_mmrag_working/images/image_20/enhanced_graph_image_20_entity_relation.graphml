@@ -1,0 +1,28 @@
+<?xml version='1.0' encoding='utf-8'?>
+<graphml xmlns="http://graphml.graphdrawing.org/xmlns" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://graphml.graphdrawing.org/xmlns http://graphml.graphdrawing.org/xmlns/1.0/graphml.xsd">
+  <key id="d6" for="edge" attr.name="order" attr.type="long" />
+  <key id="d5" for="edge" attr.name="source_id" attr.type="string" />
+  <key id="d4" for="edge" attr.name="description" attr.type="string" />
+  <key id="d3" for="edge" attr.name="weight" attr.type="double" />
+  <key id="d2" for="node" attr.name="source_id" attr.type="string" />
+  <key id="d1" for="node" attr.name="description" attr.type="string" />
+  <key id="d0" for="node" attr.name="entity_type" attr.type="string" />
+  <graph edgedefault="undirected">
+    <node id="&quot;IMAGE_20&quot;">
+      <data key="d0">"ORI_IMG"</data>
+      <data key="d1">"The image displays a white accessibility symbol, commonly known as the International Symbol of Access, set against a solid black background. The symbol is a stylized representation of a person seated in a wheelchair, rendered in a crisp, clean white outline. The figure is depicted with a head, torso, and arms, positioned within the frame of a wheelchair that includes two large wheels and a smaller front wheel. The lines of the symbol are distinct and clear, contrasting sharply with the dark background, making it highly visible. The symbol occupies the majority of the image frame, centered and prominent."</data>
+      <data key="d2">test_runs/test_mmrag_working\images\image_20.jpg</data>
+    </node>
+    <node id="&quot;WHEELCHAIR SYMBOL&quot;">
+      <data key="d0">"OBJECT"</data>
+      <data key="d1">A white icon depicting a stylized person seated in a wheelchair, set against a black background. This symbol is universally recognized as the International Symbol of Access, indicating accessibility for people with disabilities. Within Yellowstone National Park, this symbol signifies facilities and areas that are negotiable for wheelchair users, as detailed in the 'Visitor’s Guide to Accessible Features.' This guide is available at entrance stations and visitor centers, and the park is continuously working to enhance accessibility. Additionally, the park offers an 'Access Pass' free of charge for U.S. citizens or permanent residents who have been determined permanently disabled, requiring documentation. The 'Golden Access Passport' is also accepted, further supporting accessibility.</data>
+      <data key="d2">test_runs/test_mmrag_working\images\image_20.jpg</data>
+    </node>
+    <edge source="&quot;IMAGE_20&quot;" target="&quot;WHEELCHAIR SYMBOL&quot;">
+      <data key="d3">10.0</data>
+      <data key="d4">"Wheelchair Symbol是从image_20中提取的实体。"</data>
+      <data key="d5">test_runs/test_mmrag_working\images\image_20.jpg</data>
+      <data key="d6">1</data>
+    </edge>
+  </graph>
+</graphml>

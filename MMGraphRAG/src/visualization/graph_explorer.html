@@ -1,0 +1,1292 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Knowledge Graph Explorer - MMGraphRAG</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/graphology@0.25.4/dist/graphology.umd.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sigma@2.4.0/build/sigma.min.js"></script>
+    <style>
+        :root {
+            --bg-primary: #0f0a1a;
+            --bg-secondary: #1a1025;
+            --surface-card: rgba(40, 30, 60, 0.6);
+            --surface-glass-hover: rgba(167, 139, 250, 0.1);
+            --border-subtle: rgba(130, 100, 180, 0.25);
+            --border-glow: rgba(167, 139, 250, 0.5);
+            --text-primary: #f0f0f5;
+            --text-secondary: #a0a0b0;
+            --text-tertiary: #6b6b7b;
+            --neon-purple: #a78bfa;
+            --neon-cyan: #22d3ee;
+            --gradient-primary: linear-gradient(135deg, #a78bfa 0%, #22d3ee 100%);
+            --glow-purple: 0 0 30px rgba(167, 139, 250, 0.3);
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+            background: linear-gradient(135deg, var(--bg-primary) 0%, #1a0f2e 50%, #0f1a2e 100%);
+            color: var(--text-primary);
+            min-height: 100vh;
+        }
+
+        .container {
+            max-width: 1800px;
+            margin: 0 auto;
+            padding: 20px;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+
+        header {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px 0;
+            margin-bottom: 20px;
+            position: relative;
+        }
+
+        h1 {
+            font-size: 32px;
+            font-weight: 700;
+            background: var(--gradient-primary);
+            -webkit-background-clip: text;
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+            letter-spacing: 1px;
+        }
+
+        .stats-row {
+            display: flex;
+            gap: 12px;
+            margin-bottom: 20px;
+        }
+
+        .stat-card {
+            background: var(--surface-card);
+            border: 1px solid var(--border-subtle);
+            border-radius: 12px;
+            padding: 16px;
+            text-align: center;
+            flex: 1;
+            transition: all 0.3s ease;
+        }
+
+        .stat-card:hover {
+            border-color: var(--border-glow);
+            box-shadow: var(--glow-purple);
+        }
+
+        .stat-value {
+            font-size: 24px;
+            font-weight: 800;
+            background: var(--gradient-primary);
+            -webkit-background-clip: text;
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .stat-label {
+            font-size: 11px;
+            color: var(--text-secondary);
+        }
+
+        .toolbar {
+            display: flex;
+            gap: 16px;
+            margin-bottom: 20px;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+
+        .action-group {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            flex-wrap: wrap;
+        }
+
+        .file-input {
+            max-width: 240px;
+            color: var(--text-secondary);
+            font-size: 12px;
+        }
+
+        .toolbar-btn {
+            padding: 9px 14px;
+            border-radius: 10px;
+            border: 1px solid var(--border-subtle);
+            cursor: pointer;
+            font-size: 12px;
+            font-weight: 600;
+            transition: all 0.2s ease;
+        }
+
+        .toolbar-btn.primary {
+            background: var(--gradient-primary);
+            color: white;
+            border: none;
+        }
+
+        .toolbar-btn.secondary {
+            background: transparent;
+            color: var(--text-secondary);
+        }
+
+        .toolbar-btn:hover {
+            border-color: var(--neon-purple);
+            box-shadow: var(--glow-purple);
+        }
+
+        .toolbar-btn:disabled {
+            opacity: 0.6;
+            cursor: not-allowed;
+            box-shadow: none;
+        }
+
+        .status-banner {
+            margin-bottom: 16px;
+            padding: 12px 14px;
+            border-radius: 12px;
+            border: 1px solid var(--border-subtle);
+            background: rgba(34, 211, 238, 0.08);
+            color: var(--text-secondary);
+            font-size: 13px;
+        }
+
+        .status-banner.error {
+            border-color: rgba(248, 113, 113, 0.45);
+            background: rgba(248, 113, 113, 0.08);
+            color: #fecaca;
+        }
+
+        .search-box {
+            flex: 1;
+            min-width: 250px;
+            position: relative;
+        }
+
+        .search-input {
+            width: 100%;
+            padding: 10px 16px 10px 40px;
+            background: var(--surface-card);
+            border: 1px solid var(--border-subtle);
+            border-radius: 10px;
+            color: var(--text-primary);
+            font-size: 14px;
+        }
+
+        .search-input:focus {
+            border-color: var(--neon-purple);
+            outline: none;
+        }
+
+        .search-icon {
+            position: absolute;
+            left: 14px;
+            top: 50%;
+            transform: translateY(-50%);
+            opacity: 0.5;
+        }
+
+        .search-results {
+            position: absolute;
+            top: 100%;
+            left: 0;
+            right: 0;
+            background: var(--bg-secondary);
+            border: 1px solid var(--border-subtle);
+            border-radius: 10px;
+            margin-top: 8px;
+            max-height: 300px;
+            overflow-y: auto;
+            z-index: 100;
+            display: none;
+        }
+
+        .search-results.show {
+            display: block;
+        }
+
+        .search-result-item {
+            padding: 12px 16px;
+            border-bottom: 1px solid var(--border-subtle);
+            cursor: pointer;
+            transition: background 0.2s;
+        }
+
+        .search-result-item:last-child {
+            border-bottom: none;
+        }
+
+        .search-result-item:hover {
+            background: var(--surface-glass-hover);
+        }
+
+        .checkbox-label {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            color: var(--text-secondary);
+            font-size: 14px;
+            cursor: pointer;
+        }
+
+        .checkbox-label input {
+            width: 18px;
+            height: 18px;
+            accent-color: var(--neon-purple);
+        }
+
+        .main-content {
+            display: grid;
+            grid-template-columns: 1fr 320px;
+            gap: 20px;
+            flex: 1;
+            min-height: 0;
+        }
+
+        .graph-container {
+            background: var(--surface-card);
+            border: 1px solid var(--border-subtle);
+            border-radius: 16px;
+            overflow: hidden;
+            position: relative;
+        }
+
+        #graph-canvas {
+            width: 100%;
+            height: 100%;
+        }
+
+        .graph-loading {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            text-align: center;
+            color: var(--text-secondary);
+        }
+
+        .spinner {
+            width: 50px;
+            height: 50px;
+            border: 3px solid var(--border-subtle);
+            border-top-color: var(--neon-purple);
+            border-radius: 50%;
+            animation: spin 1s linear infinite;
+            margin: 0 auto 16px;
+        }
+
+        @keyframes spin {
+            to {
+                transform: rotate(360deg);
+            }
+        }
+
+        .graph-controls {
+            position: absolute;
+            bottom: 16px;
+            right: 16px;
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+        }
+
+        .control-btn {
+            width: 40px;
+            height: 40px;
+            background: var(--bg-secondary);
+            border: 1px solid var(--border-subtle);
+            border-radius: 8px;
+            color: var(--text-primary);
+            cursor: pointer;
+            font-size: 18px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: all 0.2s;
+        }
+
+        .control-btn:hover {
+            background: var(--surface-glass-hover);
+            border-color: var(--neon-purple);
+        }
+
+        .side-panel {
+            display: flex;
+            flex-direction: column;
+            gap: 16px;
+        }
+
+        .panel-section {
+            background: var(--surface-card);
+            border: 1px solid var(--border-subtle);
+            border-radius: 12px;
+            padding: 16px;
+        }
+
+        .panel-title {
+            font-size: 14px;
+            font-weight: 600;
+            margin-bottom: 12px;
+            color: var(--text-primary);
+        }
+
+        .legend-list {
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+            max-height: 200px;
+            overflow-y: auto;
+        }
+
+        .legend-item {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            font-size: 12px;
+            color: var(--text-secondary);
+        }
+
+        .legend-color {
+            width: 14px;
+            height: 14px;
+            border-radius: 50%;
+            flex-shrink: 0;
+            cursor: pointer;
+        }
+
+        .legend-count {
+            margin-left: auto;
+            background: rgba(255, 255, 255, 0.1);
+            padding: 2px 8px;
+            border-radius: 10px;
+            font-size: 11px;
+        }
+
+        .detail-panel {
+            flex: 1;
+            overflow-y: auto;
+        }
+
+        .detail-field {
+            margin-bottom: 12px;
+        }
+
+        .detail-label {
+            font-size: 11px;
+            color: var(--text-tertiary);
+            margin-bottom: 4px;
+            text-transform: uppercase;
+        }
+
+        .detail-value {
+            color: var(--text-primary);
+            word-break: break-word;
+            font-size: 13px;
+            line-height: 1.6;
+        }
+
+        .entity-type-badge {
+            display: inline-block;
+            padding: 4px 12px;
+            border-radius: 15px;
+            font-size: 12px;
+            font-weight: 500;
+        }
+
+        .answer-box {
+            padding: 12px;
+            border-radius: 10px;
+            background: rgba(255, 255, 255, 0.04);
+            line-height: 1.7;
+            white-space: pre-wrap;
+        }
+
+        .result-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+        }
+
+        .result-chip {
+            padding: 6px 10px;
+            border-radius: 999px;
+            border: 1px solid var(--border-subtle);
+            background: rgba(255, 255, 255, 0.04);
+            font-size: 12px;
+            cursor: pointer;
+        }
+
+        .result-chip:hover {
+            border-color: var(--neon-cyan);
+        }
+
+        .source-item {
+            padding: 10px 12px;
+            border-radius: 10px;
+            background: rgba(255, 255, 255, 0.04);
+            margin-bottom: 10px;
+        }
+
+        .source-item:last-child {
+            margin-bottom: 0;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <h1>Knowledge Graph Explorer</h1>
+        </header>
+
+        <div class="stats-row">
+            <div class="stat-card">
+                <div class="stat-value" id="stat-nodes">-</div>
+                <div class="stat-label">Nodes</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-value" id="stat-edges">-</div>
+                <div class="stat-label">Edges</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-value" id="stat-types">-</div>
+                <div class="stat-label">Entity Types</div>
+            </div>
+        </div>
+
+        <div class="toolbar">
+            <div class="action-group">
+                <input type="file" class="file-input" id="pdf-input" accept="application/pdf">
+                <button id="ingest-btn" class="toolbar-btn primary">Ingest PDF</button>
+                <button id="clear-db-btn" class="toolbar-btn secondary">Clear data</button>
+            </div>
+            <div class="search-box">
+                <span class="search-icon">🔍</span>
+                <input type="text" class="search-input" id="search-input" placeholder="Search nodes...">
+                <div class="search-results" id="search-results"></div>
+            </div>
+            <div class="search-box" style="flex: 2;">
+                <span class="search-icon">💡</span>
+                <input type="text" class="search-input" id="retrieve-input" placeholder="Ask a question about the ingested document..."
+                    style="padding-left: 40px;">
+                <button id="retrieve-btn"
+                    style="position: absolute; right: 8px; top: 50%; transform: translateY(-50%); padding: 6px 16px; background: var(--gradient-primary); border: none; border-radius: 8px; color: white; cursor: pointer; font-size: 12px;">Ask</button>
+            </div>
+            <label class="checkbox-label">
+                <input type="checkbox" id="show-labels" checked>
+                Show node labels
+            </label>
+            <button id="clear-retrieve-btn"
+                style="padding: 8px 16px; background: transparent; border: 1px solid var(--border-subtle); border-radius: 8px; color: var(--text-secondary); cursor: pointer; font-size: 12px; display: none;">Clear query</button>
+        </div>
+
+        <div class="status-banner" id="app-status">Ready. Ingest a PDF to build a graph, then ask a question.</div>
+
+        <div class="main-content">
+            <div class="graph-container">
+                <div id="graph-canvas"></div>
+                <div class="graph-loading" id="graph-loading">
+                    <div class="spinner"></div>
+                    <div>Loading knowledge graph...</div>
+                </div>
+                <div class="graph-controls">
+                    <button class="control-btn" id="zoom-in" title="Zoom in">+</button>
+                    <button class="control-btn" id="zoom-out" title="Zoom out">−</button>
+                    <button class="control-btn" id="zoom-reset" title="Reset view">⟲</button>
+                </div>
+            </div>
+
+            <div class="side-panel">
+                <div class="panel-section">
+                    <div class="panel-title">Entity Type Legend</div>
+                    <div class="legend-list" id="legend-list">
+                        <div style="color: var(--text-tertiary);">Loading...</div>
+                    </div>
+                </div>
+                <div class="panel-section detail-panel">
+                    <div class="panel-title">Results</div>
+                    <div class="detail-content" id="detail-content">
+                        <div style="color: var(--text-tertiary);">Upload a PDF to build a graph, then ask a question to see the answer and hit nodes.</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // === 颜色配置 ===
+        const typeColors = {
+            'PERSON': '#f472b6', 'TECHNOLOGY': '#60a5fa', 'EVENT': '#34d399',
+            'ORGANIZATION': '#fbbf24', 'GEO': '#a78bfa', 'CONCEPT': '#fb923c',
+            'FIGURE': '#14b8a6', 'ORI_IMG': '#f87171', 'IMG': '#f87171',
+            'PRODUCT': '#22d3ee', 'LOCATION': '#c084fc', 'METHOD': '#4ade80',
+            'DATE': '#facc15', 'MONEY': '#4ade80', 'QUANTITY': '#818cf8',
+            'default': '#94a3b8'
+        };
+
+        const colorPalette = [
+            '#f472b6', '#60a5fa', '#34d399', '#fbbf24', '#a78bfa', '#fb923c',
+            '#14b8a6', '#22d3ee', '#c084fc', '#4ade80', '#818cf8', '#fb7185'
+        ];
+
+        // === 全局状态 ===
+        let graphData = null;
+        let sigmaInstance = null;
+        let graph = null;
+        let selectedNode = null;
+        let originalNodeAttrs = {};
+        let hiddenTypes = new Set();
+        let colorIndex = 0;
+
+        // === 工具函数 ===
+        function getTypeColor(type) {
+            if (typeColors[type]) return typeColors[type];
+            const color = colorPalette[colorIndex % colorPalette.length];
+            typeColors[type] = color;
+            colorIndex++;
+            return color;
+        }
+
+        function cleanNodeId(id) {
+            return id.replace(/^["']|["']$/g, '');
+        }
+
+        function escapeHtml(value) {
+            return String(value ?? '')
+                .replace(/&/g, '&amp;')
+                .replace(/</g, '&lt;')
+                .replace(/>/g, '&gt;')
+                .replace(/"/g, '&quot;')
+                .replace(/'/g, '&#39;');
+        }
+
+        function showStatus(message, isError = false) {
+            const banner = document.getElementById('app-status');
+            banner.textContent = message;
+            banner.classList.toggle('error', isError);
+        }
+
+        function resetGraphState(message = 'Upload a PDF to build a graph, then ask a question to see the answer and hit nodes.') {
+            graphData = null;
+            selectedNode = null;
+            originalNodeAttrs = {};
+            hiddenTypes = new Set();
+
+            if (sigmaInstance) {
+                sigmaInstance.kill();
+                sigmaInstance = null;
+            }
+
+            graph = null;
+            document.getElementById('graph-canvas').innerHTML = '';
+            document.getElementById('graph-loading').style.display = 'none';
+            document.getElementById('stat-nodes').textContent = '0';
+            document.getElementById('stat-edges').textContent = '0';
+            document.getElementById('stat-types').textContent = '0';
+            document.getElementById('legend-list').innerHTML = '<div style="color: var(--text-tertiary);">No graph loaded</div>';
+            document.getElementById('detail-content').innerHTML = `<div style="color: var(--text-tertiary);">${escapeHtml(message)}</div>`;
+        }
+
+        // === 图谱加载 ===
+        async function loadGraph() {
+            const loading = document.getElementById('graph-loading');
+            loading.style.display = 'block';
+
+            try {
+                const resp = await fetch('/api/graph/content?limit=5000');
+                const data = await resp.json();
+
+                if (!resp.ok) {
+                    throw new Error(data.detail || data.error || 'Unable to load graph');
+                }
+
+                if (data.success) {
+                    graphData = data;
+                    renderGraph(data);
+                    renderLegend(data.entity_types);
+                    document.getElementById('stat-nodes').textContent = data.total_nodes.toLocaleString();
+                    document.getElementById('stat-edges').textContent = data.total_edges.toLocaleString();
+                    document.getElementById('stat-types').textContent = Object.keys(data.entity_types).length;
+                    showStatus(`Graph loaded: ${data.total_nodes} nodes, ${data.total_edges} edges.`);
+                } else {
+                    throw new Error(data.error || 'Unable to load graph');
+                }
+            } catch (error) {
+                resetGraphState('No graph loaded yet. Ingest a PDF to get started.');
+                showStatus(`Graph unavailable: ${error.message}`, true);
+            }
+        }
+
+        // === 图谱渲染 ===
+        function renderGraph(data) {
+            const container = document.getElementById('graph-canvas');
+            const loading = document.getElementById('graph-loading');
+
+            if (sigmaInstance) {
+                sigmaInstance.kill();
+                sigmaInstance = null;
+            }
+
+            graph = new graphology.Graph();
+
+            // 布局参数
+            const nodeCount = data.nodes.length;
+
+            // 动态计算大小
+            let nodeSize, edgeSize;
+            if (nodeCount < 100) {
+                nodeSize = 8;
+                edgeSize = 2;
+            } else if (nodeCount < 500) {
+                nodeSize = 6;
+                edgeSize = 1.5;
+            } else if (nodeCount < 2000) {
+                nodeSize = 4;
+                edgeSize = 0.8;
+            } else {
+                nodeSize = 2;
+                edgeSize = 0.3;
+            }
+
+            const radius = Math.sqrt(nodeCount) * 30;
+
+            // 添加节点
+            data.nodes.forEach((node, i) => {
+                const angle = (i / nodeCount) * Math.PI * 2;
+                const r = radius * (0.3 + Math.random() * 0.7);
+                const type = node.entity_type || 'default';
+                const color = getTypeColor(type);
+
+                graph.addNode(node.id, {
+                    x: r * Math.cos(angle) + (Math.random() - 0.5) * 50,
+                    y: r * Math.sin(angle) + (Math.random() - 0.5) * 50,
+                    size: nodeSize,
+                    originalSize: nodeSize, // 保存原始大小
+                    color: color,
+                    originalColor: color,
+                    label: cleanNodeId(node.id),
+                    entityType: type,
+                    description: node.description || ''
+                });
+            });
+
+            // 添加边
+            data.edges.forEach((edge, i) => {
+                if (graph.hasNode(edge.source) && graph.hasNode(edge.target)) {
+                    try {
+                        const sourceAttrs = graph.getNodeAttributes(edge.source);
+                        const edgeColor = sourceAttrs.color;
+
+                        graph.addEdge(edge.source, edge.target, {
+                            id: `e${i}`,
+                            size: edgeSize,
+                            originalSize: edgeSize,
+                            color: edgeColor,
+                            originalColor: edgeColor,
+                            description: edge.description || ''
+                        });
+                    } catch (e) { }
+                }
+            });
+
+            loading.style.display = 'none';
+
+            // 创建 Sigma 实例
+            const showLabels = document.getElementById('show-labels').checked && nodeCount < 500;
+            if (nodeCount >= 500) {
+                document.getElementById('show-labels').checked = false;
+            }
+
+            sigmaInstance = new Sigma(graph, container, {
+                renderLabels: showLabels,
+                minCameraRatio: 0.0001,
+                maxCameraRatio: 10,
+                enableEdgeClickEvents: true,
+                enableEdgeHoverEvents: false,
+                labelRenderedSizeThreshold: 2,
+                zIndex: true,
+                labelColor: { attribute: 'color' }
+            });
+
+            // 节点点击
+            sigmaInstance.on('clickNode', (event) => {
+                selectNode(event.node);
+            });
+
+            // 边点击
+            sigmaInstance.on('clickEdge', (event) => {
+                clearSelection();
+                const edgeId = event.edge;
+                const attrs = graph.getEdgeAttributes(edgeId);
+                const source = graph.source(edgeId);
+                const target = graph.target(edgeId);
+                graph.setEdgeAttribute(edgeId, 'color', '#ffffff');
+                sigmaInstance.refresh();
+                showEdgeDetail(source, target, attrs);
+            });
+
+            // 点击空白
+            sigmaInstance.on('clickStage', () => {
+                clearSelection();
+            });
+        }
+
+        // === 选中节点 ===
+        function selectNode(nodeId) {
+            clearSelection();
+
+            selectedNode = nodeId;
+            const attrs = graph.getNodeAttributes(nodeId);
+
+            // 获取相连节点
+            const connectedNodes = new Set([nodeId]);
+            graph.forEachEdge(nodeId, (edge, attrs, source, target) => {
+                connectedNodes.add(source);
+                connectedNodes.add(target);
+            });
+
+            // 保存原始属性并淡化非相关节点
+            graph.forEachNode((nid, nattrs) => {
+                if (!originalNodeAttrs[nid]) {
+                    originalNodeAttrs[nid] = {
+                        size: nattrs.size,
+                        color: nattrs.color,
+                        label: nattrs.label
+                    };
+                }
+                if (!connectedNodes.has(nid)) {
+                    graph.setNodeAttribute(nid, 'color', '#3d3654');
+                    graph.setNodeAttribute(nid, 'label', '');
+                }
+            });
+
+            // 淡化非相关边
+            graph.forEachEdge((edge, eattrs, source, target) => {
+                if (!connectedNodes.has(source) || !connectedNodes.has(target)) {
+                    graph.setEdgeAttribute(edge, 'color', '#2d2644');
+                } else if (source === nodeId || target === nodeId) {
+                    graph.setEdgeAttribute(edge, 'color', attrs.originalColor || attrs.color);
+                }
+            });
+
+            // 高亮选中节点
+            const highlightSize = Math.min(attrs.size * 3, attrs.size + 8);
+            graph.setNodeAttribute(nodeId, 'size', highlightSize);
+            graph.setNodeAttribute(nodeId, 'zIndex', 1000);
+
+            // 相关节点设置较高 zIndex
+            connectedNodes.forEach(nid => {
+                if (nid !== nodeId && graph.hasNode(nid)) {
+                    graph.setNodeAttribute(nid, 'zIndex', 500);
+                    graph.setNodeAttribute(nid, 'label', cleanNodeId(nid));
+                }
+            });
+
+            // 相关边设置到顶层
+            graph.forEachEdge(nodeId, (edge) => {
+                graph.setEdgeAttribute(edge, 'zIndex', 500);
+            });
+
+            sigmaInstance.refresh();
+            showNodeDetail(nodeId, attrs);
+        }
+
+        // === 清除选中 ===
+        function clearSelection() {
+            if (!graph || !sigmaInstance) return;
+
+            Object.keys(originalNodeAttrs).forEach(nid => {
+                if (graph.hasNode(nid)) {
+                    const orig = originalNodeAttrs[nid];
+                    graph.setNodeAttribute(nid, 'size', orig.size);
+                    graph.setNodeAttribute(nid, 'color', orig.color);
+                    graph.setNodeAttribute(nid, 'zIndex', 0);
+                    if (orig.label !== undefined) {
+                        graph.setNodeAttribute(nid, 'label', orig.label);
+                    }
+                }
+            });
+
+            graph.forEachEdge((edge) => {
+                const edgeAttrs = graph.getEdgeAttributes(edge);
+                if (edgeAttrs.originalColor) {
+                    graph.setEdgeAttribute(edge, 'color', edgeAttrs.originalColor);
+                }
+                if (edgeAttrs.originalSize) {
+                    graph.setEdgeAttribute(edge, 'size', edgeAttrs.originalSize);
+                }
+            });
+
+            selectedNode = null;
+            originalNodeAttrs = {};
+            sigmaInstance.refresh();
+        }
+
+        // === 渲染图例 ===
+        function renderLegend(entityTypes) {
+            const container = document.getElementById('legend-list');
+            if (!entityTypes || Object.keys(entityTypes).length === 0) {
+                container.innerHTML = '<div style="color: var(--text-tertiary);">No graph loaded</div>';
+                return;
+            }
+            const sortedTypes = Object.entries(entityTypes).sort((a, b) => b[1] - a[1]);
+
+            container.innerHTML = sortedTypes.map(([type, count]) => {
+                const isHidden = hiddenTypes.has(type);
+                const color = isHidden ? '#666666' : getTypeColor(type);
+                return `
+                    <div class="legend-item" data-type="${type}">
+                        <div class="legend-color" style="background: ${color}; opacity: ${isHidden ? 0.5 : 1};" title="Click to show or hide"></div>
+                        <span style="opacity: ${isHidden ? 0.5 : 1};">${type}</span>
+                        <span class="legend-count">${count}</span>
+                    </div>
+                `;
+            }).join('');
+
+            // 添加点击事件
+            container.querySelectorAll('.legend-color').forEach(el => {
+                el.addEventListener('click', () => {
+                    const type = el.parentElement.dataset.type;
+                    toggleTypeVisibility(type);
+                });
+            });
+        }
+
+        // === 切换类型可见性 ===
+        function toggleTypeVisibility(type) {
+            if (hiddenTypes.has(type)) {
+                hiddenTypes.delete(type);
+            } else {
+                hiddenTypes.add(type);
+            }
+
+            if (graph && sigmaInstance) {
+                graph.forEachNode((nodeId, attrs) => {
+                    const isHidden = hiddenTypes.has(attrs.entityType);
+                    graph.setNodeAttribute(nodeId, 'hidden', isHidden);
+                });
+
+                graph.forEachEdge((edgeId, attrs, source, target) => {
+                    const sourceAttrs = graph.getNodeAttributes(source);
+                    const targetAttrs = graph.getNodeAttributes(target);
+                    const isHidden = hiddenTypes.has(sourceAttrs.entityType) || hiddenTypes.has(targetAttrs.entityType);
+                    graph.setEdgeAttribute(edgeId, 'hidden', isHidden);
+                });
+
+                sigmaInstance.refresh();
+            }
+
+            if (graphData) {
+                renderLegend(graphData.entity_types);
+            }
+        }
+
+        // === 显示节点详情 ===
+        function showNodeDetail(nodeId, attrs) {
+            const container = document.getElementById('detail-content');
+            container.innerHTML = `
+                <div class="detail-field">
+                    <div class="detail-label">Node ID</div>
+                    <div class="detail-value">${escapeHtml(cleanNodeId(nodeId))}</div>
+                </div>
+                <div class="detail-field">
+                    <div class="detail-label">Entity Type</div>
+                    <div class="detail-value">
+                        <span class="entity-type-badge" style="background: ${getTypeColor(attrs.entityType)}; color: white;">
+                            ${escapeHtml(attrs.entityType || 'Unknown')}
+                        </span>
+                    </div>
+                </div>
+                <div class="detail-field">
+                    <div class="detail-label">Description</div>
+                    <div class="detail-value">${escapeHtml(attrs.description || 'No description')}</div>
+                </div>
+            `;
+        }
+
+        // === 显示边详情 ===
+        function showEdgeDetail(source, target, attrs) {
+            const container = document.getElementById('detail-content');
+            container.innerHTML = `
+                <div class="detail-field">
+                    <div class="detail-label">Relationship</div>
+                    <div class="detail-value">${escapeHtml(cleanNodeId(source))} - ${escapeHtml(cleanNodeId(target))}</div>
+                </div>
+                <div class="detail-field">
+                    <div class="detail-label">Description</div>
+                    <div class="detail-value">${escapeHtml(attrs.description || 'No description')}</div>
+                </div>
+            `;
+        }
+
+        function renderQueryResult(data) {
+            const hitNodes = data.hit_nodes || [];
+            const sourceChunks = data.source_chunks || [];
+            const multimodalEntities = data.multimodal_entities || [];
+
+            const nodeChips = hitNodes.length
+                ? hitNodes.map(node => `<button class="result-chip" data-node-id="${escapeHtml(node.id)}">${escapeHtml(node.id)}</button>`).join('')
+                : '<div style="color: var(--text-tertiary);">No nodes were retrieved.</div>';
+
+            const sourceMarkup = sourceChunks.length
+                ? sourceChunks.slice(0, 5).map(chunk => `
+                    <div class="source-item">
+                        <div class="detail-label">${escapeHtml(chunk.id || 'source')}</div>
+                        <div class="detail-value">${escapeHtml(chunk.content || '')}</div>
+                    </div>
+                `).join('')
+                : '<div style="color: var(--text-tertiary);">No source chunks were attached.</div>';
+
+            const multimodalMarkup = multimodalEntities.length
+                ? multimodalEntities.map(entity => `<span class="result-chip">${escapeHtml(entity)}</span>`).join('')
+                : '<div style="color: var(--text-tertiary);">No image entities were used.</div>';
+
+            document.getElementById('detail-content').innerHTML = `
+                <div class="detail-field">
+                    <div class="detail-label">Answer</div>
+                    <div class="answer-box">${escapeHtml(data.answer || 'No answer returned.')}</div>
+                </div>
+                <div class="detail-field">
+                    <div class="detail-label">Hit Nodes (${hitNodes.length})</div>
+                    <div class="result-list">${nodeChips}</div>
+                </div>
+                <div class="detail-field">
+                    <div class="detail-label">Source Chunks</div>
+                    <div>${sourceMarkup}</div>
+                </div>
+                <div class="detail-field">
+                    <div class="detail-label">Multimodal Entities</div>
+                    <div class="result-list">${multimodalMarkup}</div>
+                </div>
+            `;
+
+            document.querySelectorAll('[data-node-id]').forEach(button => {
+                button.addEventListener('click', () => {
+                    focusNode(button.dataset.nodeId);
+                });
+            });
+        }
+
+        // === 搜索功能 ===
+        let searchTimeout;
+
+        async function handleSearch(query) {
+            const resultsContainer = document.getElementById('search-results');
+
+            if (!query.trim()) {
+                resultsContainer.classList.remove('show');
+                return;
+            }
+
+            try {
+                const resp = await fetch(`/api/graph/search?q=${encodeURIComponent(query)}`);
+                const data = await resp.json();
+
+                if (!resp.ok) {
+                    throw new Error(data.detail || data.error || 'Search failed');
+                }
+
+                if (data.success && data.results.length > 0) {
+                    resultsContainer.innerHTML = data.results.map(r => {
+                        const safeId = r.id.replace(/"/g, '&quot;');
+                        return `
+                            <div class="search-result-item" data-id="${safeId}">
+                                <span class="entity-type-badge" style="background: ${getTypeColor(r.entity_type)}; color: white; font-size: 10px;">
+                                    ${r.entity_type}
+                                </span>
+                                <div style="margin-top: 6px; font-size: 13px;">${cleanNodeId(r.id)}</div>
+                            </div>
+                        `;
+                    }).join('');
+
+                    resultsContainer.querySelectorAll('.search-result-item').forEach(item => {
+                        item.addEventListener('click', () => {
+                            const nodeId = item.dataset.id;
+                            focusNode(nodeId);
+                            resultsContainer.classList.remove('show');
+                        });
+                    });
+
+                    resultsContainer.classList.add('show');
+                } else {
+                    resultsContainer.innerHTML = '<div class="search-result-item">No matching results found</div>';
+                    resultsContainer.classList.add('show');
+                }
+            } catch (error) {
+                console.error('Search failed:', error);
+                showStatus(`Search failed: ${error.message}`, true);
+            }
+        }
+
+        // === 聚焦节点 ===
+        function focusNode(nodeId) {
+            if (!sigmaInstance || !graph.hasNode(nodeId)) return;
+
+            const camera = sigmaInstance.getCamera();
+            const nodePos = sigmaInstance.getNodeDisplayData(nodeId);
+
+            if (nodePos) {
+                camera.animate({ x: nodePos.x, y: nodePos.y, ratio: 0.1 }, { duration: 500 });
+                selectNode(nodeId);
+            }
+        }
+
+        // === 初始化 ===
+        document.addEventListener('DOMContentLoaded', () => {
+            loadGraph();
+
+            // 搜索
+            document.getElementById('search-input').addEventListener('input', (e) => {
+                clearTimeout(searchTimeout);
+                searchTimeout = setTimeout(() => handleSearch(e.target.value), 300);
+            });
+
+            // 点击其他地方关闭搜索
+            document.addEventListener('click', (e) => {
+                if (!e.target.closest('.search-box')) {
+                    document.getElementById('search-results').classList.remove('show');
+                }
+            });
+
+            // 显示标签开关
+            document.getElementById('show-labels').addEventListener('change', (e) => {
+                if (sigmaInstance) {
+                    sigmaInstance.setSetting('renderLabels', e.target.checked);
+                }
+            });
+
+            // 缩放控制
+            document.getElementById('zoom-in').addEventListener('click', () => {
+                if (sigmaInstance) {
+                    const camera = sigmaInstance.getCamera();
+                    camera.animate({ ratio: camera.ratio / 1.5 }, { duration: 200 });
+                }
+            });
+
+            document.getElementById('zoom-out').addEventListener('click', () => {
+                if (sigmaInstance) {
+                    const camera = sigmaInstance.getCamera();
+                    camera.animate({ ratio: camera.ratio * 1.5 }, { duration: 200 });
+                }
+            });
+
+            document.getElementById('zoom-reset').addEventListener('click', () => {
+                if (sigmaInstance) {
+                    const camera = sigmaInstance.getCamera();
+                    camera.animate({ x: 0.5, y: 0.5, ratio: 1 }, { duration: 500 });
+                }
+            });
+
+            // === 检索功能 ===
+            const retrieveInput = document.getElementById('retrieve-input');
+            const retrieveBtn = document.getElementById('retrieve-btn');
+            const clearRetrieveBtn = document.getElementById('clear-retrieve-btn');
+            const ingestBtn = document.getElementById('ingest-btn');
+            const clearDbBtn = document.getElementById('clear-db-btn');
+            const pdfInput = document.getElementById('pdf-input');
+
+            async function ingestPdf() {
+                const file = pdfInput.files[0];
+                if (!file) {
+                    showStatus('Choose a PDF file before ingesting.', true);
+                    return;
+                }
+
+                const formData = new FormData();
+                formData.append('file', file);
+
+                ingestBtn.disabled = true;
+                ingestBtn.textContent = 'Ingesting...';
+                showStatus(`Building graph for ${file.name}. This can take a while.`);
+
+                try {
+                    const resp = await fetch('/api/documents/ingest', {
+                        method: 'POST',
+                        body: formData,
+                    });
+                    const data = await resp.json();
+
+                    if (!resp.ok) {
+                        throw new Error(data.detail || data.error || 'Ingest failed');
+                    }
+
+                    await loadGraph();
+                    renderQueryResult({
+                        answer: `Document ingested: ${data.file_name}`,
+                        hit_nodes: [],
+                        source_chunks: [],
+                        multimodal_entities: [],
+                    });
+                    showStatus(`Ingest complete: ${data.node_count} nodes and ${data.edge_count} edges built from ${data.file_name}.`);
+                } catch (error) {
+                    showStatus(`Ingest failed: ${error.message}`, true);
+                } finally {
+                    ingestBtn.disabled = false;
+                    ingestBtn.textContent = 'Ingest PDF';
+                }
+            }
+
+            async function clearStorage() {
+                clearDbBtn.disabled = true;
+                showStatus('Clearing uploaded data and generated graph artifacts...');
+
+                try {
+                    const resp = await fetch('/api/storage', { method: 'DELETE' });
+                    const data = await resp.json();
+
+                    if (!resp.ok) {
+                        throw new Error(data.detail || data.error || 'Clear failed');
+                    }
+
+                    pdfInput.value = '';
+                    retrieveInput.value = '';
+                    clearRetrieveBtn.style.display = 'none';
+                    resetGraphState();
+                    showStatus(data.message || 'Data cleared.');
+                } catch (error) {
+                    showStatus(`Clear failed: ${error.message}`, true);
+                } finally {
+                    clearDbBtn.disabled = false;
+                }
+            }
+
+            async function performRetrieval() {
+                const query = retrieveInput.value.trim();
+                if (!query) return;
+
+                retrieveBtn.textContent = 'Asking...';
+                retrieveBtn.disabled = true;
+                showStatus(`Running query: ${query}`);
+
+                try {
+                    const resp = await fetch('/api/query', {
+                        method: 'POST',
+                        headers: { 'Content-Type': 'application/json' },
+                        body: JSON.stringify({ query })
+                    });
+                    const data = await resp.json();
+
+                    if (!resp.ok) {
+                        throw new Error(data.detail || data.error || 'Query failed');
+                    }
+
+                    if (data.success) {
+                        const hitNodeIds = (data.hit_nodes || []).map(node => node.id);
+                        highlightSubgraph(hitNodeIds, data.hit_edges || [], {});
+                        clearRetrieveBtn.style.display = 'block';
+                        renderQueryResult(data);
+                        showStatus(`Query complete. ${hitNodeIds.length} nodes contributed to the answer.`);
+                    } else {
+                        throw new Error(data.message || data.error || 'No response returned');
+                    }
+                } catch (error) {
+                    console.error('Retrieval failed:', error);
+                    showStatus(`Query failed: ${error.message}`, true);
+                } finally {
+                    retrieveBtn.textContent = 'Ask';
+                    retrieveBtn.disabled = false;
+                }
+            }
+
+            // 高亮子图
+            function highlightSubgraph(nodeIds, edges, scores) {
+                if (!graph || !sigmaInstance) return;
+
+                const nodeSet = new Set(nodeIds);
+                console.log("Retrieval nodes:", nodeIds);
+                console.log("Graph nodes sample:", graph.nodes().slice(0, 5));
+
+                let matchedCount = 0;
+
+                // 保存原始属性并淡化所有节点
+                graph.forEachNode((nodeId, attrs) => {
+                    if (!originalNodeAttrs[nodeId]) {
+                        originalNodeAttrs[nodeId] = {
+                            size: attrs.size,
+                            color: attrs.color,
+                            label: attrs.label
+                        };
+                    }
+
+                    if (nodeSet.has(nodeId)) {
+                        matchedCount++;
+                        // 检索到的节点：高亮、放大，保持原色（与选中逻辑一致）
+                        const highlightSize = Math.max((attrs.originalSize || attrs.size) * 2, 10);
+                        graph.setNodeAttribute(nodeId, 'size', highlightSize);
+                        // 使用保存的原始颜色，如果没有则使用当前属性中的 color 或 originalColor
+                        const originalColor = originalNodeAttrs[nodeId]?.color || attrs.originalColor || attrs.color;
+                        graph.setNodeAttribute(nodeId, 'color', originalColor);
+                        graph.setNodeAttribute(nodeId, 'zIndex', 1000);
+                        graph.setNodeAttribute(nodeId, 'label', cleanNodeId(nodeId));
+                    } else {
+                        // 其他节点：淡化
+                        graph.setNodeAttribute(nodeId, 'color', '#3d3654');
+                        graph.setNodeAttribute(nodeId, 'label', '');
+                        graph.setNodeAttribute(nodeId, 'zIndex', 0);
+                    }
+                });
+
+                console.log("Matched nodes:", matchedCount, "of", nodeIds.length);
+
+                // 淡化/高亮边
+                graph.forEachEdge((edgeId, attrs, source, target) => {
+                    if (nodeSet.has(source) && nodeSet.has(target)) {
+                        // 两端都在结果中的边：高亮
+                        const sourceColor = originalNodeAttrs[source]?.color || attrs.originalColor;
+                        graph.setEdgeAttribute(edgeId, 'color', sourceColor || '#a78bfa');
+                        graph.setEdgeAttribute(edgeId, 'size', 3);
+                        graph.setEdgeAttribute(edgeId, 'zIndex', 500);
+                    } else {
+                        // 其他边：淡化
+                        graph.setEdgeAttribute(edgeId, 'color', '#2d2644');
+                        graph.setEdgeAttribute(edgeId, 'size', 0.5);
+                        graph.setEdgeAttribute(edgeId, 'zIndex', 0);
+                    }
+                });
+
+                sigmaInstance.refresh();
+
+                // 更新详情面板显示匹配情况
+                if (matchedCount === 0 && nodeIds.length > 0) {
+                    document.getElementById('detail-content').innerHTML += `
+                        <div class="detail-field" style="color: #fbbf24;">
+                            <div class="detail-label">Warning</div>
+                            <div class="detail-value">Node ID formats may not match. Check the console log.</div>
+                        </div>
+                    `;
+                }
+            }
+
+            retrieveBtn.addEventListener('click', performRetrieval);
+            ingestBtn.addEventListener('click', ingestPdf);
+            clearDbBtn.addEventListener('click', clearStorage);
+            retrieveInput.addEventListener('keypress', (e) => {
+                if (e.key === 'Enter') performRetrieval();
+            });
+
+            clearRetrieveBtn.addEventListener('click', () => {
+                clearSelection();
+                clearRetrieveBtn.style.display = 'none';
+                retrieveInput.value = '';
+                document.getElementById('detail-content').innerHTML =
+                    '<div style="color: var(--text-tertiary);">Ask a question to see the answer and hit nodes.</div>';
+            });
+        });
+    </script>
+</body>
+
+</html>

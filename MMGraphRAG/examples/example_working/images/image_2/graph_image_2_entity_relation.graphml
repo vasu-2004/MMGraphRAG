@@ -1,0 +1,161 @@
+<?xml version='1.0' encoding='utf-8'?>
+<graphml xmlns="http://graphml.graphdrawing.org/xmlns" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://graphml.graphdrawing.org/xmlns http://graphml.graphdrawing.org/xmlns/1.0/graphml.xsd"><key id="d6" for="edge" attr.name="order" attr.type="long"/>
+<key id="d5" for="edge" attr.name="source_id" attr.type="string"/>
+<key id="d4" for="edge" attr.name="description" attr.type="string"/>
+<key id="d3" for="edge" attr.name="weight" attr.type="double"/>
+<key id="d2" for="node" attr.name="source_id" attr.type="string"/>
+<key id="d1" for="node" attr.name="description" attr.type="string"/>
+<key id="d0" for="node" attr.name="entity_type" attr.type="string"/>
+<graph edgedefault="undirected"><node id="&quot;IMAGE_2&quot;">
+  <data key="d0">"ORI_IMG"</data>
+  <data key="d1">"The image displays a mathematical formula representing the cross-entropy (CE) loss function used in binary classification tasks. The formula is written in LaTeX-style notation and reads: CE = -\frac{1}{N} \sum_{i} \sum_{j \in \{0,1\}} y_{ij} \log p_{ij}. This equation computes the average cross-entropy loss over N training instances. For each instance i, the sum is taken over the two possible class labels j ∈ {0,1}, where y_ij represents the true label (either 0 or 1) and p_ij denotes the predicted probability for class j. The logarithm of the predicted probability is weighted by the true label, ensuring that only the log-probability of the correct class contributes to the loss. The negative sign ensures the loss is positive, and dividing by N normalizes the total loss across all samples. The context explains that this formulation applies to binary classification with one-hot encoded labels and can be extended to multi-class settings. It also mentions that each training instance contributes equally to the final objective, and strategies like class weighting or resampling are used when unequal treatment of instances is desired."</data>
+  <data key="d2">examples/example_working/images/image_2.jpg</data>
+</node>
+<node id="&quot;CE&quot;">
+  <data key="d0">"ORGANIZATION"</data>
+  <data key="d1">"Cross-entropy loss function, commonly used in machine learning for classification tasks."</data>
+  <data key="d2">examples/example_working/images/image_2.jpg</data>
+</node>
+<node id="&quot;N&quot;">
+  <data key="d0">"ORGANIZATION"</data>
+  <data key="d1">"Total number of samples in the dataset."</data>
+  <data key="d2">examples/example_working/images/image_2.jpg</data>
+</node>
+<node id="&quot;I&quot;">
+  <data key="d0">"ORGANIZATION"</data>
+  <data key="d1">"Index variable representing individual samples in the dataset."</data>
+  <data key="d2">examples/example_working/images/image_2.jpg</data>
+</node>
+<node id="&quot;J&quot;">
+  <data key="d0">"ORGANIZATION"</data>
+  <data key="d1">"Index variable representing class labels, taking values in the set {0,1} for binary classification."</data>
+  <data key="d2">examples/example_working/images/image_2.jpg</data>
+</node>
+<node id="&quot;Y_IJ&quot;">
+  <data key="d0">"ORGANIZATION"</data>
+  <data key="d1">"True label for sample i and class j, typically 1 if the sample belongs to class j, otherwise 0."</data>
+  <data key="d2">examples/example_working/images/image_2.jpg</data>
+</node>
+<node id="&quot;P_IJ&quot;">
+  <data key="d0">"ORGANIZATION"</data>
+  <data key="d1">"Predicted probability that sample i belongs to class j, output from a model such as a sigmoid or softmax function."</data>
+  <data key="d2">examples/example_working/images/image_2.jpg</data>
+</node>
+<node id="&quot;LOG&quot;">
+  <data key="d0">"ORGANIZATION"</data>
+  <data key="d1">"Natural logarithm function applied to the predicted probability p_ij."</data>
+  <data key="d2">examples/example_working/images/image_2.jpg</data>
+</node>
+<node id="&quot;SUMMATION OVER I&quot;">
+  <data key="d0">"ORGANIZATION"</data>
+  <data key="d1">"Outer summation over all samples in the dataset."</data>
+  <data key="d2">examples/example_working/images/image_2.jpg</data>
+</node>
+<node id="&quot;SUMMATION OVER J&quot;">
+  <data key="d0">"ORGANIZATION"</data>
+  <data key="d1">"Inner summation over all possible class labels (0 and 1) for each sample."</data>
+  <data key="d2">examples/example_working/images/image_2.jpg</data>
+</node>
+<edge source="&quot;IMAGE_2&quot;" target="&quot;CE&quot;">
+  <data key="d3">10.0</data>
+  <data key="d4">"CE是从image_2中提取的实体。"</data>
+  <data key="d5">examples/example_working/images/image_2.jpg</data>
+  <data key="d6">1</data>
+</edge>
+<edge source="&quot;IMAGE_2&quot;" target="&quot;N&quot;">
+  <data key="d3">10.0</data>
+  <data key="d4">"N是从image_2中提取的实体。"</data>
+  <data key="d5">examples/example_working/images/image_2.jpg</data>
+  <data key="d6">1</data>
+</edge>
+<edge source="&quot;IMAGE_2&quot;" target="&quot;I&quot;">
+  <data key="d3">10.0</data>
+  <data key="d4">"i是从image_2中提取的实体。"</data>
+  <data key="d5">examples/example_working/images/image_2.jpg</data>
+  <data key="d6">1</data>
+</edge>
+<edge source="&quot;IMAGE_2&quot;" target="&quot;J&quot;">
+  <data key="d3">10.0</data>
+  <data key="d4">"j是从image_2中提取的实体。"</data>
+  <data key="d5">examples/example_working/images/image_2.jpg</data>
+  <data key="d6">1</data>
+</edge>
+<edge source="&quot;IMAGE_2&quot;" target="&quot;Y_IJ&quot;">
+  <data key="d3">10.0</data>
+  <data key="d4">"y_ij是从image_2中提取的实体。"</data>
+  <data key="d5">examples/example_working/images/image_2.jpg</data>
+  <data key="d6">1</data>
+</edge>
+<edge source="&quot;IMAGE_2&quot;" target="&quot;P_IJ&quot;">
+  <data key="d3">10.0</data>
+  <data key="d4">"p_ij是从image_2中提取的实体。"</data>
+  <data key="d5">examples/example_working/images/image_2.jpg</data>
+  <data key="d6">1</data>
+</edge>
+<edge source="&quot;IMAGE_2&quot;" target="&quot;LOG&quot;">
+  <data key="d3">10.0</data>
+  <data key="d4">"log是从image_2中提取的实体。"</data>
+  <data key="d5">examples/example_working/images/image_2.jpg</data>
+  <data key="d6">1</data>
+</edge>
+<edge source="&quot;IMAGE_2&quot;" target="&quot;SUMMATION OVER I&quot;">
+  <data key="d3">10.0</data>
+  <data key="d4">"Summation over i是从image_2中提取的实体。"</data>
+  <data key="d5">examples/example_working/images/image_2.jpg</data>
+  <data key="d6">1</data>
+</edge>
+<edge source="&quot;IMAGE_2&quot;" target="&quot;SUMMATION OVER J&quot;">
+  <data key="d3">10.0</data>
+  <data key="d4">"Summation over j是从image_2中提取的实体。"</data>
+  <data key="d5">examples/example_working/images/image_2.jpg</data>
+  <data key="d6">1</data>
+</edge>
+<edge source="&quot;CE&quot;" target="&quot;N&quot;">
+  <data key="d3">9.0</data>
+  <data key="d4">"The cross-entropy loss is normalized by dividing by N, the total number of samples."</data>
+  <data key="d5">examples/example_working/images/image_2.jpg</data>
+  <data key="d6">1</data>
+</edge>
+<edge source="&quot;CE&quot;" target="&quot;Y_IJ&quot;">
+  <data key="d3">8.0</data>
+  <data key="d4">"The true labels y_ij are used to compute the cross-entropy loss."</data>
+  <data key="d5">examples/example_working/images/image_2.jpg</data>
+  <data key="d6">1</data>
+</edge>
+<edge source="&quot;CE&quot;" target="&quot;P_IJ&quot;">
+  <data key="d3">8.0</data>
+  <data key="d4">"The predicted probabilities p_ij are directly used in the computation of cross-entropy."</data>
+  <data key="d5">examples/example_working/images/image_2.jpg</data>
+  <data key="d6">1</data>
+</edge>
+<edge source="&quot;CE&quot;" target="&quot;LOG&quot;">
+  <data key="d3">7.0</data>
+  <data key="d4">"The logarithm function is applied to p_ij to measure the uncertainty in predictions."</data>
+  <data key="d5">examples/example_working/images/image_2.jpg</data>
+  <data key="d6">1</data>
+</edge>
+<edge source="&quot;N&quot;" target="&quot;SUMMATION OVER I&quot;">
+  <data key="d3">8.0</data>
+  <data key="d4">"The outer summation runs over all N samples."</data>
+  <data key="d5">examples/example_working/images/image_2.jpg</data>
+  <data key="d6">1</data>
+</edge>
+<edge source="&quot;J&quot;" target="&quot;SUMMATION OVER J&quot;">
+  <data key="d3">9.0</data>
+  <data key="d4">"The inner summation iterates over the two possible class labels, j ∈ {0,1}."</data>
+  <data key="d5">examples/example_working/images/image_2.jpg</data>
+  <data key="d6">1</data>
+</edge>
+<edge source="&quot;Y_IJ&quot;" target="&quot;P_IJ&quot;">
+  <data key="d3">8.0</data>
+  <data key="d4">"The true labels y_ij and predicted probabilities p_ij are paired in the formula to evaluate prediction accuracy."</data>
+  <data key="d5">examples/example_working/images/image_2.jpg</data>
+  <data key="d6">1</data>
+</edge>
+<edge source="&quot;SUMMATION OVER I&quot;" target="&quot;SUMMATION OVER J&quot;">
+  <data key="d3">9.0</data>
+  <data key="d4">"The inner summation over j is nested within the outer summation over i, indicating per-sample evaluation across classes."</data>
+  <data key="d5">examples/example_working/images/image_2.jpg</data>
+  <data key="d6">1</data>
+</edge>
+</graph></graphml>

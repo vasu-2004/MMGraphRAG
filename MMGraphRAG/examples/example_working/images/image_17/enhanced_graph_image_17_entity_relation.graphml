@@ -1,0 +1,293 @@
+<?xml version='1.0' encoding='utf-8'?>
+<graphml xmlns="http://graphml.graphdrawing.org/xmlns" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://graphml.graphdrawing.org/xmlns http://graphml.graphdrawing.org/xmlns/1.0/graphml.xsd"><key id="d6" for="edge" attr.name="order" attr.type="long"/>
+<key id="d5" for="edge" attr.name="source_id" attr.type="string"/>
+<key id="d4" for="edge" attr.name="description" attr.type="string"/>
+<key id="d3" for="edge" attr.name="weight" attr.type="double"/>
+<key id="d2" for="node" attr.name="source_id" attr.type="string"/>
+<key id="d1" for="node" attr.name="description" attr.type="string"/>
+<key id="d0" for="node" attr.name="entity_type" attr.type="string"/>
+<graph edgedefault="undirected"><node id="&quot;English WSJ&quot;">
+  <data key="d0">"GEO"</data>
+  <data key="d1">English WSJ refers to the Wall Street Journal portion of the Penn Treebank, a widely used benchmark dataset for evaluating part-of-speech tagging and named entity recognition models in English. It contains professionally written news text with high-quality linguistic annotations, making it a standard resource in natural language processing research.</data>
+  <data key="d2">examples/example_working/images/image_17.jpg</data>
+</node>
+<node id="&quot;English Tweets&quot;">
+  <data key="d0">"GEO"</data>
+  <data key="d1">English Tweets is a dataset composed of informal, user-generated English-language tweets commonly used to evaluate the robustness of NLP models—particularly named entity recognition and part-of-speech tagging systems—in handling noisy, colloquial, and syntactically irregular text typical of social media.</data>
+  <data key="d2">examples/example_working/images/image_17.jpg</data>
+</node>
+<node id="&quot;Meta BiLSTM&quot;">
+  <data key="d0">"ORGANIZATION"</data>
+  <data key="d1">Meta BiLSTM is a neural architecture for part-of-speech tagging and named entity recognition proposed by Bohnet et al. (2018). It employs a bidirectional LSTM (BiLSTM) enhanced with meta-learning or multi-task learning strategies to improve generalization across domains and languages, achieving strong performance on benchmarks like the English WSJ.</data>
+  <data key="d2">examples/example_working/images/image_17.jpg</data>
+</node>
+<node id="&quot;BERT-TAGGER&quot;">
+  <data key="d0">"ORGANIZATION"</data>
+  <data key="d1">"A named entity recognition model based on BERT (Bidirectional Encoder Representations from Transformers) introduced by Devlin et al. (2018)."</data>
+  <data key="d2">examples/example_working/images/image_17.jpg</data>
+</node>
+<node id="&quot;BERT-Tagger+FL&quot;">
+  <data key="d0">"ORGANIZATION"</data>
+  <data key="d1">BERT-Tagger+FL is an enhanced variant of the BERT-Tagger model that incorporates Focal Loss (FL), a loss function originally introduced by Lin et al. (2017) to address class imbalance by down-weighting well-classified examples during training. This adaptation improves performance on tasks like part-of-speech tagging, especially in datasets with skewed label distributions.</data>
+  <data key="d2">examples/example_working/images/image_17.jpg</data>
+</node>
+<node id="&quot;BERT-Tagger+DL&quot;">
+  <data key="d0">"ORGANIZATION"</data>
+  <data key="d1">BERT-Tagger+DL is an extension of the BERT-Tagger model that integrates Dice Loss (DL), a training objective derived from the Dice coefficient (DSC). DL is designed to directly optimize for F1 score by focusing more on hard-to-classify examples and mitigating the dominance of easy negatives during training, leading to improved recall and F1 performance.</data>
+  <data key="d2">examples/example_working/images/image_17.jpg</data>
+</node>
+<node id="&quot;BERT-Tagger+DSC&quot;">
+  <data key="d0">"ORGANIZATION"</data>
+  <data key="d1">BERT-Tagger+DSC is a version of the BERT-Tagger model that uses a self-adjusting Dice coefficient (DSC)-based loss function. This approach dynamically reweights training examples based on prediction confidence—reducing the influence of easy examples and emphasizing harder cases—to better align optimization with the F1 evaluation metric, resulting in consistent gains across multiple datasets.</data>
+  <data key="d2">examples/example_working/images/image_17.jpg</data>
+</node>
+<node id="&quot;FASTTEXT+CNN+CRF&quot;">
+  <data key="d0">"ORGANIZATION"</data>
+  <data key="d1">"A hybrid model combining FastText embeddings, CNN layers, and CRF layer proposed by Godin (2019) for named entity recognition in tweets."</data>
+  <data key="d2">examples/example_working/images/image_17.jpg</data>
+</node>
+<node id="&quot;IMAGE_17&quot;">
+  <data key="d0">"ORI_IMG"</data>
+  <data key="d1">IMAGE_17 is a table labeled "Table 4: Experimental results for English POS datasets," which presents performance metrics for various models on two English part-of-speech (POS) tagging datasets: English WSJ and English Tweets. The table is organized into two main sections, each dedicated to one dataset, and reports three evaluation metrics—Precision (Prec.), Recall (Rec.), and F1 score—for each model.
+
+In the English WSJ section, the evaluated models include Meta BiLSTM (Bohnet et al., 2018), BERT-Tagger (Devlin et al., 2018), and three enhanced variants of BERT-Tagger incorporating different loss functions: BERT-Tagger+FL (focal loss), BERT-Tagger+DL (dice loss), and BERT-Tagger+DSC (Dice Soft Cross-Entropy). Their respective results are as follows:  
+- Meta BiLSTM: Prec. = –, Rec. = –, F1 = 98.23  
+- BERT-Tagger: Prec. = 99.21, Rec. = 98.36, F1 = 98.86  
+- BERT-Tagger+FL: Prec. = 98.36, Rec. = 98.97, F1 = 98.88 (+0.02)  
+- BERT-Tagger+DL: Prec. = 99.34, Rec. = 98.22, F1 = 98.91 (+0.05)  
+- BERT-Tagger+DSC: Prec. = 99.41, Rec. = 98.93, F1 = 99.38 (+0.52)  
+
+In the English Tweets section, the models evaluated are FastText+CNN+CRF (Godin, 2019), BERT-Tagger, and its three enhanced variants. Their performance metrics are:  
+- FastText+CNN+CRF: Prec. = –, Rec. = –, F1 = 91.78  
+- BERT-Tagger: Prec. = 92.33, Rec. = 91.98, F1 = 92.34</data>
+  <data key="d2">examples/example_working/images/image_17.jpg</data>
+</node>
+<node id="&quot;BOHNET ET AL., 2018&quot;">
+  <data key="d2">examples/example_working/images/image_17.jpg</data>
+  <data key="d1">"Bohnet et al., 2018是从image_17中提取的实体。"</data>
+  <data key="d0">"UNKNOWN"</data>
+</node>
+<node id="&quot;DEVLIN ET AL., 2018&quot;">
+  <data key="d2">examples/example_working/images/image_17.jpg</data>
+  <data key="d1">"Devlin et al., 2018是从image_17中提取的实体。"</data>
+  <data key="d0">"UNKNOWN"</data>
+</node>
+<node id="&quot;GODIN, 2019&quot;">
+  <data key="d2">examples/example_working/images/image_17.jpg</data>
+  <data key="d1">"Godin, 2019是从image_17中提取的实体。"</data>
+  <data key="d0">"UNKNOWN"</data>
+</node>
+<node id="&quot;Precision (Prec.)&quot;">
+  <data key="d2">examples/example_working/images/image_17.jpg</data>
+  <data key="d1">Precision (abbreviated as Prec.) is an evaluation metric in information extraction and classification tasks that measures the proportion of correctly predicted positive instances among all instances predicted as positive. It is defined as TP / (TP + FP), where TP is true positives and FP is false positives. In the context of named entity recognition, it reflects how many of the predicted entities are correct.</data>
+  <data key="d0">"UNKNOWN"</data>
+</node>
+<node id="&quot;Recall (Rec.)&quot;">
+  <data key="d2">examples/example_working/images/image_17.jpg</data>
+  <data key="d1">Recall (abbreviated as Rec.) is an evaluation metric that quantifies the ability of a model to identify all relevant instances. It is calculated as TP / (TP + FN), where TP is true positives and FN is false negatives. In named entity recognition, recall indicates the fraction of actual entities that were successfully detected by the model.</data>
+  <data key="d0">"UNKNOWN"</data>
+</node>
+<node id="&quot;F1 Score&quot;">
+  <data key="d2">examples/example_working/images/image_17.jpg</data>
+  <data key="d1">The F1 score is the harmonic mean of precision and recall, providing a single metric that balances both concerns. It is computed as 2 × (Precision × Recall) / (Precision + Recall). The F1 score is equivalent to the Dice coefficient (DSC) when applied to binary classification or set similarity evaluation, and it is widely used to assess the performance of named entity recognition and part-of-speech tagging systems.</data>
+  <data key="d0">"UNKNOWN"</data>
+</node>
+<edge source="&quot;English WSJ&quot;" target="&quot;IMAGE_17&quot;">
+  <data key="d3">10.0</data>
+  <data key="d4">"English WSJ是从image_17中提取的实体。"</data>
+  <data key="d5">examples/example_working/images/image_17.jpg</data>
+  <data key="d6">1</data>
+</edge>
+<edge source="&quot;English WSJ&quot;" target="&quot;Meta BiLSTM&quot;">
+  <data key="d3">8.0</data>
+  <data key="d4">"The Meta BiLSTM model was evaluated on the English WSJ dataset, achieving an F1 score of 98.23."</data>
+  <data key="d5">examples/example_working/images/image_17.jpg</data>
+  <data key="d6">1</data>
+</edge>
+<edge source="&quot;English WSJ&quot;" target="&quot;BERT-TAGGER&quot;">
+  <data key="d3">9.0</data>
+  <data key="d4">"The BERT-Tagger model was evaluated on the English WSJ dataset, achieving an F1 score of 98.86."</data>
+  <data key="d5">examples/example_working/images/image_17.jpg</data>
+  <data key="d6">1</data>
+</edge>
+<edge source="&quot;English WSJ&quot;" target="&quot;BERT-Tagger+FL&quot;">
+  <data key="d3">8.0</data>
+  <data key="d4">"The BERT-Tagger+FL model was evaluated on the English WSJ dataset, achieving an F1 score of 98.88."</data>
+  <data key="d5">examples/example_working/images/image_17.jpg</data>
+  <data key="d6">1</data>
+</edge>
+<edge source="&quot;English WSJ&quot;" target="&quot;BERT-Tagger+DL&quot;">
+  <data key="d3">8.0</data>
+  <data key="d4">"The BERT-Tagger+DL model was evaluated on the English WSJ dataset, achieving an F1 score of 98.91."</data>
+  <data key="d5">examples/example_working/images/image_17.jpg</data>
+  <data key="d6">1</data>
+</edge>
+<edge source="&quot;English WSJ&quot;" target="&quot;BERT-Tagger+DSC&quot;">
+  <data key="d3">9.0</data>
+  <data key="d4">"The BERT-Tagger+DSC model was evaluated on the English WSJ dataset, achieving an F1 score of 99.38."</data>
+  <data key="d5">examples/example_working/images/image_17.jpg</data>
+  <data key="d6">1</data>
+</edge>
+<edge source="&quot;English Tweets&quot;" target="&quot;IMAGE_17&quot;">
+  <data key="d3">10.0</data>
+  <data key="d4">"English Tweets是从image_17中提取的实体。"</data>
+  <data key="d5">examples/example_working/images/image_17.jpg</data>
+  <data key="d6">1</data>
+</edge>
+<edge source="&quot;English Tweets&quot;" target="&quot;FASTTEXT+CNN+CRF&quot;">
+  <data key="d3">8.0</data>
+  <data key="d4">"The FastText+CNN+CRF model was evaluated on the English Tweets dataset, achieving an F1 score of 91.78."</data>
+  <data key="d5">examples/example_working/images/image_17.jpg</data>
+  <data key="d6">1</data>
+</edge>
+<edge source="&quot;English Tweets&quot;" target="&quot;BERT-TAGGER&quot;">
+  <data key="d3">9.0</data>
+  <data key="d4">"The BERT-Tagger model was evaluated on the English Tweets dataset, achieving an F1 score of 92.34."</data>
+  <data key="d5">examples/example_working/images/image_17.jpg</data>
+  <data key="d6">1</data>
+</edge>
+<edge source="&quot;English Tweets&quot;" target="&quot;BERT-Tagger+FL&quot;">
+  <data key="d3">8.0</data>
+  <data key="d4">"The BERT-Tagger+FL model was evaluated on the English Tweets dataset, achieving an F1 score of 92.47."</data>
+  <data key="d5">examples/example_working/images/image_17.jpg</data>
+  <data key="d6">1</data>
+</edge>
+<edge source="&quot;English Tweets&quot;" target="&quot;BERT-Tagger+DL&quot;">
+  <data key="d3">8.0</data>
+  <data key="d4">"The BERT-Tagger+DL model was evaluated on the English Tweets dataset, achieving an F1 score of 92.52."</data>
+  <data key="d5">examples/example_working/images/image_17.jpg</data>
+  <data key="d6">1</data>
+</edge>
+<edge source="&quot;English Tweets&quot;" target="&quot;BERT-Tagger+DSC&quot;">
+  <data key="d3">9.0</data>
+  <data key="d4">"The BERT-Tagger+DSC model was evaluated on the English Tweets dataset, achieving an F1 score of 92.58."</data>
+  <data key="d5">examples/example_working/images/image_17.jpg</data>
+  <data key="d6">1</data>
+</edge>
+<edge source="&quot;Meta BiLSTM&quot;" target="&quot;IMAGE_17&quot;">
+  <data key="d3">10.0</data>
+  <data key="d4">"Meta BiLSTM是从image_17中提取的实体。"</data>
+  <data key="d5">examples/example_working/images/image_17.jpg</data>
+  <data key="d6">1</data>
+</edge>
+<edge source="&quot;BERT-TAGGER&quot;" target="&quot;IMAGE_17&quot;">
+  <data key="d3">10.0</data>
+  <data key="d4">"BERT-Tagger是从image_17中提取的实体。"</data>
+  <data key="d5">examples/example_working/images/image_17.jpg</data>
+  <data key="d6">1</data>
+</edge>
+<edge source="&quot;BERT-TAGGER&quot;" target="&quot;BERT-Tagger+FL&quot;">
+  <data key="d3">9.0</data>
+  <data key="d4">"BERT-Tagger+FL is an extension of the BERT-Tagger model with additional feature learning techniques."</data>
+  <data key="d5">examples/example_working/images/image_17.jpg</data>
+  <data key="d6">1</data>
+</edge>
+<edge source="&quot;BERT-TAGGER&quot;" target="&quot;BERT-Tagger+DL&quot;">
+  <data key="d3">9.0</data>
+  <data key="d4">"BERT-Tagger+DL is an extension of the BERT-Tagger model incorporating deep learning enhancements."</data>
+  <data key="d5">examples/example_working/images/image_17.jpg</data>
+  <data key="d6">1</data>
+</edge>
+<edge source="&quot;BERT-TAGGER&quot;" target="&quot;BERT-Tagger+DSC&quot;">
+  <data key="d3">9.0</data>
+  <data key="d4">"BERT-Tagger+DSC is an enhanced version of the BERT-Tagger model using data selection criteria or similar methods."</data>
+  <data key="d5">examples/example_working/images/image_17.jpg</data>
+  <data key="d6">1</data>
+</edge>
+<edge source="&quot;BERT-Tagger+FL&quot;" target="&quot;IMAGE_17&quot;">
+  <data key="d3">10.0</data>
+  <data key="d4">"BERT-Tagger+FL是从image_17中提取的实体。"</data>
+  <data key="d5">examples/example_working/images/image_17.jpg</data>
+  <data key="d6">1</data>
+</edge>
+<edge source="&quot;BERT-Tagger+FL&quot;" target="&quot;BERT-Tagger+DL&quot;">
+  <data key="d3">7.0</data>
+  <data key="d4">"Both models are variants of BERT-Tagger with different enhancement strategies, showing incremental improvements."</data>
+  <data key="d5">examples/example_working/images/image_17.jpg</data>
+  <data key="d6">1</data>
+</edge>
+<edge source="&quot;BERT-Tagger+FL&quot;" target="&quot;BERT-Tagger+DSC&quot;">
+  <data key="d3">7.0</data>
+  <data key="d4">"Both models are extensions of BERT-Tagger with distinct improvement mechanisms, yielding comparable performance gains."</data>
+  <data key="d5">examples/example_working/images/image_17.jpg</data>
+  <data key="d6">1</data>
+</edge>
+<edge source="&quot;BERT-Tagger+DL&quot;" target="&quot;IMAGE_17&quot;">
+  <data key="d3">10.0</data>
+  <data key="d4">"BERT-Tagger+DL是从image_17中提取的实体。"</data>
+  <data key="d5">examples/example_working/images/image_17.jpg</data>
+  <data key="d6">1</data>
+</edge>
+<edge source="&quot;BERT-Tagger+DL&quot;" target="&quot;BERT-Tagger+DSC&quot;">
+  <data key="d3">7.0</data>
+  <data key="d4">"Both models represent advanced versions of BERT-Tagger, differing in their enhancement approaches but achieving high F1 scores."</data>
+  <data key="d5">examples/example_working/images/image_17.jpg</data>
+  <data key="d6">1</data>
+</edge>
+<edge source="&quot;BERT-Tagger+DSC&quot;" target="&quot;IMAGE_17&quot;">
+  <data key="d3">10.0</data>
+  <data key="d4">"BERT-Tagger+DSC是从image_17中提取的实体。"</data>
+  <data key="d5">examples/example_working/images/image_17.jpg</data>
+  <data key="d6">1</data>
+</edge>
+<edge source="&quot;FASTTEXT+CNN+CRF&quot;" target="&quot;IMAGE_17&quot;">
+  <data key="d3">10.0</data>
+  <data key="d4">"FastText+CNN+CRF是从image_17中提取的实体。"</data>
+  <data key="d5">examples/example_working/images/image_17.jpg</data>
+  <data key="d6">1</data>
+</edge>
+<edge source="&quot;IMAGE_17&quot;" target="&quot;BOHNET ET AL., 2018&quot;">
+  <data key="d3">10.0</data>
+  <data key="d4">"Bohnet et al., 2018是从image_17中提取的实体。"</data>
+  <data key="d5">examples/example_working/images/image_17.jpg</data>
+  <data key="d6">1</data>
+</edge>
+<edge source="&quot;IMAGE_17&quot;" target="&quot;DEVLIN ET AL., 2018&quot;">
+  <data key="d3">10.0</data>
+  <data key="d4">"Devlin et al., 2018是从image_17中提取的实体。"</data>
+  <data key="d5">examples/example_working/images/image_17.jpg</data>
+  <data key="d6">1</data>
+</edge>
+<edge source="&quot;IMAGE_17&quot;" target="&quot;GODIN, 2019&quot;">
+  <data key="d3">10.0</data>
+  <data key="d4">"Godin, 2019是从image_17中提取的实体。"</data>
+  <data key="d5">examples/example_working/images/image_17.jpg</data>
+  <data key="d6">1</data>
+</edge>
+<edge source="&quot;IMAGE_17&quot;" target="&quot;Precision (Prec.)&quot;">
+  <data key="d3">10.0</data>
+  <data key="d4">"Prec.是从image_17中提取的实体。"</data>
+  <data key="d5">examples/example_working/images/image_17.jpg</data>
+  <data key="d6">1</data>
+</edge>
+<edge source="&quot;IMAGE_17&quot;" target="&quot;Recall (Rec.)&quot;">
+  <data key="d3">10.0</data>
+  <data key="d4">"Rec.是从image_17中提取的实体。"</data>
+  <data key="d5">examples/example_working/images/image_17.jpg</data>
+  <data key="d6">1</data>
+</edge>
+<edge source="&quot;IMAGE_17&quot;" target="&quot;F1 Score&quot;">
+  <data key="d3">10.0</data>
+  <data key="d4">"F1是从image_17中提取的实体。"</data>
+  <data key="d5">examples/example_working/images/image_17.jpg</data>
+  <data key="d6">1</data>
+</edge>
+<edge source="&quot;Precision (Prec.)&quot;" target="&quot;Recall (Rec.)&quot;">
+  <data key="d3">9.0</data>
+  <data key="d4">"Precision and recall are complementary metrics that together inform the F1 score, which balances both."</data>
+  <data key="d5">examples/example_working/images/image_17.jpg</data>
+  <data key="d6">1</data>
+</edge>
+<edge source="&quot;Precision (Prec.)&quot;" target="&quot;F1 Score&quot;">
+  <data key="d3">9.0</data>
+  <data key="d4">"F1 score is derived from precision and recall, emphasizing their combined importance in model evaluation."</data>
+  <data key="d5">examples/example_working/images/image_17.jpg</data>
+  <data key="d6">1</data>
+</edge>
+<edge source="&quot;Recall (Rec.)&quot;" target="&quot;F1 Score&quot;">
+  <data key="d3">9.0</data>
+  <data key="d4">"F1 score depends on recall, along with precision, to evaluate model performance comprehensively."</data>
+  <data key="d5">examples/example_working/images/image_17.jpg</data>
+  <data key="d6">1</data>
+</edge>
+</graph></graphml>

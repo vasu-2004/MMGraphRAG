@@ -1,0 +1,13 @@
+<?xml version='1.0' encoding='utf-8'?>
+<graphml xmlns="http://graphml.graphdrawing.org/xmlns" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://graphml.graphdrawing.org/xmlns http://graphml.graphdrawing.org/xmlns/1.0/graphml.xsd">
+  <key id="d2" for="node" attr.name="source_id" attr.type="string" />
+  <key id="d1" for="node" attr.name="description" attr.type="string" />
+  <key id="d0" for="node" attr.name="entity_type" attr.type="string" />
+  <graph edgedefault="undirected">
+    <node id="&quot;IMAGE_15&quot;">
+      <data key="d0">"ORI_IMG"</data>
+      <data key="d1">"The image is a placeholder, depicted as a large, stylized white question mark centered against a solid black background. The question mark appears to have a slightly glowing or embossed effect, giving it a three-dimensional quality, though the overall image is simple and monochromatic. This placeholder typically indicates that the intended image content is missing or could not be loaded."</data>
+      <data key="d2">test_runs/test_mmrag_working\images\image_15.jpg</data>
+    </node>
+  </graph>
+</graphml>

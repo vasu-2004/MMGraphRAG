@@ -1,0 +1,39 @@
+<?xml version='1.0' encoding='utf-8'?>
+<graphml xmlns="http://graphml.graphdrawing.org/xmlns" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://graphml.graphdrawing.org/xmlns http://graphml.graphdrawing.org/xmlns/1.0/graphml.xsd">
+  <key id="d6" for="edge" attr.name="order" attr.type="long" />
+  <key id="d5" for="edge" attr.name="source_id" attr.type="string" />
+  <key id="d4" for="edge" attr.name="description" attr.type="string" />
+  <key id="d3" for="edge" attr.name="weight" attr.type="double" />
+  <key id="d2" for="node" attr.name="source_id" attr.type="string" />
+  <key id="d1" for="node" attr.name="description" attr.type="string" />
+  <key id="d0" for="node" attr.name="entity_type" attr.type="string" />
+  <graph edgedefault="undirected">
+    <node id="&quot;IMAGE_17&quot;">
+      <data key="d0">"ORI_IMG"</data>
+      <data key="d1">"The image displays a small, low-resolution, pixelated icon set against a solid black background. The icon itself is rendered in shades of white and light gray, creating a stark contrast. It depicts a simplified, front-facing representation of what appears to be a vehicle, possibly a bus, van, or trailer. The main body of the vehicle is a horizontal rectangle, slightly wider than it is tall. Within this larger rectangle, two smaller, squarish or rectangular shapes are centrally placed, side-by-side, which could represent windows or headlights. Below the main body, a small, dark, circular or oval shape is visible, suggesting a wheel or a hitch point. The overall design is highly stylized and abstract, typical of a pictogram or symbol, lacking fine details due to its limited resolution."</data>
+      <data key="d2">test_runs/test_mmrag_working\images\image_17.jpg</data>
+    </node>
+    <node id="&quot;VEHICLE&quot;">
+      <data key="d0">"OBJECT"</data>
+      <data key="d1">A highly pixelated, white silhouette of a generic vehicle, possibly a car, bus, or van, viewed from the side, depicted as a simple icon or sprite. Within the context of Yellowstone National Park, various types of vehicles are discussed, including motor vehicles, over-snow vehicles, wheeled vehicles, automobiles, motorcycles, motor scooters, and motor bikes. Regulations for vehicles in the park include road closures during certain seasons (e.g., all roads closed to motor vehicle travel in winter except the North Entrance road), requirements for mud/snow tires, rules against off-road travel for motorcycles, motor scooters, and motor bikes, and mandates for displaying valid state license plates and wearing seat belts. Food storage rules also advise against leaving food outside a vehicle.</data>
+      <data key="d2">test_runs/test_mmrag_working\images\image_17.jpg</data>
+    </node>
+    <node id="&quot;BACKGROUND&quot;">
+      <data key="d0">"OBJECT"</data>
+      <data key="d1">A solid, uniform black background that provides strong contrast for the white pixelated vehicle. It appears to be a void or a simple dark canvas, with no specific descriptive information provided by the text beyond its visual characteristics as a contrasting element for the foreground image.</data>
+      <data key="d2">test_runs/test_mmrag_working\images\image_17.jpg</data>
+    </node>
+    <edge source="&quot;IMAGE_17&quot;" target="&quot;VEHICLE&quot;">
+      <data key="d3">10.0</data>
+      <data key="d4">"Vehicle是从image_17中提取的实体。"</data>
+      <data key="d5">test_runs/test_mmrag_working\images\image_17.jpg</data>
+      <data key="d6">1</data>
+    </edge>
+    <edge source="&quot;IMAGE_17&quot;" target="&quot;BACKGROUND&quot;">
+      <data key="d3">10.0</data>
+      <data key="d4">"Background是从image_17中提取的实体。"</data>
+      <data key="d5">test_runs/test_mmrag_working\images\image_17.jpg</data>
+      <data key="d6">1</data>
+    </edge>
+  </graph>
+</graphml>

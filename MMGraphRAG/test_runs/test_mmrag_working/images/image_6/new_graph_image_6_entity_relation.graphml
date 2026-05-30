@@ -1,0 +1,39 @@
+<?xml version='1.0' encoding='utf-8'?>
+<graphml xmlns="http://graphml.graphdrawing.org/xmlns" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://graphml.graphdrawing.org/xmlns http://graphml.graphdrawing.org/xmlns/1.0/graphml.xsd">
+  <key id="d6" for="edge" attr.name="order" attr.type="long" />
+  <key id="d5" for="edge" attr.name="source_id" attr.type="string" />
+  <key id="d4" for="edge" attr.name="description" attr.type="string" />
+  <key id="d3" for="edge" attr.name="weight" attr.type="double" />
+  <key id="d2" for="node" attr.name="source_id" attr.type="string" />
+  <key id="d1" for="node" attr.name="description" attr.type="string" />
+  <key id="d0" for="node" attr.name="entity_type" attr.type="string" />
+  <graph edgedefault="undirected">
+    <node id="&quot;IMAGE_6&quot;">
+      <data key="d0">"ORI_IMG"</data>
+      <data key="d1">"The image is a grayscale photograph showcasing a collection of five different books or brochures, likely related to national parks, arranged in a slightly fanned-out and overlapping manner against a plain white background. The items appear to be educational or guide materials. From left to right and top to bottom:1.  **Top left:** A small, rectangular item, possibly a folded brochure or map, is partially visible. It has some text and what appears to be a graphic or map section on its surface, but specific details are obscured.2.  **Bottom left:** A book with a horizontally oriented cover features a landscape scene with what looks like several large animals (possibly bison or elk) grazing in a field. The title, though partly unreadable, seems to include the word "TRAILS" or similar, suggesting a focus on hiking or exploration.3.  **Middle left:** A taller, narrower guide book stands upright. Its cover displays a prominent image of a geyser or hot spring erupting, with steam rising into the sky. The title is clearly visible and reads "Yellowstone and Grand Teton National Parks Road Guide", indicating its purpose as a travel resource for these specific parks.4.  **Center top/right:** The largest item is a prominent, vertically oriented book or large brochure. Its cover features the word "YELLOWSTONE" in large, bold letters at the top. Below this, there's additional text that appears to say "THE OFFICIAL GUIDE TO AMERICA'S FIRST NATIONAL PARK". The lower portion of the cover shows silhouettes of multiple bison in a vast, open landscape, emphasizing the iconic wildlife of Yellowstone.5.  **Far right:** A book with a darker-toned cover is positioned on the right. While the title is somewhat obscured by glare or lighting, it appears to feature an image of a large animal, possibly a bear or another bison, in a natural setting. The text on the cover seems to be related to wildlife or fauna.The overall arrangement suggests a display of complementary resources. The grayscale format gives the image a classic, somewhat archival feel. The context provided (ordering information for the Yellowstone Association) strongly supports the interpretation that these are publications related to Yellowstone National Park."</data>
+      <data key="d2">test_runs/test_mmrag_working\images\image_6.jpg</data>
+    </node>
+    <node id="&quot;Yellowstone: The Official Guide to Touring America’s First National Park&quot;">
+      <data key="d0">"OBJECT"</data>
+      <data key="d1">This is a large, prominent guide book, identified as 'YELLOWSTONE THE OFFICIAL GUIDE TO AMERICA'S FIRST NATIONAL PARK'. Its cover features the park's name in large font, text indicating it's an official guide, and an illustration of bison in a landscape. It is positioned centrally at the top. The guide is specifically mentioned as a component of the 'Deluxe Trip Planner' offered by the nonprofit Yellowstone Association, designed to help plan a fun and educational visit. It can be ordered as part of a package for $29.95 (or $41.30 if purchased separately) by calling 877-967-0090 or visiting www.YellowstoneAssociation.org.</data>
+      <data key="d2">test_runs/test_mmrag_working\images\image_6.jpg</data>
+    </node>
+    <node id="Yellowstone Association">
+      <data key="d0">IMG_ENTITY</data>
+      <data key="d1">The image showcases a collection of publications, including 'Yellowstone: The Official Guide to Touring America’s First National Park', 'Yellowstone Trails: A Hiking Guide', and 'Yellowstone and Grand Teton Road Guide'. These materials are explicitly mentioned in the text as components of the 'Deluxe Trip Planner' offered by the nonprofit Yellowstone Association, which serves as the park's official educational partner.</data>
+      <data key="d2">test_runs/test_mmrag_working\images\image_6.jpg</data>
+    </node>
+    <edge source="&quot;IMAGE_6&quot;" target="&quot;Yellowstone: The Official Guide to Touring America’s First National Park&quot;">
+      <data key="d3">10.0</data>
+      <data key="d4">"Yellowstone Guide是从image_6中提取的实体。"</data>
+      <data key="d5">test_runs/test_mmrag_working\images\image_6.jpg</data>
+      <data key="d6">1</data>
+    </edge>
+    <edge source="&quot;IMAGE_6&quot;" target="Yellowstone Association">
+      <data key="d3">10.0</data>
+      <data key="d4">"IMAGE_6" is the image of Yellowstone Association.</data>
+      <data key="d5">test_runs/test_mmrag_working\images\image_6.jpg</data>
+      <data key="d6">1</data>
+    </edge>
+  </graph>
+</graphml>

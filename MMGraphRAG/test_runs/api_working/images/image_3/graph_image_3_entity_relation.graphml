@@ -1,0 +1,111 @@
+<?xml version='1.0' encoding='utf-8'?>
+<graphml xmlns="http://graphml.graphdrawing.org/xmlns" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://graphml.graphdrawing.org/xmlns http://graphml.graphdrawing.org/xmlns/1.0/graphml.xsd"><key id="d6" for="edge" attr.name="order" attr.type="long"/>
+<key id="d5" for="edge" attr.name="source_id" attr.type="string"/>
+<key id="d4" for="edge" attr.name="description" attr.type="string"/>
+<key id="d3" for="edge" attr.name="weight" attr.type="double"/>
+<key id="d2" for="node" attr.name="source_id" attr.type="string"/>
+<key id="d1" for="node" attr.name="description" attr.type="string"/>
+<key id="d0" for="node" attr.name="entity_type" attr.type="string"/>
+<graph edgedefault="undirected"><node id="&quot;IMAGE_3&quot;">
+  <data key="d0">"ORI_IMG"</data>
+  <data key="d1">"The image is a dramatic black and white photograph depicting a powerful waterfall cascading through a rugged, forested canyon. Dominating the center of the frame, the waterfall plunges from a considerable height, its water appearing turbulent and frothy, especially towards its base. The falls are flanked on both sides by steep, rocky cliffs and slopes, which are densely covered with dark, coniferous trees, creating a stark contrast with the lighter tones of the water and some of the exposed rock faces. On the right side of the image, a prominent, jagged rock formation rises vertically, adding to the grandeur and ruggedness of the scene. In the background and receding into the distance, more forested hills and mountainous terrain are visible, suggesting a vast natural landscape. The black and white tonality emphasizes the textures of the rock, the movement of the water, and the density of the foliage, conveying a sense of raw natural power and majesty. The overall atmosphere is one of awe-inspiring natural beauty and rugged wilderness."</data>
+  <data key="d2">C:/MMGraphRAG/MMGraphRAG/test_runs/api_working\images\image_3.jpg</data>
+</node>
+<node id="&quot;WATERFALL&quot;">
+  <data key="d0">"GEO"</data>
+  <data key="d1">"A prominent, powerful cascade of water plunging down a cliff face in the center of the image, appearing white and foamy against the dark surroundings of the canyon."</data>
+  <data key="d2">C:/MMGraphRAG/MMGraphRAG/test_runs/api_working\images\image_3.jpg</data>
+</node>
+<node id="&quot;CANYON&quot;">
+  <data key="d0">"GEO"</data>
+  <data key="d1">"A deep, V-shaped valley with steep, rocky sides, through which the waterfall flows. It is heavily forested and features rugged terrain."</data>
+  <data key="d2">C:/MMGraphRAG/MMGraphRAG/test_runs/api_working\images\image_3.jpg</data>
+</node>
+<node id="&quot;RIVER&quot;">
+  <data key="d0">"GEO"</data>
+  <data key="d1">"The body of water that feeds the waterfall and continues to flow downstream as a winding stream at the bottom of the canyon."</data>
+  <data key="d2">C:/MMGraphRAG/MMGraphRAG/test_runs/api_working\images\image_3.jpg</data>
+</node>
+<node id="&quot;CLIFFS&quot;">
+  <data key="d0">"GEO"</data>
+  <data key="d1">"Steep, rugged rock formations that form the immediate walls of the canyon, especially prominent on the right side of the waterfall."</data>
+  <data key="d2">C:/MMGraphRAG/MMGraphRAG/test_runs/api_working\images\image_3.jpg</data>
+</node>
+<node id="&quot;FOREST&quot;">
+  <data key="d0">"GEO"</data>
+  <data key="d1">"Dense coniferous trees covering the slopes and ridges of the canyon and the distant hills, appearing dark and lush in the black and white image."</data>
+  <data key="d2">C:/MMGraphRAG/MMGraphRAG/test_runs/api_working\images\image_3.jpg</data>
+</node>
+<edge source="&quot;IMAGE_3&quot;" target="&quot;WATERFALL&quot;">
+  <data key="d3">10.0</data>
+  <data key="d4">"Waterfall是从image_3中提取的实体。"</data>
+  <data key="d5">C:/MMGraphRAG/MMGraphRAG/test_runs/api_working\images\image_3.jpg</data>
+  <data key="d6">1</data>
+</edge>
+<edge source="&quot;IMAGE_3&quot;" target="&quot;CANYON&quot;">
+  <data key="d3">10.0</data>
+  <data key="d4">"Canyon是从image_3中提取的实体。"</data>
+  <data key="d5">C:/MMGraphRAG/MMGraphRAG/test_runs/api_working\images\image_3.jpg</data>
+  <data key="d6">1</data>
+</edge>
+<edge source="&quot;IMAGE_3&quot;" target="&quot;RIVER&quot;">
+  <data key="d3">10.0</data>
+  <data key="d4">"River是从image_3中提取的实体。"</data>
+  <data key="d5">C:/MMGraphRAG/MMGraphRAG/test_runs/api_working\images\image_3.jpg</data>
+  <data key="d6">1</data>
+</edge>
+<edge source="&quot;IMAGE_3&quot;" target="&quot;CLIFFS&quot;">
+  <data key="d3">10.0</data>
+  <data key="d4">"Cliffs是从image_3中提取的实体。"</data>
+  <data key="d5">C:/MMGraphRAG/MMGraphRAG/test_runs/api_working\images\image_3.jpg</data>
+  <data key="d6">1</data>
+</edge>
+<edge source="&quot;IMAGE_3&quot;" target="&quot;FOREST&quot;">
+  <data key="d3">10.0</data>
+  <data key="d4">"Forest是从image_3中提取的实体。"</data>
+  <data key="d5">C:/MMGraphRAG/MMGraphRAG/test_runs/api_working\images\image_3.jpg</data>
+  <data key="d6">1</data>
+</edge>
+<edge source="&quot;WATERFALL&quot;" target="&quot;CANYON&quot;">
+  <data key="d3">9.0</data>
+  <data key="d4">"The powerful waterfall is a central natural feature located within the deep, forested canyon."</data>
+  <data key="d5">C:/MMGraphRAG/MMGraphRAG/test_runs/api_working\images\image_3.jpg</data>
+  <data key="d6">1</data>
+</edge>
+<edge source="&quot;WATERFALL&quot;" target="&quot;RIVER&quot;">
+  <data key="d3">10.0</data>
+  <data key="d4">"The river is the source of the water that forms the impressive cascade of the waterfall."</data>
+  <data key="d5">C:/MMGraphRAG/MMGraphRAG/test_runs/api_working\images\image_3.jpg</data>
+  <data key="d6">1</data>
+</edge>
+<edge source="&quot;WATERFALL&quot;" target="&quot;CLIFFS&quot;">
+  <data key="d3">9.0</data>
+  <data key="d4">"The waterfall plunges dramatically over the steep, rocky cliffs of the canyon."</data>
+  <data key="d5">C:/MMGraphRAG/MMGraphRAG/test_runs/api_working\images\image_3.jpg</data>
+  <data key="d6">1</data>
+</edge>
+<edge source="&quot;WATERFALL&quot;" target="&quot;FOREST&quot;">
+  <data key="d3">8.0</data>
+  <data key="d4">"The powerful waterfall is framed and surrounded by dense forest that grows on the canyon slopes."</data>
+  <data key="d5">C:/MMGraphRAG/MMGraphRAG/test_runs/api_working\images\image_3.jpg</data>
+  <data key="d6">1</data>
+</edge>
+<edge source="&quot;CANYON&quot;" target="&quot;RIVER&quot;">
+  <data key="d3">9.0</data>
+  <data key="d4">"The river flows through and has carved the deep canyon over time, visible at the base of the waterfall."</data>
+  <data key="d5">C:/MMGraphRAG/MMGraphRAG/test_runs/api_working\images\image_3.jpg</data>
+  <data key="d6">1</data>
+</edge>
+<edge source="&quot;CANYON&quot;" target="&quot;CLIFFS&quot;">
+  <data key="d3">9.0</data>
+  <data key="d4">"The steep, rugged cliffs form the imposing walls of the canyon."</data>
+  <data key="d5">C:/MMGraphRAG/MMGraphRAG/test_runs/api_working\images\image_3.jpg</data>
+  <data key="d6">1</data>
+</edge>
+<edge source="&quot;CANYON&quot;" target="&quot;FOREST&quot;">
+  <data key="d3">8.0</data>
+  <data key="d4">"Dense forest covers the slopes and upper edges of the canyon, contributing to its rugged and natural appearance."</data>
+  <data key="d5">C:/MMGraphRAG/MMGraphRAG/test_runs/api_working\images\image_3.jpg</data>
+  <data key="d6">1</data>
+</edge>
+</graph></graphml>

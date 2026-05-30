@@ -1,0 +1,68 @@
+<?xml version='1.0' encoding='utf-8'?>
+<graphml xmlns="http://graphml.graphdrawing.org/xmlns" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://graphml.graphdrawing.org/xmlns http://graphml.graphdrawing.org/xmlns/1.0/graphml.xsd">
+  <key id="d6" for="edge" attr.name="order" attr.type="long" />
+  <key id="d5" for="edge" attr.name="source_id" attr.type="string" />
+  <key id="d4" for="edge" attr.name="description" attr.type="string" />
+  <key id="d3" for="edge" attr.name="weight" attr.type="double" />
+  <key id="d2" for="node" attr.name="source_id" attr.type="string" />
+  <key id="d1" for="node" attr.name="description" attr.type="string" />
+  <key id="d0" for="node" attr.name="entity_type" attr.type="string" />
+  <graph edgedefault="undirected">
+    <node id="&quot;IMAGE_9&quot;">
+      <data key="d0">"ORI_IMG"</data>
+      <data key="d1">"The image is a grayscale icon depicting two stylized human figures, typically used to signify public restrooms. On the left, there is a silhouette of a female figure, characterized by a wider upper body or dress-like shape. To the right, separated by a distinct vertical line or partition, is the silhouette of a male figure, depicted with a more rectangular torso. Both figures are enclosed within a larger, dark rectangular outline, which could represent a doorway or an entrance to a facility. The overall appearance is simple, clear, and highly symbolic, designed for universal recognition."</data>
+      <data key="d2">test_runs/test_mmrag_working\images\image_9.jpg</data>
+    </node>
+    <node id="&quot;Female Restroom Icon&quot;">
+      <data key="d0">"OBJECT"</data>
+      <data key="d1">A black, stylized silhouette of a human figure with a skirt-like lower body, typically representing a female. This icon is often positioned on the left side of a restroom sign, indicating the availability of public restroom facilities. Such facilities are listed as a service throughout Yellowstone National Park, including at various visitor centers, villages, and picnic areas.</data>
+      <data key="d2">test_runs/test_mmrag_working\images\image_9.jpg</data>
+    </node>
+    <node id="&quot;Male Restroom Icon&quot;">
+      <data key="d0">"OBJECT"</data>
+      <data key="d1">A black, stylized silhouette of a human figure with a pant-like lower body, typically representing a male. This icon is often positioned on the right side of a restroom sign, indicating the availability of public restroom facilities. These facilities are a widely provided service within Yellowstone National Park, found at numerous locations such as visitor centers, villages, and picnic areas.</data>
+      <data key="d2">test_runs/test_mmrag_working\images\image_9.jpg</data>
+    </node>
+    <node id="&quot;Public Restroom Sign&quot;">
+      <data key="d0">"OBJECT"</data>
+      <data key="d1">A white background sign with a dark border, featuring two black, stylized human figures (one female, one male) side-by-side. This sign is commonly used to indicate a public restroom facility available for both genders. The provided text confirms that 'Restrooms' are a full service offered at various locations within Yellowstone National Park, including Bridge Bay, Canyon, Fishing Bridge, Grant Village, Lake Village, Mammoth Hot Springs, Old Faithful, Roosevelt, and Tower Fall, as well as in picnic areas.</data>
+      <data key="d2">test_runs/test_mmrag_working\images\image_9.jpg</data>
+    </node>
+    <edge source="&quot;IMAGE_9&quot;" target="&quot;Female Restroom Icon&quot;">
+      <data key="d3">10.0</data>
+      <data key="d4">"Female Icon是从image_9中提取的实体。"</data>
+      <data key="d5">test_runs/test_mmrag_working\images\image_9.jpg</data>
+      <data key="d6">1</data>
+    </edge>
+    <edge source="&quot;IMAGE_9&quot;" target="&quot;Male Restroom Icon&quot;">
+      <data key="d3">10.0</data>
+      <data key="d4">"Male Icon是从image_9中提取的实体。"</data>
+      <data key="d5">test_runs/test_mmrag_working\images\image_9.jpg</data>
+      <data key="d6">1</data>
+    </edge>
+    <edge source="&quot;IMAGE_9&quot;" target="&quot;Public Restroom Sign&quot;">
+      <data key="d3">10.0</data>
+      <data key="d4">"Restroom Sign是从image_9中提取的实体。"</data>
+      <data key="d5">test_runs/test_mmrag_working\images\image_9.jpg</data>
+      <data key="d6">1</data>
+    </edge>
+    <edge source="&quot;Female Restroom Icon&quot;" target="&quot;Male Restroom Icon&quot;">
+      <data key="d3">9.0</data>
+      <data key="d4">"The female icon and male icon are displayed side-by-side on the same sign to indicate a shared facility."</data>
+      <data key="d5">test_runs/test_mmrag_working\images\image_9.jpg</data>
+      <data key="d6">1</data>
+    </edge>
+    <edge source="&quot;Female Restroom Icon&quot;" target="&quot;Public Restroom Sign&quot;">
+      <data key="d3">10.0</data>
+      <data key="d4">"The female icon is a primary component of the restroom sign."</data>
+      <data key="d5">test_runs/test_mmrag_working\images\image_9.jpg</data>
+      <data key="d6">1</data>
+    </edge>
+    <edge source="&quot;Male Restroom Icon&quot;" target="&quot;Public Restroom Sign&quot;">
+      <data key="d3">10.0</data>
+      <data key="d4">"The male icon is a primary component of the restroom sign."</data>
+      <data key="d5">test_runs/test_mmrag_working\images\image_9.jpg</data>
+      <data key="d6">1</data>
+    </edge>
+  </graph>
+</graphml>

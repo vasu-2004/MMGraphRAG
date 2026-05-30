@@ -1,0 +1,73 @@
+<?xml version='1.0' encoding='utf-8'?>
+<graphml xmlns="http://graphml.graphdrawing.org/xmlns" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://graphml.graphdrawing.org/xmlns http://graphml.graphdrawing.org/xmlns/1.0/graphml.xsd">
+  <key id="d6" for="edge" attr.name="order" attr.type="long" />
+  <key id="d5" for="edge" attr.name="source_id" attr.type="string" />
+  <key id="d4" for="edge" attr.name="description" attr.type="string" />
+  <key id="d3" for="edge" attr.name="weight" attr.type="double" />
+  <key id="d2" for="node" attr.name="source_id" attr.type="string" />
+  <key id="d1" for="node" attr.name="description" attr.type="string" />
+  <key id="d0" for="node" attr.name="entity_type" attr.type="string" />
+  <graph edgedefault="undirected">
+    <node id="&quot;IMAGE_5_PERSON-0.JPG&quot;">
+      <data key="d0">"IMG"</data>
+      <data key="d1">"The category of this image feature block is 'person'. The entity features are as follows:Person Features:- Gender: Child, likely female- Skin color: Not discernible due to grayscale image- Hairstyle: Wavy or curly hair, appearing light in tone (e.g., blonde or light brown in color), reaching approximately to the shoulders. A small clip or bow is visible in the hair on the right side of the head.- Facial expression: Neutral to slightly curious, with a closed mouth.- Age: Appears to be a very young child, likely a toddler or preschooler.- Clothing: Wearing a light-colored (appears white or light grey in grayscale) long-sleeved top with a high neckline.- Posture: The child is looking towards the right side of the frame, with her head slightly tilted. Only the upper torso and head are visible."</data>
+      <data key="d2">test_runs/test_mmrag_working\images\image_5.jpg</data>
+    </node>
+    <node id="&quot;IMAGE_5_PERSON-1.JPG&quot;">
+      <data key="d0">"IMG"</data>
+      <data key="d1">"The category of this image feature block is 'person'. The entity features are as follows:Person Features:- **Gender:** Appears to be male.- **Skin color:** Indiscernible due to the grayscale and low resolution of the image.- **Hairstyle:** Short, dark hair, possibly styled with a fringe or slightly messy over the forehead.- **Facial features:**    - **Eyes:** Wearing glasses with what appear to be rectangular or slightly rounded frames. The eyes themselves are not clearly visible.    - **Nose:** Visible, but details are obscured by low resolution.    - **Mouth:** Appears to be closed, with a hint of a slight smile or neutral expression.- **Expression:** Seems to have a neutral to slightly positive or thoughtful expression.- **Age:** Appears to be an adult, possibly young to middle-aged.- **Clothing:** Only a very small portion of what might be a collar or shoulder of a shirt is visible on the right side, making specific clothing details impossible to determine.- **Accessories:** Clearly wearing glasses.- **Posture:** The head is slightly tilted to the left (from the viewer's perspective), and the person is looking generally towards the viewer. The image captures a headshot.Overall, the person appears to be looking directly or slightly off-camera, wearing glasses, with a somewhat indistinct facial expression due to the image's quality."</data>
+      <data key="d2">test_runs/test_mmrag_working\images\image_5.jpg</data>
+    </node>
+    <node id="&quot;IMAGE_5&quot;">
+      <data key="d0">"ORI_IMG"</data>
+      <data key="d1">"The image is a black and white close-up photograph depicting a group of people, primarily adults and children, engaged in an outdoor activity. In the foreground, slightly to the left, is a young child with light-colored hair, possibly blonde, wearing a light-colored top. This child is looking towards the right with a curious expression. To the right of this child and slightly behind, another child with darker hair and glasses is visible, also looking towards the right. Dominating the central and right portions of the image is an adult wearing a light-colored ranger-style hat with a dark band. This adult's face is partially obscured by the hat brim, but they appear to be looking down and interacting with the children, suggesting a supervisory or educational role. Another adult figure is partially visible on the far right, with a forearm and hand visible, wearing a watch on the wrist. This adult also seems to be part of the interaction, possibly holding or assisting one of the children. The background is somewhat blurred but shows elements of an outdoor setting, including what appear to be wooden logs or structures, suggesting a park, camp, or natural environment. The overall atmosphere conveyed is one of positive interaction, possibly an educational program or recreational activity, with the adults engaging with the children in a natural setting."</data>
+      <data key="d2">test_runs/test_mmrag_working\images\image_5.jpg</data>
+    </node>
+    <node id="&quot;Park Ranger or Guide&quot;">
+      <data key="d0">"PERSON"</data>
+      <data key="d1">An adult individual, likely a park ranger or guide, is depicted wearing a light-colored, wide-brimmed hat with a dark band, partially obscuring their face. They are looking down and interacting with children, possibly in the context of one of Yellowstone's educational programs like the Junior Ranger or Young Scientist programs, or providing guidance on safety, such as the importance of keeping children close in hazardous areas like hydrothermal features or near wildlife. The adult is also wearing a wristwatch on their left wrist.</data>
+      <data key="d2">test_runs/test_mmrag_working\images\image_5.jpg</data>
+    </node>
+    <node id="&quot;Child Visitor&quot;">
+      <data key="d2">test_runs/test_mmrag_working\images\image_5.jpg</data>
+      <data key="d1">A child with blonde hair, likely a visitor to Yellowstone National Park. The park emphasizes safety for children, advising parents to keep them close and educate them about hazards like hydrothermal areas, wildlife, and steep drop-offs. Children are also encouraged to participate in educational initiatives such as the Junior Ranger and Young Scientist programs, designed to foster understanding and involvement in Yellowstone.</data>
+      <data key="d0">"UNKNOWN"</data>
+    </node>
+    <edge source="&quot;IMAGE_5_PERSON-0.JPG&quot;" target="&quot;Park Ranger or Guide&quot;">
+      <data key="d3">1.0</data>
+      <data key="d4">"The image feature block image_5_person-0.jpg is a picture of a child, which does not match the description of an adult figure."</data>
+      <data key="d5">test_runs/test_mmrag_working\images\image_5.jpg</data>
+      <data key="d6">1</data>
+    </edge>
+    <edge source="&quot;IMAGE_5_PERSON-0.JPG&quot;" target="&quot;IMAGE_5&quot;">
+      <data key="d3">10.0</data>
+      <data key="d4">"image_5_person-0.jpg是image_5的图像特征块。"</data>
+      <data key="d5">test_runs/test_mmrag_working\images\image_5.jpg</data>
+      <data key="d6">1</data>
+    </edge>
+    <edge source="&quot;IMAGE_5_PERSON-1.JPG&quot;" target="&quot;Park Ranger or Guide&quot;">
+      <data key="d3">6.0</data>
+      <data key="d4">"The image feature block image_5_person-1.jpg is a picture of an adult figure."</data>
+      <data key="d5">test_runs/test_mmrag_working\images\image_5.jpg</data>
+      <data key="d6">1</data>
+    </edge>
+    <edge source="&quot;IMAGE_5_PERSON-1.JPG&quot;" target="&quot;IMAGE_5&quot;">
+      <data key="d3">10.0</data>
+      <data key="d4">"image_5_person-1.jpg是image_5的图像特征块。"</data>
+      <data key="d5">test_runs/test_mmrag_working\images\image_5.jpg</data>
+      <data key="d6">1</data>
+    </edge>
+    <edge source="&quot;IMAGE_5&quot;" target="&quot;Park Ranger or Guide&quot;">
+      <data key="d3">10.0</data>
+      <data key="d4">"Adult Figure是从image_5中提取的实体。"</data>
+      <data key="d5">test_runs/test_mmrag_working\images\image_5.jpg</data>
+      <data key="d6">1</data>
+    </edge>
+    <edge source="&quot;IMAGE_5&quot;" target="&quot;Child Visitor&quot;">
+      <data key="d3">10.0</data>
+      <data key="d4">"Child with Blonde Hair是从image_5中提取的实体。"</data>
+      <data key="d5">test_runs/test_mmrag_working\images\image_5.jpg</data>
+      <data key="d6">1</data>
+    </edge>
+  </graph>
+</graphml>

@@ -1,0 +1,93 @@
+<?xml version='1.0' encoding='utf-8'?>
+<graphml xmlns="http://graphml.graphdrawing.org/xmlns" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://graphml.graphdrawing.org/xmlns http://graphml.graphdrawing.org/xmlns/1.0/graphml.xsd"><key id="d6" for="edge" attr.name="order" attr.type="long"/>
+<key id="d5" for="edge" attr.name="source_id" attr.type="string"/>
+<key id="d4" for="edge" attr.name="description" attr.type="string"/>
+<key id="d3" for="edge" attr.name="weight" attr.type="double"/>
+<key id="d2" for="node" attr.name="source_id" attr.type="string"/>
+<key id="d1" for="node" attr.name="description" attr.type="string"/>
+<key id="d0" for="node" attr.name="entity_type" attr.type="string"/>
+<graph edgedefault="undirected"><node id="&quot;IMAGE_6&quot;">
+  <data key="d0">"ORI_IMG"</data>
+  <data key="d1">"The image displays a mathematical formula for the Dice Similarity Coefficient (DSC) applied to an individual example $x_i$. The equation is presented in a clean, typeset format typical of academic or technical documents. The formula is written as: $$ \mathrm{DSC}(x_i) = \frac{2p_{i1}y_{i1}}{p_{i1} + y_{i1}} $$ where $p_{i1}$ represents the predicted probability of class 1 for example $x_i$, and $y_{i1}$ is the true label (0 or 1) for that example. This formulation indicates that the DSC is computed based on the product of the predicted and actual values, scaled by twice the numerator divided by their sum. The context explains that when $y_{i1} = 0$ (a negative example), the term does not contribute to the objective function, meaning only positive examples influence the loss. For numerical stability, a smoothing factor $\gamma$ is typically added to both the numerator and denominator, though it is set to 1 in the described case. The surrounding text provides additional insight into the use of this metric in machine learning, particularly in binary classification tasks where precision and recall are balanced via the DSC, which is mathematically equivalent to the F1-score in certain contexts."</data>
+  <data key="d2">examples/example_working/images/image_6.jpg</data>
+</node>
+<node id="&quot;DSC&quot;">
+  <data key="d0">"ORGANIZATION"</data>
+  <data key="d1">"Dice Similarity Coefficient, a metric used to measure the similarity between two sets, often applied in image segmentation tasks."</data>
+  <data key="d2">examples/example_working/images/image_6.jpg</data>
+</node>
+<node id="&quot;Input Data Point (X_I)&quot;">
+  <data key="d0">"OBJECT"</data>
+  <data key="d1">In the context of Dice Similarity Coefficient (DSC) calculation for binary classification, X_I represents a single training instance or input data point—such as a pixel in image segmentation or a token in NLP tasks. It serves as the basis for computing predicted probabilities and ground truth alignment, particularly when evaluating similarity between model predictions and actual labels using DSC-based losses.</data>
+  <data key="d2">examples/example_working/images/image_6.jpg</data>
+</node>
+<node id="&quot;Predicted Probability for Class 1 (P_I1)&quot;">
+  <data key="d0">"OBJECT"</data>
+  <data key="d1">P_I1 denotes the model's predicted probability that the i-th input instance belongs to class 1 (e.g., the positive class). In DSC and related loss formulations like Dice Loss (DL) or Tversky Loss (TL), P_I1 is a continuous value in [0, 1] used to compute soft similarity measures with ground truth labels. It plays a central role in differentiating easy vs. hard examples, especially in imbalanced settings, and is often adjusted dynamically (e.g., via (1 - P_I1) weighting in Self-adjusting Dice Loss) to reduce the influence of well-classified samples.</data>
+  <data key="d2">examples/example_working/images/image_6.jpg</data>
+</node>
+<node id="&quot;Ground Truth Label for Class 1 (Y_I1)&quot;">
+  <data key="d0">"OBJECT"</data>
+  <data key="d1">Y_I1 is the binary ground truth label indicating whether the i-th instance truly belongs to class 1. It takes values in {0, 1}, where 1 signifies a positive example and 0 a negative one. In Dice-based metrics and losses, Y_I1 defines the target set against which predicted probabilities (P_I1) are compared. Unlike cross-entropy, standard DSC ignores negative examples (Y_I1 = 0), but smoothed variants (with γ &gt; 0) allow them to contribute minimally to the loss, aiding training stability in highly imbalanced datasets such as those in medical image segmentation or NLP sequence labeling.</data>
+  <data key="d2">examples/example_working/images/image_6.jpg</data>
+</node>
+<node id="&quot;DICE COEFFICIENT&quot;">
+  <data key="d0">"CONCEPT"</data>
+  <data key="d1">"The Dice Coefficient (DSC) is an F1-oriented statistic used to measure the similarity between two sets, commonly applied in evaluating model predictions against ground truth in machine learning contexts. It is mathematically defined and discussed with variants including smoothing and loss formulations."</data>
+  <data key="d2">examples/example_working/images/image_6.jpg</data>
+</node>
+<edge source="&quot;IMAGE_6&quot;" target="&quot;DSC&quot;">
+  <data key="d3">10.0</data>
+  <data key="d4">"DSC是从image_6中提取的实体。"</data>
+  <data key="d5">examples/example_working/images/image_6.jpg</data>
+  <data key="d6">1</data>
+</edge>
+<edge source="&quot;IMAGE_6&quot;" target="&quot;Input Data Point (X_I)&quot;">
+  <data key="d3">10.0</data>
+  <data key="d4">"x_i是从image_6中提取的实体。"</data>
+  <data key="d5">examples/example_working/images/image_6.jpg</data>
+  <data key="d6">1</data>
+</edge>
+<edge source="&quot;IMAGE_6&quot;" target="&quot;Predicted Probability for Class 1 (P_I1)&quot;">
+  <data key="d3">10.0</data>
+  <data key="d4">"p_i1是从image_6中提取的实体。"</data>
+  <data key="d5">examples/example_working/images/image_6.jpg</data>
+  <data key="d6">1</data>
+</edge>
+<edge source="&quot;IMAGE_6&quot;" target="&quot;Ground Truth Label for Class 1 (Y_I1)&quot;">
+  <data key="d3">10.0</data>
+  <data key="d4">"y_i1是从image_6中提取的实体。"</data>
+  <data key="d5">examples/example_working/images/image_6.jpg</data>
+  <data key="d6">1</data>
+</edge>
+<edge source="&quot;IMAGE_6&quot;" target="&quot;DICE COEFFICIENT&quot;">
+  <data key="d3">10.0</data>
+  <data key="d4">"IMAGE_6" is the image of "DICE COEFFICIENT".</data>
+  <data key="d5">examples/example_working/images/image_6.jpg</data>
+  <data key="d6">1</data>
+</edge>
+<edge source="&quot;DSC&quot;" target="&quot;Input Data Point (X_I)&quot;">
+  <data key="d3">9.0</data>
+  <data key="d4">"The DSC function takes x_i as input to compute the similarity score."</data>
+  <data key="d5">examples/example_working/images/image_6.jpg</data>
+  <data key="d6">1</data>
+</edge>
+<edge source="&quot;DSC&quot;" target="&quot;Predicted Probability for Class 1 (P_I1)&quot;">
+  <data key="d3">8.0</data>
+  <data key="d4">"The DSC formula uses p_i1 as part of the numerator and denominator to calculate similarity."</data>
+  <data key="d5">examples/example_working/images/image_6.jpg</data>
+  <data key="d6">1</data>
+</edge>
+<edge source="&quot;DSC&quot;" target="&quot;Ground Truth Label for Class 1 (Y_I1)&quot;">
+  <data key="d3">8.0</data>
+  <data key="d4">"The DSC formula uses y_i1 as part of the numerator and denominator to calculate similarity."</data>
+  <data key="d5">examples/example_working/images/image_6.jpg</data>
+  <data key="d6">1</data>
+</edge>
+<edge source="&quot;Predicted Probability for Class 1 (P_I1)&quot;" target="&quot;Ground Truth Label for Class 1 (Y_I1)&quot;">
+  <data key="d3">7.0</data>
+  <data key="d4">"Both p_i1 and y_i1 are paired values for the same data point i, representing predicted and actual labels respectively."</data>
+  <data key="d5">examples/example_working/images/image_6.jpg</data>
+  <data key="d6">1</data>
+</edge>
+</graph></graphml>

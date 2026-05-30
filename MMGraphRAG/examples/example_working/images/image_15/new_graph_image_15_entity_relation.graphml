@@ -1,0 +1,110 @@
+<?xml version='1.0' encoding='utf-8'?>
+<graphml xmlns="http://graphml.graphdrawing.org/xmlns" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://graphml.graphdrawing.org/xmlns http://graphml.graphdrawing.org/xmlns/1.0/graphml.xsd"><key id="d6" for="edge" attr.name="order" attr.type="long"/>
+<key id="d5" for="edge" attr.name="source_id" attr.type="string"/>
+<key id="d4" for="edge" attr.name="description" attr.type="string"/>
+<key id="d3" for="edge" attr.name="weight" attr.type="double"/>
+<key id="d2" for="node" attr.name="source_id" attr.type="string"/>
+<key id="d1" for="node" attr.name="description" attr.type="string"/>
+<key id="d0" for="node" attr.name="entity_type" attr.type="string"/>
+<graph edgedefault="undirected"><node id="&quot;IMAGE_15&quot;">
+  <data key="d0">"ORI_IMG"</data>
+  <data key="d1">"The image displays a mathematical equation representing an adaptive variant of the Dice Similarity Coefficient (DSC), used in machine learning, particularly in tasks involving segmentation or classification with probabilistic outputs. The equation is written as: DSC(x_i) = \frac{2(1 - p_{i1})p_{i1} \cdot y_{i1} + \gamma}{(1 - p_{i1})p_{i1} + y_{i1} + \gamma}. Here, x_i represents an input example, p_{i1} is the predicted probability for class 1 (or positive class), y_{i1} is the corresponding ground truth label (typically binary: 0 or 1), and \gamma is a small smoothing constant to avoid division by zero. The term (1 - p_{i1})p_{i1} acts as a dynamic weighting factor that diminishes the influence of examples where the prediction is confident (i.e., when p_{i1} approaches 0 or 1), thereby focusing more on hard-to-classify examples during training. This modification aims to improve model performance by adaptively adjusting the loss contribution based on prediction confidence. The equation is presented in standard mathematical notation using LaTeX-style formatting, with clear superscripts, subscripts, fractions, and symbols. The context provided explains that this formulation replaces a previous version (Eq.11) to make the DSC more adaptive by incorporating a decaying factor, emphasizing its use in training models where balancing focus between easy and difficult examples is crucial."</data>
+  <data key="d2">examples/example_working/images/image_15.jpg</data>
+</node>
+<node id="&quot;DSC&quot;">
+  <data key="d0">"ORGANIZATION"</data>
+  <data key="d1">"Dice Similarity Coefficient, a metric used in image segmentation to measure the similarity between two sets of pixels, often applied in medical imaging and computer vision tasks."</data>
+  <data key="d2">examples/example_working/images/image_15.jpg</data>
+</node>
+<node id="&quot;Input Pixel/Voxel $x_i$&quot;">
+  <data key="d0">"OBJECT"</data>
+  <data key="d1">In the context of binary image segmentation, $x_i$ (denoted as 'XI') represents an individual pixel or voxel from the input image. It serves as the basic unit for prediction in segmentation tasks, where a model assigns a probability $p_{i1}$ indicating the likelihood that $x_i$ belongs to the foreground class. The notation is commonly used when computing pixel-wise losses such as Dice Loss (DL) or Tversky Loss (TL), especially in medical image analysis.</data>
+  <data key="d2">examples/example_working/images/image_15.jpg</data>
+</node>
+<node id="&quot;PI1&quot;">
+  <data key="d0">"OBJECT"</data>
+  <data key="d1">"Predicted probability that the pixel xi belongs to class 1 (foreground), output from a classification model such as a neural network."</data>
+  <data key="d2">examples/example_working/images/image_15.jpg</data>
+</node>
+<node id="&quot;True Label $y_i$&quot;">
+  <data key="d0">"OBJECT"</data>
+  <data key="d1">The true label $y_i$ (denoted as 'YI') corresponds to the ground-truth binary annotation for pixel or voxel $x_i$ in a segmentation map. It takes a value of 1 if $x_i$ belongs to the foreground class and 0 otherwise. This label is essential for computing performance metrics like the Dice Coefficient (DSC) and for defining loss functions such as Cross-Entropy (CE), Dice Loss (DL), and Tversky Loss (TL). In smoothed variants of these losses, $y_{i1}$ appears in both numerator and denominator alongside predicted probabilities $p_{i1}$ to ensure differentiability and contribution from negative examples during training.</data>
+  <data key="d2">examples/example_working/images/image_15.jpg</data>
+</node>
+<node id="&quot;Γ&quot;">
+  <data key="d0">"OBJECT"</data>
+  <data key="d1">"Smoothing parameter used to avoid division by zero when computing the DSC, typically a small positive constant like 1e-6."</data>
+  <data key="d2">examples/example_working/images/image_15.jpg</data>
+</node>
+<node id="&quot;SELF-ADJUSTING DICE LOSS&quot;">
+  <data key="d0">"EVENT"</data>
+  <data key="d1">"Self-adjusting Dice Loss is a proposed adaptive variant of the Dice Similarity Coefficient that introduces a decaying factor (1 - p) to reduce the influence of easy examples during training."</data>
+  <data key="d2">examples/example_working/images/image_15.jpg</data>
+</node>
+<edge source="&quot;IMAGE_15&quot;" target="&quot;DSC&quot;">
+  <data key="d3">10.0</data>
+  <data key="d4">"DSC是从image_15中提取的实体。"</data>
+  <data key="d5">examples/example_working/images/image_15.jpg</data>
+  <data key="d6">1</data>
+</edge>
+<edge source="&quot;IMAGE_15&quot;" target="&quot;Input Pixel/Voxel $x_i$&quot;">
+  <data key="d3">10.0</data>
+  <data key="d4">"xi是从image_15中提取的实体。"</data>
+  <data key="d5">examples/example_working/images/image_15.jpg</data>
+  <data key="d6">1</data>
+</edge>
+<edge source="&quot;IMAGE_15&quot;" target="&quot;PI1&quot;">
+  <data key="d3">10.0</data>
+  <data key="d4">"pi1是从image_15中提取的实体。"</data>
+  <data key="d5">examples/example_working/images/image_15.jpg</data>
+  <data key="d6">1</data>
+</edge>
+<edge source="&quot;IMAGE_15&quot;" target="&quot;True Label $y_i$&quot;">
+  <data key="d3">10.0</data>
+  <data key="d4">"yi是从image_15中提取的实体。"</data>
+  <data key="d5">examples/example_working/images/image_15.jpg</data>
+  <data key="d6">1</data>
+</edge>
+<edge source="&quot;IMAGE_15&quot;" target="&quot;Γ&quot;">
+  <data key="d3">10.0</data>
+  <data key="d4">"γ是从image_15中提取的实体。"</data>
+  <data key="d5">examples/example_working/images/image_15.jpg</data>
+  <data key="d6">1</data>
+</edge>
+<edge source="&quot;IMAGE_15&quot;" target="&quot;SELF-ADJUSTING DICE LOSS&quot;">
+  <data key="d3">10.0</data>
+  <data key="d4">"IMAGE_15" is the image of "SELF-ADJUSTING DICE LOSS".</data>
+  <data key="d5">examples/example_working/images/image_15.jpg</data>
+  <data key="d6">1</data>
+</edge>
+<edge source="&quot;DSC&quot;" target="&quot;Input Pixel/Voxel $x_i$&quot;">
+  <data key="d3">9.0</data>
+  <data key="d4">"The DSC function computes the similarity score for each pixel xi based on its predicted and true labels."</data>
+  <data key="d5">examples/example_working/images/image_15.jpg</data>
+  <data key="d6">1</data>
+</edge>
+<edge source="&quot;DSC&quot;" target="&quot;PI1&quot;">
+  <data key="d3">8.0</data>
+  <data key="d4">"The DSC formula uses the predicted probability pi1 to calculate the overlap between predicted and actual segmentations."</data>
+  <data key="d5">examples/example_working/images/image_15.jpg</data>
+  <data key="d6">1</data>
+</edge>
+<edge source="&quot;DSC&quot;" target="&quot;True Label $y_i$&quot;">
+  <data key="d3">8.0</data>
+  <data key="d4">"The DSC formula incorporates the true label yi to compare the prediction against ground truth."</data>
+  <data key="d5">examples/example_working/images/image_15.jpg</data>
+  <data key="d6">1</data>
+</edge>
+<edge source="&quot;DSC&quot;" target="&quot;Γ&quot;">
+  <data key="d3">7.0</data>
+  <data key="d4">"The γ term is added to the DSC formula to ensure numerical stability during computation."</data>
+  <data key="d5">examples/example_working/images/image_15.jpg</data>
+  <data key="d6">1</data>
+</edge>
+<edge source="&quot;PI1&quot;" target="&quot;True Label $y_i$&quot;">
+  <data key="d3">8.0</data>
+  <data key="d4">"The predicted probability pi1 is compared with the true label yi to evaluate segmentation accuracy."</data>
+  <data key="d5">examples/example_working/images/image_15.jpg</data>
+  <data key="d6">1</data>
+</edge>
+</graph></graphml>

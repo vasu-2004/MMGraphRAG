@@ -1,0 +1,65 @@
+<?xml version='1.0' encoding='utf-8'?>
+<graphml xmlns="http://graphml.graphdrawing.org/xmlns" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://graphml.graphdrawing.org/xmlns http://graphml.graphdrawing.org/xmlns/1.0/graphml.xsd"><key id="d6" for="edge" attr.name="order" attr.type="long"/>
+<key id="d5" for="edge" attr.name="source_id" attr.type="string"/>
+<key id="d4" for="edge" attr.name="description" attr.type="string"/>
+<key id="d3" for="edge" attr.name="weight" attr.type="double"/>
+<key id="d2" for="node" attr.name="source_id" attr.type="string"/>
+<key id="d1" for="node" attr.name="description" attr.type="string"/>
+<key id="d0" for="node" attr.name="entity_type" attr.type="string"/>
+<graph edgedefault="undirected"><node id="&quot;IMAGE_16&quot;">
+  <data key="d0">"ORI_IMG"</data>
+  <data key="d1">"The image displays a small, low-resolution, black-and-white icon, likely a pictogram. It consists of a prominent white circular shape centered within a black square frame. Inside the white circle, there are two thin, dark vertical shapes. The shape on the left is shorter and has a slightly broader, multi-pronged top, characteristic of a fork. The shape on the right is longer and narrower, with a pointed or rounded top, resembling a knife. These two utensils are positioned side-by-side, suggesting an icon for food service or a restaurant, consistent with the surrounding text mentioning "food service.""</data>
+  <data key="d2">C:/MMGraphRAG/MMGraphRAG/test_runs/api_working\images\image_16.jpg</data>
+</node>
+<node id="&quot;CIRCLE&quot;">
+  <data key="d0">"OBJECT"</data>
+  <data key="d1">A dark gray circular shape forming the outer boundary of the icon.</data>
+  <data key="d2">C:/MMGraphRAG/MMGraphRAG/test_runs/api_working\images\image_16.jpg</data>
+</node>
+<node id="&quot;FORK&quot;">
+  <data key="d0">"OBJECT"</data>
+  <data key="d1">A light gray eating utensil with tines, positioned vertically inside the circle to the left.</data>
+  <data key="d2">C:/MMGraphRAG/MMGraphRAG/test_runs/api_working\images\image_16.jpg</data>
+</node>
+<node id="&quot;KNIFE&quot;">
+  <data key="d0">"OBJECT"</data>
+  <data key="d1">A light gray eating utensil with a blade and handle, positioned vertically inside the circle to the right.</data>
+  <data key="d2">C:/MMGraphRAG/MMGraphRAG/test_runs/api_working\images\image_16.jpg</data>
+</node>
+<edge source="&quot;IMAGE_16&quot;" target="&quot;CIRCLE&quot;">
+  <data key="d3">10.0</data>
+  <data key="d4">"Circle是从image_16中提取的实体。"</data>
+  <data key="d5">C:/MMGraphRAG/MMGraphRAG/test_runs/api_working\images\image_16.jpg</data>
+  <data key="d6">1</data>
+</edge>
+<edge source="&quot;IMAGE_16&quot;" target="&quot;FORK&quot;">
+  <data key="d3">10.0</data>
+  <data key="d4">"Fork是从image_16中提取的实体。"</data>
+  <data key="d5">C:/MMGraphRAG/MMGraphRAG/test_runs/api_working\images\image_16.jpg</data>
+  <data key="d6">1</data>
+</edge>
+<edge source="&quot;IMAGE_16&quot;" target="&quot;KNIFE&quot;">
+  <data key="d3">10.0</data>
+  <data key="d4">"Knife是从image_16中提取的实体。"</data>
+  <data key="d5">C:/MMGraphRAG/MMGraphRAG/test_runs/api_working\images\image_16.jpg</data>
+  <data key="d6">1</data>
+</edge>
+<edge source="&quot;CIRCLE&quot;" target="&quot;FORK&quot;">
+  <data key="d3">9.0</data>
+  <data key="d4">"The fork is located inside the circle."</data>
+  <data key="d5">C:/MMGraphRAG/MMGraphRAG/test_runs/api_working\images\image_16.jpg</data>
+  <data key="d6">1</data>
+</edge>
+<edge source="&quot;CIRCLE&quot;" target="&quot;KNIFE&quot;">
+  <data key="d3">9.0</data>
+  <data key="d4">"The knife is located inside the circle."</data>
+  <data key="d5">C:/MMGraphRAG/MMGraphRAG/test_runs/api_working\images\image_16.jpg</data>
+  <data key="d6">1</data>
+</edge>
+<edge source="&quot;FORK&quot;" target="&quot;KNIFE&quot;">
+  <data key="d3">8.0</data>
+  <data key="d4">"The fork is positioned immediately to the left of the knife."</data>
+  <data key="d5">C:/MMGraphRAG/MMGraphRAG/test_runs/api_working\images\image_16.jpg</data>
+  <data key="d6">1</data>
+</edge>
+</graph></graphml>

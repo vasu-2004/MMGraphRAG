@@ -1,0 +1,28 @@
+<?xml version='1.0' encoding='utf-8'?>
+<graphml xmlns="http://graphml.graphdrawing.org/xmlns" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://graphml.graphdrawing.org/xmlns http://graphml.graphdrawing.org/xmlns/1.0/graphml.xsd">
+  <key id="d6" for="edge" attr.name="order" attr.type="long" />
+  <key id="d5" for="edge" attr.name="source_id" attr.type="string" />
+  <key id="d4" for="edge" attr.name="description" attr.type="string" />
+  <key id="d3" for="edge" attr.name="weight" attr.type="double" />
+  <key id="d2" for="node" attr.name="source_id" attr.type="string" />
+  <key id="d1" for="node" attr.name="description" attr.type="string" />
+  <key id="d0" for="node" attr.name="entity_type" attr.type="string" />
+  <graph edgedefault="undirected">
+    <node id="&quot;IMAGE_7&quot;">
+      <data key="d0">"ORI_IMG"</data>
+      <data key="d1">"The image is a small, monochrome, pixelated graphic featuring the letters "FS". The letters are rendered in a bold, blocky, sans-serif font, appearing in a light gray or white color against a dark gray or black background. The letters "F" and "S" are clearly distinguishable, with the "F" having a strong vertical stem and two horizontal bars, and the "S" forming a characteristic curved shape. The edges of both the letters and the background show visible pixelation, giving the graphic a distinct low-resolution or retro digital aesthetic. The overall shape of the graphic is rectangular, and the letters are centrally placed within this frame. It appears to be an icon, a logo, or a small graphic identifier."</data>
+      <data key="d2">test_runs/test_mmrag_working\images\image_7.jpg</data>
+    </node>
+    <node id="&quot;FS LOGO&quot;">
+      <data key="d0">"ORGANIZATION"</data>
+      <data key="d1">A stylized logo featuring the letters 'FS' in a bold, sans-serif font. The letters appear silver or white with a metallic or glossy finish, set against a dark, possibly black, background that has a subtle textured or pixelated pattern. The 'F' and 'S' are closely positioned, forming a cohesive emblem.</data>
+      <data key="d2">test_runs/test_mmrag_working\images\image_7.jpg</data>
+    </node>
+    <edge source="&quot;IMAGE_7&quot;" target="&quot;FS LOGO&quot;">
+      <data key="d3">10.0</data>
+      <data key="d4">"FS Logo是从image_7中提取的实体。"</data>
+      <data key="d5">test_runs/test_mmrag_working\images\image_7.jpg</data>
+      <data key="d6">1</data>
+    </edge>
+  </graph>
+</graphml>

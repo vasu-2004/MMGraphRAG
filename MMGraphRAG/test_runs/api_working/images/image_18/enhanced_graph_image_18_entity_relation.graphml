@@ -1,0 +1,10 @@
+<?xml version='1.0' encoding='utf-8'?>
+<graphml xmlns="http://graphml.graphdrawing.org/xmlns" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://graphml.graphdrawing.org/xmlns http://graphml.graphdrawing.org/xmlns/1.0/graphml.xsd"><key id="d2" for="node" attr.name="source_id" attr.type="string"/>
+<key id="d1" for="node" attr.name="description" attr.type="string"/>
+<key id="d0" for="node" attr.name="entity_type" attr.type="string"/>
+<graph edgedefault="undirected"><node id="&quot;IMAGE_18&quot;">
+  <data key="d0">"ORI_IMG"</data>
+  <data key="d1">"The image is a very small, low-resolution, and highly pixelated grayscale graphic. It measures approximately 16x16 pixels. The dominant colors are shades of dark gray and black in the background, with some lighter gray and white pixels forming an indistinct shape in the center. The shape is extremely blurry and abstract, making it impossible to identify any specific objects or recognizable forms. It appears to be a small icon or a fragment of a larger image that has been heavily downscaled, resulting in a loss of all discernible detail."</data>
+  <data key="d2">C:/MMGraphRAG/MMGraphRAG/test_runs/api_working\images\image_18.jpg</data>
+</node>
+</graph></graphml>

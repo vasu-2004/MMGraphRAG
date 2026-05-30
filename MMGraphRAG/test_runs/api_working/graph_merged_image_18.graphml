@@ -1,0 +1,1068 @@
+<?xml version='1.0' encoding='utf-8'?>
+<graphml xmlns="http://graphml.graphdrawing.org/xmlns" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://graphml.graphdrawing.org/xmlns http://graphml.graphdrawing.org/xmlns/1.0/graphml.xsd"><key id="d6" for="edge" attr.name="order" attr.type="long"/>
+<key id="d5" for="edge" attr.name="source_id" attr.type="string"/>
+<key id="d4" for="edge" attr.name="description" attr.type="string"/>
+<key id="d3" for="edge" attr.name="weight" attr.type="double"/>
+<key id="d2" for="node" attr.name="source_id" attr.type="string"/>
+<key id="d1" for="node" attr.name="description" attr.type="string"/>
+<key id="d0" for="node" attr.name="entity_type" attr.type="string"/>
+<graph edgedefault="undirected"><node id="&quot;IMAGE_18&quot;">
+  <data key="d0">"ORI_IMG"</data>
+  <data key="d1">"The image is a very small, low-resolution, and highly pixelated grayscale graphic. It measures approximately 16x16 pixels. The dominant colors are shades of dark gray and black in the background, with some lighter gray and white pixels forming an indistinct shape in the center. The shape is extremely blurry and abstract, making it impossible to identify any specific objects or recognizable forms. It appears to be a small icon or a fragment of a larger image that has been heavily downscaled, resulting in a loss of all discernible detail."</data>
+  <data key="d2">C:/MMGraphRAG/MMGraphRAG/test_runs/api_working\images\image_18.jpg</data>
+</node>
+<node id="&quot;IMAGE_17&quot;">
+  <data key="d0">"ORI_IMG"</data>
+  <data key="d1">"The image displays a small, pixelated, black and white icon set against a solid black background. The icon itself is rendered in shades of white and light gray, creating a stark contrast. It depicts a stylized representation of a recreational vehicle or trailer, resembling a camper van or a caravan. The main body of the vehicle is a horizontal rectangle with softened corners. Within this main body, towards the front, there are two smaller, distinct rectangular shapes, which appear to represent windows. Below the main body, centered, is a small circular or oval shape, likely indicating a wheel or a hitch for the trailer. The overall impression is that of a simple, symbolic graphic."</data>
+  <data key="d2">C:/MMGraphRAG/MMGraphRAG/test_runs/api_working\images\image_17.jpg</data>
+</node>
+<node id="&quot;Generic Building Icon (House Icon)&quot;">
+  <data key="d0">"OBJECT"</data>
+  <data key="d1">A very low-resolution, pixelated black and white icon resembling a simple house or building. It features a rectangular base and a triangular or peaked roof, with two small square shapes that could represent windows or doors on its front face. The icon is rendered in white against a black background. Given the context of the document detailing Yellowstone National Park, this generic house icon likely serves as a visual symbol or marker on a map or guide to indicate the location of various facilities or buildings within the park, such as visitor centers, lodging, general stores, clinics, or ranger stations, which are extensively mentioned in the accompanying text.</data>
+  <data key="d2">C:/MMGraphRAG/MMGraphRAG/test_runs/api_working\images\image_17.jpg</data>
+</node>
+<node id="Campground">
+  <data key="d0">IMG_ENTITY</data>
+  <data key="d1">A stylized icon depicting a recreational vehicle or trailer, which is used in the '5 Services' section of the text as a visual indicator for a campground location or service within Yellowstone National Park.</data>
+  <data key="d2">C:/MMGraphRAG/MMGraphRAG/test_runs/api_working\images\image_17.jpg</data>
+</node>
+<node id="&quot;IMAGE_16&quot;">
+  <data key="d0">"ORI_IMG"</data>
+  <data key="d1">"The image displays a small, low-resolution, black-and-white icon, likely a pictogram. It consists of a prominent white circular shape centered within a black square frame. Inside the white circle, there are two thin, dark vertical shapes. The shape on the left is shorter and has a slightly broader, multi-pronged top, characteristic of a fork. The shape on the right is longer and narrower, with a pointed or rounded top, resembling a knife. These two utensils are positioned side-by-side, suggesting an icon for food service or a restaurant, consistent with the surrounding text mentioning "food service.""</data>
+  <data key="d2">C:/MMGraphRAG/MMGraphRAG/test_runs/api_working\images\image_16.jpg</data>
+</node>
+<node id="&quot;CIRCLE&quot;">
+  <data key="d0">"OBJECT"</data>
+  <data key="d1">A dark gray circular shape forming the outer boundary of the icon.</data>
+  <data key="d2">C:/MMGraphRAG/MMGraphRAG/test_runs/api_working\images\image_16.jpg</data>
+</node>
+<node id="&quot;FORK&quot;">
+  <data key="d0">"OBJECT"</data>
+  <data key="d1">A light gray eating utensil with tines, positioned vertically inside the circle to the left.</data>
+  <data key="d2">C:/MMGraphRAG/MMGraphRAG/test_runs/api_working\images\image_16.jpg</data>
+</node>
+<node id="&quot;KNIFE&quot;">
+  <data key="d0">"OBJECT"</data>
+  <data key="d1">A light gray eating utensil with a blade and handle, positioned vertically inside the circle to the right.</data>
+  <data key="d2">C:/MMGraphRAG/MMGraphRAG/test_runs/api_working\images\image_16.jpg</data>
+</node>
+<node id="&quot;IMAGE_15&quot;">
+  <data key="d0">"ORI_IMG"</data>
+  <data key="d1">"The image displays a large, stylized white question mark centered against a solid black background. The question mark is rendered with a slightly blurred or glowing effect, giving it a soft, ethereal appearance, and appears to be a placeholder or an indicator that the intended image is missing or could not be loaded. The overall impression is one of ambiguity or an unknown element."</data>
+  <data key="d2">C:/MMGraphRAG/MMGraphRAG/test_runs/api_working\images\image_15.jpg</data>
+</node>
+<node id="&quot;IMAGE_14&quot;">
+  <data key="d0">"ORI_IMG"</data>
+  <data key="d1">"The image displays a monochrome icon, set against a solid black background. The icon itself is rendered in shades of gray and white, creating a somewhat metallic or glossy appearance. It depicts a stylized representation of a fuel pump or gas dispenser. The main body of the pump is a relatively tall, rectangular shape with a slightly rounded or sloped top. Extending from the right side of this main body is a hose, which curves downwards and terminates in a nozzle, indicative of a dispenser. There are subtle gradients of gray and white within the icon, suggesting depth and a light source, with some lighter areas on the top and front surfaces of the pump's body. The overall impression is a clear, minimalist symbol often used to indicate the availability of fuel."</data>
+  <data key="d2">C:/MMGraphRAG/MMGraphRAG/test_runs/api_working\images\image_14.jpg</data>
+</node>
+<node id="&quot;Gasoline/Fuel Icon&quot;">
+  <data key="d0">"OBJECT"</data>
+  <data key="d1">A black and white icon depicting a stylized gas pump, featuring a dispenser with a nozzle and a hose. In the context of Yellowstone National Park, this icon is specifically used to represent the availability of 'Gasoline/fuel' services. These fuel services are listed as available at various park locations including Bridge Bay, Canyon, Fishing Bridge, Grant Village, Lake Village, Mammoth Hot Springs, Old Faithful, Roosevelt, and Tower Fall.</data>
+  <data key="d2">C:/MMGraphRAG/MMGraphRAG/test_runs/api_working\images\image_14.jpg</data>
+</node>
+<node id="&quot;IMAGE_13&quot;">
+  <data key="d0">"ORI_IMG"</data>
+  <data key="d1">"The image displays a monochrome graphic icon, primarily composed of shades of black and white or gray. The central element is a bold, black plus sign, oriented vertically and horizontally, forming a cross shape. This black plus sign is perfectly centered within a smaller, distinct white square. This white square, with the black plus sign inside it, is then set against a larger, solid black square background. The overall appearance is clean, geometric, and indicative of an 'add' or 'expand' function, commonly seen in user interfaces."</data>
+  <data key="d2">C:/MMGraphRAG/MMGraphRAG/test_runs/api_working\images\image_13.jpg</data>
+</node>
+<node id="&quot;PLUS SIGN&quot;">
+  <data key="d0">"OBJECT"</data>
+  <data key="d1">A black plus sign, centrally located within a white square. It consists of two intersecting bars of equal length and width.</data>
+  <data key="d2">C:/MMGraphRAG/MMGraphRAG/test_runs/api_working\images\image_13.jpg</data>
+</node>
+<node id="&quot;SQUARE&quot;">
+  <data key="d0">"OBJECT"</data>
+  <data key="d1">A white square with a black border, serving as the background and container for the black plus sign. The area outside the square is black.</data>
+  <data key="d2">C:/MMGraphRAG/MMGraphRAG/test_runs/api_working\images\image_13.jpg</data>
+</node>
+<node id="&quot;IMAGE_12&quot;">
+  <data key="d0">"ORI_IMG"</data>
+  <data key="d1">"The image displays a single, prominent character, which is the uppercase Greek letter Delta (Δ). The character is rendered in a light gray or white color, standing out against a dark gray or black rectangular background. The Delta symbol is depicted as an equilateral triangle with a flat base, its lines appearing somewhat thick and slightly blurred or pixelated, giving it a somewhat soft-edged or anti-aliased appearance. The overall aesthetic is simple and monochromatic, focusing solely on the geometric form of the letter."</data>
+  <data key="d2">C:/MMGraphRAG/MMGraphRAG/test_runs/api_working\images\image_12.jpg</data>
+</node>
+<node id="&quot;DELTA SYMBOL&quot;">
+  <data key="d0">"OBJECT"</data>
+  <data key="d1">A white, uppercase Greek letter Delta (Δ) with a triangular shape, centered on a solid black background. It appears as a mathematical or scientific symbol.</data>
+  <data key="d2">C:/MMGraphRAG/MMGraphRAG/test_runs/api_working\images\image_12.jpg</data>
+</node>
+<node id="&quot;IMAGE_11&quot;">
+  <data key="d0">"ORI_IMG"</data>
+  <data key="d1">"The image features a dark, horizontally oriented rectangular shape with significantly rounded corners, almost resembling a squircle or a pill shape. Inside this dark, uniform background, two uppercase letters, 'FS', are prominently displayed. The letters are rendered in a light grey or silver color, exhibiting a gradient effect that gives them a metallic, glossy, or embossed appearance. The 'F' is positioned to the left of the 'S', and both letters are bold and centrally aligned within the dark shape. The overall design suggests a stylized logo or an icon."</data>
+  <data key="d2">C:/MMGraphRAG/MMGraphRAG/test_runs/api_working\images\image_11.jpg</data>
+</node>
+<node id="&quot;FS LOGO&quot;">
+  <data key="d0">"ORGANIZATION"</data>
+  <data key="d1">A stylized logo featuring the capital letters 'F' and 'S' in a bold, metallic or glossy silver/grey appearance. The letters are embossed or raised against a dark, pixelated or textured background, creating a strong contrast. The image is monochromatic, primarily in shades of grey and black.</data>
+  <data key="d2">C:/MMGraphRAG/MMGraphRAG/test_runs/api_working\images\image_7.jpg</data>
+</node>
+<node id="&quot;IMAGE_10&quot;">
+  <data key="d0">"ORI_IMG"</data>
+  <data key="d1">"The image is a simple, monochromatic icon depicting an anchor. The anchor is rendered in a light gray or white color against a solid black background, providing a strong contrast. It is centrally positioned within the square frame. The design is stylized and symmetrical, featuring a prominent shank extending downwards from a circular or oval-shaped ring at the top, which would typically be used for attaching a chain or rope. Two curved arms extend outwards and downwards from the base of the shank, each terminating in a sharp, triangular fluke. The overall shape is clean and well-defined, characteristic of a graphic symbol rather than a realistic depiction."</data>
+  <data key="d2">C:/MMGraphRAG/MMGraphRAG/test_runs/api_working\images\image_10.jpg</data>
+</node>
+<node id="&quot;ANCHOR&quot;">
+  <data key="d0">"OBJECT"</data>
+  <data key="d1">A white or light gray metallic anchor, centrally depicted with a classic design including a shank, stock, and flukes, set against a dark background.</data>
+  <data key="d2">C:/MMGraphRAG/MMGraphRAG/test_runs/api_working\images\image_10.jpg</data>
+</node>
+<node id="&quot;BACKGROUND&quot;">
+  <data key="d0">"OBJECT"</data>
+  <data key="d1">A solid, dark black rectangular area that serves as the backdrop for the white anchor.</data>
+  <data key="d2">C:/MMGraphRAG/MMGraphRAG/test_runs/api_working\images\image_10.jpg</data>
+</node>
+<node id="&quot;IMAGE_9&quot;">
+  <data key="d0">"ORI_IMG"</data>
+  <data key="d1">"The image is a grayscale icon commonly used to represent a restroom or public toilets. It features two stylized human figures, a female and a male, standing side-by-side. The figure on the left represents a female, depicted with a triangular or bell-shaped lower body, suggesting a skirt or dress, and a circular head. The figure on the right represents a male, with a rectangular body and a circular head. Both figures are rendered as solid black silhouettes against a lighter, possibly white or light gray, background. They appear to be enclosed within a simple, slightly arched or rectangular frame, which might symbolize an entrance or a door. The overall design is minimalist and symbolic, characteristic of public signage."</data>
+  <data key="d2">C:/MMGraphRAG/MMGraphRAG/test_runs/api_working\images\image_9.jpg</data>
+</node>
+<node id="&quot;FEMALE FIGURE SILHOUETTE&quot;">
+  <data key="d0">"PERSON"</data>
+  <data key="d1">A stylized, black silhouette of a female figure, typically depicted with a triangular lower body suggesting a dress or skirt. This universal pictogram is commonly used on signs to represent women's facilities, such as restrooms.</data>
+  <data key="d2">C:/MMGraphRAG/MMGraphRAG/test_runs/api_working\images\image_9.jpg</data>
+</node>
+<node id="&quot;MALE FIGURE SILHOUETTE&quot;">
+  <data key="d0">"PERSON"</data>
+  <data key="d1">A stylized, black silhouette of a male figure, typically depicted with a rectangular lower body suggesting trousers. This universal pictogram is commonly used on signs to represent men's facilities, such as restrooms.</data>
+  <data key="d2">C:/MMGraphRAG/MMGraphRAG/test_runs/api_working\images\image_9.jpg</data>
+</node>
+<node id="&quot;RESTROOM SIGN&quot;">
+  <data key="d0">"OBJECT"</data>
+  <data key="d1">A common pictogram used to indicate public restrooms, featuring a dark background with two white stylized human figures side-by-side – typically a female silhouette on the left and a male silhouette on the right. In Yellowstone National Park, 'Restrooms' are explicitly listed as services available at various locations including Bridge Bay, Canyon, Fishing Bridge, Grant Village, Lake Village, Mammoth Hot Springs, Old Faithful, Roosevelt, and Tower Fall. Furthermore, picnic areas throughout the park usually provide toilets, implying the widespread presence of such signs to guide visitors to these facilities.</data>
+  <data key="d2">C:/MMGraphRAG/MMGraphRAG/test_runs/api_working\images\image_9.jpg</data>
+</node>
+<node id="&quot;IMAGE_8&quot;">
+  <data key="d0">"ORI_IMG"</data>
+  <data key="d1">"The image is a small, extremely low-resolution, pixelated square graphic rendered in grayscale. It features two blocky, abstract shapes that strongly resemble the letters 'FS' in a bold, sans-serif style. These shapes are depicted in various shades of light gray, appearing to have a slight gradient or embossed effect, against a dark, almost black background. The pixelation is very prominent, making the edges of the shapes jagged and indistinct. The overall impression is that of a highly stylized or severely downscaled icon or symbol, rather than a detailed photograph or illustration."</data>
+  <data key="d2">C:/MMGraphRAG/MMGraphRAG/test_runs/api_working\images\image_8.jpg</data>
+</node>
+<node id="&quot;IMAGE_7&quot;">
+  <data key="d0">"ORI_IMG"</data>
+  <data key="d1">"The image displays a small, monochrome graphic featuring two capital letters, 'FS', rendered in a stylized, blocky, and somewhat pixelated font. The letters are depicted in a light gray or white color with subtle gradient shading, giving them a metallic or embossed appearance, suggesting depth. They are centrally positioned against a solid, dark, likely black, square background. The overall resolution of the image appears low, contributing to the pixelated quality of both the letters and the background edges. The graphic functions as a simple, abstract symbol or icon."</data>
+  <data key="d2">C:/MMGraphRAG/MMGraphRAG/test_runs/api_working\images\image_7.jpg</data>
+</node>
+<node id="&quot;IMAGE_6&quot;">
+  <data key="d0">"ORI_IMG"</data>
+  <data key="d1">"The image displays a collection of five grayscale books or guides, likely related to national parks, arranged against a plain white background. All items are oriented vertically, with their covers facing the viewer, and are slightly overlapping, creating a sense of a casual display of literature. Starting from the top left, a small, folded brochure or map is partially visible, appearing to be white with some dark text and graphic elements, though the specific content is indistinct due to its partial view and the grayscale conversion.Below and slightly to the right of the brochure, at the bottom left, is a book or guide with a dark, possibly black or dark blue, spine and a cover featuring a landscape image. The image appears to depict mountains or a natural vista, possibly with water. Part of the title is visible, starting with letters that could be 'CRATER' or similar, in a lighter font.In the middle-left, a taller, narrower guide stands prominently. Its cover is light-colored, possibly white or light gray, and features a distinct black and white photograph of a geyser or hot spring erupting, with steam rising. The title, clearly legible, reads "YELLOWSTONE AND GRAND TETON NATIONAL PARKS Road Guide" in dark, bold lettering.Dominating the center-right and positioned slightly behind the other items is the largest book. Its cover is light gray or white, with the prominent title "YELLOWSTONE" in large, dark, sans-serif font at the top. Below this, smaller text reads "THE OFFICIAL GUIDE TO AMERICA'S FIRST NATIONAL PARK". The bottom portion of the cover features a silhouette graphic of several bison or similar large wildlife, adding to the park theme.Finally, on the far right, another book or guide is visible. Its cover is darker, possibly black or a very dark gray, and features an image of several animals, possibly elk or deer, in a natural setting. The title is partially obscured but appears to include words like 'FAUNA' or 'FLORA' and mentions 'YELLOWSTONE'.The overall arrangement suggests a selection of informational or educational materials available for national park visitors, consistent with the provided context mentioning "YellowstoneAssociation.org" for ordering."</data>
+  <data key="d2">C:/MMGraphRAG/MMGraphRAG/test_runs/api_working\images\image_6.jpg</data>
+</node>
+<node id="&quot;YELLOWSTONE: THE AMERICAN GUIDE NATIONAL PARK BOOK&quot;">
+  <data key="d0">"OBJECT"</data>
+  <data key="d1">"A large, light-colored book or guide with the prominent title 'YELLOWSTONE' and 'THE AMERICAN GUIDE TO ITS NATIONAL PARK'. The bottom features an illustration of several bison. It appears to be a comprehensive guide to Yellowstone National Park."</data>
+  <data key="d2">C:/MMGraphRAG/MMGraphRAG/test_runs/api_working\images\image_6.jpg</data>
+</node>
+<node id="&quot;YELLOWSTONE AND GRAND TETON NATIONAL PARKS ROAD GUIDE&quot;">
+  <data key="d0">"OBJECT"</data>
+  <data key="d1">"A vertical, light-colored book titled 'Yellowstone and Grand Teton National Parks Road Guide'. It features an image of a geyser or hot spring erupting, suggesting it's a travel guide for these specific national parks."</data>
+  <data key="d2">C:/MMGraphRAG/MMGraphRAG/test_runs/api_working\images\image_6.jpg</data>
+</node>
+<node id="&quot;FAME'S YOSEMITE BOOK&quot;">
+  <data key="d0">"OBJECT"</data>
+  <data key="d1">"A dark-covered book with the partially visible title 'FAME'S' and 'YOSEMITE'. It features a landscape image, likely of Yosemite National Park, indicating it is a guide or pictorial book about the park."</data>
+  <data key="d2">C:/MMGraphRAG/MMGraphRAG/test_runs/api_working\images\image_6.jpg</data>
+</node>
+<node id="&quot;MONTANA GUIDEBOOK&quot;">
+  <data key="d0">"OBJECT"</data>
+  <data key="d1">"A vertical book with a dark cover, partially visible, featuring a landscape image with mountains and trees. The visible text mentions 'MONTANA' and 'TRAILS', suggesting it's a guide or book about Montana trails or parks."</data>
+  <data key="d2">C:/MMGraphRAG/MMGraphRAG/test_runs/api_working\images\image_6.jpg</data>
+</node>
+<node id="&quot;SMALL BROCHURE&quot;">
+  <data key="d0">"OBJECT"</data>
+  <data key="d1">"A small, folded brochure or map, partially visible at the top left corner of the image. It has some text and graphics, but the details are indistinguishable."</data>
+  <data key="d2">C:/MMGraphRAG/MMGraphRAG/test_runs/api_working\images\image_6.jpg</data>
+</node>
+<node id="&quot;IMAGE_5_PERSON-0.JPG&quot;">
+  <data key="d0">"IMG"</data>
+  <data key="d1">"The category of this image feature block is 'person'. The entity features are as follows:Person Features:- Gender: Appears to be female.- Age: A young child, likely a toddler or pre-schooler.- Skin color: Not discernible due to grayscale, but appears fair.- Hairstyle: Wavy or curly light-colored hair, possibly blonde or light brown, worn loose around the face. A small, light-colored accessory (possibly a clip or bow) is visible on the top of the head.- Clothing: Wearing a light-colored, possibly white, top with a high neckline, which could be a t-shirt or sweater.- Facial expression: Looking slightly to the right with a neutral or mildly curious expression. The mouth is closed.- Posture: Only the upper body (head and shoulders) is visible. The child's head is turned to the right, and the shoulders are slightly hunched."</data>
+  <data key="d2">C:/MMGraphRAG/MMGraphRAG/test_runs/api_working\images\image_5.jpg</data>
+</node>
+<node id="&quot;IMAGE_5_PERSON-1.JPG&quot;">
+  <data key="d0">"IMG"</data>
+  <data key="d1">"The category of this image feature block is 'person'. The entity features are as follows:Person Features:- **Gender:** Appears to be male or androgynous.- **Hairstyle:** Short, dark, and somewhat tousled hair, covering the forehead.- **Facial features:**    - **Eyes:** Wearing glasses with dark frames. The eyes behind the lenses are not clearly discernible due to the low resolution and grayscale nature.    - **Mouth:** A subtle smile or smirk is visible, hinting at a friendly or perhaps slightly mischievous expression.- **Expression:** The overall expression is one of slight amusement or friendliness.- **Age:** Appears to be a young adult.- **Clothing:** A small portion of what seems to be a light-colored collar or shirt is visible on the right side of the image.- **Accessories:** Clearly wearing glasses with dark, possibly thick, frames.- **Posture:** The head is slightly tilted, and the person is looking towards the viewer."</data>
+  <data key="d2">C:/MMGraphRAG/MMGraphRAG/test_runs/api_working\images\image_5.jpg</data>
+</node>
+<node id="&quot;IMAGE_5&quot;">
+  <data key="d0">"ORI_IMG"</data>
+  <data key="d1">"The image is a black and white photograph depicting an outdoor scene with an adult interacting with two young children. In the foreground, on the left, a young child, possibly a girl, with light-colored hair tied back, is visible, looking slightly to the viewer's right with a neutral expression. She is wearing a light-colored top. To her right, another child with darker hair and distinctive round, light-rimmed sunglasses is looking towards the right side of the frame, possibly at the adult. This child is also wearing a light-colored top. The central figure is an adult, likely a park ranger given their wide-brimmed hat, which is a prominent feature. The adult has dark hair and is leaning down, looking intently at the children, suggesting an interaction or teaching moment. They are wearing a light-colored shirt, and a wristwatch is visible on their left wrist. The background is somewhat blurry but appears to be a natural outdoor setting, with indistinct shapes of what might be wooden logs or structures, and possibly other people in the distance, further suggesting a park or camp environment. The overall atmosphere appears engaging and educational, focusing on the interaction between the adult and the children. The black and white tone gives the image a classic, documentary feel."</data>
+  <data key="d2">C:/MMGraphRAG/MMGraphRAG/test_runs/api_working\images\image_5.jpg</data>
+</node>
+<node id="&quot;Park Ranger&quot;">
+  <data key="d0">"PERSON"</data>
+  <data key="d1">An adult woman, potentially a Park Ranger in Yellowstone National Park, with dark hair, wearing a light-colored ranger-style hat with a dark band and a watch on her left wrist. She is looking down, interacting with children, a role consistent with rangers who lead activities, answer questions, and help visitors understand the wonders and hazards of Yellowstone.</data>
+  <data key="d2">C:/MMGraphRAG/MMGraphRAG/test_runs/api_working\images\image_5.jpg</data>
+</node>
+<node id="&quot;Child Visitor (Light Hair)&quot;">
+  <data key="d0">"PERSON"</data>
+  <data key="d1">A young child with light, curly hair, wearing a light-colored shirt. The child is looking towards the left, appearing to be held or supported by the woman. As a visitor in Yellowstone, children are advised to stay close to adults and understand the park's hazards, particularly hydrothermal areas, wildlife, and steep drop-offs. They might also participate in Junior Ranger or Young Scientist programs.</data>
+  <data key="d2">C:/MMGraphRAG/MMGraphRAG/test_runs/api_working\images\image_5.jpg</data>
+</node>
+<node id="&quot;Child Visitor (Dark Hair)&quot;">
+  <data key="d0">"PERSON"</data>
+  <data key="d1">A child with dark hair, wearing round-framed glasses and a light-colored shirt. The child is looking towards the right with a slight smile. As a visitor in Yellowstone, children are advised to stay close to adults and understand the park's hazards, particularly hydrothermal areas, wildlife, and steep drop-offs. They might also participate in Junior Ranger or Young Scientist programs.</data>
+  <data key="d2">C:/MMGraphRAG/MMGraphRAG/test_runs/api_working\images\image_5.jpg</data>
+</node>
+<node id="&quot;Park Ranger Hat&quot;">
+  <data key="d0">"OBJECT"</data>
+  <data key="d1">A light-colored, wide-brimmed hat with a dark band, worn by the woman, suggesting she is a park ranger. Park rangers in Yellowstone lead programs and assist visitors, making such a hat a common part of their attire in the outdoor setting.</data>
+  <data key="d2">C:/MMGraphRAG/MMGraphRAG/test_runs/api_working\images\image_5.jpg</data>
+</node>
+<node id="&quot;Round-framed Glasses&quot;">
+  <data key="d0">"OBJECT"</data>
+  <data key="d1">A pair of eyeglasses with round frames, worn by one of the child visitors in the Yellowstone National Park setting.</data>
+  <data key="d2">C:/MMGraphRAG/MMGraphRAG/test_runs/api_working\images\image_5.jpg</data>
+</node>
+<node id="&quot;Wristwatch&quot;">
+  <data key="d0">"OBJECT"</data>
+  <data key="d1">A wristwatch with a light-colored face and strap, worn on the left wrist of the woman, who appears to be a park ranger in Yellowstone National Park.</data>
+  <data key="d2">C:/MMGraphRAG/MMGraphRAG/test_runs/api_working\images\image_5.jpg</data>
+</node>
+<node id="&quot;Yellowstone National Park Setting&quot;">
+  <data key="d0">"GEO"</data>
+  <data key="d1">A blurry outdoor environment, characteristic of Yellowstone National Park, visible in the background. The park is mostly above 7,500 feet (2,275 m) with unpredictable weather. The setting features logs or wooden structures and what appears to be dirt or gravel ground, suggesting a natural or camp-like area within the park, where visitors are advised to stay on designated trails and be aware of hazards like hydrothermal features and wildlife.</data>
+  <data key="d2">C:/MMGraphRAG/MMGraphRAG/test_runs/api_working\images\image_5.jpg</data>
+</node>
+<node id="Especially for Children">
+  <data key="d0">IMG_ENTITY</data>
+  <data key="d1">The image captures an adult, likely a park ranger, engaging with two young children in an outdoor educational setting. This scene directly illustrates the 'Especially for Children' section of the Yellowstone National Park Trip Planner, which describes programs like the Junior Ranger and Young Scientist initiatives designed to foster involvement and understanding of Yellowstone's hazards and wonders among young visitors.</data>
+  <data key="d2">C:/MMGraphRAG/MMGraphRAG/test_runs/api_working\images\image_5.jpg</data>
+</node>
+<node id="&quot;IMAGE_4_PERSON-0.JPG&quot;">
+  <data key="d0">"IMG"</data>
+  <data key="d1">"The category of this image feature block is 'person'. The entity features are as follows:Person Features:- **Gender:** Indeterminate from this angle and resolution, but appears to be an adult.- **Hairstyle:** Not visible, as the head is covered by a hood.- **Clothing:** Wearing a dark-colored, likely gray or black, hooded jacket or sweatshirt. The hood is pulled up, covering the head. The fabric appears somewhat thick, suggesting a warm garment. Below the jacket, a darker, possibly black, lower garment (trousers or skirt) is visible.- **Posture:** The person is seen from the back, appearing to be standing or walking away. The head is slightly bowed or looking forward.- **Age:** Appears to be an adult, but more specific age estimation is not possible due to the lack of visible facial features or distinguishing characteristics."</data>
+  <data key="d2">C:/MMGraphRAG/MMGraphRAG/test_runs/api_working\images\image_4.jpg</data>
+</node>
+<node id="&quot;IMAGE_4_PERSON-1.JPG&quot;">
+  <data key="d0">"IMG"</data>
+  <data key="d1">"The category of this image feature block is 'person'. The entity features are as follows:Person Features:- **Gender:** Appears to be female.- **Hairstyle:** Long, dark hair, seemingly pulled back or styled, visible from the side profile.- **Clothing:** Wearing a dark, short-sleeved top (possibly a t-shirt or athletic jersey) and dark shorts. There appears to be a lighter colored band or stripe on the upper right arm.- **Facial Expression:** The face is mostly obscured as the person is in a side profile with the head tilted downwards. No clear expression is discernible.- **Age:** Appears to be an adult or older youth.- **Posture:** The person is in an athletic stance, leaning forward with knees slightly bent. Both arms are extended forward and slightly upwards, with hands together, suggesting an action like receiving or hitting a ball (e.g., in volleyball).- **Overall Impression:** The pose indicates active participation in a sport or physical activity. The image is black and white."</data>
+  <data key="d2">C:/MMGraphRAG/MMGraphRAG/test_runs/api_working\images\image_4.jpg</data>
+</node>
+<node id="&quot;IMAGE_4_PERSON-3.JPG&quot;">
+  <data key="d0">"IMG"</data>
+  <data key="d1">"The category of this image feature block is 'person'. The entity features are as follows:Person Features:- **Gender:** Indeterminate from the silhouette, but the broad shoulders might suggest a male figure.- **Hairstyle:** Appears to have short hair, but specific details are not discernible due to the silhouette.- **Clothing:** Seems to be wearing a top with a collar, possibly a jacket or a collared shirt, with distinct shoulder lines.- **Facial Expression:** Not discernible.- **Age:** Not discernible from the silhouette.- **Posture:** The person is depicted from the chest up, with both arms extended outwards and slightly upwards from the torso. The head is turned slightly to the viewer's left. The pose suggests an action, possibly gesturing, reaching, or holding something.- **Overall Appearance:** A dark, low-resolution silhouette of a person's upper body, indicating a dynamic posture."</data>
+  <data key="d2">C:/MMGraphRAG/MMGraphRAG/test_runs/api_working\images\image_4.jpg</data>
+</node>
+<node id="&quot;IMAGE_4&quot;">
+  <data key="d0">"ORI_IMG"</data>
+  <data key="d1">"The image is a black and white photograph depicting an indoor scene, likely a museum or visitor center, with a large, prominent spherical water feature at its center. The sphere is dark, highly polished, and appears to be made of stone or metal, with water visibly cascading down its surface and collecting in a circular, textured basin below. On the right side of the sphere, a young child, possibly a boy, is interacting with it, reaching out with both hands to touch its smooth, wet surface. The child is wearing a light-colored, possibly checkered, short-sleeved top, light-colored shorts, and a dark baseball cap. Their posture suggests curiosity and engagement with the exhibit. In the background, several other people are visible, some standing, some observing other exhibits, suggesting a public and educational environment. The lighting in the room is ambient, with some overhead light sources creating reflections on the sphere. The overall atmosphere is calm and educational, focusing on the interaction between the child and the unique water sculpture."</data>
+  <data key="d2">C:/MMGraphRAG/MMGraphRAG/test_runs/api_working\images\image_4.jpg</data>
+</node>
+<node id="&quot;GIRL&quot;">
+  <data key="d0">"PERSON"</data>
+  <data key="d1">"A young girl, seen from the side, wearing a hat, a dark short-sleeved shirt, and light-colored shorts or pants. She is actively touching a large dark sphere with both hands, looking engaged and curious."</data>
+  <data key="d2">C:/MMGraphRAG/MMGraphRAG/test_runs/api_working\images\image_4.jpg</data>
+</node>
+<node id="&quot;LARGE SPHERE&quot;">
+  <data key="d0">"OBJECT"</data>
+  <data key="d1">"A prominent, very large, dark, glossy spherical object, appearing to be made of stone or polished granite. It is positioned on a cylindrical base, with water visibly flowing around its lower portion, suggesting it's a kinetic water sculpture or globe."</data>
+  <data key="d2">C:/MMGraphRAG/MMGraphRAG/test_runs/api_working\images\image_4.jpg</data>
+</node>
+<node id="&quot;PEDESTAL&quot;">
+  <data key="d0">"OBJECT"</data>
+  <data key="d1">"A sturdy, cylindrical base made of a light-colored, textured material, possibly stone or concrete. It supports the large dark sphere and contains the water feature."</data>
+  <data key="d2">C:/MMGraphRAG/MMGraphRAG/test_runs/api_working\images\image_4.jpg</data>
+</node>
+<node id="&quot;WATER&quot;">
+  <data key="d0">"OBJECT"</data>
+  <data key="d1">"Visible as a thin sheet or stream flowing outwards from beneath the large sphere and over the edge of the pedestal, indicating a water fountain or kinetic sculpture."</data>
+  <data key="d2">C:/MMGraphRAG/MMGraphRAG/test_runs/api_working\images\image_4.jpg</data>
+</node>
+<node id="&quot;BACKGROUND PEOPLE&quot;">
+  <data key="d0">"PERSON"</data>
+  <data key="d1">"Several individuals are visible in the blurred background, standing and observing. They are dressed in casual attire, suggesting a public or recreational setting."</data>
+  <data key="d2">C:/MMGraphRAG/MMGraphRAG/test_runs/api_working\images\image_4.jpg</data>
+</node>
+<node id="&quot;INDOOR ENVIRONMENT&quot;">
+  <data key="d0">"GEO"</data>
+  <data key="d1">"An indoor public space, likely a museum, science center, or exhibition hall, characterized by artificial lighting, blurred architectural elements, and other people."</data>
+  <data key="d2">C:/MMGraphRAG/MMGraphRAG/test_runs/api_working\images\image_4.jpg</data>
+</node>
+<node id="Canyon Visitor Education Center">
+  <data key="d0">IMG_ENTITY</data>
+  <data key="d1">The image captures an indoor scene within a visitor education center, potentially the Canyon Visitor Education Center, where a child engages with a prominent spherical water feature. This interactive exhibit is consistent with the center's mission to educate visitors about Yellowstone's supervolcano, geysers, hot springs, and geological history.</data>
+  <data key="d2">C:/MMGraphRAG/MMGraphRAG/test_runs/api_working\images\image_4.jpg</data>
+</node>
+<node id="&quot;IMAGE_3&quot;">
+  <data key="d0">"ORI_IMG"</data>
+  <data key="d1">"The image is a dramatic black and white photograph depicting a powerful waterfall cascading through a rugged, forested canyon. Dominating the center of the frame, the waterfall plunges from a considerable height, its water appearing turbulent and frothy, especially towards its base. The falls are flanked on both sides by steep, rocky cliffs and slopes, which are densely covered with dark, coniferous trees, creating a stark contrast with the lighter tones of the water and some of the exposed rock faces. On the right side of the image, a prominent, jagged rock formation rises vertically, adding to the grandeur and ruggedness of the scene. In the background and receding into the distance, more forested hills and mountainous terrain are visible, suggesting a vast natural landscape. The black and white tonality emphasizes the textures of the rock, the movement of the water, and the density of the foliage, conveying a sense of raw natural power and majesty. The overall atmosphere is one of awe-inspiring natural beauty and rugged wilderness."</data>
+  <data key="d2">C:/MMGraphRAG/MMGraphRAG/test_runs/api_working\images\image_3.jpg</data>
+</node>
+<node id="&quot;WATERFALL&quot;">
+  <data key="d0">"GEO"</data>
+  <data key="d1">"A prominent, powerful cascade of water plunging down a cliff face in the center of the image, appearing white and foamy against the dark surroundings of the canyon."</data>
+  <data key="d2">C:/MMGraphRAG/MMGraphRAG/test_runs/api_working\images\image_3.jpg</data>
+</node>
+<node id="&quot;CANYON&quot;">
+  <data key="d0">"GEO"</data>
+  <data key="d1">"A deep, V-shaped valley with steep, rocky sides, through which the waterfall flows. It is heavily forested and features rugged terrain."</data>
+  <data key="d2">C:/MMGraphRAG/MMGraphRAG/test_runs/api_working\images\image_3.jpg</data>
+</node>
+<node id="&quot;RIVER&quot;">
+  <data key="d0">"GEO"</data>
+  <data key="d1">"The body of water that feeds the waterfall and continues to flow downstream as a winding stream at the bottom of the canyon."</data>
+  <data key="d2">C:/MMGraphRAG/MMGraphRAG/test_runs/api_working\images\image_3.jpg</data>
+</node>
+<node id="&quot;CLIFFS&quot;">
+  <data key="d0">"GEO"</data>
+  <data key="d1">"Steep, rugged rock formations that form the immediate walls of the canyon, especially prominent on the right side of the waterfall."</data>
+  <data key="d2">C:/MMGraphRAG/MMGraphRAG/test_runs/api_working\images\image_3.jpg</data>
+</node>
+<node id="&quot;FOREST&quot;">
+  <data key="d0">"GEO"</data>
+  <data key="d1">"Dense coniferous trees covering the slopes and ridges of the canyon and the distant hills, appearing dark and lush in the black and white image."</data>
+  <data key="d2">C:/MMGraphRAG/MMGraphRAG/test_runs/api_working\images\image_3.jpg</data>
+</node>
+<node id="Lower Falls of the Yellowstone River">
+  <data key="d0">IMG_ENTITY</data>
+  <data key="d1">A powerful waterfall located within the spectacular Grand Canyon of the Yellowstone, as depicted in the dramatic black and white photograph showing its turbulent cascade through a rugged, forested canyon.</data>
+  <data key="d2">C:/MMGraphRAG/MMGraphRAG/test_runs/api_working\images\image_3.jpg</data>
+</node>
+<node id="&quot;IMAGE_2&quot;">
+  <data key="d0">"ORI_IMG"</data>
+  <data key="d1">"The black and white image captures a dynamic and intense close-up of two elk engaged in a head-to-head confrontation, likely sparring or fighting. Both elk are depicted from the head and shoulder up, with their large, multi-tined antlers prominently interlocked. The elk on the left is shown in profile, with its head lowered and facing right, its dark body partially visible. Its antlers are expansive and complex, with several points branching upwards and forwards. The elk on the right is seen more from a three-quarter view, also with its head lowered and angled towards the left, its eyes appearing focused on the struggle. Its antlers are equally impressive, intricately woven with those of the other elk, forming a powerful central point of conflict. The fur of both animals appears dark due to the grayscale nature of the image, suggesting a deep brown or black color. The background is softly blurred and out of focus, hinting at a natural outdoor environment, possibly a grassy or rocky terrain, which emphasizes the elk as the sole subjects of the image. The overall atmosphere conveyed is one of raw power, natural struggle, and intense concentration."</data>
+  <data key="d2">C:/MMGraphRAG/MMGraphRAG/test_runs/api_working\images\image_2.jpg</data>
+</node>
+<node id="&quot;Left Elk (Yellowstone National Park)&quot;">
+  <data key="d0">"PERSON"</data>
+  <data key="d1">A large, dark-colored male elk, positioned on the left side of the image. Its head is lowered, and its prominent, branched antlers are interlocked with those of the other elk, indicating a physical confrontation or sparring. These wild animals, often seen sparring, are a common sight in Yellowstone National Park. Visitors are advised to maintain a safe distance of at least 25 yards (23m) from elk, which are among the large mammals that have inhabited the park since its establishment.</data>
+  <data key="d2">C:/MMGraphRAG/MMGraphRAG/test_runs/api_working\images\image_2.jpg</data>
+</node>
+<node id="&quot;Right Elk (Yellowstone National Park)&quot;">
+  <data key="d0">"PERSON"</data>
+  <data key="d1">A large, dark-colored male elk, positioned on the right side of the image. Its head is lowered, and its prominent, branched antlers are interlocked with those of the other elk, indicating a physical confrontation or sparring. This sparring behavior is characteristic of bull elk, which are significant wild animals in Yellowstone National Park. The park advises visitors to maintain a safe distance of at least 25 yards (23m) from all elk.</data>
+  <data key="d2">C:/MMGraphRAG/MMGraphRAG/test_runs/api_working\images\image_2.jpg</data>
+</node>
+<node id="&quot;Antlers of Left Elk (Yellowstone National Park)&quot;">
+  <data key="d0">"OBJECT"</data>
+  <data key="d1">The large, complex, branched antlers belonging to the elk on the left. They are dark and appear sturdy, currently engaged and interlocked with the antlers of the right elk. Such interlocked antlers are indicative of sparring, a natural behavior observed in bull elk, particularly in areas like Yellowstone National Park, where elk are a prominent part of the wildlife. Visitors are reminded to keep a safe distance from these wild animals, especially during such interactions.</data>
+  <data key="d2">C:/MMGraphRAG/MMGraphRAG/test_runs/api_working\images\image_2.jpg</data>
+</node>
+<node id="&quot;Antlers of Right Elk (Yellowstone National Park)&quot;">
+  <data key="d2">C:/MMGraphRAG/MMGraphRAG/test_runs/api_working\images\image_2.jpg</data>
+  <data key="d1">The large, complex, branched antlers belonging to the elk on the right. These prominent, sturdy antlers are currently interlocked with the antlers of the left elk, indicating a sparring match. This behavior is characteristic of bull elk, which are significant wild animals in Yellowstone National Park. The park advises visitors to maintain a safe distance of at least 25 yards (23m) from all elk, especially when they are engaged in activities like sparring.</data>
+  <data key="d0">"UNKNOWN"</data>
+</node>
+<node id="Bull elk sparring. Keep your distance!">
+  <data key="d0">IMG_ENTITY</data>
+  <data key="d1">The image depicts two bull elk with interlocked antlers, engaged in a head-to-head confrontation, which is explicitly described in the text as 'Bull elk sparring'. The text also includes a safety warning, 'Keep your distance!', related to encountering such wildlife.</data>
+  <data key="d2">C:/MMGraphRAG/MMGraphRAG/test_runs/api_working\images\image_2.jpg</data>
+</node>
+<node id="&quot;IMAGE_1&quot;">
+  <data key="d0">"ORI_IMG"</data>
+  <data key="d1">"The image captures a breathtaking natural phenomenon: a geyser erupting dramatically under a clear blue sky, with a vibrant rainbow arcing through its steam plume. In the foreground, a large, light gray or off-white geyser cone, likely composed of mineral deposits like sinter, dominates the left-center. This conical formation has a rugged, uneven texture, with steam visibly rising from its base and surrounding ground, creating a misty atmosphere close to the earth. From the top of this cone, a powerful, tall column of dense white steam erupts vertically, then billows outwards and upwards, dissipating into softer, cloud-like formations against the bright blue sky. The steam plume is thickest and most concentrated at its base, gradually becoming more diffuse as it ascends and spreads across the upper portion of the frame. Through the lighter, more dispersed part of the steam, a distinct and colorful rainbow is visible, gracefully arching from the mid-left of the steam plume down towards the right side of the frame, touching the horizon near the distant treeline. The colors of the rainbow, including red, orange, yellow, green, blue, indigo, and violet, are clearly distinguishable. The immediate ground surrounding the geyser is flat, barren, and a mixture of light brown, gray, and white tones, suggesting mineral-rich soil or dried mud, with some small, dark patches that could be water or wet areas. In the mid-ground and background, a dense forest of dark green evergreen trees stretches horizontally across the scene, forming a clear horizon line beneath the expansive, cloudless blue sky. The overall atmosphere is one of natural power and serene beauty, enhanced by the rare and captivating sight of the rainbow intersecting the geyser's steam."</data>
+  <data key="d2">C:/MMGraphRAG/MMGraphRAG/test_runs/api_working\images\image_1.jpg</data>
+</node>
+<node id="&quot;Geyser Mound&quot;">
+  <data key="d0">"GEO"</data>
+  <data key="d1">A large, light-colored, rocky conical formation, likely composed of mineral deposits, from which a powerful column of steam and hot water is actively erupting. Its surface is rugged and appears somewhat barren. Geyser mounds are evidence of ongoing volcanic activity, common in areas like Yellowstone National Park, where their waters are frequently near or above boiling. The crust surrounding these hydrothermal features can be thin and break easily, often overlying scalding water, making it crucial for visitors to stay on designated boardwalks and trails to ensure safety and preserve delicate formations.</data>
+  <data key="d2">C:/MMGraphRAG/MMGraphRAG/test_runs/api_working\images\image_1.jpg</data>
+</node>
+<node id="&quot;Steam Eruption&quot;">
+  <data key="d0">"EVENT"</data>
+  <data key="d1">A thick, white, and voluminous column of steam and hot water vapor vigorously erupting from the geyser mound, rising high into the clear blue sky and dispersing into a large cloud-like formation. These eruptions are a clear indication of ongoing volcanic activity and represent a significant hydrothermal feature. The waters involved in such eruptions are frequently near or above boiling, highlighting the powerful and potentially dangerous nature of these natural phenomena.</data>
+  <data key="d2">C:/MMGraphRAG/MMGraphRAG/test_runs/api_working\images\image_1.jpg</data>
+</node>
+<node id="&quot;Sky&quot;">
+  <data key="d0">"GEO"</data>
+  <data key="d1">A clear, bright blue sky dominating the upper portion of the image, providing a vibrant backdrop to the geyser and steam. Some lighter, wispy clouds are visible, likely formed by the dispersing steam. Given that much of Yellowstone National Park, where such geysers are found, is above 7,500 feet (2,275 m), the sky often appears vast and clear, though the weather can be unpredictable.</data>
+  <data key="d2">C:/MMGraphRAG/MMGraphRAG/test_runs/api_working\images\image_1.jpg</data>
+</node>
+<node id="&quot;Rainbow&quot;">
+  <data key="d0">"EVENT"</data>
+  <data key="d1">A vibrant, multi-colored arc of light, displaying the spectrum of colors (red, orange, yellow, green, blue, indigo, violet), appearing within the steam plume and extending down towards the ground on the right side of the image. This natural optical phenomenon occurs when sunlight refracts through water droplets in the geyser's steam, creating a beautiful visual effect.</data>
+  <data key="d2">C:/MMGraphRAG/MMGraphRAG/test_runs/api_working\images\image_1.jpg</data>
+</node>
+<node id="&quot;Forest&quot;">
+  <data key="d0">"GEO"</data>
+  <data key="d1">A dense line of dark green conifer trees, forming a natural border in the middle ground and background, stretching horizontally across the landscape behind the geyser, indicating a natural wilderness setting. In areas like Yellowstone National Park, forests provide habitat for a variety of wildlife. Visitors are cautioned to avoid areas of dead trees (snags), which may suddenly fall, especially on windy days.</data>
+  <data key="d2">C:/MMGraphRAG/MMGraphRAG/test_runs/api_working\images\image_1.jpg</data>
+</node>
+<node id="&quot;Ground&quot;">
+  <data key="d0">"GEO"</data>
+  <data key="d1">The light-colored, barren, and rocky terrain in the foreground and immediately surrounding the geyser mound, characterized by mineral deposits, some scattered rocks, and possibly damp or pooled areas. In hydrothermal regions, this ground can be extremely dangerous; the crust surrounding features is often thin and breaks easily, overlying scalding water. For safety, visitors are strictly required to stay on designated boardwalks and trails to protect both themselves and the delicate geological formations.</data>
+  <data key="d2">C:/MMGraphRAG/MMGraphRAG/test_runs/api_working\images\image_1.jpg</data>
+</node>
+<node id="Geysers &amp; Hot Springs">
+  <data key="d0">IMG_ENTITY</data>
+  <data key="d1">The image perfectly illustrates a geyser erupting with a rainbow, representing the 'Geysers &amp; Hot Springs' highlighted in the text as evidence of ongoing volcanic activity and a key attraction within Yellowstone National Park.</data>
+  <data key="d2">C:/MMGraphRAG/MMGraphRAG/test_runs/api_working\images\image_1.jpg</data>
+</node>
+<node id="&quot;YELLOWSTONE NATIONAL PARK&quot;">
+  <data key="d0">"GEO"</data>
+  <data key="d1">"A prominent national park in Wyoming, serving as the main location for various activities, camping, and pass usage described in the text. Its visitor access in winter is under review, and it experiences distinct seasonal weather patterns."&lt;SEP&gt;"Yellowstone National Park is a large national park, mostly above 7,500 feet (2,275 m), known for unpredictable weather, busy roads, dangerous hydrothermal features, and diverse wildlife. This document is a trip planner for the park in 2010."&lt;SEP&gt;"Yellowstone National Park is a major national park primarily located in Wyoming, with parts extending into Montana and Idaho, known for its various features, roads, and visitor activities. It is also referred to as a destination for inquiries regarding authorized providers."&lt;SEP&gt;"Yellowstone National Park is the primary organization managing the park, providing services, setting regulations, and offering various facilities and activities. It also refers to the geographical area itself."</data>
+  <data key="d2">chunk-47639910c915bafe8d80a13752ccb8ee&lt;SEP&gt;chunk-2b3cdc79954b41510d5ae0999ef6daf3&lt;SEP&gt;chunk-88e5c2ce20f231e3a806b09b6cab2c4d&lt;SEP&gt;chunk-7351b12b3e5ac87b530aa3bf02ecf8cc</data>
+</node>
+<node id="&quot;COAST GUARD&quot;">
+  <data key="d0">"ORGANIZATION"</data>
+  <data key="d1">"The Coast Guard is a government organization whose approved 'wearable' personal flotation devices are required for each person boating."</data>
+  <data key="d2">chunk-e22ff6904de7a8eef70b8467d191a104</data>
+</node>
+<node id="&quot;XANTERRA PARKS AND RESORTS&quot;">
+  <data key="d0">"ORGANIZATION"</data>
+  <data key="d1">"An organization that handles reservations for Yellowstone National Park, providing contact information including a P.O. Box and phone numbers."</data>
+  <data key="d2">chunk-4c35ba44e693c85e6206ade502e115d5</data>
+</node>
+<node id="&quot;MAMMOTH HOT SPRINGS&quot;">
+  <data key="d0">"GEO"</data>
+  <data key="d1">"A specific location within Yellowstone National Park known for its geothermal features and a visitor center."</data>
+  <data key="d2">chunk-8f0e2c09fcd8882a570819d4a5395ca3</data>
+</node>
+<node id="&quot;NORRIS GEYSER BASIN&quot;">
+  <data key="d0">"GEO"</data>
+  <data key="d1">"A specific location within Yellowstone National Park known for its geothermal features and a museum."</data>
+  <data key="d2">chunk-8f0e2c09fcd8882a570819d4a5395ca3</data>
+</node>
+<edge source="&quot;IMAGE_17&quot;" target="&quot;Generic Building Icon (House Icon)&quot;">
+  <data key="d3">10.0</data>
+  <data key="d4">"House Icon是从image_17中提取的实体。"</data>
+  <data key="d5">C:/MMGraphRAG/MMGraphRAG/test_runs/api_working\images\image_17.jpg</data>
+  <data key="d6">1</data>
+</edge>
+<edge source="&quot;IMAGE_17&quot;" target="Campground">
+  <data key="d3">10.0</data>
+  <data key="d4">"IMAGE_17" is the image of Campground.</data>
+  <data key="d5">C:/MMGraphRAG/MMGraphRAG/test_runs/api_working\images\image_17.jpg</data>
+  <data key="d6">1</data>
+</edge>
+<edge source="&quot;IMAGE_16&quot;" target="&quot;CIRCLE&quot;">
+  <data key="d3">10.0</data>
+  <data key="d4">"Circle是从image_16中提取的实体。"</data>
+  <data key="d5">C:/MMGraphRAG/MMGraphRAG/test_runs/api_working\images\image_16.jpg</data>
+  <data key="d6">1</data>
+</edge>
+<edge source="&quot;IMAGE_16&quot;" target="&quot;FORK&quot;">
+  <data key="d3">10.0</data>
+  <data key="d4">"Fork是从image_16中提取的实体。"</data>
+  <data key="d5">C:/MMGraphRAG/MMGraphRAG/test_runs/api_working\images\image_16.jpg</data>
+  <data key="d6">1</data>
+</edge>
+<edge source="&quot;IMAGE_16&quot;" target="&quot;KNIFE&quot;">
+  <data key="d3">10.0</data>
+  <data key="d4">"Knife是从image_16中提取的实体。"</data>
+  <data key="d5">C:/MMGraphRAG/MMGraphRAG/test_runs/api_working\images\image_16.jpg</data>
+  <data key="d6">1</data>
+</edge>
+<edge source="&quot;CIRCLE&quot;" target="&quot;FORK&quot;">
+  <data key="d3">9.0</data>
+  <data key="d4">"The fork is located inside the circle."</data>
+  <data key="d5">C:/MMGraphRAG/MMGraphRAG/test_runs/api_working\images\image_16.jpg</data>
+  <data key="d6">1</data>
+</edge>
+<edge source="&quot;CIRCLE&quot;" target="&quot;KNIFE&quot;">
+  <data key="d3">9.0</data>
+  <data key="d4">"The knife is located inside the circle."</data>
+  <data key="d5">C:/MMGraphRAG/MMGraphRAG/test_runs/api_working\images\image_16.jpg</data>
+  <data key="d6">1</data>
+</edge>
+<edge source="&quot;FORK&quot;" target="&quot;KNIFE&quot;">
+  <data key="d3">8.0</data>
+  <data key="d4">"The fork is positioned immediately to the left of the knife."</data>
+  <data key="d5">C:/MMGraphRAG/MMGraphRAG/test_runs/api_working\images\image_16.jpg</data>
+  <data key="d6">1</data>
+</edge>
+<edge source="&quot;IMAGE_14&quot;" target="&quot;Gasoline/Fuel Icon&quot;">
+  <data key="d3">10.0</data>
+  <data key="d4">"Gas Pump Icon是从image_14中提取的实体。"</data>
+  <data key="d5">C:/MMGraphRAG/MMGraphRAG/test_runs/api_working\images\image_14.jpg</data>
+  <data key="d6">1</data>
+</edge>
+<edge source="&quot;IMAGE_13&quot;" target="&quot;PLUS SIGN&quot;">
+  <data key="d3">10.0</data>
+  <data key="d4">"Plus Sign是从image_13中提取的实体。"</data>
+  <data key="d5">C:/MMGraphRAG/MMGraphRAG/test_runs/api_working\images\image_13.jpg</data>
+  <data key="d6">1</data>
+</edge>
+<edge source="&quot;IMAGE_13&quot;" target="&quot;SQUARE&quot;">
+  <data key="d3">10.0</data>
+  <data key="d4">"Square是从image_13中提取的实体。"</data>
+  <data key="d5">C:/MMGraphRAG/MMGraphRAG/test_runs/api_working\images\image_13.jpg</data>
+  <data key="d6">1</data>
+</edge>
+<edge source="&quot;PLUS SIGN&quot;" target="&quot;SQUARE&quot;">
+  <data key="d3">9.0</data>
+  <data key="d4">"The black plus sign is positioned inside and centered within the white square."</data>
+  <data key="d5">C:/MMGraphRAG/MMGraphRAG/test_runs/api_working\images\image_13.jpg</data>
+  <data key="d6">1</data>
+</edge>
+<edge source="&quot;IMAGE_12&quot;" target="&quot;DELTA SYMBOL&quot;">
+  <data key="d3">10.0</data>
+  <data key="d4">"Delta Symbol是从image_12中提取的实体。"</data>
+  <data key="d5">C:/MMGraphRAG/MMGraphRAG/test_runs/api_working\images\image_12.jpg</data>
+  <data key="d6">1</data>
+</edge>
+<edge source="&quot;IMAGE_11&quot;" target="&quot;FS LOGO&quot;">
+  <data key="d3">10.0</data>
+  <data key="d4">"FS Logo是从image_11中提取的实体。"</data>
+  <data key="d5">C:/MMGraphRAG/MMGraphRAG/test_runs/api_working\images\image_11.jpg</data>
+  <data key="d6">1</data>
+</edge>
+<edge source="&quot;FS LOGO&quot;" target="&quot;IMAGE_8&quot;">
+  <data key="d3">10.0</data>
+  <data key="d4">"FS Logo是从image_8中提取的实体。"</data>
+  <data key="d5">C:/MMGraphRAG/MMGraphRAG/test_runs/api_working\images\image_8.jpg</data>
+  <data key="d6">1</data>
+</edge>
+<edge source="&quot;FS LOGO&quot;" target="&quot;IMAGE_7&quot;">
+  <data key="d3">10.0</data>
+  <data key="d4">"FS Logo是从image_7中提取的实体。"</data>
+  <data key="d5">C:/MMGraphRAG/MMGraphRAG/test_runs/api_working\images\image_7.jpg</data>
+  <data key="d6">1</data>
+</edge>
+<edge source="&quot;IMAGE_10&quot;" target="&quot;ANCHOR&quot;">
+  <data key="d3">10.0</data>
+  <data key="d4">"Anchor是从image_10中提取的实体。"</data>
+  <data key="d5">C:/MMGraphRAG/MMGraphRAG/test_runs/api_working\images\image_10.jpg</data>
+  <data key="d6">1</data>
+</edge>
+<edge source="&quot;IMAGE_10&quot;" target="&quot;BACKGROUND&quot;">
+  <data key="d3">10.0</data>
+  <data key="d4">"Background是从image_10中提取的实体。"</data>
+  <data key="d5">C:/MMGraphRAG/MMGraphRAG/test_runs/api_working\images\image_10.jpg</data>
+  <data key="d6">1</data>
+</edge>
+<edge source="&quot;ANCHOR&quot;" target="&quot;BACKGROUND&quot;">
+  <data key="d3">9.0</data>
+  <data key="d4">"The anchor is prominently displayed in the center of the dark black background."</data>
+  <data key="d5">C:/MMGraphRAG/MMGraphRAG/test_runs/api_working\images\image_10.jpg</data>
+  <data key="d6">1</data>
+</edge>
+<edge source="&quot;IMAGE_9&quot;" target="&quot;FEMALE FIGURE SILHOUETTE&quot;">
+  <data key="d3">10.0</data>
+  <data key="d4">"Female Figure Silhouette是从image_9中提取的实体。"</data>
+  <data key="d5">C:/MMGraphRAG/MMGraphRAG/test_runs/api_working\images\image_9.jpg</data>
+  <data key="d6">1</data>
+</edge>
+<edge source="&quot;IMAGE_9&quot;" target="&quot;MALE FIGURE SILHOUETTE&quot;">
+  <data key="d3">10.0</data>
+  <data key="d4">"Male Figure Silhouette是从image_9中提取的实体。"</data>
+  <data key="d5">C:/MMGraphRAG/MMGraphRAG/test_runs/api_working\images\image_9.jpg</data>
+  <data key="d6">1</data>
+</edge>
+<edge source="&quot;IMAGE_9&quot;" target="&quot;RESTROOM SIGN&quot;">
+  <data key="d3">10.0</data>
+  <data key="d4">"Restroom Sign是从image_9中提取的实体。"</data>
+  <data key="d5">C:/MMGraphRAG/MMGraphRAG/test_runs/api_working\images\image_9.jpg</data>
+  <data key="d6">1</data>
+</edge>
+<edge source="&quot;FEMALE FIGURE SILHOUETTE&quot;" target="&quot;RESTROOM SIGN&quot;">
+  <data key="d3">9.0</data>
+  <data key="d4">"The female figure silhouette is prominently displayed on the restroom sign, symbolizing the women's section of the facility."</data>
+  <data key="d5">C:/MMGraphRAG/MMGraphRAG/test_runs/api_working\images\image_9.jpg</data>
+  <data key="d6">1</data>
+</edge>
+<edge source="&quot;FEMALE FIGURE SILHOUETTE&quot;" target="&quot;MALE FIGURE SILHOUETTE&quot;">
+  <data key="d3">8.0</data>
+  <data key="d4">"The female and male figure silhouettes are depicted together side-by-side on the same sign, indicating a combined or adjacent restroom facility for both genders."</data>
+  <data key="d5">C:/MMGraphRAG/MMGraphRAG/test_runs/api_working\images\image_9.jpg</data>
+  <data key="d6">1</data>
+</edge>
+<edge source="&quot;MALE FIGURE SILHOUETTE&quot;" target="&quot;RESTROOM SIGN&quot;">
+  <data key="d3">9.0</data>
+  <data key="d4">"The male figure silhouette is prominently displayed on the restroom sign, symbolizing the men's section of the facility."</data>
+  <data key="d5">C:/MMGraphRAG/MMGraphRAG/test_runs/api_working\images\image_9.jpg</data>
+  <data key="d6">1</data>
+</edge>
+<edge source="&quot;IMAGE_6&quot;" target="&quot;YELLOWSTONE: THE AMERICAN GUIDE NATIONAL PARK BOOK&quot;">
+  <data key="d3">10.0</data>
+  <data key="d4">"Yellowstone: The American Guide National Park Book是从image_6中提取的实体。"</data>
+  <data key="d5">C:/MMGraphRAG/MMGraphRAG/test_runs/api_working\images\image_6.jpg</data>
+  <data key="d6">1</data>
+</edge>
+<edge source="&quot;IMAGE_6&quot;" target="&quot;YELLOWSTONE AND GRAND TETON NATIONAL PARKS ROAD GUIDE&quot;">
+  <data key="d3">10.0</data>
+  <data key="d4">"Yellowstone and Grand Teton National Parks Road Guide是从image_6中提取的实体。"</data>
+  <data key="d5">C:/MMGraphRAG/MMGraphRAG/test_runs/api_working\images\image_6.jpg</data>
+  <data key="d6">1</data>
+</edge>
+<edge source="&quot;IMAGE_6&quot;" target="&quot;FAME'S YOSEMITE BOOK&quot;">
+  <data key="d3">10.0</data>
+  <data key="d4">"Fame's Yosemite Book是从image_6中提取的实体。"</data>
+  <data key="d5">C:/MMGraphRAG/MMGraphRAG/test_runs/api_working\images\image_6.jpg</data>
+  <data key="d6">1</data>
+</edge>
+<edge source="&quot;IMAGE_6&quot;" target="&quot;MONTANA GUIDEBOOK&quot;">
+  <data key="d3">10.0</data>
+  <data key="d4">"Montana Guidebook是从image_6中提取的实体。"</data>
+  <data key="d5">C:/MMGraphRAG/MMGraphRAG/test_runs/api_working\images\image_6.jpg</data>
+  <data key="d6">1</data>
+</edge>
+<edge source="&quot;IMAGE_6&quot;" target="&quot;SMALL BROCHURE&quot;">
+  <data key="d3">10.0</data>
+  <data key="d4">"Small Brochure是从image_6中提取的实体。"</data>
+  <data key="d5">C:/MMGraphRAG/MMGraphRAG/test_runs/api_working\images\image_6.jpg</data>
+  <data key="d6">1</data>
+</edge>
+<edge source="&quot;YELLOWSTONE: THE AMERICAN GUIDE NATIONAL PARK BOOK&quot;" target="&quot;YELLOWSTONE AND GRAND TETON NATIONAL PARKS ROAD GUIDE&quot;">
+  <data key="d3">8.0</data>
+  <data key="d4">"Both books are guides related to Yellowstone National Park, with the latter also covering Grand Teton National Park, indicating a common theme of national park exploration."</data>
+  <data key="d5">C:/MMGraphRAG/MMGraphRAG/test_runs/api_working\images\image_6.jpg</data>
+  <data key="d6">1</data>
+</edge>
+<edge source="&quot;YELLOWSTONE: THE AMERICAN GUIDE NATIONAL PARK BOOK&quot;" target="&quot;FAME'S YOSEMITE BOOK&quot;">
+  <data key="d3">7.0</data>
+  <data key="d4">"Both are books about U.S. National Parks (Yellowstone and Yosemite, respectively), suggesting a collection of national park literature."</data>
+  <data key="d5">C:/MMGraphRAG/MMGraphRAG/test_runs/api_working\images\image_6.jpg</data>
+  <data key="d6">1</data>
+</edge>
+<edge source="&quot;YELLOWSTONE: THE AMERICAN GUIDE NATIONAL PARK BOOK&quot;" target="&quot;MONTANA GUIDEBOOK&quot;">
+  <data key="d3">6.0</data>
+  <data key="d4">"Both are guides related to natural landscapes and potentially national parks or regions, with Yellowstone being near Montana."</data>
+  <data key="d5">C:/MMGraphRAG/MMGraphRAG/test_runs/api_working\images\image_6.jpg</data>
+  <data key="d6">1</data>
+</edge>
+<edge source="&quot;YELLOWSTONE: THE AMERICAN GUIDE NATIONAL PARK BOOK&quot;" target="&quot;SMALL BROCHURE&quot;">
+  <data key="d3">5.0</data>
+  <data key="d4">"The small brochure is part of the same collection of travel and park-related literature as the Yellowstone book."</data>
+  <data key="d5">C:/MMGraphRAG/MMGraphRAG/test_runs/api_working\images\image_6.jpg</data>
+  <data key="d6">1</data>
+</edge>
+<edge source="&quot;YELLOWSTONE AND GRAND TETON NATIONAL PARKS ROAD GUIDE&quot;" target="&quot;FAME'S YOSEMITE BOOK&quot;">
+  <data key="d3">7.0</data>
+  <data key="d4">"Both books are guides or pictorials about U.S. National Parks (Yellowstone/Grand Teton and Yosemite, respectively)."</data>
+  <data key="d5">C:/MMGraphRAG/MMGraphRAG/test_runs/api_working\images\image_6.jpg</data>
+  <data key="d6">1</data>
+</edge>
+<edge source="&quot;YELLOWSTONE AND GRAND TETON NATIONAL PARKS ROAD GUIDE&quot;" target="&quot;MONTANA GUIDEBOOK&quot;">
+  <data key="d3">7.0</data>
+  <data key="d4">"Both are regional guides for natural areas, with Grand Teton and Yellowstone being adjacent to Montana, implying a geographical and thematic connection."</data>
+  <data key="d5">C:/MMGraphRAG/MMGraphRAG/test_runs/api_working\images\image_6.jpg</data>
+  <data key="d6">1</data>
+</edge>
+<edge source="&quot;YELLOWSTONE AND GRAND TETON NATIONAL PARKS ROAD GUIDE&quot;" target="&quot;SMALL BROCHURE&quot;">
+  <data key="d3">5.0</data>
+  <data key="d4">"The small brochure is part of the same collection of travel and park-related literature as the Yellowstone and Grand Teton guide."</data>
+  <data key="d5">C:/MMGraphRAG/MMGraphRAG/test_runs/api_working\images\image_6.jpg</data>
+  <data key="d6">1</data>
+</edge>
+<edge source="&quot;FAME'S YOSEMITE BOOK&quot;" target="&quot;MONTANA GUIDEBOOK&quot;">
+  <data key="d3">6.0</data>
+  <data key="d4">"Both are books related to natural landscapes and potentially national parks or outdoor activities, though they cover different geographical regions."</data>
+  <data key="d5">C:/MMGraphRAG/MMGraphRAG/test_runs/api_working\images\image_6.jpg</data>
+  <data key="d6">1</data>
+</edge>
+<edge source="&quot;FAME'S YOSEMITE BOOK&quot;" target="&quot;SMALL BROCHURE&quot;">
+  <data key="d3">5.0</data>
+  <data key="d4">"The small brochure is part of the same collection of travel and park-related literature as the Yosemite book."</data>
+  <data key="d5">C:/MMGraphRAG/MMGraphRAG/test_runs/api_working\images\image_6.jpg</data>
+  <data key="d6">1</data>
+</edge>
+<edge source="&quot;MONTANA GUIDEBOOK&quot;" target="&quot;SMALL BROCHURE&quot;">
+  <data key="d3">5.0</data>
+  <data key="d4">"The small brochure is part of the same collection of travel and park-related literature as the Montana guidebook."</data>
+  <data key="d5">C:/MMGraphRAG/MMGraphRAG/test_runs/api_working\images\image_6.jpg</data>
+  <data key="d6">1</data>
+</edge>
+<edge source="&quot;IMAGE_5_PERSON-0.JPG&quot;" target="&quot;Child Visitor (Light Hair)&quot;">
+  <data key="d3">9.0</data>
+  <data key="d4">"The image feature block image_5_person-0.jpg is a picture of a child with light hair."</data>
+  <data key="d5">C:/MMGraphRAG/MMGraphRAG/test_runs/api_working\images\image_5.jpg</data>
+  <data key="d6">1</data>
+</edge>
+<edge source="&quot;IMAGE_5_PERSON-0.JPG&quot;" target="&quot;IMAGE_5&quot;">
+  <data key="d3">10.0</data>
+  <data key="d4">"image_5_person-0.jpg是image_5的图像特征块。"</data>
+  <data key="d5">C:/MMGraphRAG/MMGraphRAG/test_runs/api_working\images\image_5.jpg</data>
+  <data key="d6">1</data>
+</edge>
+<edge source="&quot;IMAGE_5_PERSON-1.JPG&quot;" target="&quot;Child Visitor (Dark Hair)&quot;">
+  <data key="d3">9.0</data>
+  <data key="d4">"The image feature block image_5_person-1.jpg is a picture of a child with dark hair."</data>
+  <data key="d5">C:/MMGraphRAG/MMGraphRAG/test_runs/api_working\images\image_5.jpg</data>
+  <data key="d6">1</data>
+</edge>
+<edge source="&quot;IMAGE_5_PERSON-1.JPG&quot;" target="&quot;IMAGE_5&quot;">
+  <data key="d3">10.0</data>
+  <data key="d4">"image_5_person-1.jpg是image_5的图像特征块。"</data>
+  <data key="d5">C:/MMGraphRAG/MMGraphRAG/test_runs/api_working\images\image_5.jpg</data>
+  <data key="d6">1</data>
+</edge>
+<edge source="&quot;IMAGE_5&quot;" target="&quot;Park Ranger&quot;">
+  <data key="d3">10.0</data>
+  <data key="d4">"Woman是从image_5中提取的实体。"</data>
+  <data key="d5">C:/MMGraphRAG/MMGraphRAG/test_runs/api_working\images\image_5.jpg</data>
+  <data key="d6">1</data>
+</edge>
+<edge source="&quot;IMAGE_5&quot;" target="&quot;Child Visitor (Light Hair)&quot;">
+  <data key="d3">10.0</data>
+  <data key="d4">"Child with light hair是从image_5中提取的实体。"</data>
+  <data key="d5">C:/MMGraphRAG/MMGraphRAG/test_runs/api_working\images\image_5.jpg</data>
+  <data key="d6">1</data>
+</edge>
+<edge source="&quot;IMAGE_5&quot;" target="&quot;Child Visitor (Dark Hair)&quot;">
+  <data key="d3">10.0</data>
+  <data key="d4">"Child with dark hair是从image_5中提取的实体。"</data>
+  <data key="d5">C:/MMGraphRAG/MMGraphRAG/test_runs/api_working\images\image_5.jpg</data>
+  <data key="d6">1</data>
+</edge>
+<edge source="&quot;IMAGE_5&quot;" target="&quot;Park Ranger Hat&quot;">
+  <data key="d3">10.0</data>
+  <data key="d4">"Ranger Hat是从image_5中提取的实体。"</data>
+  <data key="d5">C:/MMGraphRAG/MMGraphRAG/test_runs/api_working\images\image_5.jpg</data>
+  <data key="d6">1</data>
+</edge>
+<edge source="&quot;IMAGE_5&quot;" target="&quot;Round-framed Glasses&quot;">
+  <data key="d3">10.0</data>
+  <data key="d4">"Glasses是从image_5中提取的实体。"</data>
+  <data key="d5">C:/MMGraphRAG/MMGraphRAG/test_runs/api_working\images\image_5.jpg</data>
+  <data key="d6">1</data>
+</edge>
+<edge source="&quot;IMAGE_5&quot;" target="&quot;Wristwatch&quot;">
+  <data key="d3">10.0</data>
+  <data key="d4">"Watch是从image_5中提取的实体。"</data>
+  <data key="d5">C:/MMGraphRAG/MMGraphRAG/test_runs/api_working\images\image_5.jpg</data>
+  <data key="d6">1</data>
+</edge>
+<edge source="&quot;IMAGE_5&quot;" target="&quot;Yellowstone National Park Setting&quot;">
+  <data key="d3">10.0</data>
+  <data key="d4">"Outdoor Setting是从image_5中提取的实体。"</data>
+  <data key="d5">C:/MMGraphRAG/MMGraphRAG/test_runs/api_working\images\image_5.jpg</data>
+  <data key="d6">1</data>
+</edge>
+<edge source="&quot;IMAGE_5&quot;" target="Especially for Children">
+  <data key="d3">10.0</data>
+  <data key="d4">"IMAGE_5" is the image of Especially for Children.</data>
+  <data key="d5">C:/MMGraphRAG/MMGraphRAG/test_runs/api_working\images\image_5.jpg</data>
+  <data key="d6">1</data>
+</edge>
+<edge source="&quot;Park Ranger&quot;" target="&quot;Child Visitor (Light Hair)&quot;">
+  <data key="d3">9.0</data>
+  <data key="d4">"The woman is holding or supporting the child with light hair, looking down at them."</data>
+  <data key="d5">C:/MMGraphRAG/MMGraphRAG/test_runs/api_working\images\image_5.jpg</data>
+  <data key="d6">1</data>
+</edge>
+<edge source="&quot;Park Ranger&quot;" target="&quot;Child Visitor (Dark Hair)&quot;">
+  <data key="d3">8.0</data>
+  <data key="d4">"The woman is in close proximity and interacting with the child with dark hair."</data>
+  <data key="d5">C:/MMGraphRAG/MMGraphRAG/test_runs/api_working\images\image_5.jpg</data>
+  <data key="d6">1</data>
+</edge>
+<edge source="&quot;Park Ranger&quot;" target="&quot;Park Ranger Hat&quot;">
+  <data key="d3">10.0</data>
+  <data key="d4">"The woman is wearing the ranger hat on her head."</data>
+  <data key="d5">C:/MMGraphRAG/MMGraphRAG/test_runs/api_working\images\image_5.jpg</data>
+  <data key="d6">1</data>
+</edge>
+<edge source="&quot;Park Ranger&quot;" target="&quot;Wristwatch&quot;">
+  <data key="d3">9.0</data>
+  <data key="d4">"The woman is wearing the watch on her left wrist."</data>
+  <data key="d5">C:/MMGraphRAG/MMGraphRAG/test_runs/api_working\images\image_5.jpg</data>
+  <data key="d6">1</data>
+</edge>
+<edge source="&quot;Child Visitor (Light Hair)&quot;" target="&quot;Child Visitor (Dark Hair)&quot;">
+  <data key="d3">8.0</data>
+  <data key="d4">"The two children are sitting closely together, appearing to be companions."</data>
+  <data key="d5">C:/MMGraphRAG/MMGraphRAG/test_runs/api_working\images\image_5.jpg</data>
+  <data key="d6">1</data>
+</edge>
+<edge source="&quot;IMAGE_4_PERSON-0.JPG&quot;" target="&quot;GIRL&quot;">
+  <data key="d3">7.0</data>
+  <data key="d4">"The image feature block image_4_person-0.jpg is a picture of a girl."</data>
+  <data key="d5">C:/MMGraphRAG/MMGraphRAG/test_runs/api_working\images\image_4.jpg</data>
+  <data key="d6">1</data>
+</edge>
+<edge source="&quot;IMAGE_4_PERSON-0.JPG&quot;" target="&quot;IMAGE_4&quot;">
+  <data key="d3">10.0</data>
+  <data key="d4">"image_4_person-0.jpg是image_4的图像特征块。"</data>
+  <data key="d5">C:/MMGraphRAG/MMGraphRAG/test_runs/api_working\images\image_4.jpg</data>
+  <data key="d6">1</data>
+</edge>
+<edge source="&quot;IMAGE_4_PERSON-1.JPG&quot;" target="&quot;GIRL&quot;">
+  <data key="d3">9.0</data>
+  <data key="d4">"The image feature block image_4_person-1.jpg is a picture of a girl."</data>
+  <data key="d5">C:/MMGraphRAG/MMGraphRAG/test_runs/api_working\images\image_4.jpg</data>
+  <data key="d6">1</data>
+</edge>
+<edge source="&quot;IMAGE_4_PERSON-1.JPG&quot;" target="&quot;IMAGE_4&quot;">
+  <data key="d3">10.0</data>
+  <data key="d4">"image_4_person-1.jpg是image_4的图像特征块。"</data>
+  <data key="d5">C:/MMGraphRAG/MMGraphRAG/test_runs/api_working\images\image_4.jpg</data>
+  <data key="d6">1</data>
+</edge>
+<edge source="&quot;IMAGE_4_PERSON-3.JPG&quot;" target="&quot;GIRL&quot;">
+  <data key="d3">9.0</data>
+  <data key="d4">"The image feature block image_4_person-3.jpg is a picture of a girl."</data>
+  <data key="d5">C:/MMGraphRAG/MMGraphRAG/test_runs/api_working\images\image_4.jpg</data>
+  <data key="d6">1</data>
+</edge>
+<edge source="&quot;IMAGE_4_PERSON-3.JPG&quot;" target="&quot;IMAGE_4&quot;">
+  <data key="d3">10.0</data>
+  <data key="d4">"image_4_person-3.jpg是image_4的图像特征块。"</data>
+  <data key="d5">C:/MMGraphRAG/MMGraphRAG/test_runs/api_working\images\image_4.jpg</data>
+  <data key="d6">1</data>
+</edge>
+<edge source="&quot;IMAGE_4&quot;" target="&quot;GIRL&quot;">
+  <data key="d3">10.0</data>
+  <data key="d4">"Girl是从image_4中提取的实体。"</data>
+  <data key="d5">C:/MMGraphRAG/MMGraphRAG/test_runs/api_working\images\image_4.jpg</data>
+  <data key="d6">1</data>
+</edge>
+<edge source="&quot;IMAGE_4&quot;" target="&quot;LARGE SPHERE&quot;">
+  <data key="d3">10.0</data>
+  <data key="d4">"Large Sphere是从image_4中提取的实体。"</data>
+  <data key="d5">C:/MMGraphRAG/MMGraphRAG/test_runs/api_working\images\image_4.jpg</data>
+  <data key="d6">1</data>
+</edge>
+<edge source="&quot;IMAGE_4&quot;" target="&quot;PEDESTAL&quot;">
+  <data key="d3">10.0</data>
+  <data key="d4">"Pedestal是从image_4中提取的实体。"</data>
+  <data key="d5">C:/MMGraphRAG/MMGraphRAG/test_runs/api_working\images\image_4.jpg</data>
+  <data key="d6">1</data>
+</edge>
+<edge source="&quot;IMAGE_4&quot;" target="&quot;WATER&quot;">
+  <data key="d3">10.0</data>
+  <data key="d4">"Water是从image_4中提取的实体。"</data>
+  <data key="d5">C:/MMGraphRAG/MMGraphRAG/test_runs/api_working\images\image_4.jpg</data>
+  <data key="d6">1</data>
+</edge>
+<edge source="&quot;IMAGE_4&quot;" target="&quot;BACKGROUND PEOPLE&quot;">
+  <data key="d3">10.0</data>
+  <data key="d4">"Background People是从image_4中提取的实体。"</data>
+  <data key="d5">C:/MMGraphRAG/MMGraphRAG/test_runs/api_working\images\image_4.jpg</data>
+  <data key="d6">1</data>
+</edge>
+<edge source="&quot;IMAGE_4&quot;" target="&quot;INDOOR ENVIRONMENT&quot;">
+  <data key="d3">10.0</data>
+  <data key="d4">"Indoor Environment是从image_4中提取的实体。"</data>
+  <data key="d5">C:/MMGraphRAG/MMGraphRAG/test_runs/api_working\images\image_4.jpg</data>
+  <data key="d6">1</data>
+</edge>
+<edge source="&quot;IMAGE_4&quot;" target="Canyon Visitor Education Center">
+  <data key="d3">10.0</data>
+  <data key="d4">"IMAGE_4" is the image of Canyon Visitor Education Center.</data>
+  <data key="d5">C:/MMGraphRAG/MMGraphRAG/test_runs/api_working\images\image_4.jpg</data>
+  <data key="d6">1</data>
+</edge>
+<edge source="&quot;GIRL&quot;" target="&quot;LARGE SPHERE&quot;">
+  <data key="d3">9.0</data>
+  <data key="d4">"The girl is actively touching and interacting with the large sphere with both hands."</data>
+  <data key="d5">C:/MMGraphRAG/MMGraphRAG/test_runs/api_working\images\image_4.jpg</data>
+  <data key="d6">1</data>
+</edge>
+<edge source="&quot;GIRL&quot;" target="&quot;INDOOR ENVIRONMENT&quot;">
+  <data key="d3">8.0</data>
+  <data key="d4">"The girl is present within the indoor environment."</data>
+  <data key="d5">C:/MMGraphRAG/MMGraphRAG/test_runs/api_working\images\image_4.jpg</data>
+  <data key="d6">1</data>
+</edge>
+<edge source="&quot;LARGE SPHERE&quot;" target="&quot;PEDESTAL&quot;">
+  <data key="d3">9.0</data>
+  <data key="d4">"The large sphere is resting on and supported by the cylindrical pedestal."</data>
+  <data key="d5">C:/MMGraphRAG/MMGraphRAG/test_runs/api_working\images\image_4.jpg</data>
+  <data key="d6">1</data>
+</edge>
+<edge source="&quot;LARGE SPHERE&quot;" target="&quot;WATER&quot;">
+  <data key="d3">8.0</data>
+  <data key="d4">"Water is flowing from beneath the large sphere, creating a fountain effect around its base."</data>
+  <data key="d5">C:/MMGraphRAG/MMGraphRAG/test_runs/api_working\images\image_4.jpg</data>
+  <data key="d6">1</data>
+</edge>
+<edge source="&quot;LARGE SPHERE&quot;" target="&quot;BACKGROUND PEOPLE&quot;">
+  <data key="d3">6.0</data>
+  <data key="d4">"The background people appear to be observing the large sphere."</data>
+  <data key="d5">C:/MMGraphRAG/MMGraphRAG/test_runs/api_working\images\image_4.jpg</data>
+  <data key="d6">1</data>
+</edge>
+<edge source="&quot;PEDESTAL&quot;" target="&quot;WATER&quot;">
+  <data key="d3">7.0</data>
+  <data key="d4">"The pedestal contains the water feature, with water flowing over its edges."</data>
+  <data key="d5">C:/MMGraphRAG/MMGraphRAG/test_runs/api_working\images\image_4.jpg</data>
+  <data key="d6">1</data>
+</edge>
+<edge source="&quot;BACKGROUND PEOPLE&quot;" target="&quot;INDOOR ENVIRONMENT&quot;">
+  <data key="d3">8.0</data>
+  <data key="d4">"The background people are also present within the indoor environment."</data>
+  <data key="d5">C:/MMGraphRAG/MMGraphRAG/test_runs/api_working\images\image_4.jpg</data>
+  <data key="d6">1</data>
+</edge>
+<edge source="&quot;IMAGE_3&quot;" target="&quot;WATERFALL&quot;">
+  <data key="d3">10.0</data>
+  <data key="d4">"Waterfall是从image_3中提取的实体。"</data>
+  <data key="d5">C:/MMGraphRAG/MMGraphRAG/test_runs/api_working\images\image_3.jpg</data>
+  <data key="d6">1</data>
+</edge>
+<edge source="&quot;IMAGE_3&quot;" target="&quot;CANYON&quot;">
+  <data key="d3">10.0</data>
+  <data key="d4">"Canyon是从image_3中提取的实体。"</data>
+  <data key="d5">C:/MMGraphRAG/MMGraphRAG/test_runs/api_working\images\image_3.jpg</data>
+  <data key="d6">1</data>
+</edge>
+<edge source="&quot;IMAGE_3&quot;" target="&quot;RIVER&quot;">
+  <data key="d3">10.0</data>
+  <data key="d4">"River是从image_3中提取的实体。"</data>
+  <data key="d5">C:/MMGraphRAG/MMGraphRAG/test_runs/api_working\images\image_3.jpg</data>
+  <data key="d6">1</data>
+</edge>
+<edge source="&quot;IMAGE_3&quot;" target="&quot;CLIFFS&quot;">
+  <data key="d3">10.0</data>
+  <data key="d4">"Cliffs是从image_3中提取的实体。"</data>
+  <data key="d5">C:/MMGraphRAG/MMGraphRAG/test_runs/api_working\images\image_3.jpg</data>
+  <data key="d6">1</data>
+</edge>
+<edge source="&quot;IMAGE_3&quot;" target="&quot;FOREST&quot;">
+  <data key="d3">10.0</data>
+  <data key="d4">"Forest是从image_3中提取的实体。"</data>
+  <data key="d5">C:/MMGraphRAG/MMGraphRAG/test_runs/api_working\images\image_3.jpg</data>
+  <data key="d6">1</data>
+</edge>
+<edge source="&quot;IMAGE_3&quot;" target="Lower Falls of the Yellowstone River">
+  <data key="d3">10.0</data>
+  <data key="d4">"IMAGE_3" is the image of Lower Falls of the Yellowstone River.</data>
+  <data key="d5">C:/MMGraphRAG/MMGraphRAG/test_runs/api_working\images\image_3.jpg</data>
+  <data key="d6">1</data>
+</edge>
+<edge source="&quot;WATERFALL&quot;" target="&quot;CANYON&quot;">
+  <data key="d3">9.0</data>
+  <data key="d4">"The powerful waterfall is a central natural feature located within the deep, forested canyon."</data>
+  <data key="d5">C:/MMGraphRAG/MMGraphRAG/test_runs/api_working\images\image_3.jpg</data>
+  <data key="d6">1</data>
+</edge>
+<edge source="&quot;WATERFALL&quot;" target="&quot;RIVER&quot;">
+  <data key="d3">10.0</data>
+  <data key="d4">"The river is the source of the water that forms the impressive cascade of the waterfall."</data>
+  <data key="d5">C:/MMGraphRAG/MMGraphRAG/test_runs/api_working\images\image_3.jpg</data>
+  <data key="d6">1</data>
+</edge>
+<edge source="&quot;WATERFALL&quot;" target="&quot;CLIFFS&quot;">
+  <data key="d3">9.0</data>
+  <data key="d4">"The waterfall plunges dramatically over the steep, rocky cliffs of the canyon."</data>
+  <data key="d5">C:/MMGraphRAG/MMGraphRAG/test_runs/api_working\images\image_3.jpg</data>
+  <data key="d6">1</data>
+</edge>
+<edge source="&quot;WATERFALL&quot;" target="&quot;FOREST&quot;">
+  <data key="d3">8.0</data>
+  <data key="d4">"The powerful waterfall is framed and surrounded by dense forest that grows on the canyon slopes."</data>
+  <data key="d5">C:/MMGraphRAG/MMGraphRAG/test_runs/api_working\images\image_3.jpg</data>
+  <data key="d6">1</data>
+</edge>
+<edge source="&quot;CANYON&quot;" target="&quot;RIVER&quot;">
+  <data key="d3">9.0</data>
+  <data key="d4">"The river flows through and has carved the deep canyon over time, visible at the base of the waterfall."</data>
+  <data key="d5">C:/MMGraphRAG/MMGraphRAG/test_runs/api_working\images\image_3.jpg</data>
+  <data key="d6">1</data>
+</edge>
+<edge source="&quot;CANYON&quot;" target="&quot;CLIFFS&quot;">
+  <data key="d3">9.0</data>
+  <data key="d4">"The steep, rugged cliffs form the imposing walls of the canyon."</data>
+  <data key="d5">C:/MMGraphRAG/MMGraphRAG/test_runs/api_working\images\image_3.jpg</data>
+  <data key="d6">1</data>
+</edge>
+<edge source="&quot;CANYON&quot;" target="&quot;FOREST&quot;">
+  <data key="d3">8.0</data>
+  <data key="d4">"Dense forest covers the slopes and upper edges of the canyon, contributing to its rugged and natural appearance."</data>
+  <data key="d5">C:/MMGraphRAG/MMGraphRAG/test_runs/api_working\images\image_3.jpg</data>
+  <data key="d6">1</data>
+</edge>
+<edge source="&quot;IMAGE_2&quot;" target="&quot;Left Elk (Yellowstone National Park)&quot;">
+  <data key="d3">10.0</data>
+  <data key="d4">"Left Elk是从image_2中提取的实体。"</data>
+  <data key="d5">C:/MMGraphRAG/MMGraphRAG/test_runs/api_working\images\image_2.jpg</data>
+  <data key="d6">1</data>
+</edge>
+<edge source="&quot;IMAGE_2&quot;" target="&quot;Right Elk (Yellowstone National Park)&quot;">
+  <data key="d3">10.0</data>
+  <data key="d4">"Right Elk是从image_2中提取的实体。"</data>
+  <data key="d5">C:/MMGraphRAG/MMGraphRAG/test_runs/api_working\images\image_2.jpg</data>
+  <data key="d6">1</data>
+</edge>
+<edge source="&quot;IMAGE_2&quot;" target="&quot;Antlers of Left Elk (Yellowstone National Park)&quot;">
+  <data key="d3">10.0</data>
+  <data key="d4">"Left Elk's Antlers是从image_2中提取的实体。"</data>
+  <data key="d5">C:/MMGraphRAG/MMGraphRAG/test_runs/api_working\images\image_2.jpg</data>
+  <data key="d6">1</data>
+</edge>
+<edge source="&quot;IMAGE_2&quot;" target="&quot;Antlers of Right Elk (Yellowstone National Park)&quot;">
+  <data key="d3">10.0</data>
+  <data key="d4">"Right Elk's Antlers是从image_2中提取的实体。"</data>
+  <data key="d5">C:/MMGraphRAG/MMGraphRAG/test_runs/api_working\images\image_2.jpg</data>
+  <data key="d6">1</data>
+</edge>
+<edge source="&quot;IMAGE_2&quot;" target="Bull elk sparring. Keep your distance!">
+  <data key="d3">10.0</data>
+  <data key="d4">"IMAGE_2" is the image of Bull elk sparring. Keep your distance!.</data>
+  <data key="d5">C:/MMGraphRAG/MMGraphRAG/test_runs/api_working\images\image_2.jpg</data>
+  <data key="d6">1</data>
+</edge>
+<edge source="&quot;IMAGE_1&quot;" target="&quot;Geyser Mound&quot;">
+  <data key="d3">10.0</data>
+  <data key="d4">"Geyser Mound是从image_1中提取的实体。"</data>
+  <data key="d5">C:/MMGraphRAG/MMGraphRAG/test_runs/api_working\images\image_1.jpg</data>
+  <data key="d6">1</data>
+</edge>
+<edge source="&quot;IMAGE_1&quot;" target="&quot;Steam Eruption&quot;">
+  <data key="d3">10.0</data>
+  <data key="d4">"Steam Eruption是从image_1中提取的实体。"</data>
+  <data key="d5">C:/MMGraphRAG/MMGraphRAG/test_runs/api_working\images\image_1.jpg</data>
+  <data key="d6">1</data>
+</edge>
+<edge source="&quot;IMAGE_1&quot;" target="&quot;Sky&quot;">
+  <data key="d3">10.0</data>
+  <data key="d4">"Sky是从image_1中提取的实体。"</data>
+  <data key="d5">C:/MMGraphRAG/MMGraphRAG/test_runs/api_working\images\image_1.jpg</data>
+  <data key="d6">1</data>
+</edge>
+<edge source="&quot;IMAGE_1&quot;" target="&quot;Rainbow&quot;">
+  <data key="d3">10.0</data>
+  <data key="d4">"Rainbow是从image_1中提取的实体。"</data>
+  <data key="d5">C:/MMGraphRAG/MMGraphRAG/test_runs/api_working\images\image_1.jpg</data>
+  <data key="d6">1</data>
+</edge>
+<edge source="&quot;IMAGE_1&quot;" target="&quot;Forest&quot;">
+  <data key="d3">10.0</data>
+  <data key="d4">"Forest是从image_1中提取的实体。"</data>
+  <data key="d5">C:/MMGraphRAG/MMGraphRAG/test_runs/api_working\images\image_1.jpg</data>
+  <data key="d6">1</data>
+</edge>
+<edge source="&quot;IMAGE_1&quot;" target="&quot;Ground&quot;">
+  <data key="d3">10.0</data>
+  <data key="d4">"Ground是从image_1中提取的实体。"</data>
+  <data key="d5">C:/MMGraphRAG/MMGraphRAG/test_runs/api_working\images\image_1.jpg</data>
+  <data key="d6">1</data>
+</edge>
+<edge source="&quot;IMAGE_1&quot;" target="Geysers &amp; Hot Springs">
+  <data key="d3">10.0</data>
+  <data key="d4">"IMAGE_1" is the image of Geysers &amp; Hot Springs.</data>
+  <data key="d5">C:/MMGraphRAG/MMGraphRAG/test_runs/api_working\images\image_1.jpg</data>
+  <data key="d6">1</data>
+</edge>
+<edge source="&quot;Geyser Mound&quot;" target="&quot;Steam Eruption&quot;">
+  <data key="d3">10.0</data>
+  <data key="d4">"The Geyser Mound is the source from which the Steam Eruption originates."</data>
+  <data key="d5">C:/MMGraphRAG/MMGraphRAG/test_runs/api_working\images\image_1.jpg</data>
+  <data key="d6">1</data>
+</edge>
+<edge source="&quot;Geyser Mound&quot;" target="&quot;Ground&quot;">
+  <data key="d3">9.0</data>
+  <data key="d4">"The Geyser Mound is situated on the barren, rocky Ground."</data>
+  <data key="d5">C:/MMGraphRAG/MMGraphRAG/test_runs/api_working\images\image_1.jpg</data>
+  <data key="d6">1</data>
+</edge>
+<edge source="&quot;Geyser Mound&quot;" target="&quot;Forest&quot;">
+  <data key="d3">8.0</data>
+  <data key="d4">"The Geyser Mound is located in front of the distant Forest."</data>
+  <data key="d5">C:/MMGraphRAG/MMGraphRAG/test_runs/api_working\images\image_1.jpg</data>
+  <data key="d6">1</data>
+</edge>
+<edge source="&quot;Steam Eruption&quot;" target="&quot;Sky&quot;">
+  <data key="d3">9.0</data>
+  <data key="d4">"The Steam Eruption rises high into the Sky."</data>
+  <data key="d5">C:/MMGraphRAG/MMGraphRAG/test_runs/api_working\images\image_1.jpg</data>
+  <data key="d6">1</data>
+</edge>
+<edge source="&quot;Steam Eruption&quot;" target="&quot;Rainbow&quot;">
+  <data key="d3">10.0</data>
+  <data key="d4">"The Rainbow is formed by sunlight refracting through the water droplets within the Steam Eruption."</data>
+  <data key="d5">C:/MMGraphRAG/MMGraphRAG/test_runs/api_working\images\image_1.jpg</data>
+  <data key="d6">1</data>
+</edge>
+<edge source="&quot;Sky&quot;" target="&quot;Rainbow&quot;">
+  <data key="d3">9.0</data>
+  <data key="d4">"The Rainbow is visible against the backdrop of the Sky."</data>
+  <data key="d5">C:/MMGraphRAG/MMGraphRAG/test_runs/api_working\images\image_1.jpg</data>
+  <data key="d6">1</data>
+</edge>
+<edge source="&quot;Forest&quot;" target="&quot;Ground&quot;">
+  <data key="d3">7.0</data>
+  <data key="d4">"The Forest borders the barren Ground in the background."</data>
+  <data key="d5">C:/MMGraphRAG/MMGraphRAG/test_runs/api_working\images\image_1.jpg</data>
+  <data key="d6">1</data>
+</edge>
+</graph></graphml>

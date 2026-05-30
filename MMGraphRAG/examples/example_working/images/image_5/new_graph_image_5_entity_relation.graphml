@@ -1,0 +1,144 @@
+<?xml version='1.0' encoding='utf-8'?>
+<graphml xmlns="http://graphml.graphdrawing.org/xmlns" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://graphml.graphdrawing.org/xmlns http://graphml.graphdrawing.org/xmlns/1.0/graphml.xsd"><key id="d6" for="edge" attr.name="order" attr.type="long"/>
+<key id="d5" for="edge" attr.name="source_id" attr.type="string"/>
+<key id="d4" for="edge" attr.name="description" attr.type="string"/>
+<key id="d3" for="edge" attr.name="weight" attr.type="double"/>
+<key id="d2" for="node" attr.name="source_id" attr.type="string"/>
+<key id="d1" for="node" attr.name="description" attr.type="string"/>
+<key id="d0" for="node" attr.name="entity_type" attr.type="string"/>
+<graph edgedefault="undirected"><node id="&quot;IMAGE_5&quot;">
+  <data key="d0">"ORI_IMG"</data>
+  <data key="d1">"The image displays a mathematical formula for the Dice Similarity Coefficient (DSC), commonly used in evaluating the performance of binary classification models, particularly in image segmentation tasks. The equation is presented in three equivalent forms. The first form expresses DSC as: DSC = (2TP) / (2TP + FN + FP), where TP denotes true positives, FN denotes false negatives, and FP denotes false positives. The second form rewrites this using precision (Pre) and recall (Rec): DSC = (2 × Pre × Rec) / (Pre + Rec). The third form shows that DSC is mathematically equivalent to the F1 score: DSC = F1. The formula is derived from set theory, with A representing predicted positive examples and B representing actual (golden) positive examples. The context explains that for a single example xi, the Dice coefficient can be written as DSC(xi) = (2pi1yi1) / (pi1 + yi1), where pi1 and yi1 are binary indicators for prediction and ground truth, respectively. The image contains no graphical elements, colors, or visual objects beyond the black text on a white background, formatted in standard mathematical notation."</data>
+  <data key="d2">examples/example_working/images/image_5.jpg</data>
+</node>
+<node id="&quot;DSC&quot;">
+  <data key="d0">"ORGANIZATION"</data>
+  <data key="d1">"Dice Similarity Coefficient, a metric used to measure the similarity between two sets, often applied in image segmentation and evaluation tasks."</data>
+  <data key="d2">examples/example_working/images/image_5.jpg</data>
+</node>
+<node id="&quot;True Positives (TP)&quot;">
+  <data key="d0">"OBJECT"</data>
+  <data key="d1">True Positives (TP) refer to the number of instances that are correctly identified as positive in a binary classification task. In the context of evaluation metrics like the Dice coefficient and F1 score, TP plays a central role, as it appears in both the numerator and denominator of these measures. Specifically, the Dice coefficient is defined as 2*TP / (2*TP + FN + FP), directly linking TP to the model's ability to capture relevant positive cases accurately.</data>
+  <data key="d2">examples/example_working/images/image_5.jpg</data>
+</node>
+<node id="&quot;False Negatives (FN)&quot;">
+  <data key="d0">"OBJECT"</data>
+  <data key="d1">False Negatives (FN) represent actual positive instances that were incorrectly classified as negative by the model. In imbalanced datasets—common in tasks like object detection and medical image segmentation—FN can significantly impact performance metrics such as recall and the Dice coefficient. The Tversky index, for example, allows explicit control over the penalty for FN through its β parameter, enabling models to prioritize sensitivity when needed.</data>
+  <data key="d2">examples/example_working/images/image_5.jpg</data>
+</node>
+<node id="&quot;False Positives (FP)&quot;">
+  <data key="d0">"OBJECT"</data>
+  <data key="d1">False Positives (FP) are instances that are actually negative but have been incorrectly predicted as positive by the classifier. In scenarios with severe class imbalance, such as background-object imbalance in object detection or rare-class identification in NLP, excessive FP can distort precision and overall model reliability. Techniques like hard negative mining and Dice-based losses aim to mitigate the influence of FP by adjusting how prediction errors contribute to the loss function.</data>
+  <data key="d2">examples/example_working/images/image_5.jpg</data>
+</node>
+<node id="&quot;Precision (PRE)&quot;">
+  <data key="d0">"OBJECT"</data>
+  <data key="d1">Precision (PRE) is defined as the ratio of true positives (TP) to the total number of predicted positives (TP + FP), reflecting the accuracy of positive predictions made by a model. It is a key component of the F1 score, which is equivalent to the Dice coefficient in binary classification: F1 = 2*(Precision × Recall) / (Precision + Recall). In imbalanced settings, high precision alone may be misleading if recall is low, motivating the use of combined metrics like F1 or adaptive losses that balance both concerns.</data>
+  <data key="d2">examples/example_working/images/image_5.jpg</data>
+</node>
+<node id="&quot;Recall (REC)&quot;">
+  <data key="d0">"OBJECT"</data>
+  <data key="d1">Recall (REC), also known as sensitivity, measures the proportion of actual positive instances that are correctly identified by the model, calculated as TP / (TP + FN). It is crucial in applications where missing positive cases is costly, such as medical diagnosis or rare event detection. The Dice coefficient and Tversky index incorporate recall alongside precision, and advanced loss functions like self-adjusting Dice loss dynamically modulate the contribution of easy vs. hard examples to improve recall without sacrificing precision excessively.</data>
+  <data key="d2">examples/example_working/images/image_5.jpg</data>
+</node>
+<node id="&quot;F1&quot;">
+  <data key="d0">"ORGANIZATION"</data>
+  <data key="d1">"F1 Score, the harmonic mean of precision and recall, used to evaluate the performance of classification models."</data>
+  <data key="d2">examples/example_working/images/image_5.jpg</data>
+</node>
+<node id="&quot;DICE COEFFICIENT&quot;">
+  <data key="d0">"CONCEPT"</data>
+  <data key="d1">"The Dice Coefficient (DSC) is an F1-oriented statistic used to measure the similarity between two sets, commonly applied in evaluating model predictions against ground truth in machine learning contexts. It is mathematically defined and discussed with variants including smoothing and loss formulations."</data>
+  <data key="d2">examples/example_working/images/image_5.jpg</data>
+</node>
+<edge source="&quot;IMAGE_5&quot;" target="&quot;DSC&quot;">
+  <data key="d3">10.0</data>
+  <data key="d4">"DSC是从image_5中提取的实体。"</data>
+  <data key="d5">examples/example_working/images/image_5.jpg</data>
+  <data key="d6">1</data>
+</edge>
+<edge source="&quot;IMAGE_5&quot;" target="&quot;True Positives (TP)&quot;">
+  <data key="d3">10.0</data>
+  <data key="d4">"TP是从image_5中提取的实体。"</data>
+  <data key="d5">examples/example_working/images/image_5.jpg</data>
+  <data key="d6">1</data>
+</edge>
+<edge source="&quot;IMAGE_5&quot;" target="&quot;False Negatives (FN)&quot;">
+  <data key="d3">10.0</data>
+  <data key="d4">"FN是从image_5中提取的实体。"</data>
+  <data key="d5">examples/example_working/images/image_5.jpg</data>
+  <data key="d6">1</data>
+</edge>
+<edge source="&quot;IMAGE_5&quot;" target="&quot;False Positives (FP)&quot;">
+  <data key="d3">10.0</data>
+  <data key="d4">"FP是从image_5中提取的实体。"</data>
+  <data key="d5">examples/example_working/images/image_5.jpg</data>
+  <data key="d6">1</data>
+</edge>
+<edge source="&quot;IMAGE_5&quot;" target="&quot;Precision (PRE)&quot;">
+  <data key="d3">10.0</data>
+  <data key="d4">"Pre是从image_5中提取的实体。"</data>
+  <data key="d5">examples/example_working/images/image_5.jpg</data>
+  <data key="d6">1</data>
+</edge>
+<edge source="&quot;IMAGE_5&quot;" target="&quot;Recall (REC)&quot;">
+  <data key="d3">10.0</data>
+  <data key="d4">"Rec是从image_5中提取的实体。"</data>
+  <data key="d5">examples/example_working/images/image_5.jpg</data>
+  <data key="d6">1</data>
+</edge>
+<edge source="&quot;IMAGE_5&quot;" target="&quot;F1&quot;">
+  <data key="d3">10.0</data>
+  <data key="d4">"F1是从image_5中提取的实体。"</data>
+  <data key="d5">examples/example_working/images/image_5.jpg</data>
+  <data key="d6">1</data>
+</edge>
+<edge source="&quot;IMAGE_5&quot;" target="&quot;DICE COEFFICIENT&quot;">
+  <data key="d3">10.0</data>
+  <data key="d4">"IMAGE_5" is the image of "DICE COEFFICIENT".</data>
+  <data key="d5">examples/example_working/images/image_5.jpg</data>
+  <data key="d6">1</data>
+</edge>
+<edge source="&quot;DSC&quot;" target="&quot;True Positives (TP)&quot;">
+  <data key="d3">9.0</data>
+  <data key="d4">"The Dice Similarity Coefficient formula includes True Positives as a core component in its numerator and denominator."</data>
+  <data key="d5">examples/example_working/images/image_5.jpg</data>
+  <data key="d6">1</data>
+</edge>
+<edge source="&quot;DSC&quot;" target="&quot;False Negatives (FN)&quot;">
+  <data key="d3">8.0</data>
+  <data key="d4">"The Dice Similarity Coefficient formula includes False Negatives in its denominator, affecting the overall similarity score."</data>
+  <data key="d5">examples/example_working/images/image_5.jpg</data>
+  <data key="d6">1</data>
+</edge>
+<edge source="&quot;DSC&quot;" target="&quot;False Positives (FP)&quot;">
+  <data key="d3">8.0</data>
+  <data key="d4">"The Dice Similarity Coefficient formula includes False Positives in its denominator, influencing the final similarity value."</data>
+  <data key="d5">examples/example_working/images/image_5.jpg</data>
+  <data key="d6">1</data>
+</edge>
+<edge source="&quot;DSC&quot;" target="&quot;Precision (PRE)&quot;">
+  <data key="d3">9.0</data>
+  <data key="d4">"The Dice Similarity Coefficient is mathematically equivalent to the F1 score, which depends on Precision."</data>
+  <data key="d5">examples/example_working/images/image_5.jpg</data>
+  <data key="d6">1</data>
+</edge>
+<edge source="&quot;DSC&quot;" target="&quot;Recall (REC)&quot;">
+  <data key="d3">9.0</data>
+  <data key="d4">"The Dice Similarity Coefficient is mathematically equivalent to the F1 score, which depends on Recall."</data>
+  <data key="d5">examples/example_working/images/image_5.jpg</data>
+  <data key="d6">1</data>
+</edge>
+<edge source="&quot;DSC&quot;" target="&quot;F1&quot;">
+  <data key="d3">10.0</data>
+  <data key="d4">"The Dice Similarity Coefficient (DSC) is equal to the F1 score, both representing the harmonic mean of precision and recall."</data>
+  <data key="d5">examples/example_working/images/image_5.jpg</data>
+  <data key="d6">1</data>
+</edge>
+<edge source="&quot;Precision (PRE)&quot;" target="&quot;Recall (REC)&quot;">
+  <data key="d3">9.0</data>
+  <data key="d4">"Precision and Recall are combined in the F1 score, reflecting their joint contribution to model evaluation."</data>
+  <data key="d5">examples/example_working/images/image_5.jpg</data>
+  <data key="d6">1</data>
+</edge>
+</graph></graphml>

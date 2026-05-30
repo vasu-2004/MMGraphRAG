@@ -1,0 +1,65 @@
+<?xml version='1.0' encoding='utf-8'?>
+<graphml xmlns="http://graphml.graphdrawing.org/xmlns" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://graphml.graphdrawing.org/xmlns http://graphml.graphdrawing.org/xmlns/1.0/graphml.xsd"><key id="d6" for="edge" attr.name="order" attr.type="long"/>
+<key id="d5" for="edge" attr.name="source_id" attr.type="string"/>
+<key id="d4" for="edge" attr.name="description" attr.type="string"/>
+<key id="d3" for="edge" attr.name="weight" attr.type="double"/>
+<key id="d2" for="node" attr.name="source_id" attr.type="string"/>
+<key id="d1" for="node" attr.name="description" attr.type="string"/>
+<key id="d0" for="node" attr.name="entity_type" attr.type="string"/>
+<graph edgedefault="undirected"><node id="&quot;IMAGE_9&quot;">
+  <data key="d0">"ORI_IMG"</data>
+  <data key="d1">"The image is a grayscale icon commonly used to represent a restroom or public toilets. It features two stylized human figures, a female and a male, standing side-by-side. The figure on the left represents a female, depicted with a triangular or bell-shaped lower body, suggesting a skirt or dress, and a circular head. The figure on the right represents a male, with a rectangular body and a circular head. Both figures are rendered as solid black silhouettes against a lighter, possibly white or light gray, background. They appear to be enclosed within a simple, slightly arched or rectangular frame, which might symbolize an entrance or a door. The overall design is minimalist and symbolic, characteristic of public signage."</data>
+  <data key="d2">C:/MMGraphRAG/MMGraphRAG/test_runs/api_working\images\image_9.jpg</data>
+</node>
+<node id="&quot;FEMALE FIGURE SILHOUETTE&quot;">
+  <data key="d0">"PERSON"</data>
+  <data key="d1">A stylized, black silhouette of a female figure, typically depicted with a triangular lower body suggesting a dress or skirt. This universal pictogram is commonly used on signs to represent women's facilities, such as restrooms.</data>
+  <data key="d2">C:/MMGraphRAG/MMGraphRAG/test_runs/api_working\images\image_9.jpg</data>
+</node>
+<node id="&quot;MALE FIGURE SILHOUETTE&quot;">
+  <data key="d0">"PERSON"</data>
+  <data key="d1">A stylized, black silhouette of a male figure, typically depicted with a rectangular lower body suggesting trousers. This universal pictogram is commonly used on signs to represent men's facilities, such as restrooms.</data>
+  <data key="d2">C:/MMGraphRAG/MMGraphRAG/test_runs/api_working\images\image_9.jpg</data>
+</node>
+<node id="&quot;RESTROOM SIGN&quot;">
+  <data key="d0">"OBJECT"</data>
+  <data key="d1">A common pictogram used to indicate public restrooms, featuring a dark background with two white stylized human figures side-by-side – typically a female silhouette on the left and a male silhouette on the right. In Yellowstone National Park, 'Restrooms' are explicitly listed as services available at various locations including Bridge Bay, Canyon, Fishing Bridge, Grant Village, Lake Village, Mammoth Hot Springs, Old Faithful, Roosevelt, and Tower Fall. Furthermore, picnic areas throughout the park usually provide toilets, implying the widespread presence of such signs to guide visitors to these facilities.</data>
+  <data key="d2">C:/MMGraphRAG/MMGraphRAG/test_runs/api_working\images\image_9.jpg</data>
+</node>
+<edge source="&quot;IMAGE_9&quot;" target="&quot;FEMALE FIGURE SILHOUETTE&quot;">
+  <data key="d3">10.0</data>
+  <data key="d4">"Female Figure Silhouette是从image_9中提取的实体。"</data>
+  <data key="d5">C:/MMGraphRAG/MMGraphRAG/test_runs/api_working\images\image_9.jpg</data>
+  <data key="d6">1</data>
+</edge>
+<edge source="&quot;IMAGE_9&quot;" target="&quot;MALE FIGURE SILHOUETTE&quot;">
+  <data key="d3">10.0</data>
+  <data key="d4">"Male Figure Silhouette是从image_9中提取的实体。"</data>
+  <data key="d5">C:/MMGraphRAG/MMGraphRAG/test_runs/api_working\images\image_9.jpg</data>
+  <data key="d6">1</data>
+</edge>
+<edge source="&quot;IMAGE_9&quot;" target="&quot;RESTROOM SIGN&quot;">
+  <data key="d3">10.0</data>
+  <data key="d4">"Restroom Sign是从image_9中提取的实体。"</data>
+  <data key="d5">C:/MMGraphRAG/MMGraphRAG/test_runs/api_working\images\image_9.jpg</data>
+  <data key="d6">1</data>
+</edge>
+<edge source="&quot;FEMALE FIGURE SILHOUETTE&quot;" target="&quot;RESTROOM SIGN&quot;">
+  <data key="d3">9.0</data>
+  <data key="d4">"The female figure silhouette is prominently displayed on the restroom sign, symbolizing the women's section of the facility."</data>
+  <data key="d5">C:/MMGraphRAG/MMGraphRAG/test_runs/api_working\images\image_9.jpg</data>
+  <data key="d6">1</data>
+</edge>
+<edge source="&quot;FEMALE FIGURE SILHOUETTE&quot;" target="&quot;MALE FIGURE SILHOUETTE&quot;">
+  <data key="d3">8.0</data>
+  <data key="d4">"The female and male figure silhouettes are depicted together side-by-side on the same sign, indicating a combined or adjacent restroom facility for both genders."</data>
+  <data key="d5">C:/MMGraphRAG/MMGraphRAG/test_runs/api_working\images\image_9.jpg</data>
+  <data key="d6">1</data>
+</edge>
+<edge source="&quot;MALE FIGURE SILHOUETTE&quot;" target="&quot;RESTROOM SIGN&quot;">
+  <data key="d3">9.0</data>
+  <data key="d4">"The male figure silhouette is prominently displayed on the restroom sign, symbolizing the men's section of the facility."</data>
+  <data key="d5">C:/MMGraphRAG/MMGraphRAG/test_runs/api_working\images\image_9.jpg</data>
+  <data key="d6">1</data>
+</edge>
+</graph></graphml>

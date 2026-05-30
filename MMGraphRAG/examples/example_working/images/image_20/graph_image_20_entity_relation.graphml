@@ -1,0 +1,146 @@
+<?xml version='1.0' encoding='utf-8'?>
+<graphml xmlns="http://graphml.graphdrawing.org/xmlns" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://graphml.graphdrawing.org/xmlns http://graphml.graphdrawing.org/xmlns/1.0/graphml.xsd"><key id="d6" for="edge" attr.name="order" attr.type="long"/>
+<key id="d5" for="edge" attr.name="source_id" attr.type="string"/>
+<key id="d4" for="edge" attr.name="description" attr.type="string"/>
+<key id="d3" for="edge" attr.name="weight" attr.type="double"/>
+<key id="d2" for="node" attr.name="source_id" attr.type="string"/>
+<key id="d1" for="node" attr.name="description" attr.type="string"/>
+<key id="d0" for="node" attr.name="entity_type" attr.type="string"/>
+<graph edgedefault="undirected"><node id="&quot;IMAGE_20&quot;">
+  <data key="d0">"ORI_IMG"</data>
+  <data key="d1">"The image is a table labeled 'Table 7: Experimental results for PI task.' It presents performance comparisons of various models on two natural language understanding benchmarks: MRPC (Microsoft Research Paraphrase Corpus) and QQP (Quora Question Pairs). The table has three columns: 'Model', 'MRPC F1', and 'QQP F1'. Each row corresponds to a model configuration, with the base models being BERT (Devlin et al., 2018) and XLNet (Yang et al., 2019), followed by their variants enhanced with different techniques: FL (Focal Loss), DL (Denoising Loss), and DSC (Dual Soft Constraint loss).The first section lists BERT-based models. BERT achieves an F1 score of 88.0 on MRPC and 91.3 on QQP. Adding FL improves the scores to 88.43 (+0.43) and 91.86 (+0.56), respectively. BERT+DL yields 88.71 (+0.71) and 91.92 (+0.62). The best-performing BERT variant is BERT+DSC, achieving 88.92 (+0.92) on MRPC and 92.11 (+0.81) on QQP.The second section presents XLNet-based models. XLNet alone achieves 89.2 on MRPC and 91.8 on QQP. With FL, it improves to 89.25 (+0.05) and 92.31 (+0.51). XLNet+DL reaches 89.33 (+0.13) and 92.39 (+0.59). The top-performing model in this group is XLNet+DSC, scoring 89.78 (+0.58) on MRPC and 92.60 (+0.79) on QQP.All values are presented in black text on a white background, with clear horizontal lines separating rows. The table uses bold formatting for the highest scores in each column (BERT+DSC and XLNet+DSC). The improvement values in parentheses indicate absolute gains over the base model. The overall trend shows that the DSC method consistently provides the largest performance boost across both datasets and base models, suggesting its effectiveness in enhancing model performance on paraphrase identification tasks."</data>
+  <data key="d2">examples/example_working/images/image_20.jpg</data>
+</node>
+<node id="&quot;BERT&quot;">
+  <data key="d0">"ORGANIZATION"</data>
+  <data key="d1">"A pre-trained language model introduced by Devlin et al. in 2018, used as a baseline for comparison in the table.""</data>
+  <data key="d2">examples/example_working/images/image_20.jpg</data>
+</node>
+<node id="&quot;BERT+FL&quot;">
+  <data key="d0">"ORGANIZATION"</data>
+  <data key="d1">"An enhanced version of BERT with FL (Fine-tuning Layer), showing improved performance over the base BERT model.""</data>
+  <data key="d2">examples/example_working/images/image_20.jpg</data>
+</node>
+<node id="&quot;BERT+DL&quot;">
+  <data key="d0">"ORGANIZATION"</data>
+  <data key="d1">"An enhanced version of BERT with DL (Discriminative Learning), demonstrating better results than BERT alone.""</data>
+  <data key="d2">examples/example_working/images/image_20.jpg</data>
+</node>
+<node id="&quot;BERT+DSC&quot;">
+  <data key="d0">"ORGANIZATION"</data>
+  <data key="d1">"An enhanced version of BERT with DSC (Discriminative Self-Consistency), achieving the highest improvement among BERT variants.""</data>
+  <data key="d2">examples/example_working/images/image_20.jpg</data>
+</node>
+<node id="&quot;XLNET&quot;">
+  <data key="d0">"ORGANIZATION"</data>
+  <data key="d1">"A pre-trained language model introduced by Yang et al. in 2019, serving as another baseline model in the comparison.""</data>
+  <data key="d2">examples/example_working/images/image_20.jpg</data>
+</node>
+<node id="&quot;XLNET+FL&quot;">
+  <data key="d0">"ORGANIZATION"</data>
+  <data key="d1">"An enhanced version of XLNet with FL (Fine-tuning Layer), showing performance gains over the base XLNet model.""</data>
+  <data key="d2">examples/example_working/images/image_20.jpg</data>
+</node>
+<node id="&quot;XLNET+DL&quot;">
+  <data key="d0">"ORGANIZATION"</data>
+  <data key="d1">"An enhanced version of XLNet with DL (Discriminative Learning), outperforming the original XLNet.""</data>
+  <data key="d2">examples/example_working/images/image_20.jpg</data>
+</node>
+<node id="&quot;XLNET+DSC&quot;">
+  <data key="d0">"ORGANIZATION"</data>
+  <data key="d1">"An enhanced version of XLNet with DSC (Discriminative Self-Consistency), achieving the best performance among XLNet variants.""</data>
+  <data key="d2">examples/example_working/images/image_20.jpg</data>
+</node>
+<node id="&quot;MRPC F1&quot;">
+  <data key="d0">"EVENT"</data>
+  <data key="d1">"A metric representing the F1 score on the Microsoft Research Paraphrase Corpus task, used to evaluate model performance.""</data>
+  <data key="d2">examples/example_working/images/image_20.jpg</data>
+</node>
+<node id="&quot;QQP F1&quot;">
+  <data key="d0">"EVENT"</data>
+  <data key="d1">"A metric representing the F1 score on the Quora Question Pairs task, used to evaluate model performance.""</data>
+  <data key="d2">examples/example_working/images/image_20.jpg</data>
+</node>
+<node id="&quot;DEVLIN ET AL., 2018&quot;">
+  <data key="d0">"ORGANIZATION"</data>
+  <data key="d1">"The authors and year of publication for the BERT paper, indicating the source of the original BERT model.""</data>
+  <data key="d2">examples/example_working/images/image_20.jpg</data>
+</node>
+<node id="&quot;YANG ET AL., 2019&quot;">
+  <data key="d0">"ORGANIZATION"</data>
+  <data key="d1">"The authors and year of publication for the XLNet paper, indicating the source of the original XLNet model.""</data>
+  <data key="d2">examples/example_working/images/image_20.jpg</data>
+</node>
+<edge source="&quot;IMAGE_20&quot;" target="&quot;BERT&quot;">
+  <data key="d3">10.0</data>
+  <data key="d4">"BERT是从image_20中提取的实体。"</data>
+  <data key="d5">examples/example_working/images/image_20.jpg</data>
+  <data key="d6">1</data>
+</edge>
+<edge source="&quot;IMAGE_20&quot;" target="&quot;BERT+FL&quot;">
+  <data key="d3">10.0</data>
+  <data key="d4">"BERT+FL是从image_20中提取的实体。"</data>
+  <data key="d5">examples/example_working/images/image_20.jpg</data>
+  <data key="d6">1</data>
+</edge>
+<edge source="&quot;IMAGE_20&quot;" target="&quot;BERT+DL&quot;">
+  <data key="d3">10.0</data>
+  <data key="d4">"BERT+DL是从image_20中提取的实体。"</data>
+  <data key="d5">examples/example_working/images/image_20.jpg</data>
+  <data key="d6">1</data>
+</edge>
+<edge source="&quot;IMAGE_20&quot;" target="&quot;BERT+DSC&quot;">
+  <data key="d3">10.0</data>
+  <data key="d4">"BERT+DSC是从image_20中提取的实体。"</data>
+  <data key="d5">examples/example_working/images/image_20.jpg</data>
+  <data key="d6">1</data>
+</edge>
+<edge source="&quot;IMAGE_20&quot;" target="&quot;XLNET&quot;">
+  <data key="d3">10.0</data>
+  <data key="d4">"XLNet是从image_20中提取的实体。"</data>
+  <data key="d5">examples/example_working/images/image_20.jpg</data>
+  <data key="d6">1</data>
+</edge>
+<edge source="&quot;IMAGE_20&quot;" target="&quot;XLNET+FL&quot;">
+  <data key="d3">10.0</data>
+  <data key="d4">"XLNet+FL是从image_20中提取的实体。"</data>
+  <data key="d5">examples/example_working/images/image_20.jpg</data>
+  <data key="d6">1</data>
+</edge>
+<edge source="&quot;IMAGE_20&quot;" target="&quot;XLNET+DL&quot;">
+  <data key="d3">10.0</data>
+  <data key="d4">"XLNet+DL是从image_20中提取的实体。"</data>
+  <data key="d5">examples/example_working/images/image_20.jpg</data>
+  <data key="d6">1</data>
+</edge>
+<edge source="&quot;IMAGE_20&quot;" target="&quot;XLNET+DSC&quot;">
+  <data key="d3">10.0</data>
+  <data key="d4">"XLNet+DSC是从image_20中提取的实体。"</data>
+  <data key="d5">examples/example_working/images/image_20.jpg</data>
+  <data key="d6">1</data>
+</edge>
+<edge source="&quot;IMAGE_20&quot;" target="&quot;MRPC F1&quot;">
+  <data key="d3">10.0</data>
+  <data key="d4">"MRPC F1是从image_20中提取的实体。"</data>
+  <data key="d5">examples/example_working/images/image_20.jpg</data>
+  <data key="d6">1</data>
+</edge>
+<edge source="&quot;IMAGE_20&quot;" target="&quot;QQP F1&quot;">
+  <data key="d3">10.0</data>
+  <data key="d4">"QQP F1是从image_20中提取的实体。"</data>
+  <data key="d5">examples/example_working/images/image_20.jpg</data>
+  <data key="d6">1</data>
+</edge>
+<edge source="&quot;IMAGE_20&quot;" target="&quot;DEVLIN ET AL., 2018&quot;">
+  <data key="d3">10.0</data>
+  <data key="d4">"Devlin et al., 2018是从image_20中提取的实体。"</data>
+  <data key="d5">examples/example_working/images/image_20.jpg</data>
+  <data key="d6">1</data>
+</edge>
+<edge source="&quot;IMAGE_20&quot;" target="&quot;YANG ET AL., 2019&quot;">
+  <data key="d3">10.0</data>
+  <data key="d4">"Yang et al., 2019是从image_20中提取的实体。"</data>
+  <data key="d5">examples/example_working/images/image_20.jpg</data>
+  <data key="d6">1</data>
+</edge>
+</graph></graphml>

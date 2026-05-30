@@ -1,0 +1,30 @@
+<?xml version='1.0' encoding='utf-8'?>
+<graphml xmlns="http://graphml.graphdrawing.org/xmlns" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://graphml.graphdrawing.org/xmlns http://graphml.graphdrawing.org/xmlns/1.0/graphml.xsd"><key id="d2" for="node" attr.name="source_id" attr.type="string"/>
+<key id="d1" for="node" attr.name="description" attr.type="string"/>
+<key id="d0" for="node" attr.name="entity_type" attr.type="string"/>
+<graph edgedefault="undirected"><node id="&quot;YELLOWSTONE NATIONAL PARK&quot;">
+  <data key="d0">"GEO"</data>
+  <data key="d1">"A prominent national park in Wyoming, serving as the main location for various activities, camping, and pass usage described in the text. Its visitor access in winter is under review, and it experiences distinct seasonal weather patterns."&lt;SEP&gt;"Yellowstone National Park is a large national park, mostly above 7,500 feet (2,275 m), known for unpredictable weather, busy roads, dangerous hydrothermal features, and diverse wildlife. This document is a trip planner for the park in 2010."&lt;SEP&gt;"Yellowstone National Park is a major national park primarily located in Wyoming, with parts extending into Montana and Idaho, known for its various features, roads, and visitor activities. It is also referred to as a destination for inquiries regarding authorized providers."&lt;SEP&gt;"Yellowstone National Park is the primary organization managing the park, providing services, setting regulations, and offering various facilities and activities. It also refers to the geographical area itself."</data>
+  <data key="d2">chunk-47639910c915bafe8d80a13752ccb8ee&lt;SEP&gt;chunk-2b3cdc79954b41510d5ae0999ef6daf3&lt;SEP&gt;chunk-88e5c2ce20f231e3a806b09b6cab2c4d&lt;SEP&gt;chunk-7351b12b3e5ac87b530aa3bf02ecf8cc</data>
+</node>
+<node id="&quot;COAST GUARD&quot;">
+  <data key="d0">"ORGANIZATION"</data>
+  <data key="d1">"The Coast Guard is a government organization whose approved 'wearable' personal flotation devices are required for each person boating."</data>
+  <data key="d2">chunk-e22ff6904de7a8eef70b8467d191a104</data>
+</node>
+<node id="&quot;XANTERRA PARKS AND RESORTS&quot;">
+  <data key="d0">"ORGANIZATION"</data>
+  <data key="d1">"An organization that handles reservations for Yellowstone National Park, providing contact information including a P.O. Box and phone numbers."</data>
+  <data key="d2">chunk-4c35ba44e693c85e6206ade502e115d5</data>
+</node>
+<node id="&quot;MAMMOTH HOT SPRINGS&quot;">
+  <data key="d0">"GEO"</data>
+  <data key="d1">"A specific location within Yellowstone National Park known for its geothermal features and a visitor center."</data>
+  <data key="d2">chunk-8f0e2c09fcd8882a570819d4a5395ca3</data>
+</node>
+<node id="&quot;NORRIS GEYSER BASIN&quot;">
+  <data key="d0">"GEO"</data>
+  <data key="d1">"A specific location within Yellowstone National Park known for its geothermal features and a museum."</data>
+  <data key="d2">chunk-8f0e2c09fcd8882a570819d4a5395ca3</data>
+</node>
+</graph></graphml>

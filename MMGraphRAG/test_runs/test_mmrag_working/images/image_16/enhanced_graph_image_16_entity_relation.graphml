@@ -1,0 +1,97 @@
+<?xml version='1.0' encoding='utf-8'?>
+<graphml xmlns="http://graphml.graphdrawing.org/xmlns" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://graphml.graphdrawing.org/xmlns http://graphml.graphdrawing.org/xmlns/1.0/graphml.xsd">
+  <key id="d6" for="edge" attr.name="order" attr.type="long" />
+  <key id="d5" for="edge" attr.name="source_id" attr.type="string" />
+  <key id="d4" for="edge" attr.name="description" attr.type="string" />
+  <key id="d3" for="edge" attr.name="weight" attr.type="double" />
+  <key id="d2" for="node" attr.name="source_id" attr.type="string" />
+  <key id="d1" for="node" attr.name="description" attr.type="string" />
+  <key id="d0" for="node" attr.name="entity_type" attr.type="string" />
+  <graph edgedefault="undirected">
+    <node id="&quot;IMAGE_16&quot;">
+      <data key="d0">"ORI_IMG"</data>
+      <data key="d1">"The image displays a small, pixelated icon, predominantly in shades of gray and white. It features a circular shape with a thick black outline, enclosing a white interior. Inside this white circle, there are two distinct, vertically oriented black figures. The figure on the left is thinner and appears to be a stylized representation of a fork, while the figure on the right is slightly wider and resembles a knife. Both figures are simple, linear forms. The overall impression is that of a universal symbol, likely indicating a dining facility or food service."</data>
+      <data key="d2">test_runs/test_mmrag_working\images\image_16.jpg</data>
+    </node>
+    <node id="&quot;CIRCLE&quot;">
+      <data key="d0">"OBJECT"</data>
+      <data key="d1">"A prominent circular shape with a thick black outline and a white interior, serving as the main container for the utensils."</data>
+      <data key="d2">test_runs/test_mmrag_working\images\image_16.jpg</data>
+    </node>
+    <node id="&quot;FORK&quot;">
+      <data key="d0">"OBJECT"</data>
+      <data key="d1">"A black silhouette of a dining fork, positioned vertically on the left side inside the circle."</data>
+      <data key="d2">test_runs/test_mmrag_working\images\image_16.jpg</data>
+    </node>
+    <node id="&quot;KNIFE&quot;">
+      <data key="d0">"OBJECT"</data>
+      <data key="d1">"A black silhouette of a dining knife, positioned vertically on the right side inside the circle, next to the fork."</data>
+      <data key="d2">test_runs/test_mmrag_working\images\image_16.jpg</data>
+    </node>
+    <node id="&quot;ICON&quot;">
+      <data key="d0">"OBJECT"</data>
+      <data key="d1">"A black and white graphical symbol representing dining or a restaurant, composed of a circle containing a fork and a knife."</data>
+      <data key="d2">test_runs/test_mmrag_working\images\image_16.jpg</data>
+    </node>
+    <edge source="&quot;IMAGE_16&quot;" target="&quot;CIRCLE&quot;">
+      <data key="d3">10.0</data>
+      <data key="d4">"Circle是从image_16中提取的实体。"</data>
+      <data key="d5">test_runs/test_mmrag_working\images\image_16.jpg</data>
+      <data key="d6">1</data>
+    </edge>
+    <edge source="&quot;IMAGE_16&quot;" target="&quot;FORK&quot;">
+      <data key="d3">10.0</data>
+      <data key="d4">"Fork是从image_16中提取的实体。"</data>
+      <data key="d5">test_runs/test_mmrag_working\images\image_16.jpg</data>
+      <data key="d6">1</data>
+    </edge>
+    <edge source="&quot;IMAGE_16&quot;" target="&quot;KNIFE&quot;">
+      <data key="d3">10.0</data>
+      <data key="d4">"Knife是从image_16中提取的实体。"</data>
+      <data key="d5">test_runs/test_mmrag_working\images\image_16.jpg</data>
+      <data key="d6">1</data>
+    </edge>
+    <edge source="&quot;IMAGE_16&quot;" target="&quot;ICON&quot;">
+      <data key="d3">10.0</data>
+      <data key="d4">"Icon是从image_16中提取的实体。"</data>
+      <data key="d5">test_runs/test_mmrag_working\images\image_16.jpg</data>
+      <data key="d6">1</data>
+    </edge>
+    <edge source="&quot;CIRCLE&quot;" target="&quot;FORK&quot;">
+      <data key="d3">9.0</data>
+      <data key="d4">"The fork is positioned inside the circle."</data>
+      <data key="d5">test_runs/test_mmrag_working\images\image_16.jpg</data>
+      <data key="d6">1</data>
+    </edge>
+    <edge source="&quot;CIRCLE&quot;" target="&quot;KNIFE&quot;">
+      <data key="d3">9.0</data>
+      <data key="d4">"The knife is positioned inside the circle."</data>
+      <data key="d5">test_runs/test_mmrag_working\images\image_16.jpg</data>
+      <data key="d6">1</data>
+    </edge>
+    <edge source="&quot;CIRCLE&quot;" target="&quot;ICON&quot;">
+      <data key="d3">9.0</data>
+      <data key="d4">"The circle forms the main boundary and visual structure of the icon."</data>
+      <data key="d5">test_runs/test_mmrag_working\images\image_16.jpg</data>
+      <data key="d6">1</data>
+    </edge>
+    <edge source="&quot;FORK&quot;" target="&quot;KNIFE&quot;">
+      <data key="d3">8.0</data>
+      <data key="d4">"The fork is placed directly to the left of the knife within the circle."</data>
+      <data key="d5">test_runs/test_mmrag_working\images\image_16.jpg</data>
+      <data key="d6">1</data>
+    </edge>
+    <edge source="&quot;FORK&quot;" target="&quot;ICON&quot;">
+      <data key="d3">9.0</data>
+      <data key="d4">"The fork is a key element that constitutes the icon."</data>
+      <data key="d5">test_runs/test_mmrag_working\images\image_16.jpg</data>
+      <data key="d6">1</data>
+    </edge>
+    <edge source="&quot;KNIFE&quot;" target="&quot;ICON&quot;">
+      <data key="d3">9.0</data>
+      <data key="d4">"The knife is a key element that constitutes the icon."</data>
+      <data key="d5">test_runs/test_mmrag_working\images\image_16.jpg</data>
+      <data key="d6">1</data>
+    </edge>
+  </graph>
+</graphml>

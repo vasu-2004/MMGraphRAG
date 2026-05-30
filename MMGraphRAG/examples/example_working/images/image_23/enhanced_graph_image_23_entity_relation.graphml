@@ -1,0 +1,122 @@
+<?xml version='1.0' encoding='utf-8'?>
+<graphml xmlns="http://graphml.graphdrawing.org/xmlns" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://graphml.graphdrawing.org/xmlns http://graphml.graphdrawing.org/xmlns/1.0/graphml.xsd"><key id="d6" for="edge" attr.name="order" attr.type="long"/>
+<key id="d5" for="edge" attr.name="source_id" attr.type="string"/>
+<key id="d4" for="edge" attr.name="description" attr.type="string"/>
+<key id="d3" for="edge" attr.name="weight" attr.type="double"/>
+<key id="d2" for="node" attr.name="source_id" attr.type="string"/>
+<key id="d1" for="node" attr.name="description" attr.type="string"/>
+<key id="d0" for="node" attr.name="entity_type" attr.type="string"/>
+<graph edgedefault="undirected"><node id="&quot;TABLE&quot;">
+  <data key="d0">"OBJECT"</data>
+  <data key="d1">"A structured table with three columns and ten rows, displaying numerical data related to performance metrics for different values of α."</data>
+  <data key="d2">examples/example_working/images/image_23.jpg</data>
+</node>
+<node id="&quot;α (alpha)&quot;">
+  <data key="d0">"OBJECT"</data>
+  <data key="d1">A hyperparameter in the Tversky Index used to control the tradeoff between false negatives and false positives in evaluation metrics like F1 score. In the experiments, α ranges from 0.1 to 0.9 in increments of 0.1, with β set as 1 − α. The optimal value of α varies by dataset: for the Chinese OntoNotes4.0 NER dataset, peak performance (F1 = 84.67) occurs at α = 0.6, while for the English QuoRef MRC dataset, the best result (F1 = 68.44) is achieved at α = 0.4. This demonstrates α’s critical role in tuning model performance on imbalanced or task-specific data.</data>
+  <data key="d2">examples/example_working/images/image_23.jpg</data>
+</node>
+<node id="&quot;CHINESE ONTO4.0&quot;">
+  <data key="d0">"ORGANIZATION"</data>
+  <data key="d1">"A benchmark or dataset used for evaluating performance, associated with Chinese language processing, showing scores that peak at 84.67 when α = 0.6."</data>
+  <data key="d2">examples/example_working/images/image_23.jpg</data>
+</node>
+<node id="&quot;ENGLISH QUOREF&quot;">
+  <data key="d0">"ORGANIZATION"</data>
+  <data key="d1">"A benchmark or dataset used for evaluating performance, associated with English language processing, showing scores that peak at 68.44 when α = 0.4."</data>
+  <data key="d2">examples/example_working/images/image_23.jpg</data>
+</node>
+<node id="&quot;SCORE (F1-score)&quot;">
+  <data key="d0">"OBJECT"</data>
+  <data key="d1">Numerical performance metrics representing F1-scores across different experimental conditions and datasets. Higher SCORE values indicate better model performance in tasks such as question answering (QQP), named entity recognition (Chinese OntoNotes4.0), and machine reading comprehension (English QuoRef). The scores are reported in tables comparing baseline models (e.g., BERT) with variants using different loss functions (e.g., Dice Loss, DSC) and data augmentation strategies (+positive, +negative, etc.). For instance, in Table 8, BERT+DSC achieves the highest F1-score of 93.63 under the '+ positive &amp; negative' augmentation setting, while in Table 10, the highest scores are 84.67 (Chinese Onto4.0) and 68.44 (English QuoRef) at specific α values.</data>
+  <data key="d2">examples/example_working/images/image_23.jpg</data>
+</node>
+<node id="&quot;IMAGE_23&quot;">
+  <data key="d0">"ORI_IMG"</data>
+  <data key="d1">IMAGE_23 is a table titled "Table 10: The effect of hyperparameters in Tversky Index," which evaluates how varying values of the hyperparameter α—while setting β = 1 − α—affect model performance on two datasets: "Chinese Onto4.0" and "English QuoRef." The table contains three columns: the first lists α values ranging from 0.1 to 0.9 in increments of 0.1, while the second and third columns present the corresponding Tversky Index scores for "Chinese Onto4.0" and "English QuoRef," respectively. The scores are as follows:  
+- α = 0.1: Chinese Onto4.0 = 80.13, English QuoRef = 63.23  
+- α = 0.2: Chinese Onto4.0 = 81.17, English QuoRef = 63.45  
+- α = 0.3: Chinese Onto4.0 = 84.22, English QuoRef = 65.88  
+- α = 0.4: Chinese Onto4.0 = 84.52, English QuoRef = 68.44 (bolded)  
+- α = 0.5: Chinese Onto4.0 = 84.47, English QuoRef = 67.52  
+- α = 0.6: Chinese Onto4.0 = 84.67 (bolded), English QuoRef = 66.35  
+- α = 0.7: Chinese Onto4.0 = 81.81, English QuoRef = 65.09  
+- α = 0.8: Chinese Onto4.0 = 80.97, English QuoRef = 64.13  
+- α = 0.9: Chinese Onto4.0 = 80.21, English QuoRef = 64.84  
+
+The highest performance for "Chinese Onto4.0" is 84.67 at α = 0.6, and for "English QuoRef" it is 68.44 at α = 0.4;</data>
+  <data key="d2">examples/example_working/images/image_23.jpg</data>
+</node>
+<edge source="&quot;TABLE&quot;" target="&quot;IMAGE_23&quot;">
+  <data key="d3">10.0</data>
+  <data key="d4">"Table是从image_23中提取的实体。"</data>
+  <data key="d5">examples/example_working/images/image_23.jpg</data>
+  <data key="d6">1</data>
+</edge>
+<edge source="&quot;TABLE&quot;" target="&quot;α (alpha)&quot;">
+  <data key="d3">9.0</data>
+  <data key="d4">"The table includes α as a column header and lists various values of α in the first column."</data>
+  <data key="d5">examples/example_working/images/image_23.jpg</data>
+  <data key="d6">1</data>
+</edge>
+<edge source="&quot;TABLE&quot;" target="&quot;CHINESE ONTO4.0&quot;">
+  <data key="d3">9.0</data>
+  <data key="d4">"The table contains a column labeled 'Chinese Onto4.0' with corresponding scores for each α value."</data>
+  <data key="d5">examples/example_working/images/image_23.jpg</data>
+  <data key="d6">1</data>
+</edge>
+<edge source="&quot;TABLE&quot;" target="&quot;ENGLISH QUOREF&quot;">
+  <data key="d3">9.0</data>
+  <data key="d4">"The table contains a column labeled 'English QuoRef' with corresponding scores for each α value."</data>
+  <data key="d5">examples/example_working/images/image_23.jpg</data>
+  <data key="d6">1</data>
+</edge>
+<edge source="&quot;TABLE&quot;" target="&quot;SCORE (F1-score)&quot;">
+  <data key="d3">9.0</data>
+  <data key="d4">"The table displays multiple score values across its cells, linked to specific α values and benchmarks."</data>
+  <data key="d5">examples/example_working/images/image_23.jpg</data>
+  <data key="d6">1</data>
+</edge>
+<edge source="&quot;α (alpha)&quot;" target="&quot;IMAGE_23&quot;">
+  <data key="d3">10.0</data>
+  <data key="d4">"α是从image_23中提取的实体。"</data>
+  <data key="d5">examples/example_working/images/image_23.jpg</data>
+  <data key="d6">1</data>
+</edge>
+<edge source="&quot;α (alpha)&quot;" target="&quot;CHINESE ONTO4.0&quot;">
+  <data key="d3">8.0</data>
+  <data key="d4">"The value of α influences the performance score on the Chinese Onto4.0 benchmark, with the highest score (84.67) achieved at α = 0.6."</data>
+  <data key="d5">examples/example_working/images/image_23.jpg</data>
+  <data key="d6">1</data>
+</edge>
+<edge source="&quot;α (alpha)&quot;" target="&quot;ENGLISH QUOREF&quot;">
+  <data key="d3">8.0</data>
+  <data key="d4">"The value of α influences the performance score on the English QuoRef benchmark, with the highest score (68.44) achieved at α = 0.4."</data>
+  <data key="d5">examples/example_working/images/image_23.jpg</data>
+  <data key="d6">1</data>
+</edge>
+<edge source="&quot;CHINESE ONTO4.0&quot;" target="&quot;IMAGE_23&quot;">
+  <data key="d3">10.0</data>
+  <data key="d4">"Chinese Onto4.0是从image_23中提取的实体。"</data>
+  <data key="d5">examples/example_working/images/image_23.jpg</data>
+  <data key="d6">1</data>
+</edge>
+<edge source="&quot;CHINESE ONTO4.0&quot;" target="&quot;ENGLISH QUOREF&quot;">
+  <data key="d3">7.0</data>
+  <data key="d4">"Both benchmarks are compared side by side in the table, allowing for direct comparison of performance across languages and α values."</data>
+  <data key="d5">examples/example_working/images/image_23.jpg</data>
+  <data key="d6">1</data>
+</edge>
+<edge source="&quot;ENGLISH QUOREF&quot;" target="&quot;IMAGE_23&quot;">
+  <data key="d3">10.0</data>
+  <data key="d4">"English QuoRef是从image_23中提取的实体。"</data>
+  <data key="d5">examples/example_working/images/image_23.jpg</data>
+  <data key="d6">1</data>
+</edge>
+<edge source="&quot;SCORE (F1-score)&quot;" target="&quot;IMAGE_23&quot;">
+  <data key="d3">10.0</data>
+  <data key="d4">"Score是从image_23中提取的实体。"</data>
+  <data key="d5">examples/example_working/images/image_23.jpg</data>
+  <data key="d6">1</data>
+</edge>
+</graph></graphml>

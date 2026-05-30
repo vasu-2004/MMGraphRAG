@@ -1,0 +1,45 @@
+<?xml version='1.0' encoding='utf-8'?>
+<graphml xmlns="http://graphml.graphdrawing.org/xmlns" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://graphml.graphdrawing.org/xmlns http://graphml.graphdrawing.org/xmlns/1.0/graphml.xsd">
+  <key id="d6" for="edge" attr.name="order" attr.type="long" />
+  <key id="d5" for="edge" attr.name="source_id" attr.type="string" />
+  <key id="d4" for="edge" attr.name="description" attr.type="string" />
+  <key id="d3" for="edge" attr.name="weight" attr.type="double" />
+  <key id="d2" for="node" attr.name="source_id" attr.type="string" />
+  <key id="d1" for="node" attr.name="description" attr.type="string" />
+  <key id="d0" for="node" attr.name="entity_type" attr.type="string" />
+  <graph edgedefault="undirected">
+    <node id="&quot;IMAGE_13&quot;">
+      <data key="d0">"ORI_IMG"</data>
+      <data key="d1">"The image is a small, square, monochrome icon. It features a black background with a white inner square border, and centrally placed within this white bordered area is a bold, black plus sign (+). The icon is simple and graphic, designed for clear symbolic representation. Given the context provided, which mentions 'Visitor Center or information station' and 'Full service', this icon likely represents a location offering full services or an information point, possibly on a map or guide."</data>
+      <data key="d2">test_runs/test_mmrag_working\images\image_13.jpg</data>
+    </node>
+    <node id="&quot;PLUS SIGN&quot;">
+      <data key="d0">"OBJECT"</data>
+      <data key="d1">"A black plus sign, which is a common mathematical symbol for addition or a general symbol for 'add' or 'positive'. It is centrally positioned within a square."</data>
+      <data key="d2">test_runs/test_mmrag_working\images\image_13.jpg</data>
+    </node>
+    <node id="&quot;SQUARE&quot;">
+      <data key="d0">"OBJECT"</data>
+      <data key="d1">"A white square with a black border, acting as a background or container for the black plus sign. The square defines the boundary of the icon."</data>
+      <data key="d2">test_runs/test_mmrag_working\images\image_13.jpg</data>
+    </node>
+    <edge source="&quot;IMAGE_13&quot;" target="&quot;PLUS SIGN&quot;">
+      <data key="d3">10.0</data>
+      <data key="d4">"Plus Sign是从image_13中提取的实体。"</data>
+      <data key="d5">test_runs/test_mmrag_working\images\image_13.jpg</data>
+      <data key="d6">1</data>
+    </edge>
+    <edge source="&quot;IMAGE_13&quot;" target="&quot;SQUARE&quot;">
+      <data key="d3">10.0</data>
+      <data key="d4">"Square是从image_13中提取的实体。"</data>
+      <data key="d5">test_runs/test_mmrag_working\images\image_13.jpg</data>
+      <data key="d6">1</data>
+    </edge>
+    <edge source="&quot;PLUS SIGN&quot;" target="&quot;SQUARE&quot;">
+      <data key="d3">9.0</data>
+      <data key="d4">"The Plus Sign is contained within and centrally positioned inside the Square."</data>
+      <data key="d5">test_runs/test_mmrag_working\images\image_13.jpg</data>
+      <data key="d6">1</data>
+    </edge>
+  </graph>
+</graphml>

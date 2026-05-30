@@ -1,0 +1,92 @@
+{
+  "2": {
+    "chunk_key": "chunk-7351b12b3e5ac87b530aa3bf02ecf8cc",
+    "entities": [
+      {
+        "entity_name": "\"YELLOWSTONE NATIONAL PARK\"",
+        "entity_type": "\"GEO\"",
+        "description": "\"Yellowstone National Park is a major national park primarily located in Wyoming, with parts extending into Montana and Idaho, known for its various features, roads, and visitor activities. It is also referred to as a destination for inquiries regarding authorized providers.\"",
+        "source_id": "chunk-7351b12b3e5ac87b530aa3bf02ecf8cc"
+      }
+    ],
+    "relationships": []
+  },
+  "4": {
+    "chunk_key": "chunk-e22ff6904de7a8eef70b8467d191a104",
+    "entities": [
+      {
+        "entity_name": "\"COAST GUARD\"",
+        "entity_type": "\"ORGANIZATION\"",
+        "description": "\"The Coast Guard is a government organization whose approved 'wearable' personal flotation devices are required for each person boating.\"",
+        "source_id": "chunk-e22ff6904de7a8eef70b8467d191a104"
+      }
+    ],
+    "relationships": []
+  },
+  "3": {
+    "chunk_key": "chunk-88e5c2ce20f231e3a806b09b6cab2c4d",
+    "entities": [
+      {
+        "entity_name": "\"YELLOWSTONE NATIONAL PARK\"",
+        "entity_type": "\"ORGANIZATION\"",
+        "description": "\"Yellowstone National Park is the primary organization managing the park, providing services, setting regulations, and offering various facilities and activities. It also refers to the geographical area itself.\"",
+        "source_id": "chunk-88e5c2ce20f231e3a806b09b6cab2c4d"
+      }
+    ],
+    "relationships": []
+  },
+  "0": {
+    "chunk_key": "chunk-47639910c915bafe8d80a13752ccb8ee",
+    "entities": [
+      {
+        "entity_name": "\"YELLOWSTONE NATIONAL PARK\"",
+        "entity_type": "\"GEO\"",
+        "description": "\"Yellowstone National Park is a large national park, mostly above 7,500 feet (2,275 m), known for unpredictable weather, busy roads, dangerous hydrothermal features, and diverse wildlife. This document is a trip planner for the park in 2010.\"",
+        "source_id": "chunk-47639910c915bafe8d80a13752ccb8ee"
+      }
+    ],
+    "relationships": []
+  },
+  "6": {
+    "chunk_key": "chunk-4c35ba44e693c85e6206ade502e115d5",
+    "entities": [
+      {
+        "entity_name": "\"XANTERRA PARKS AND RESORTS\"",
+        "entity_type": "\"ORGANIZATION\"",
+        "description": "\"An organization that handles reservations for Yellowstone National Park, providing contact information including a P.O. Box and phone numbers.\"",
+        "source_id": "chunk-4c35ba44e693c85e6206ade502e115d5"
+      }
+    ],
+    "relationships": []
+  },
+  "1": {
+    "chunk_key": "chunk-8f0e2c09fcd8882a570819d4a5395ca3",
+    "entities": [
+      {
+        "entity_name": "\"MAMMOTH HOT SPRINGS\"",
+        "entity_type": "\"GEO\"",
+        "description": "\"A specific location within Yellowstone National Park known for its geothermal features and a visitor center.\"",
+        "source_id": "chunk-8f0e2c09fcd8882a570819d4a5395ca3"
+      },
+      {
+        "entity_name": "\"NORRIS GEYSER BASIN\"",
+        "entity_type": "\"GEO\"",
+        "description": "\"A specific location within Yellowstone National Park known for its geothermal features and a museum.\"",
+        "source_id": "chunk-8f0e2c09fcd8882a570819d4a5395ca3"
+      }
+    ],
+    "relationships": []
+  },
+  "5": {
+    "chunk_key": "chunk-2b3cdc79954b41510d5ae0999ef6daf3",
+    "entities": [
+      {
+        "entity_name": "\"YELLOWSTONE NATIONAL PARK\"",
+        "entity_type": "\"GEO\"",
+        "description": "\"A prominent national park in Wyoming, serving as the main location for various activities, camping, and pass usage described in the text. Its visitor access in winter is under review, and it experiences distinct seasonal weather patterns.\"",
+        "source_id": "chunk-2b3cdc79954b41510d5ae0999ef6daf3"
+      }
+    ],
+    "relationships": []
+  }
+}

@@ -1,0 +1,82 @@
+<?xml version='1.0' encoding='utf-8'?>
+<graphml xmlns="http://graphml.graphdrawing.org/xmlns" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://graphml.graphdrawing.org/xmlns http://graphml.graphdrawing.org/xmlns/1.0/graphml.xsd"><key id="d6" for="edge" attr.name="order" attr.type="long"/>
+<key id="d5" for="edge" attr.name="source_id" attr.type="string"/>
+<key id="d4" for="edge" attr.name="description" attr.type="string"/>
+<key id="d3" for="edge" attr.name="weight" attr.type="double"/>
+<key id="d2" for="node" attr.name="source_id" attr.type="string"/>
+<key id="d1" for="node" attr.name="description" attr.type="string"/>
+<key id="d0" for="node" attr.name="entity_type" attr.type="string"/>
+<graph edgedefault="undirected"><node id="&quot;IMAGE_13&quot;">
+  <data key="d0">"ORI_IMG"</data>
+  <data key="d1">"The image displays a mathematical formula representing a modified version of the F1 score, specifically tailored for binary classification tasks involving probabilistic predictions. The formula is written as: F1(x_i) = 2 \frac{\mathbb{I}(p_{i1} &gt; 0.5)y_{i1}}{\mathbb{I}(p_{i1} &gt; 0.5) + y_{i1}}Here, x_i denotes an input example, p_{i1} represents the predicted probability that the example belongs to class 1 (positive class), and y_{i1} is the true label (binary: 0 or 1). The indicator function \mathbb{I}(p_{i1} &gt; 0.5) evaluates to 1 if the predicted probability exceeds 0.5, and 0 otherwise. This formulation computes the F1 score based on hard decisions derived from thresholding probabilities at 0.5, rather than using continuous probabilities directly. The context explains that this form contrasts with a 'soft' F1 variant (Eq.5) which uses continuous probabilities, and highlights the potential issue when training data contains many easy-negative examples—these can dominate training due to their low prediction probabilities being easily pushed to zero, while hard-negative examples remain indistinguishable from positives, degrading final F1 performance. The equation is presented in standard LaTeX-style mathematical notation, centered and clearly formatted, with no additional visual elements such as graphs, tables, or diagrams."</data>
+  <data key="d2">examples/example_working/images/image_13.jpg</data>
+</node>
+<node id="&quot;F1(X_I)&quot;">
+  <data key="d0">"ORGANIZATION"</data>
+  <data key="d1">"Mathematical function representing the F1 score for a given instance x_i, commonly used in evaluating classification models."</data>
+  <data key="d2">examples/example_working/images/image_13.jpg</data>
+</node>
+<node id="&quot;Numerical constant multiplier (2) in the Dice coefficient formula&quot;">
+  <data key="d0">"ORGANIZATION"</data>
+  <data key="d1">The constant '2' serves as a numerical multiplier in the Dice coefficient (DSC) formula, appearing in both the numerator of the set-based and sample-wise formulations. It ensures proper normalization when computing the similarity between predicted and ground truth sets by accounting for the intersection relative to the sum of set cardinalities. In the context of binary classification, it scales the true positives (TP) to balance precision and recall in the F1-score-equivalent expression of DSC.</data>
+  <data key="d2">examples/example_working/images/image_13.jpg</data>
+</node>
+<node id="&quot;Indicator function I(p_i1 &gt; 0.5)&quot;">
+  <data key="d0">"ORGANIZATION"</data>
+  <data key="d1">This is a binary indicator function used in the hard-thresholded computation of the F1 score for an individual example x_i. It evaluates to 1 if the model's predicted probability p_i1 for the positive class exceeds 0.5, indicating a positive prediction, and 0 otherwise. Unlike the soft probabilistic version used in standard Dice loss, this discrete formulation reflects actual classification decisions and is referenced to highlight the gap between optimization objectives (soft Dice) and evaluation metrics (hard F1).</data>
+  <data key="d2">examples/example_working/images/image_13.jpg</data>
+</node>
+<node id="&quot;True label Y_i1&quot;">
+  <data key="d0">"ORGANIZATION"</data>
+  <data key="d1">Y_i1 denotes the ground truth binary label for instance x_i, where a value of 1 indicates the instance belongs to the positive class and 0 indicates the negative class. In the context of Dice coefficient and related losses (e.g., Dice Loss, Tversky Loss), Y_i1 is used alongside the predicted probability p_i1 to compute similarity or discrepancy at the sample level. It plays a critical role in determining whether an example contributes to the loss, especially after smoothing with a gamma term that allows even negative examples (Y_i1 = 0) to influence training.</data>
+  <data key="d2">examples/example_working/images/image_13.jpg</data>
+</node>
+<edge source="&quot;IMAGE_13&quot;" target="&quot;F1(X_I)&quot;">
+  <data key="d3">10.0</data>
+  <data key="d4">"F1(x_i)是从image_13中提取的实体。"</data>
+  <data key="d5">examples/example_working/images/image_13.jpg</data>
+  <data key="d6">1</data>
+</edge>
+<edge source="&quot;IMAGE_13&quot;" target="&quot;Numerical constant multiplier (2) in the Dice coefficient formula&quot;">
+  <data key="d3">10.0</data>
+  <data key="d4">"2是从image_13中提取的实体。"</data>
+  <data key="d5">examples/example_working/images/image_13.jpg</data>
+  <data key="d6">1</data>
+</edge>
+<edge source="&quot;IMAGE_13&quot;" target="&quot;Indicator function I(p_i1 &gt; 0.5)&quot;">
+  <data key="d3">10.0</data>
+  <data key="d4">"I(p_i1 &gt; 0.5)是从image_13中提取的实体。"</data>
+  <data key="d5">examples/example_working/images/image_13.jpg</data>
+  <data key="d6">1</data>
+</edge>
+<edge source="&quot;IMAGE_13&quot;" target="&quot;True label Y_i1&quot;">
+  <data key="d3">10.0</data>
+  <data key="d4">"y_i1是从image_13中提取的实体。"</data>
+  <data key="d5">examples/example_working/images/image_13.jpg</data>
+  <data key="d6">1</data>
+</edge>
+<edge source="&quot;F1(X_I)&quot;" target="&quot;Numerical constant multiplier (2) in the Dice coefficient formula&quot;">
+  <data key="d3">9.0</data>
+  <data key="d4">"The F1 score is scaled by multiplying with the constant 2."</data>
+  <data key="d5">examples/example_working/images/image_13.jpg</data>
+  <data key="d6">1</data>
+</edge>
+<edge source="&quot;F1(X_I)&quot;" target="&quot;Indicator function I(p_i1 &gt; 0.5)&quot;">
+  <data key="d3">8.0</data>
+  <data key="d4">"The numerator and denominator of the F1 score both depend on the indicator function I(p_i1 &gt; 0.5), which determines whether the prediction is considered positive."</data>
+  <data key="d5">examples/example_working/images/image_13.jpg</data>
+  <data key="d6">1</data>
+</edge>
+<edge source="&quot;F1(X_I)&quot;" target="&quot;True label Y_i1&quot;">
+  <data key="d3">8.0</data>
+  <data key="d4">"The true label y_i1 is used in both the numerator and denominator of the F1 score calculation, directly influencing its value."</data>
+  <data key="d5">examples/example_working/images/image_13.jpg</data>
+  <data key="d6">1</data>
+</edge>
+<edge source="&quot;Indicator function I(p_i1 &gt; 0.5)&quot;" target="&quot;True label Y_i1&quot;">
+  <data key="d3">7.0</data>
+  <data key="d4">"The indicator function and the true label are compared to evaluate precision and recall components of the F1 score."</data>
+  <data key="d5">examples/example_working/images/image_13.jpg</data>
+  <data key="d6">1</data>
+</edge>
+</graph></graphml>

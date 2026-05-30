@@ -1,0 +1,138 @@
+<?xml version='1.0' encoding='utf-8'?>
+<graphml xmlns="http://graphml.graphdrawing.org/xmlns" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://graphml.graphdrawing.org/xmlns http://graphml.graphdrawing.org/xmlns/1.0/graphml.xsd"><key id="d6" for="edge" attr.name="order" attr.type="long"/>
+<key id="d5" for="edge" attr.name="source_id" attr.type="string"/>
+<key id="d4" for="edge" attr.name="description" attr.type="string"/>
+<key id="d3" for="edge" attr.name="weight" attr.type="double"/>
+<key id="d2" for="node" attr.name="source_id" attr.type="string"/>
+<key id="d1" for="node" attr.name="description" attr.type="string"/>
+<key id="d0" for="node" attr.name="entity_type" attr.type="string"/>
+<graph edgedefault="undirected"><node id="&quot;IMAGE_11&quot;">
+  <data key="d0">"ORI_IMG"</data>
+  <data key="d1">"The image displays a mathematical formula for the Tversky Index (TI), which is used to measure the similarity between two sets, A and B. The formula is presented in a clean, centered LaTeX-style typeset format. It reads: TI = \frac{|A \cap B|}{|A \cap B| + \alpha |A \setminus B| + \beta |B \setminus A|}The numerator represents the size of the intersection of sets A and B, denoted as |A ∩ B|. The denominator includes the same intersection term plus weighted terms for the set differences: α times the size of A minus B (|A \ B|), and β times the size of B minus A (|B \ A|). The parameters α and β are weighting factors that allow control over the penalty for false positives and false negatives, respectively. When α = β = 0.5, the Tversky Index reduces to the Dice Similarity Coefficient (DSC). This formula is commonly used in machine learning, particularly in segmentation tasks, where it serves as a loss function or evaluation metric. The context explains that this index generalizes the Dice coefficient and offers flexibility in balancing false positives and false negatives, making it suitable for scenarios requiring nuanced similarity measures."</data>
+  <data key="d2">examples/example_working/images/image_11.jpg</data>
+</node>
+<node id="&quot;TI&quot;">
+  <data key="d0">"OBJECT"</data>
+  <data key="d1">"The symbol 'TI' represents a mathematical measure, likely the Jaccard Index or a similar similarity metric, used to quantify the relationship between two sets A and B.""</data>
+  <data key="d2">examples/example_working/images/image_11.jpg</data>
+</node>
+<node id="&quot;A ∩ B&quot;">
+  <data key="d0">"OBJECT"</data>
+  <data key="d1">The intersection of sets A and B, representing elements common to both sets. In the context of the Tversky Index (TI), this term appears in the numerator and corresponds to true positives (TP) when A is the set of predicted positive examples and B is the set of ground-truth positive examples.</data>
+  <data key="d2">examples/example_working/images/image_11.jpg</data>
+</node>
+<node id="&quot;A \ B&quot;">
+  <data key="d0">"OBJECT"</data>
+  <data key="d1">The set difference of A minus B, representing elements in A that are not in B. In the Tversky Index formula, this term corresponds to false positives (FP) and appears in the denominator scaled by coefficient α, which controls the penalty for false positives.</data>
+  <data key="d2">examples/example_working/images/image_11.jpg</data>
+</node>
+<node id="&quot;B \ A&quot;">
+  <data key="d0">"OBJECT"</data>
+  <data key="d1">The set difference of B minus A, representing elements in B that are not in A. Within the Tversky Index, this term corresponds to false negatives (FN) and appears in the denominator weighted by coefficient β, which governs the penalty for false negatives.</data>
+  <data key="d2">examples/example_working/images/image_11.jpg</data>
+</node>
+<node id="&quot;α (alpha)&quot;">
+  <data key="d0">"OBJECT"</data>
+  <data key="d1">A scalar coefficient (denoted as α) that weights the contribution of the set difference A \ B (false positives) in the denominator of the Tversky Index. By adjusting α, one can control the emphasis on penalizing false positives; for example, setting α = β = 0.5 recovers the Dice Similarity Coefficient (DSC).</data>
+  <data key="d2">examples/example_working/images/image_11.jpg</data>
+</node>
+<node id="&quot;β (beta)&quot;">
+  <data key="d0">"OBJECT"</data>
+  <data key="d1">A scalar coefficient (denoted as β) that weights the contribution of the set difference B \ A (false negatives) in the denominator of the Tversky Index. Adjusting β allows flexible trade-offs between recall and precision, making TI a generalization of the Fβ score.</data>
+  <data key="d2">examples/example_working/images/image_11.jpg</data>
+</node>
+<node id="&quot;Tversky Index (TI) Formula&quot;">
+  <data key="d0">"OBJECT"</data>
+  <data key="d1">A mathematical expression defining the Tversky Index (TI) as a similarity measure between two sets A and B: TI = |A ∩ B| / (|A ∩ B| + α|A \ B| + β|B \ A|). This formula generalizes the Dice Coefficient and approximates the Fβ score, offering tunable sensitivity to false positives and false negatives via coefficients α and β. When α = β = 0.5, TI reduces to the Dice Similarity Coefficient (DSC).</data>
+  <data key="d2">examples/example_working/images/image_11.jpg</data>
+</node>
+<node id="&quot;TVERSKY INDEX (TI)&quot;">
+  <data key="d0">"CONCEPT"</data>
+  <data key="d1">"The Tversky Index (TI) is a generalization of the Dice Coefficient that approximates the Fβ score, allowing for asymmetric penalization of false positives and false negatives."</data>
+  <data key="d2">examples/example_working/images/image_11.jpg</data>
+</node>
+<edge source="&quot;IMAGE_11&quot;" target="&quot;TI&quot;">
+  <data key="d3">10.0</data>
+  <data key="d4">"TI是从image_11中提取的实体。"</data>
+  <data key="d5">examples/example_working/images/image_11.jpg</data>
+  <data key="d6">1</data>
+</edge>
+<edge source="&quot;IMAGE_11&quot;" target="&quot;A ∩ B&quot;">
+  <data key="d3">10.0</data>
+  <data key="d4">"A ∩ B是从image_11中提取的实体。"</data>
+  <data key="d5">examples/example_working/images/image_11.jpg</data>
+  <data key="d6">1</data>
+</edge>
+<edge source="&quot;IMAGE_11&quot;" target="&quot;A \ B&quot;">
+  <data key="d3">10.0</data>
+  <data key="d4">"A \ B是从image_11中提取的实体。"</data>
+  <data key="d5">examples/example_working/images/image_11.jpg</data>
+  <data key="d6">1</data>
+</edge>
+<edge source="&quot;IMAGE_11&quot;" target="&quot;B \ A&quot;">
+  <data key="d3">10.0</data>
+  <data key="d4">"B \ A是从image_11中提取的实体。"</data>
+  <data key="d5">examples/example_working/images/image_11.jpg</data>
+  <data key="d6">1</data>
+</edge>
+<edge source="&quot;IMAGE_11&quot;" target="&quot;α (alpha)&quot;">
+  <data key="d3">10.0</data>
+  <data key="d4">"α是从image_11中提取的实体。"</data>
+  <data key="d5">examples/example_working/images/image_11.jpg</data>
+  <data key="d6">1</data>
+</edge>
+<edge source="&quot;IMAGE_11&quot;" target="&quot;β (beta)&quot;">
+  <data key="d3">10.0</data>
+  <data key="d4">"β是从image_11中提取的实体。"</data>
+  <data key="d5">examples/example_working/images/image_11.jpg</data>
+  <data key="d6">1</data>
+</edge>
+<edge source="&quot;IMAGE_11&quot;" target="&quot;Tversky Index (TI) Formula&quot;">
+  <data key="d3">10.0</data>
+  <data key="d4">"Formula是从image_11中提取的实体。"</data>
+  <data key="d5">examples/example_working/images/image_11.jpg</data>
+  <data key="d6">1</data>
+</edge>
+<edge source="&quot;IMAGE_11&quot;" target="&quot;TVERSKY INDEX (TI)&quot;">
+  <data key="d3">10.0</data>
+  <data key="d4">"IMAGE_11" is the image of "TVERSKY INDEX (TI)".</data>
+  <data key="d5">examples/example_working/images/image_11.jpg</data>
+  <data key="d6">1</data>
+</edge>
+<edge source="&quot;TI&quot;" target="&quot;A ∩ B&quot;">
+  <data key="d3">9.0</data>
+  <data key="d4">"TI is directly proportional to the size of the intersection of sets A and B, which forms the numerator of the formula."</data>
+  <data key="d5">examples/example_working/images/image_11.jpg</data>
+  <data key="d6">1</data>
+</edge>
+<edge source="&quot;TI&quot;" target="&quot;A \ B&quot;">
+  <data key="d3">8.0</data>
+  <data key="d4">"TI is inversely related to the size of A \ B, modulated by the coefficient α, contributing to the denominator."</data>
+  <data key="d5">examples/example_working/images/image_11.jpg</data>
+  <data key="d6">1</data>
+</edge>
+<edge source="&quot;TI&quot;" target="&quot;B \ A&quot;">
+  <data key="d3">8.0</data>
+  <data key="d4">"TI is inversely related to the size of B \ A, modulated by the coefficient β, contributing to the denominator."</data>
+  <data key="d5">examples/example_working/images/image_11.jpg</data>
+  <data key="d6">1</data>
+</edge>
+<edge source="&quot;TI&quot;" target="&quot;α (alpha)&quot;">
+  <data key="d3">7.0</data>
+  <data key="d4">"The coefficient α scales the influence of A \ B on the value of the measure TI."</data>
+  <data key="d5">examples/example_working/images/image_11.jpg</data>
+  <data key="d6">1</data>
+</edge>
+<edge source="&quot;TI&quot;" target="&quot;β (beta)&quot;">
+  <data key="d3">7.0</data>
+  <data key="d4">"The coefficient β scales the influence of B \ A on the value of the measure TI."</data>
+  <data key="d5">examples/example_working/images/image_11.jpg</data>
+  <data key="d6">1</data>
+</edge>
+<edge source="&quot;TI&quot;" target="&quot;Tversky Index (TI) Formula&quot;">
+  <data key="d3">10.0</data>
+  <data key="d4">"TI is defined by the Formula, which specifies how the sets A and B and their relationships contribute to the final value."</data>
+  <data key="d5">examples/example_working/images/image_11.jpg</data>
+  <data key="d6">1</data>
+</edge>
+</graph></graphml>

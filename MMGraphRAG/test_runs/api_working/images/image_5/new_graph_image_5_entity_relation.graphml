@@ -1,0 +1,166 @@
+<?xml version='1.0' encoding='utf-8'?>
+<graphml xmlns="http://graphml.graphdrawing.org/xmlns" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://graphml.graphdrawing.org/xmlns http://graphml.graphdrawing.org/xmlns/1.0/graphml.xsd"><key id="d6" for="edge" attr.name="order" attr.type="long"/>
+<key id="d5" for="edge" attr.name="source_id" attr.type="string"/>
+<key id="d4" for="edge" attr.name="description" attr.type="string"/>
+<key id="d3" for="edge" attr.name="weight" attr.type="double"/>
+<key id="d2" for="node" attr.name="source_id" attr.type="string"/>
+<key id="d1" for="node" attr.name="description" attr.type="string"/>
+<key id="d0" for="node" attr.name="entity_type" attr.type="string"/>
+<graph edgedefault="undirected"><node id="&quot;IMAGE_5_PERSON-0.JPG&quot;">
+  <data key="d0">"IMG"</data>
+  <data key="d1">"The category of this image feature block is 'person'. The entity features are as follows:Person Features:- Gender: Appears to be female.- Age: A young child, likely a toddler or pre-schooler.- Skin color: Not discernible due to grayscale, but appears fair.- Hairstyle: Wavy or curly light-colored hair, possibly blonde or light brown, worn loose around the face. A small, light-colored accessory (possibly a clip or bow) is visible on the top of the head.- Clothing: Wearing a light-colored, possibly white, top with a high neckline, which could be a t-shirt or sweater.- Facial expression: Looking slightly to the right with a neutral or mildly curious expression. The mouth is closed.- Posture: Only the upper body (head and shoulders) is visible. The child's head is turned to the right, and the shoulders are slightly hunched."</data>
+  <data key="d2">C:/MMGraphRAG/MMGraphRAG/test_runs/api_working\images\image_5.jpg</data>
+</node>
+<node id="&quot;IMAGE_5_PERSON-1.JPG&quot;">
+  <data key="d0">"IMG"</data>
+  <data key="d1">"The category of this image feature block is 'person'. The entity features are as follows:Person Features:- **Gender:** Appears to be male or androgynous.- **Hairstyle:** Short, dark, and somewhat tousled hair, covering the forehead.- **Facial features:**    - **Eyes:** Wearing glasses with dark frames. The eyes behind the lenses are not clearly discernible due to the low resolution and grayscale nature.    - **Mouth:** A subtle smile or smirk is visible, hinting at a friendly or perhaps slightly mischievous expression.- **Expression:** The overall expression is one of slight amusement or friendliness.- **Age:** Appears to be a young adult.- **Clothing:** A small portion of what seems to be a light-colored collar or shirt is visible on the right side of the image.- **Accessories:** Clearly wearing glasses with dark, possibly thick, frames.- **Posture:** The head is slightly tilted, and the person is looking towards the viewer."</data>
+  <data key="d2">C:/MMGraphRAG/MMGraphRAG/test_runs/api_working\images\image_5.jpg</data>
+</node>
+<node id="&quot;IMAGE_5&quot;">
+  <data key="d0">"ORI_IMG"</data>
+  <data key="d1">"The image is a black and white photograph depicting an outdoor scene with an adult interacting with two young children. In the foreground, on the left, a young child, possibly a girl, with light-colored hair tied back, is visible, looking slightly to the viewer's right with a neutral expression. She is wearing a light-colored top. To her right, another child with darker hair and distinctive round, light-rimmed sunglasses is looking towards the right side of the frame, possibly at the adult. This child is also wearing a light-colored top. The central figure is an adult, likely a park ranger given their wide-brimmed hat, which is a prominent feature. The adult has dark hair and is leaning down, looking intently at the children, suggesting an interaction or teaching moment. They are wearing a light-colored shirt, and a wristwatch is visible on their left wrist. The background is somewhat blurry but appears to be a natural outdoor setting, with indistinct shapes of what might be wooden logs or structures, and possibly other people in the distance, further suggesting a park or camp environment. The overall atmosphere appears engaging and educational, focusing on the interaction between the adult and the children. The black and white tone gives the image a classic, documentary feel."</data>
+  <data key="d2">C:/MMGraphRAG/MMGraphRAG/test_runs/api_working\images\image_5.jpg</data>
+</node>
+<node id="&quot;Park Ranger&quot;">
+  <data key="d0">"PERSON"</data>
+  <data key="d1">An adult woman, potentially a Park Ranger in Yellowstone National Park, with dark hair, wearing a light-colored ranger-style hat with a dark band and a watch on her left wrist. She is looking down, interacting with children, a role consistent with rangers who lead activities, answer questions, and help visitors understand the wonders and hazards of Yellowstone.</data>
+  <data key="d2">C:/MMGraphRAG/MMGraphRAG/test_runs/api_working\images\image_5.jpg</data>
+</node>
+<node id="&quot;Child Visitor (Light Hair)&quot;">
+  <data key="d0">"PERSON"</data>
+  <data key="d1">A young child with light, curly hair, wearing a light-colored shirt. The child is looking towards the left, appearing to be held or supported by the woman. As a visitor in Yellowstone, children are advised to stay close to adults and understand the park's hazards, particularly hydrothermal areas, wildlife, and steep drop-offs. They might also participate in Junior Ranger or Young Scientist programs.</data>
+  <data key="d2">C:/MMGraphRAG/MMGraphRAG/test_runs/api_working\images\image_5.jpg</data>
+</node>
+<node id="&quot;Child Visitor (Dark Hair)&quot;">
+  <data key="d0">"PERSON"</data>
+  <data key="d1">A child with dark hair, wearing round-framed glasses and a light-colored shirt. The child is looking towards the right with a slight smile. As a visitor in Yellowstone, children are advised to stay close to adults and understand the park's hazards, particularly hydrothermal areas, wildlife, and steep drop-offs. They might also participate in Junior Ranger or Young Scientist programs.</data>
+  <data key="d2">C:/MMGraphRAG/MMGraphRAG/test_runs/api_working\images\image_5.jpg</data>
+</node>
+<node id="&quot;Park Ranger Hat&quot;">
+  <data key="d0">"OBJECT"</data>
+  <data key="d1">A light-colored, wide-brimmed hat with a dark band, worn by the woman, suggesting she is a park ranger. Park rangers in Yellowstone lead programs and assist visitors, making such a hat a common part of their attire in the outdoor setting.</data>
+  <data key="d2">C:/MMGraphRAG/MMGraphRAG/test_runs/api_working\images\image_5.jpg</data>
+</node>
+<node id="&quot;Round-framed Glasses&quot;">
+  <data key="d0">"OBJECT"</data>
+  <data key="d1">A pair of eyeglasses with round frames, worn by one of the child visitors in the Yellowstone National Park setting.</data>
+  <data key="d2">C:/MMGraphRAG/MMGraphRAG/test_runs/api_working\images\image_5.jpg</data>
+</node>
+<node id="&quot;Wristwatch&quot;">
+  <data key="d0">"OBJECT"</data>
+  <data key="d1">A wristwatch with a light-colored face and strap, worn on the left wrist of the woman, who appears to be a park ranger in Yellowstone National Park.</data>
+  <data key="d2">C:/MMGraphRAG/MMGraphRAG/test_runs/api_working\images\image_5.jpg</data>
+</node>
+<node id="&quot;Yellowstone National Park Setting&quot;">
+  <data key="d0">"GEO"</data>
+  <data key="d1">A blurry outdoor environment, characteristic of Yellowstone National Park, visible in the background. The park is mostly above 7,500 feet (2,275 m) with unpredictable weather. The setting features logs or wooden structures and what appears to be dirt or gravel ground, suggesting a natural or camp-like area within the park, where visitors are advised to stay on designated trails and be aware of hazards like hydrothermal features and wildlife.</data>
+  <data key="d2">C:/MMGraphRAG/MMGraphRAG/test_runs/api_working\images\image_5.jpg</data>
+</node>
+<node id="Especially for Children">
+  <data key="d0">IMG_ENTITY</data>
+  <data key="d1">The image captures an adult, likely a park ranger, engaging with two young children in an outdoor educational setting. This scene directly illustrates the 'Especially for Children' section of the Yellowstone National Park Trip Planner, which describes programs like the Junior Ranger and Young Scientist initiatives designed to foster involvement and understanding of Yellowstone's hazards and wonders among young visitors.</data>
+  <data key="d2">C:/MMGraphRAG/MMGraphRAG/test_runs/api_working\images\image_5.jpg</data>
+</node>
+<edge source="&quot;IMAGE_5_PERSON-0.JPG&quot;" target="&quot;Child Visitor (Light Hair)&quot;">
+  <data key="d3">9.0</data>
+  <data key="d4">"The image feature block image_5_person-0.jpg is a picture of a child with light hair."</data>
+  <data key="d5">C:/MMGraphRAG/MMGraphRAG/test_runs/api_working\images\image_5.jpg</data>
+  <data key="d6">1</data>
+</edge>
+<edge source="&quot;IMAGE_5_PERSON-0.JPG&quot;" target="&quot;IMAGE_5&quot;">
+  <data key="d3">10.0</data>
+  <data key="d4">"image_5_person-0.jpg是image_5的图像特征块。"</data>
+  <data key="d5">C:/MMGraphRAG/MMGraphRAG/test_runs/api_working\images\image_5.jpg</data>
+  <data key="d6">1</data>
+</edge>
+<edge source="&quot;IMAGE_5_PERSON-1.JPG&quot;" target="&quot;Child Visitor (Dark Hair)&quot;">
+  <data key="d3">9.0</data>
+  <data key="d4">"The image feature block image_5_person-1.jpg is a picture of a child with dark hair."</data>
+  <data key="d5">C:/MMGraphRAG/MMGraphRAG/test_runs/api_working\images\image_5.jpg</data>
+  <data key="d6">1</data>
+</edge>
+<edge source="&quot;IMAGE_5_PERSON-1.JPG&quot;" target="&quot;IMAGE_5&quot;">
+  <data key="d3">10.0</data>
+  <data key="d4">"image_5_person-1.jpg是image_5的图像特征块。"</data>
+  <data key="d5">C:/MMGraphRAG/MMGraphRAG/test_runs/api_working\images\image_5.jpg</data>
+  <data key="d6">1</data>
+</edge>
+<edge source="&quot;IMAGE_5&quot;" target="&quot;Park Ranger&quot;">
+  <data key="d3">10.0</data>
+  <data key="d4">"Woman是从image_5中提取的实体。"</data>
+  <data key="d5">C:/MMGraphRAG/MMGraphRAG/test_runs/api_working\images\image_5.jpg</data>
+  <data key="d6">1</data>
+</edge>
+<edge source="&quot;IMAGE_5&quot;" target="&quot;Child Visitor (Light Hair)&quot;">
+  <data key="d3">10.0</data>
+  <data key="d4">"Child with light hair是从image_5中提取的实体。"</data>
+  <data key="d5">C:/MMGraphRAG/MMGraphRAG/test_runs/api_working\images\image_5.jpg</data>
+  <data key="d6">1</data>
+</edge>
+<edge source="&quot;IMAGE_5&quot;" target="&quot;Child Visitor (Dark Hair)&quot;">
+  <data key="d3">10.0</data>
+  <data key="d4">"Child with dark hair是从image_5中提取的实体。"</data>
+  <data key="d5">C:/MMGraphRAG/MMGraphRAG/test_runs/api_working\images\image_5.jpg</data>
+  <data key="d6">1</data>
+</edge>
+<edge source="&quot;IMAGE_5&quot;" target="&quot;Park Ranger Hat&quot;">
+  <data key="d3">10.0</data>
+  <data key="d4">"Ranger Hat是从image_5中提取的实体。"</data>
+  <data key="d5">C:/MMGraphRAG/MMGraphRAG/test_runs/api_working\images\image_5.jpg</data>
+  <data key="d6">1</data>
+</edge>
+<edge source="&quot;IMAGE_5&quot;" target="&quot;Round-framed Glasses&quot;">
+  <data key="d3">10.0</data>
+  <data key="d4">"Glasses是从image_5中提取的实体。"</data>
+  <data key="d5">C:/MMGraphRAG/MMGraphRAG/test_runs/api_working\images\image_5.jpg</data>
+  <data key="d6">1</data>
+</edge>
+<edge source="&quot;IMAGE_5&quot;" target="&quot;Wristwatch&quot;">
+  <data key="d3">10.0</data>
+  <data key="d4">"Watch是从image_5中提取的实体。"</data>
+  <data key="d5">C:/MMGraphRAG/MMGraphRAG/test_runs/api_working\images\image_5.jpg</data>
+  <data key="d6">1</data>
+</edge>
+<edge source="&quot;IMAGE_5&quot;" target="&quot;Yellowstone National Park Setting&quot;">
+  <data key="d3">10.0</data>
+  <data key="d4">"Outdoor Setting是从image_5中提取的实体。"</data>
+  <data key="d5">C:/MMGraphRAG/MMGraphRAG/test_runs/api_working\images\image_5.jpg</data>
+  <data key="d6">1</data>
+</edge>
+<edge source="&quot;IMAGE_5&quot;" target="Especially for Children">
+  <data key="d3">10.0</data>
+  <data key="d4">"IMAGE_5" is the image of Especially for Children.</data>
+  <data key="d5">C:/MMGraphRAG/MMGraphRAG/test_runs/api_working\images\image_5.jpg</data>
+  <data key="d6">1</data>
+</edge>
+<edge source="&quot;Park Ranger&quot;" target="&quot;Child Visitor (Light Hair)&quot;">
+  <data key="d3">9.0</data>
+  <data key="d4">"The woman is holding or supporting the child with light hair, looking down at them."</data>
+  <data key="d5">C:/MMGraphRAG/MMGraphRAG/test_runs/api_working\images\image_5.jpg</data>
+  <data key="d6">1</data>
+</edge>
+<edge source="&quot;Park Ranger&quot;" target="&quot;Child Visitor (Dark Hair)&quot;">
+  <data key="d3">8.0</data>
+  <data key="d4">"The woman is in close proximity and interacting with the child with dark hair."</data>
+  <data key="d5">C:/MMGraphRAG/MMGraphRAG/test_runs/api_working\images\image_5.jpg</data>
+  <data key="d6">1</data>
+</edge>
+<edge source="&quot;Park Ranger&quot;" target="&quot;Park Ranger Hat&quot;">
+  <data key="d3">10.0</data>
+  <data key="d4">"The woman is wearing the ranger hat on her head."</data>
+  <data key="d5">C:/MMGraphRAG/MMGraphRAG/test_runs/api_working\images\image_5.jpg</data>
+  <data key="d6">1</data>
+</edge>
+<edge source="&quot;Park Ranger&quot;" target="&quot;Wristwatch&quot;">
+  <data key="d3">9.0</data>
+  <data key="d4">"The woman is wearing the watch on her left wrist."</data>
+  <data key="d5">C:/MMGraphRAG/MMGraphRAG/test_runs/api_working\images\image_5.jpg</data>
+  <data key="d6">1</data>
+</edge>
+<edge source="&quot;Child Visitor (Light Hair)&quot;" target="&quot;Child Visitor (Dark Hair)&quot;">
+  <data key="d3">8.0</data>
+  <data key="d4">"The two children are sitting closely together, appearing to be companions."</data>
+  <data key="d5">C:/MMGraphRAG/MMGraphRAG/test_runs/api_working\images\image_5.jpg</data>
+  <data key="d6">1</data>
+</edge>
+</graph></graphml>

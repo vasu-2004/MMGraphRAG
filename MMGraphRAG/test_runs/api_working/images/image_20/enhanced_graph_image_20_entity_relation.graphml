@@ -1,0 +1,42 @@
+<?xml version='1.0' encoding='utf-8'?>
+<graphml xmlns="http://graphml.graphdrawing.org/xmlns" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://graphml.graphdrawing.org/xmlns http://graphml.graphdrawing.org/xmlns/1.0/graphml.xsd"><key id="d6" for="edge" attr.name="order" attr.type="long"/>
+<key id="d5" for="edge" attr.name="source_id" attr.type="string"/>
+<key id="d4" for="edge" attr.name="description" attr.type="string"/>
+<key id="d3" for="edge" attr.name="weight" attr.type="double"/>
+<key id="d2" for="node" attr.name="source_id" attr.type="string"/>
+<key id="d1" for="node" attr.name="description" attr.type="string"/>
+<key id="d0" for="node" attr.name="entity_type" attr.type="string"/>
+<graph edgedefault="undirected"><node id="&quot;IMAGE_20&quot;">
+  <data key="d0">"ORI_IMG"</data>
+  <data key="d1">"The image displays a clear, stylized white wheelchair accessibility symbol set against a solid black background. The symbol, commonly known as the International Symbol of Access, features a white outline of a person seated in a wheelchair. The person's head is represented by a small white circle, and their body is depicted with a 'V' shape for the torso and arms, with bent legs extending downwards. The wheelchair itself is shown with two large, spoked wheels on either side of the seated figure and a smaller front wheel, all rendered in white outline. The lines of the symbol are crisp and distinct, contrasting sharply with the deep black background, making it highly visible and recognizable. The overall impression is one of a standard, functional icon."</data>
+  <data key="d2">C:/MMGraphRAG/MMGraphRAG/test_runs/api_working\images\image_20.jpg</data>
+</node>
+<node id="&quot;International Symbol of Access (Wheelchair Symbol)&quot;">
+  <data key="d0">"OBJECT"</data>
+  <data key="d1">A white graphic symbol depicting a person seated in a wheelchair, representing the International Symbol of Access, which indicates accessibility. This symbol is particularly relevant in the context of Yellowstone National Park's efforts to provide accessible features and facilities for visitors, including a 'Visitor’s Guide to Accessible Features' for wheelchair users and the availability of an 'Access Pass' for permanently disabled U.S. citizens or residents. It is typically set against a dark background for high contrast.</data>
+  <data key="d2">C:/MMGraphRAG/MMGraphRAG/test_runs/api_working\images\image_20.jpg</data>
+</node>
+<node id="&quot;Dark Background for Accessibility Symbol&quot;">
+  <data key="d0">"OBJECT"</data>
+  <data key="d1">A solid dark or black background that provides high contrast for the white graphic of the International Symbol of Access (wheelchair symbol). This visual contrast ensures the symbol is clearly visible and easily recognizable, especially in the context of conveying information about accessibility, such as for facilities in Yellowstone National Park.</data>
+  <data key="d2">C:/MMGraphRAG/MMGraphRAG/test_runs/api_working\images\image_20.jpg</data>
+</node>
+<edge source="&quot;IMAGE_20&quot;" target="&quot;International Symbol of Access (Wheelchair Symbol)&quot;">
+  <data key="d3">10.0</data>
+  <data key="d4">"Wheelchair Symbol是从image_20中提取的实体。"</data>
+  <data key="d5">C:/MMGraphRAG/MMGraphRAG/test_runs/api_working\images\image_20.jpg</data>
+  <data key="d6">1</data>
+</edge>
+<edge source="&quot;IMAGE_20&quot;" target="&quot;Dark Background for Accessibility Symbol&quot;">
+  <data key="d3">10.0</data>
+  <data key="d4">"Background是从image_20中提取的实体。"</data>
+  <data key="d5">C:/MMGraphRAG/MMGraphRAG/test_runs/api_working\images\image_20.jpg</data>
+  <data key="d6">1</data>
+</edge>
+<edge source="&quot;International Symbol of Access (Wheelchair Symbol)&quot;" target="&quot;Dark Background for Accessibility Symbol&quot;">
+  <data key="d3">9.0</data>
+  <data key="d4">"The Wheelchair Symbol is prominently displayed on the dark Background."</data>
+  <data key="d5">C:/MMGraphRAG/MMGraphRAG/test_runs/api_working\images\image_20.jpg</data>
+  <data key="d6">1</data>
+</edge>
+</graph></graphml>

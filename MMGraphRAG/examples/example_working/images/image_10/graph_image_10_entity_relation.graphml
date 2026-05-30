@@ -1,0 +1,111 @@
+<?xml version='1.0' encoding='utf-8'?>
+<graphml xmlns="http://graphml.graphdrawing.org/xmlns" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://graphml.graphdrawing.org/xmlns http://graphml.graphdrawing.org/xmlns/1.0/graphml.xsd"><key id="d6" for="edge" attr.name="order" attr.type="long"/>
+<key id="d5" for="edge" attr.name="source_id" attr.type="string"/>
+<key id="d4" for="edge" attr.name="description" attr.type="string"/>
+<key id="d3" for="edge" attr.name="weight" attr.type="double"/>
+<key id="d2" for="node" attr.name="source_id" attr.type="string"/>
+<key id="d1" for="node" attr.name="description" attr.type="string"/>
+<key id="d0" for="node" attr.name="entity_type" attr.type="string"/>
+<graph edgedefault="undirected"><node id="&quot;IMAGE_10&quot;">
+  <data key="d0">"ORI_IMG"</data>
+  <data key="d1">"The image displays a mathematical formula representing the Dice Loss (DL) in the context of set-level computation, commonly used in machine learning tasks such as segmentation or classification. The formula is written in LaTeX-style mathematical notation and reads: $$\mathrm{DL} = 1 - \frac{2 \sum_i p_{i1} y_{i1} + \gamma}{\sum_i p_{i1}^2 + \sum_i y_{i1}^2 + \gamma}$$Here, $\mathrm{DL}$ denotes the Dice Loss, which measures the dissimilarity between predicted probabilities $p_{i1}$ and true labels $y_{i1}$ across all instances $i$. The numerator includes twice the sum of element-wise products of predictions and labels, regularized by a small constant $\gamma$ to prevent division by zero. The denominator consists of the sum of squared predictions and squared true labels, also regularized by $\gamma$. This formulation is designed to improve optimization stability by computing a set-level Dice coefficient rather than summing individual ones. The context indicates that this version of DL is related to the Tversky index (TI), a generalization of the Dice coefficient that approximates the $F_\beta$ score. The equation is presented in clean, black serif font on a white background, typical of academic or technical documentation."</data>
+  <data key="d2">examples/example_working/images/image_10.jpg</data>
+</node>
+<node id="&quot;DL&quot;">
+  <data key="d0">"ORGANIZATION"</data>
+  <data key="d1">"Mathematical expression representing a metric, likely Discrimination Loss, defined as 1 minus a fraction involving summations of variables p_i1, y_i1, and γ."</data>
+  <data key="d2">examples/example_working/images/image_10.jpg</data>
+</node>
+<node id="&quot;P_I1&quot;">
+  <data key="d0">"OBJECT"</data>
+  <data key="d1">"Variable representing a probability or weight component in the formula, indexed by i and subscripted with 1, used in both numerator and denominator."</data>
+  <data key="d2">examples/example_working/images/image_10.jpg</data>
+</node>
+<node id="&quot;Y_I1&quot;">
+  <data key="d0">"OBJECT"</data>
+  <data key="d1">"Variable representing an output or target value, indexed by i and subscripted with 1, appearing in both numerator and denominator."</data>
+  <data key="d2">examples/example_working/images/image_10.jpg</data>
+</node>
+<node id="&quot;Γ&quot;">
+  <data key="d0">"OBJECT"</data>
+  <data key="d1">"Constant term added to both numerator and denominator, possibly serving as a regularization parameter or smoothing factor."</data>
+  <data key="d2">examples/example_working/images/image_10.jpg</data>
+</node>
+<node id="&quot;Σ&quot;">
+  <data key="d0">"OBJECT"</data>
+  <data key="d1">"Summation symbol indicating the sum over all indices i of the respective terms, used twice in the formula."</data>
+  <data key="d2">examples/example_working/images/image_10.jpg</data>
+</node>
+<edge source="&quot;IMAGE_10&quot;" target="&quot;DL&quot;">
+  <data key="d3">10.0</data>
+  <data key="d4">"DL是从image_10中提取的实体。"</data>
+  <data key="d5">examples/example_working/images/image_10.jpg</data>
+  <data key="d6">1</data>
+</edge>
+<edge source="&quot;IMAGE_10&quot;" target="&quot;P_I1&quot;">
+  <data key="d3">10.0</data>
+  <data key="d4">"p_i1是从image_10中提取的实体。"</data>
+  <data key="d5">examples/example_working/images/image_10.jpg</data>
+  <data key="d6">1</data>
+</edge>
+<edge source="&quot;IMAGE_10&quot;" target="&quot;Y_I1&quot;">
+  <data key="d3">10.0</data>
+  <data key="d4">"y_i1是从image_10中提取的实体。"</data>
+  <data key="d5">examples/example_working/images/image_10.jpg</data>
+  <data key="d6">1</data>
+</edge>
+<edge source="&quot;IMAGE_10&quot;" target="&quot;Γ&quot;">
+  <data key="d3">10.0</data>
+  <data key="d4">"γ是从image_10中提取的实体。"</data>
+  <data key="d5">examples/example_working/images/image_10.jpg</data>
+  <data key="d6">1</data>
+</edge>
+<edge source="&quot;IMAGE_10&quot;" target="&quot;Σ&quot;">
+  <data key="d3">10.0</data>
+  <data key="d4">"Σ是从image_10中提取的实体。"</data>
+  <data key="d5">examples/example_working/images/image_10.jpg</data>
+  <data key="d6">1</data>
+</edge>
+<edge source="&quot;DL&quot;" target="&quot;P_I1&quot;">
+  <data key="d3">9.0</data>
+  <data key="d4">"The DL metric depends on p_i1 through its appearance in both the numerator and denominator of the fraction."</data>
+  <data key="d5">examples/example_working/images/image_10.jpg</data>
+  <data key="d6">1</data>
+</edge>
+<edge source="&quot;DL&quot;" target="&quot;Y_I1&quot;">
+  <data key="d3">9.0</data>
+  <data key="d4">"The DL metric depends on y_i1 through its presence in both the numerator and denominator of the fraction."</data>
+  <data key="d5">examples/example_working/images/image_10.jpg</data>
+  <data key="d6">1</data>
+</edge>
+<edge source="&quot;DL&quot;" target="&quot;Γ&quot;">
+  <data key="d3">8.0</data>
+  <data key="d4">"The DL metric includes γ as a constant additive term in both the numerator and denominator, affecting the overall value."</data>
+  <data key="d5">examples/example_working/images/image_10.jpg</data>
+  <data key="d6">1</data>
+</edge>
+<edge source="&quot;DL&quot;" target="&quot;Σ&quot;">
+  <data key="d3">9.0</data>
+  <data key="d4">"The DL metric uses summation (Σ) operations to aggregate values across all indices i for both p_i1 and y_i1."</data>
+  <data key="d5">examples/example_working/images/image_10.jpg</data>
+  <data key="d6">1</data>
+</edge>
+<edge source="&quot;P_I1&quot;" target="&quot;Y_I1&quot;">
+  <data key="d3">7.0</data>
+  <data key="d4">"p_i1 and y_i1 are paired in the numerator of the formula, suggesting a relationship where their product contributes to the overall computation."</data>
+  <data key="d5">examples/example_working/images/image_10.jpg</data>
+  <data key="d6">1</data>
+</edge>
+<edge source="&quot;P_I1&quot;" target="&quot;Γ&quot;">
+  <data key="d3">6.0</data>
+  <data key="d4">"p_i1 is combined with γ in the denominator via summation, indicating a normalization effect."</data>
+  <data key="d5">examples/example_working/images/image_10.jpg</data>
+  <data key="d6">1</data>
+</edge>
+<edge source="&quot;Y_I1&quot;" target="&quot;Γ&quot;">
+  <data key="d3">6.0</data>
+  <data key="d4">"y_i1 is combined with γ in the denominator via summation, contributing to the normalization of the expression."</data>
+  <data key="d5">examples/example_working/images/image_10.jpg</data>
+  <data key="d6">1</data>
+</edge>
+</graph></graphml>

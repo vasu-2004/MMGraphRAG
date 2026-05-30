@@ -1,0 +1,50 @@
+<?xml version='1.0' encoding='utf-8'?>
+<graphml xmlns="http://graphml.graphdrawing.org/xmlns" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://graphml.graphdrawing.org/xmlns http://graphml.graphdrawing.org/xmlns/1.0/graphml.xsd">
+  <key id="d6" for="edge" attr.name="order" attr.type="long" />
+  <key id="d5" for="edge" attr.name="source_id" attr.type="string" />
+  <key id="d4" for="edge" attr.name="description" attr.type="string" />
+  <key id="d3" for="edge" attr.name="weight" attr.type="double" />
+  <key id="d2" for="node" attr.name="source_id" attr.type="string" />
+  <key id="d1" for="node" attr.name="description" attr.type="string" />
+  <key id="d0" for="node" attr.name="entity_type" attr.type="string" />
+  <graph edgedefault="undirected">
+    <node id="&quot;IMAGE_8&quot;">
+      <data key="d0">"ORI_IMG"</data>
+      <data key="d1">"The image is a very low-resolution, pixelated graphic, predominantly in grayscale. It features two stylized, blocky characters, which appear to be either 'rs' or 'fs', rendered in a light gray or white color against a dark gray or black background. The pixelation is extremely prominent, with individual square pixels clearly visible, giving the characters a jagged, digital appearance rather than smooth curves. The overall shape of the graphic is rectangular, with the characters occupying the central area."</data>
+      <data key="d2">test_runs/test_mmrag_working\images\image_8.jpg</data>
+    </node>
+    <node id="&quot;RS&quot; LOGO">
+      <data key="d0">"OBJECT"</data>
+      <data key="d1">"A stylized logo composed of the lowercase letters 'r' and 's'. The letters are rendered in a pixelated, grayscale gradient, appearing brighter in the center and fading towards the edges, set against a dark, pixelated background. The overall appearance is digital and somewhat retro due to the pixelation."</data>
+      <data key="d2">test_runs/test_mmrag_working\images\image_8.jpg</data>
+    </node>
+    <node id="&quot;BACKGROUND&quot;">
+      <data key="d0">"OBJECT"</data>
+      <data key="d1">"A dark, pixelated grayscale background that provides contrast for the 'rs' logo. It has a uniform dark tone with visible pixel structure."</data>
+      <data key="d2">test_runs/test_mmrag_working\images\image_8.jpg</data>
+    </node>
+    <node id="&quot;RS&quot;">
+      <data key="d2">test_runs/test_mmrag_working\images\image_8.jpg</data>
+      <data key="d1">"rs是从image_8中提取的实体。"</data>
+      <data key="d0">"UNKNOWN"</data>
+    </node>
+    <edge source="&quot;IMAGE_8&quot;" target="&quot;RS&quot;">
+      <data key="d3">10.0</data>
+      <data key="d4">"rs是从image_8中提取的实体。"</data>
+      <data key="d5">test_runs/test_mmrag_working\images\image_8.jpg</data>
+      <data key="d6">1</data>
+    </edge>
+    <edge source="&quot;IMAGE_8&quot;" target="&quot;BACKGROUND&quot;">
+      <data key="d3">10.0</data>
+      <data key="d4">"Background是从image_8中提取的实体。"</data>
+      <data key="d5">test_runs/test_mmrag_working\images\image_8.jpg</data>
+      <data key="d6">1</data>
+    </edge>
+    <edge source="&quot;RS&quot; LOGO" target="&quot;BACKGROUND&quot;">
+      <data key="d3">9.0</data>
+      <data key="d4">"The 'rs' logo is prominently displayed on the dark, pixelated background."</data>
+      <data key="d5">test_runs/test_mmrag_working\images\image_8.jpg</data>
+      <data key="d6">1</data>
+    </edge>
+  </graph>
+</graphml>

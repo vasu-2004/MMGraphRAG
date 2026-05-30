@@ -1,0 +1,233 @@
+<?xml version='1.0' encoding='utf-8'?>
+<graphml xmlns="http://graphml.graphdrawing.org/xmlns" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://graphml.graphdrawing.org/xmlns http://graphml.graphdrawing.org/xmlns/1.0/graphml.xsd"><key id="d6" for="edge" attr.name="order" attr.type="long"/>
+<key id="d5" for="edge" attr.name="source_id" attr.type="string"/>
+<key id="d4" for="edge" attr.name="description" attr.type="string"/>
+<key id="d3" for="edge" attr.name="weight" attr.type="double"/>
+<key id="d2" for="node" attr.name="source_id" attr.type="string"/>
+<key id="d1" for="node" attr.name="description" attr.type="string"/>
+<key id="d0" for="node" attr.name="entity_type" attr.type="string"/>
+<graph edgedefault="undirected"><node id="&quot;BERT&quot;">
+  <data key="d0">"ORGANIZATION"</data>
+  <data key="d1">"A pre-trained language model used as a baseline in the evaluation of performance across different conditions."</data>
+  <data key="d2">examples/example_working/images/image_21.jpg</data>
+</node>
+<node id="&quot;BERT+FL&quot;">
+  <data key="d0">"ORGANIZATION"</data>
+  <data key="d1">BERT+FL refers to the BERT model enhanced with Focal Loss (FL), a loss function designed to address class imbalance by down-weighting well-classified examples. Experimental results on tasks like Paraphrase Identification (PI) and Machine Reading Comprehension (MRC) show consistent, though modest, improvements over standard BERT—e.g., +0.56 F1 on QQP and +0.85 F1 on SQuAD v2.0. However, its performance gains are less pronounced compared to other variants like BERT+DSC, especially on highly imbalanced datasets.</data>
+  <data key="d2">examples/example_working/images/image_21.jpg</data>
+</node>
+<node id="&quot;BERT+DL&quot;">
+  <data key="d0">"ORGANIZATION"</data>
+  <data key="d1">BERT+DL denotes the BERT model trained with Dice Loss (DL), a loss function that approximates the F1 score during training to better align with evaluation metrics in imbalanced classification tasks. It demonstrates slight improvements over baseline BERT across multiple benchmarks: for instance, +0.62 F1 on QQP and +1.36 F1 on SQuAD v2.0. While effective, DL is generally outperformed by the more refined DSC loss, particularly in scenarios with severe data imbalance.</data>
+  <data key="d2">examples/example_working/images/image_21.jpg</data>
+</node>
+<node id="&quot;BERT+DSC&quot;">
+  <data key="d0">"ORGANIZATION"</data>
+  <data key="d1">"BERT enhanced with DSC (possibly a specific data selection or contrastive method), achieving the highest performance among the variants."</data>
+  <data key="d2">examples/example_working/images/image_21.jpg</data>
+</node>
+<node id="&quot;Original Training Set (Original)&quot;">
+  <data key="d0">"EVENT"</data>
+  <data key="d1">The 'Original' condition refers to the baseline experimental setup using the unmodified QQP dataset containing 363,871 examples with a natural class distribution of 37% positive and 63% negative samples. This serves as the control condition against which data augmentation and sampling strategies are evaluated. Models trained under this condition establish the reference performance—for example, BERT achieves 91.3 F1 on QQP in this setting.</data>
+  <data key="d2">examples/example_working/images/image_21.jpg</data>
+</node>
+<node id="&quot;Positive Augmentation (+ Positive)&quot;">
+  <data key="d0">"EVENT"</data>
+  <data key="d1">The '+ Positive' condition involves augmenting the original training set by generating additional positive examples to create a balanced dataset (50% positive, 50% negative). This is achieved by selecting original positive examples as templates and replacing entity mentions using SpaCy and DBpedia. This strategy consistently improves model performance—e.g., BERT’s F1 on QQP rises from 91.3 to 92.27—demonstrating that balancing class distribution through positive augmentation enhances model effectiveness in paraphrase identification.</data>
+  <data key="d2">examples/example_working/images/image_21.jpg</data>
+</node>
+<node id="&quot;Negative Augmentation (+ Negative)&quot;">
+  <data key="d0">"EVENT"</data>
+  <data key="d1">The '+ Negative' condition creates a more imbalanced dataset by augmenting negative examples using the same entity replacement technique applied to negative templates, resulting in a training set with 21% positive and 79% negative samples. This exacerbates class imbalance and typically degrades performance—e.g., BERT’s F1 on QQP drops to 90.08—highlighting the adverse effects of increasing negative sample dominance without rebalancing.</data>
+  <data key="d2">examples/example_working/images/image_21.jpg</data>
+</node>
+<node id="&quot;Negative Downsampling (- Negative)&quot;">
+  <data key="d0">"EVENT"</data>
+  <data key="d1">The '- Negative' condition involves downsampling negative examples from the original dataset to achieve class balance (50% positive, 50% negative), reducing the total training size to 269,165 examples. Despite achieving balance, the reduced data volume leads to lower performance—e.g., BERT’s F1 falls to 89.73—indicating that data quantity remains critical even when class distribution is balanced.</data>
+  <data key="d2">examples/example_working/images/image_21.jpg</data>
+</node>
+<node id="&quot;Combined Positive and Negative Augmentation (+ Positive &amp; Negative)&quot;">
+  <data key="d0">"EVENT"</data>
+  <data key="d1">The '+ Positive &amp; Negative' condition augments both positive and negative examples while maintaining a balanced 50-50 class distribution, resulting in a larger training set of 458,477 examples. This approach yields the best overall performance across all models—e.g., BERT achieves 93.14 F1 on QQP—suggesting that combining balanced augmentation with increased data volume maximizes model efficacy in imbalanced learning scenarios.</data>
+  <data key="d2">examples/example_working/images/image_21.jpg</data>
+</node>
+<node id="&quot;IMAGE_21&quot;">
+  <data key="d0">"ORI_IMG"</data>
+  <data key="d1">IMAGE_21 is a table titled "Table 8: The effect of different data augmentation ways for QQP in terms of F1-score," which presents a comparative analysis of F1-scores across four model configurations—BERT, BERT+FL, BERT+DL, and BERT+DSC—under five distinct data augmentation strategies: 'original', '+ positive', '+ negative', '- negative', and '+ positive &amp; negative'. The table demonstrates how each augmentation approach affects model performance on the Quora Question Pairs (QQP) dataset.
+
+For the base BERT model, the original F1-score is 91.3. Adding only positive examples (+ positive) improves performance to 92.27, while adding only negative examples (+ negative) reduces it to 90.08. Removing negative examples (- negative), which results in a balanced 50-50 class distribution by down-sampling negatives, further decreases performance to 89.73. In contrast, combining both positive and negative augmentations (+ positive &amp; negative) yields the highest score of 93.14.
+
+Similar trends are observed across the enhanced models. BERT+FL achieves an original score of 91.86 (+0.56 over BERT), with its best result (93.45, +0.31 over its own baseline) under the '+ positive &amp; negative' condition. BERT+DL starts at 91.92 (+0.62) and peaks at 93.52 (+0.38) with combined augmentation. BERT+DSC shows the highest baseline at 92.11 (+0.81) and reaches 93.63 (+0.49) with '+ positive &amp; negative'.
+
+Across all models, the '+ positive &amp; negative' strategy consistently delivers the highest F1-scores, with improvements ranging from +0.31 to +0.49 relative to each model’s original performance. Conversely, '+ negative' generally degrades performance—attributed to creating a highly imbalanced dataset (21% positive, 79% negative)—and '- negative', despite balancing the class distribution, also underperforms compared to the original setup, particularly for the base BERT model. The table thus highlights that strategic combination of both positive and negative data augmentation yields optimal results, whereas isolated or removal-based strategies tend to be</data>
+  <data key="d2">examples/example_working/images/image_21.jpg</data>
+</node>
+<edge source="&quot;BERT&quot;" target="&quot;IMAGE_21&quot;">
+  <data key="d3">10.0</data>
+  <data key="d4">"BERT是从image_21中提取的实体。"</data>
+  <data key="d5">examples/example_working/images/image_21.jpg</data>
+  <data key="d6">1</data>
+</edge>
+<edge source="&quot;BERT&quot;" target="&quot;BERT+FL&quot;">
+  <data key="d3">8.0</data>
+  <data key="d4">"BERT+FL is an extension of BERT with additional fine-tuning or learning strategy, improving performance slightly."</data>
+  <data key="d5">examples/example_working/images/image_21.jpg</data>
+  <data key="d6">1</data>
+</edge>
+<edge source="&quot;BERT&quot;" target="&quot;BERT+DL&quot;">
+  <data key="d3">7.0</data>
+  <data key="d4">"BERT+DL builds upon BERT by incorporating deep learning techniques, resulting in marginal gains."</data>
+  <data key="d5">examples/example_working/images/image_21.jpg</data>
+  <data key="d6">1</data>
+</edge>
+<edge source="&quot;BERT&quot;" target="&quot;BERT+DSC&quot;">
+  <data key="d3">9.0</data>
+  <data key="d4">"BERT+DSC enhances BERT using a data selection or contrastive approach, achieving the highest score."</data>
+  <data key="d5">examples/example_working/images/image_21.jpg</data>
+  <data key="d6">1</data>
+</edge>
+<edge source="&quot;BERT&quot;" target="&quot;Original Training Set (Original)&quot;">
+  <data key="d3">10.0</data>
+  <data key="d4">"BERT is evaluated under the original condition as a baseline."</data>
+  <data key="d5">examples/example_working/images/image_21.jpg</data>
+  <data key="d6">1</data>
+</edge>
+<edge source="&quot;BERT+FL&quot;" target="&quot;IMAGE_21&quot;">
+  <data key="d3">10.0</data>
+  <data key="d4">"BERT+FL是从image_21中提取的实体。"</data>
+  <data key="d5">examples/example_working/images/image_21.jpg</data>
+  <data key="d6">1</data>
+</edge>
+<edge source="&quot;BERT+FL&quot;" target="&quot;Original Training Set (Original)&quot;">
+  <data key="d3">7.0</data>
+  <data key="d4">"BERT+FL performs better than the original BERT under the same condition."</data>
+  <data key="d5">examples/example_working/images/image_21.jpg</data>
+  <data key="d6">1</data>
+</edge>
+<edge source="&quot;BERT+FL&quot;" target="&quot;Positive Augmentation (+ Positive)&quot;">
+  <data key="d3">8.0</data>
+  <data key="d4">"BERT+FL improves performance when positive samples are added."</data>
+  <data key="d5">examples/example_working/images/image_21.jpg</data>
+  <data key="d6">1</data>
+</edge>
+<edge source="&quot;BERT+FL&quot;" target="&quot;Negative Augmentation (+ Negative)&quot;">
+  <data key="d3">5.0</data>
+  <data key="d4">"BERT+FL performs worse than original when negative samples are added."</data>
+  <data key="d5">examples/example_working/images/image_21.jpg</data>
+  <data key="d6">1</data>
+</edge>
+<edge source="&quot;BERT+FL&quot;" target="&quot;Negative Downsampling (- Negative)&quot;">
+  <data key="d3">6.0</data>
+  <data key="d4">"BERT+FL benefits slightly from removing negative samples."</data>
+  <data key="d5">examples/example_working/images/image_21.jpg</data>
+  <data key="d6">1</data>
+</edge>
+<edge source="&quot;BERT+FL&quot;" target="&quot;Combined Positive and Negative Augmentation (+ Positive &amp; Negative)&quot;">
+  <data key="d3">9.0</data>
+  <data key="d4">"BERT+FL achieves its best performance when both positive and negative samples are included."</data>
+  <data key="d5">examples/example_working/images/image_21.jpg</data>
+  <data key="d6">1</data>
+</edge>
+<edge source="&quot;BERT+DL&quot;" target="&quot;IMAGE_21&quot;">
+  <data key="d3">10.0</data>
+  <data key="d4">"BERT+DL是从image_21中提取的实体。"</data>
+  <data key="d5">examples/example_working/images/image_21.jpg</data>
+  <data key="d6">1</data>
+</edge>
+<edge source="&quot;BERT+DL&quot;" target="&quot;Original Training Set (Original)&quot;">
+  <data key="d3">6.0</data>
+  <data key="d4">"BERT+DL shows a small improvement over the original BERT."</data>
+  <data key="d5">examples/example_working/images/image_21.jpg</data>
+  <data key="d6">1</data>
+</edge>
+<edge source="&quot;BERT+DL&quot;" target="&quot;Positive Augmentation (+ Positive)&quot;">
+  <data key="d3">7.0</data>
+  <data key="d4">"BERT+DL improves with positive samples."</data>
+  <data key="d5">examples/example_working/images/image_21.jpg</data>
+  <data key="d6">1</data>
+</edge>
+<edge source="&quot;BERT+DL&quot;" target="&quot;Negative Augmentation (+ Negative)&quot;">
+  <data key="d3">4.0</data>
+  <data key="d4">"BERT+DL sees minimal gain from adding negative samples."</data>
+  <data key="d5">examples/example_working/images/image_21.jpg</data>
+  <data key="d6">1</data>
+</edge>
+<edge source="&quot;BERT+DL&quot;" target="&quot;Negative Downsampling (- Negative)&quot;">
+  <data key="d3">6.0</data>
+  <data key="d4">"BERT+DL performs better when negative samples are removed."</data>
+  <data key="d5">examples/example_working/images/image_21.jpg</data>
+  <data key="d6">1</data>
+</edge>
+<edge source="&quot;BERT+DL&quot;" target="&quot;Combined Positive and Negative Augmentation (+ Positive &amp; Negative)&quot;">
+  <data key="d3">8.0</data>
+  <data key="d4">"BERT+DL achieves peak performance with both sample types added."</data>
+  <data key="d5">examples/example_working/images/image_21.jpg</data>
+  <data key="d6">1</data>
+</edge>
+<edge source="&quot;BERT+DSC&quot;" target="&quot;IMAGE_21&quot;">
+  <data key="d3">10.0</data>
+  <data key="d4">"BERT+DSC是从image_21中提取的实体。"</data>
+  <data key="d5">examples/example_working/images/image_21.jpg</data>
+  <data key="d6">1</data>
+</edge>
+<edge source="&quot;BERT+DSC&quot;" target="&quot;Original Training Set (Original)&quot;">
+  <data key="d3">9.0</data>
+  <data key="d4">"BERT+DSC outperforms the original BERT significantly."</data>
+  <data key="d5">examples/example_working/images/image_21.jpg</data>
+  <data key="d6">1</data>
+</edge>
+<edge source="&quot;BERT+DSC&quot;" target="&quot;Positive Augmentation (+ Positive)&quot;">
+  <data key="d3">8.0</data>
+  <data key="d4">"BERT+DSC improves further with positive samples."</data>
+  <data key="d5">examples/example_working/images/image_21.jpg</data>
+  <data key="d6">1</data>
+</edge>
+<edge source="&quot;BERT+DSC&quot;" target="&quot;Negative Augmentation (+ Negative)&quot;">
+  <data key="d3">6.0</data>
+  <data key="d4">"BERT+DSC shows moderate improvement with negative samples."</data>
+  <data key="d5">examples/example_working/images/image_21.jpg</data>
+  <data key="d6">1</data>
+</edge>
+<edge source="&quot;BERT+DSC&quot;" target="&quot;Negative Downsampling (- Negative)&quot;">
+  <data key="d3">7.0</data>
+  <data key="d4">"BERT+DSC still performs well even without negative samples."</data>
+  <data key="d5">examples/example_working/images/image_21.jpg</data>
+  <data key="d6">1</data>
+</edge>
+<edge source="&quot;BERT+DSC&quot;" target="&quot;Combined Positive and Negative Augmentation (+ Positive &amp; Negative)&quot;">
+  <data key="d3">10.0</data>
+  <data key="d4">"BERT+DSC achieves the highest performance when both positive and negative samples are added."</data>
+  <data key="d5">examples/example_working/images/image_21.jpg</data>
+  <data key="d6">1</data>
+</edge>
+<edge source="&quot;Original Training Set (Original)&quot;" target="&quot;IMAGE_21&quot;">
+  <data key="d3">10.0</data>
+  <data key="d4">"original是从image_21中提取的实体。"</data>
+  <data key="d5">examples/example_working/images/image_21.jpg</data>
+  <data key="d6">1</data>
+</edge>
+<edge source="&quot;Positive Augmentation (+ Positive)&quot;" target="&quot;IMAGE_21&quot;">
+  <data key="d3">10.0</data>
+  <data key="d4">"+ positive是从image_21中提取的实体。"</data>
+  <data key="d5">examples/example_working/images/image_21.jpg</data>
+  <data key="d6">1</data>
+</edge>
+<edge source="&quot;Negative Augmentation (+ Negative)&quot;" target="&quot;IMAGE_21&quot;">
+  <data key="d3">10.0</data>
+  <data key="d4">"+ negative是从image_21中提取的实体。"</data>
+  <data key="d5">examples/example_working/images/image_21.jpg</data>
+  <data key="d6">1</data>
+</edge>
+<edge source="&quot;Negative Downsampling (- Negative)&quot;" target="&quot;IMAGE_21&quot;">
+  <data key="d3">10.0</data>
+  <data key="d4">"- negative是从image_21中提取的实体。"</data>
+  <data key="d5">examples/example_working/images/image_21.jpg</data>
+  <data key="d6">1</data>
+</edge>
+<edge source="&quot;Combined Positive and Negative Augmentation (+ Positive &amp; Negative)&quot;" target="&quot;IMAGE_21&quot;">
+  <data key="d3">10.0</data>
+  <data key="d4">"+ positive &amp; negative是从image_21中提取的实体。"</data>
+  <data key="d5">examples/example_working/images/image_21.jpg</data>
+  <data key="d6">1</data>
+</edge>
+</graph></graphml>

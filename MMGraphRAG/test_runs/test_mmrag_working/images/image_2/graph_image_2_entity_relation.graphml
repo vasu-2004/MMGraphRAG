@@ -1,0 +1,108 @@
+<?xml version='1.0' encoding='utf-8'?>
+<graphml xmlns="http://graphml.graphdrawing.org/xmlns" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://graphml.graphdrawing.org/xmlns http://graphml.graphdrawing.org/xmlns/1.0/graphml.xsd">
+  <key id="d6" for="edge" attr.name="order" attr.type="long" />
+  <key id="d5" for="edge" attr.name="source_id" attr.type="string" />
+  <key id="d4" for="edge" attr.name="description" attr.type="string" />
+  <key id="d3" for="edge" attr.name="weight" attr.type="double" />
+  <key id="d2" for="node" attr.name="source_id" attr.type="string" />
+  <key id="d1" for="node" attr.name="description" attr.type="string" />
+  <key id="d0" for="node" attr.name="entity_type" attr.type="string" />
+  <graph edgedefault="undirected">
+    <node id="&quot;IMAGE_2&quot;">
+      <data key="d0">"ORI_IMG"</data>
+      <data key="d1">"The image is a black and white photograph capturing an intense moment between two large elk, likely engaged in a sparring match or a dominance display. Both elk are depicted in profile, with their heads lowered and antlers intricately locked together at the center of the frame. The elk on the left is positioned with its body facing towards the left edge of the image and its head turned sharply to the right, engaging with the other elk. Its dark, muscular neck and shoulder are visible. The elk on the right is positioned with its body facing towards the right edge of the image, and its head turned towards the left, meeting the other animal. Both animals possess impressive, multi-tined antlers that appear strong and robust as they intertwine. The fur of both elk appears dark and textured due to the black and white rendering. The background is softly blurred, providing a shallow depth of field that keeps the focus sharply on the two animals and their interaction. The blurred background suggests a natural outdoor environment, possibly a grassy or rocky terrain, but it is indistinct enough not to distract from the main subjects. The overall atmosphere of the image is one of raw power, natural instinct, and dynamic confrontation."</data>
+      <data key="d2">test_runs/test_mmrag_working\images\image_2.jpg</data>
+    </node>
+    <node id="&quot;LEFT ELK&quot;">
+      <data key="d0">"PERSON"</data>
+      <data key="d1">"A large, dark-furred male elk (bull) viewed from its left side, with its head lowered. Its prominent, multi-tined antlers are engaged in a struggle with another elk. The elk appears to be in motion, possibly pushing or grappling."</data>
+      <data key="d2">test_runs/test_mmrag_working\images\image_2.jpg</data>
+    </node>
+    <node id="&quot;RIGHT ELK&quot;">
+      <data key="d0">"PERSON"</data>
+      <data key="d1">"A large, dark-furred male elk (bull) viewed from its front-right, with its head lowered. Its prominent, multi-tined antlers are engaged in a struggle with another elk. The elk appears to be bracing itself or pushing back."</data>
+      <data key="d2">test_runs/test_mmrag_working\images\image_2.jpg</data>
+    </node>
+    <node id="&quot;LEFT ELK'S ANTLERS&quot;">
+      <data key="d0">"OBJECT"</data>
+      <data key="d1">"Large, dark, multi-tined antlers belonging to the left elk. They are actively interlocked with the antlers of the right elk, forming the central point of their confrontation."</data>
+      <data key="d2">test_runs/test_mmrag_working\images\image_2.jpg</data>
+    </node>
+    <node id="&quot;RIGHT ELK'S ANTLERS&quot;">
+      <data key="d0">"OBJECT"</data>
+      <data key="d1">"Large, dark, multi-tined antlers belonging to the right elk. They are actively interlocked with the antlers of the left elk, forming the central point of their confrontation."</data>
+      <data key="d2">test_runs/test_mmrag_working\images\image_2.jpg</data>
+    </node>
+    <node id="&quot;BACKGROUND TERRAIN&quot;">
+      <data key="d0">"GEO"</data>
+      <data key="d1">"A blurry, natural outdoor environment, likely consisting of grassy ground or low vegetation, indicating a wild habitat. The background is out of focus, emphasizing the elk in the foreground."</data>
+      <data key="d2">test_runs/test_mmrag_working\images\image_2.jpg</data>
+    </node>
+    <edge source="&quot;IMAGE_2&quot;" target="&quot;LEFT ELK&quot;">
+      <data key="d3">10.0</data>
+      <data key="d4">"Left Elk是从image_2中提取的实体。"</data>
+      <data key="d5">test_runs/test_mmrag_working\images\image_2.jpg</data>
+      <data key="d6">1</data>
+    </edge>
+    <edge source="&quot;IMAGE_2&quot;" target="&quot;RIGHT ELK&quot;">
+      <data key="d3">10.0</data>
+      <data key="d4">"Right Elk是从image_2中提取的实体。"</data>
+      <data key="d5">test_runs/test_mmrag_working\images\image_2.jpg</data>
+      <data key="d6">1</data>
+    </edge>
+    <edge source="&quot;IMAGE_2&quot;" target="&quot;LEFT ELK'S ANTLERS&quot;">
+      <data key="d3">10.0</data>
+      <data key="d4">"Left Elk's Antlers是从image_2中提取的实体。"</data>
+      <data key="d5">test_runs/test_mmrag_working\images\image_2.jpg</data>
+      <data key="d6">1</data>
+    </edge>
+    <edge source="&quot;IMAGE_2&quot;" target="&quot;RIGHT ELK'S ANTLERS&quot;">
+      <data key="d3">10.0</data>
+      <data key="d4">"Right Elk's Antlers是从image_2中提取的实体。"</data>
+      <data key="d5">test_runs/test_mmrag_working\images\image_2.jpg</data>
+      <data key="d6">1</data>
+    </edge>
+    <edge source="&quot;IMAGE_2&quot;" target="&quot;BACKGROUND TERRAIN&quot;">
+      <data key="d3">10.0</data>
+      <data key="d4">"Background Terrain是从image_2中提取的实体。"</data>
+      <data key="d5">test_runs/test_mmrag_working\images\image_2.jpg</data>
+      <data key="d6">1</data>
+    </edge>
+    <edge source="&quot;LEFT ELK&quot;" target="&quot;RIGHT ELK&quot;">
+      <data key="d3">9.0</data>
+      <data key="d4">"The two elk are in direct physical contact, engaged in a head-to-head struggle or sparring match, using their antlers as weapons or tools for leverage."</data>
+      <data key="d5">test_runs/test_mmrag_working\images\image_2.jpg</data>
+      <data key="d6">1</data>
+    </edge>
+    <edge source="&quot;LEFT ELK&quot;" target="&quot;LEFT ELK'S ANTLERS&quot;">
+      <data key="d3">10.0</data>
+      <data key="d4">"The Left Elk's Antlers are an integral part of the Left Elk, growing from its head and used in its interaction with the other elk."</data>
+      <data key="d5">test_runs/test_mmrag_working\images\image_2.jpg</data>
+      <data key="d6">1</data>
+    </edge>
+    <edge source="&quot;LEFT ELK&quot;" target="&quot;BACKGROUND TERRAIN&quot;">
+      <data key="d3">7.0</data>
+      <data key="d4">"The Left Elk is situated within the natural outdoor Background Terrain, which is its habitat."</data>
+      <data key="d5">test_runs/test_mmrag_working\images\image_2.jpg</data>
+      <data key="d6">1</data>
+    </edge>
+    <edge source="&quot;RIGHT ELK&quot;" target="&quot;RIGHT ELK'S ANTLERS&quot;">
+      <data key="d3">10.0</data>
+      <data key="d4">"The Right Elk's Antlers are an integral part of the Right Elk, growing from its head and used in its interaction with the other elk."</data>
+      <data key="d5">test_runs/test_mmrag_working\images\image_2.jpg</data>
+      <data key="d6">1</data>
+    </edge>
+    <edge source="&quot;RIGHT ELK&quot;" target="&quot;BACKGROUND TERRAIN&quot;">
+      <data key="d3">7.0</data>
+      <data key="d4">"The Right Elk is situated within the natural outdoor Background Terrain, which is its habitat."</data>
+      <data key="d5">test_runs/test_mmrag_working\images\image_2.jpg</data>
+      <data key="d6">1</data>
+    </edge>
+    <edge source="&quot;LEFT ELK'S ANTLERS&quot;" target="&quot;RIGHT ELK'S ANTLERS&quot;">
+      <data key="d3">9.0</data>
+      <data key="d4">"The antlers of both elk are interlocked, indicating a direct clash and showing the intensity of their physical confrontation."</data>
+      <data key="d5">test_runs/test_mmrag_working\images\image_2.jpg</data>
+      <data key="d6">1</data>
+    </edge>
+  </graph>
+</graphml>

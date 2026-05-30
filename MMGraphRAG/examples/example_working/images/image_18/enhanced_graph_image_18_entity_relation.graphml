@@ -1,0 +1,352 @@
+<?xml version='1.0' encoding='utf-8'?>
+<graphml xmlns="http://graphml.graphdrawing.org/xmlns" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://graphml.graphdrawing.org/xmlns http://graphml.graphdrawing.org/xmlns/1.0/graphml.xsd"><key id="d6" for="edge" attr.name="order" attr.type="long"/>
+<key id="d5" for="edge" attr.name="source_id" attr.type="string"/>
+<key id="d4" for="edge" attr.name="description" attr.type="string"/>
+<key id="d3" for="edge" attr.name="weight" attr.type="double"/>
+<key id="d2" for="node" attr.name="source_id" attr.type="string"/>
+<key id="d1" for="node" attr.name="description" attr.type="string"/>
+<key id="d0" for="node" attr.name="entity_type" attr.type="string"/>
+<graph edgedefault="undirected"><node id="&quot;IMAGE_18&quot;">
+  <data key="d0">"ORI_IMG"</data>
+  <data key="d1">"The image is a structured table labeled 'Table 5: Experimental results for NER task,' presenting comparative performance metrics of various named entity recognition (NER) models across four different datasets: English CoNLL 2003, English OntoNotes 5.0, Chinese MSRA, and Chinese OntoNotes 4.0. The table is divided into four main sections, each corresponding to one dataset. Within each section, the rows list different models, and the columns report their performance in terms of Precision (Prec.), Recall (Rec.), and F1 score. The models include ELMo (Peters et al., 2018), CVT (Clark et al., 2018), BERT-Tagger (Devlin et al., 2018), BERT-MRC (Li et al., 2019), and its variants with additional loss functions: BERT-MRC+FL (Focal Loss), BERT-MRC+DL (Dice Loss), and BERT-MRC+DSC (Dice-Similarity Coefficient Loss). For each model, the exact numerical values are provided. Notably, in the English CoNLL 2003 dataset, BERT-MRC achieves an F1 score of 93.04, while BERT-MRC+DSC improves it to 93.33 (+0.29). In English OntoNotes 5.0, BERT-MRC+DSC reaches an F1 of 92.07 (+0.96) compared to the base BERT-MRC. On Chinese MSRA, BERT-MRC+DSC achieves 96.72 (+0.97), and on Chinese OntoNotes 4.0, it scores 84.47 (+2.36), significantly outperforming the baseline BERT-MRC. The table highlights that the DSC loss consistently provides substantial gains over other losses like FL and DL, especially in Chinese datasets. The context emphasizes that these results demonstrate state-of-the-art (SOTA) performance, particularly due to the effectiveness of the DSC loss in handling data imbalance issues."</data>
+  <data key="d2">examples/example_working/images/image_18.jpg</data>
+</node>
+<node id="&quot;ENGLISH CONLL 2003&quot;">
+  <data key="d0">"GEO"</data>
+  <data key="d1">"A benchmark dataset for named entity recognition in English, used to evaluate the performance of various models."</data>
+  <data key="d2">examples/example_working/images/image_18.jpg</data>
+</node>
+<node id="&quot;ENGLISH ONTONOTES 5.0&quot;">
+  <data key="d0">"GEO"</data>
+  <data key="d1">"A multilingual corpus for semantic role labeling and other NLP tasks, specifically the English version with rich annotations."</data>
+  <data key="d2">examples/example_working/images/image_18.jpg</data>
+</node>
+<node id="&quot;CHINESE MSRA&quot;">
+  <data key="d0">"GEO"</data>
+  <data key="d1">"A Chinese named entity recognition dataset developed by Microsoft Research Asia, commonly used for evaluating Chinese NLP models."</data>
+  <data key="d2">examples/example_working/images/image_18.jpg</data>
+</node>
+<node id="&quot;CHINESE ONTONOTES 4.0&quot;">
+  <data key="d0">"GEO"</data>
+  <data key="d1">"The Chinese version of the OntoNotes corpus, used for evaluating syntactic and semantic parsing models on Chinese text."</data>
+  <data key="d2">examples/example_working/images/image_18.jpg</data>
+</node>
+<node id="&quot;ELMO (PETERS ET AL., 2018)&quot;">
+  <data key="d0">"ORGANIZATION"</data>
+  <data key="d1">"A language model based on deep bidirectional LSTM networks that provides context-sensitive word representations.""</data>
+  <data key="d2">examples/example_working/images/image_18.jpg</data>
+</node>
+<node id="&quot;CVT (CLARK ET AL., 2018)&quot;">
+  <data key="d0">"ORGANIZATION"</data>
+  <data key="d1">"A contextualized vector representation model designed for named entity recognition tasks.""</data>
+  <data key="d2">examples/example_working/images/image_18.jpg</data>
+</node>
+<node id="&quot;BERT-TAGGER (DEVLIN ET AL., 2018)&quot;">
+  <data key="d0">"ORGANIZATION"</data>
+  <data key="d1">"A BERT-based model adapted for sequence tagging tasks such as named entity recognition.""</data>
+  <data key="d2">examples/example_working/images/image_18.jpg</data>
+</node>
+<node id="&quot;BERT-MRC (LI ET AL., 2019)&quot;">
+  <data key="d0">"ORGANIZATION"</data>
+  <data key="d1">"A reading comprehension-based approach using BERT to perform named entity recognition.""</data>
+  <data key="d2">examples/example_working/images/image_18.jpg</data>
+</node>
+<node id="&quot;BERT-MRC+FL&quot;">
+  <data key="d0">"ORGANIZATION"</data>
+  <data key="d1">BERT-MRC+FL is an enhanced variant of the BERT-MRC (BERT-based Machine Reading Comprehension) model that incorporates Focal Loss (FL) as a fine-tuning strategy to address class imbalance during training. Experimental results show modest improvements over the base BERT-MRC model across multiple Named Entity Recognition (NER) datasets, such as a +0.06 F1 gain on English CoNLL 2003 and +1.19 on Chinese OntoNotes 4.0, though its effectiveness varies depending on the dataset.</data>
+  <data key="d2">examples/example_working/images/image_18.jpg</data>
+</node>
+<node id="&quot;BERT-MRC+DL&quot;">
+  <data key="d0">"ORGANIZATION"</data>
+  <data key="d1">BERT-MRC+DL extends the BERT-MRC framework by integrating a Dual Learning (DL) mechanism to improve model generalization. This approach demonstrates consistent performance gains in NER tasks—for instance, achieving +0.12 F1 improvement on English CoNLL 2003, +0.77 on OntoNotes5.0, and +1.90 on Chinese OntoNotes 4.0—indicating that dual learning effectively enhances the model’s ability to capture entity boundaries and types through mutual reinforcement between related tasks.</data>
+  <data key="d2">examples/example_working/images/image_18.jpg</data>
+</node>
+<node id="&quot;BERT-MRC+DSC&quot;">
+  <data key="d0">"ORGANIZATION"</data>
+  <data key="d1">BERT-MRC+DSC is a variant of BERT-MRC that employs Dynamic Self-Criticism (DSC) during training to refine predictions by reducing the model's focus on already-correct examples. This method yields the most significant performance improvements among the evaluated enhancements, achieving state-of-the-art results on multiple NER benchmarks: +0.29 F1 on CoNLL 2003, +0.96 on OntoNotes5.0, +0.69 on Chinese MSRA, and +2.36 on Chinese OntoNotes 4.0. The DSC loss function stabilizes training by attenuating gradients once prediction confidence exceeds a threshold (e.g., probability &gt; 0.5), leading to more robust and balanced learning.</data>
+  <data key="d2">examples/example_working/images/image_18.jpg</data>
+</node>
+<node id="&quot;LATTICE-LSTM (ZHANG AND YANG, 2018)&quot;">
+  <data key="d0">"ORGANIZATION"</data>
+  <data key="d1">"A lattice-based LSTM model designed for handling Chinese characters and their morphological variations.""</data>
+  <data key="d2">examples/example_working/images/image_18.jpg</data>
+</node>
+<node id="&quot;GLYCE-BERT (WU ET AL., 2019)&quot;">
+  <data key="d0">"ORGANIZATION"</data>
+  <data key="d1">"A BERT-based model that incorporates character-level information for better Chinese language understanding.""</data>
+  <data key="d2">examples/example_working/images/image_18.jpg</data>
+</node>
+<node id="&quot;PREC.&quot;">
+  <data key="d0">"OBJECT"</data>
+  <data key="d1">Precision (abbreviated as 'Prec.' or 'PREC.') is an evaluation metric used in natural language processing tasks such as Named Entity Recognition (NER) and Part-of-Speech (POS) tagging. It measures the proportion of correctly predicted entities (or tags) among all predicted entities, calculated as TP / (TP + FP), where TP denotes true positives and FP false positives. In the provided experimental tables, precision values are reported alongside recall and F1 to offer a detailed view of model accuracy and reliability.</data>
+  <data key="d2">examples/example_working/images/image_18.jpg</data>
+</node>
+<node id="&quot;REC.&quot;">
+  <data key="d0">"OBJECT"</data>
+  <data key="d1">Recall (abbreviated as 'Rec.' or 'REC.') is a key evaluation metric in NLP tasks like NER and POS tagging, indicating the proportion of actual relevant entities (or tags) that were correctly identified by the model. It is computed as TP / (TP + FN), where FN represents false negatives. High recall signifies that the model captures most ground-truth entities, and it is often balanced against precision via the F1 score to assess overall performance.</data>
+  <data key="d2">examples/example_working/images/image_18.jpg</data>
+</node>
+<node id="&quot;F1&quot;">
+  <data key="d0">"OBJECT"</data>
+  <data key="d1">F1 score is the harmonic mean of precision and recall, providing a single balanced metric to evaluate model performance in tasks such as Named Entity Recognition and Part-of-Speech tagging. It is especially useful when dealing with imbalanced datasets, as it accounts for both false positives and false negatives. In the experimental results, F1 scores are used as the primary indicator of model effectiveness, with improvements from variants like BERT-MRC+DSC reported as absolute gains (e.g., '+2.36') over baseline models.</data>
+  <data key="d2">examples/example_working/images/image_18.jpg</data>
+</node>
+<edge source="&quot;IMAGE_18&quot;" target="&quot;ENGLISH CONLL 2003&quot;">
+  <data key="d3">10.0</data>
+  <data key="d4">"English CoNLL 2003是从image_18中提取的实体。"</data>
+  <data key="d5">examples/example_working/images/image_18.jpg</data>
+  <data key="d6">1</data>
+</edge>
+<edge source="&quot;IMAGE_18&quot;" target="&quot;ENGLISH ONTONOTES 5.0&quot;">
+  <data key="d3">10.0</data>
+  <data key="d4">"English OntoNotes 5.0是从image_18中提取的实体。"</data>
+  <data key="d5">examples/example_working/images/image_18.jpg</data>
+  <data key="d6">1</data>
+</edge>
+<edge source="&quot;IMAGE_18&quot;" target="&quot;CHINESE MSRA&quot;">
+  <data key="d3">10.0</data>
+  <data key="d4">"Chinese MSRA是从image_18中提取的实体。"</data>
+  <data key="d5">examples/example_working/images/image_18.jpg</data>
+  <data key="d6">1</data>
+</edge>
+<edge source="&quot;IMAGE_18&quot;" target="&quot;CHINESE ONTONOTES 4.0&quot;">
+  <data key="d3">10.0</data>
+  <data key="d4">"Chinese OntoNotes 4.0是从image_18中提取的实体。"</data>
+  <data key="d5">examples/example_working/images/image_18.jpg</data>
+  <data key="d6">1</data>
+</edge>
+<edge source="&quot;IMAGE_18&quot;" target="&quot;ELMO (PETERS ET AL., 2018)&quot;">
+  <data key="d3">10.0</data>
+  <data key="d4">"ELMo (Peters et al., 2018)是从image_18中提取的实体。"</data>
+  <data key="d5">examples/example_working/images/image_18.jpg</data>
+  <data key="d6">1</data>
+</edge>
+<edge source="&quot;IMAGE_18&quot;" target="&quot;CVT (CLARK ET AL., 2018)&quot;">
+  <data key="d3">10.0</data>
+  <data key="d4">"CVT (Clark et al., 2018)是从image_18中提取的实体。"</data>
+  <data key="d5">examples/example_working/images/image_18.jpg</data>
+  <data key="d6">1</data>
+</edge>
+<edge source="&quot;IMAGE_18&quot;" target="&quot;BERT-TAGGER (DEVLIN ET AL., 2018)&quot;">
+  <data key="d3">10.0</data>
+  <data key="d4">"BERT-Tagger (Devlin et al., 2018)是从image_18中提取的实体。"</data>
+  <data key="d5">examples/example_working/images/image_18.jpg</data>
+  <data key="d6">1</data>
+</edge>
+<edge source="&quot;IMAGE_18&quot;" target="&quot;BERT-MRC (LI ET AL., 2019)&quot;">
+  <data key="d3">10.0</data>
+  <data key="d4">"BERT-MRC (Li et al., 2019)是从image_18中提取的实体。"</data>
+  <data key="d5">examples/example_working/images/image_18.jpg</data>
+  <data key="d6">1</data>
+</edge>
+<edge source="&quot;IMAGE_18&quot;" target="&quot;BERT-MRC+FL&quot;">
+  <data key="d3">10.0</data>
+  <data key="d4">"BERT-MRC+FL是从image_18中提取的实体。"</data>
+  <data key="d5">examples/example_working/images/image_18.jpg</data>
+  <data key="d6">1</data>
+</edge>
+<edge source="&quot;IMAGE_18&quot;" target="&quot;BERT-MRC+DL&quot;">
+  <data key="d3">10.0</data>
+  <data key="d4">"BERT-MRC+DL是从image_18中提取的实体。"</data>
+  <data key="d5">examples/example_working/images/image_18.jpg</data>
+  <data key="d6">1</data>
+</edge>
+<edge source="&quot;IMAGE_18&quot;" target="&quot;BERT-MRC+DSC&quot;">
+  <data key="d3">10.0</data>
+  <data key="d4">"BERT-MRC+DSC是从image_18中提取的实体。"</data>
+  <data key="d5">examples/example_working/images/image_18.jpg</data>
+  <data key="d6">1</data>
+</edge>
+<edge source="&quot;IMAGE_18&quot;" target="&quot;LATTICE-LSTM (ZHANG AND YANG, 2018)&quot;">
+  <data key="d3">10.0</data>
+  <data key="d4">"Lattice-LSTM (Zhang and Yang, 2018)是从image_18中提取的实体。"</data>
+  <data key="d5">examples/example_working/images/image_18.jpg</data>
+  <data key="d6">1</data>
+</edge>
+<edge source="&quot;IMAGE_18&quot;" target="&quot;GLYCE-BERT (WU ET AL., 2019)&quot;">
+  <data key="d3">10.0</data>
+  <data key="d4">"Glyce-BERT (Wu et al., 2019)是从image_18中提取的实体。"</data>
+  <data key="d5">examples/example_working/images/image_18.jpg</data>
+  <data key="d6">1</data>
+</edge>
+<edge source="&quot;IMAGE_18&quot;" target="&quot;PREC.&quot;">
+  <data key="d3">10.0</data>
+  <data key="d4">"Prec.是从image_18中提取的实体。"</data>
+  <data key="d5">examples/example_working/images/image_18.jpg</data>
+  <data key="d6">1</data>
+</edge>
+<edge source="&quot;IMAGE_18&quot;" target="&quot;REC.&quot;">
+  <data key="d3">10.0</data>
+  <data key="d4">"Rec.是从image_18中提取的实体。"</data>
+  <data key="d5">examples/example_working/images/image_18.jpg</data>
+  <data key="d6">1</data>
+</edge>
+<edge source="&quot;IMAGE_18&quot;" target="&quot;F1&quot;">
+  <data key="d3">10.0</data>
+  <data key="d4">"F1是从image_18中提取的实体。"</data>
+  <data key="d5">examples/example_working/images/image_18.jpg</data>
+  <data key="d6">1</data>
+</edge>
+<edge source="&quot;ENGLISH CONLL 2003&quot;" target="&quot;ELMO (PETERS ET AL., 2018)&quot;">
+  <data key="d3">7.0</data>
+  <data key="d4">"ELMo is evaluated on the English CoNLL 2003 dataset, achieving an F1 score of 92.22."</data>
+  <data key="d5">examples/example_working/images/image_18.jpg</data>
+  <data key="d6">1</data>
+</edge>
+<edge source="&quot;ENGLISH CONLL 2003&quot;" target="&quot;CVT (CLARK ET AL., 2018)&quot;">
+  <data key="d3">7.0</data>
+  <data key="d4">"CVT is evaluated on the English CoNLL 2003 dataset, achieving an F1 score of 92.6."</data>
+  <data key="d5">examples/example_working/images/image_18.jpg</data>
+  <data key="d6">1</data>
+</edge>
+<edge source="&quot;ENGLISH CONLL 2003&quot;" target="&quot;BERT-TAGGER (DEVLIN ET AL., 2018)&quot;">
+  <data key="d3">7.0</data>
+  <data key="d4">"BERT-Tagger is evaluated on the English CoNLL 2003 dataset, achieving an F1 score of 92.8."</data>
+  <data key="d5">examples/example_working/images/image_18.jpg</data>
+  <data key="d6">1</data>
+</edge>
+<edge source="&quot;ENGLISH CONLL 2003&quot;" target="&quot;BERT-MRC (LI ET AL., 2019)&quot;">
+  <data key="d3">9.0</data>
+  <data key="d4">"BERT-MRC achieves the highest F1 score of 93.04 on the English CoNLL 2003 dataset."</data>
+  <data key="d5">examples/example_working/images/image_18.jpg</data>
+  <data key="d6">1</data>
+</edge>
+<edge source="&quot;ENGLISH CONLL 2003&quot;" target="&quot;BERT-MRC+FL&quot;">
+  <data key="d3">8.0</data>
+  <data key="d4">"BERT-MRC+FL performs slightly worse than BERT-MRC on English CoNLL 2003 with an F1 of 93.11."</data>
+  <data key="d5">examples/example_working/images/image_18.jpg</data>
+  <data key="d6">1</data>
+</edge>
+<edge source="&quot;ENGLISH CONLL 2003&quot;" target="&quot;BERT-MRC+DL&quot;">
+  <data key="d3">8.0</data>
+  <data key="d4">"BERT-MRC+DL achieves an F1 of 93.17 on English CoNLL 2003, showing marginal improvement over baseline."</data>
+  <data key="d5">examples/example_working/images/image_18.jpg</data>
+  <data key="d6">1</data>
+</edge>
+<edge source="&quot;ENGLISH CONLL 2003&quot;" target="&quot;BERT-MRC+DSC&quot;">
+  <data key="d3">9.0</data>
+  <data key="d4">"BERT-MRC+DSC achieves the best result on English CoNLL 2003 with an F1 of 93.33."</data>
+  <data key="d5">examples/example_working/images/image_18.jpg</data>
+  <data key="d6">1</data>
+</edge>
+<edge source="&quot;ENGLISH ONTONOTES 5.0&quot;" target="&quot;CVT (CLARK ET AL., 2018)&quot;">
+  <data key="d3">7.0</data>
+  <data key="d4">"CVT is evaluated on English OntoNotes 5.0, achieving an F1 score of 88.8."</data>
+  <data key="d5">examples/example_working/images/image_18.jpg</data>
+  <data key="d6">1</data>
+</edge>
+<edge source="&quot;ENGLISH ONTONOTES 5.0&quot;" target="&quot;BERT-TAGGER (DEVLIN ET AL., 2018)&quot;">
+  <data key="d3">7.0</data>
+  <data key="d4">"BERT-Tagger is evaluated on English OntoNotes 5.0, achieving an F1 of 89.16."</data>
+  <data key="d5">examples/example_working/images/image_18.jpg</data>
+  <data key="d6">1</data>
+</edge>
+<edge source="&quot;ENGLISH ONTONOTES 5.0&quot;" target="&quot;BERT-MRC (LI ET AL., 2019)&quot;">
+  <data key="d3">9.0</data>
+  <data key="d4">"BERT-MRC achieves an F1 of 91.11 on English OntoNotes 5.0, outperforming earlier models."</data>
+  <data key="d5">examples/example_working/images/image_18.jpg</data>
+  <data key="d6">1</data>
+</edge>
+<edge source="&quot;ENGLISH ONTONOTES 5.0&quot;" target="&quot;BERT-MRC+FL&quot;">
+  <data key="d3">8.0</data>
+  <data key="d4">"BERT-MRC+FL improves upon BERT-MRC with an F1 of 91.22 on English OntoNotes 5.0."</data>
+  <data key="d5">examples/example_working/images/image_18.jpg</data>
+  <data key="d6">1</data>
+</edge>
+<edge source="&quot;ENGLISH ONTONOTES 5.0&quot;" target="&quot;BERT-MRC+DL&quot;">
+  <data key="d3">8.0</data>
+  <data key="d4">"BERT-MRC+DL achieves an F1 of 91.88 on English OntoNotes 5.0, showing consistent gains."</data>
+  <data key="d5">examples/example_working/images/image_18.jpg</data>
+  <data key="d6">1</data>
+</edge>
+<edge source="&quot;ENGLISH ONTONOTES 5.0&quot;" target="&quot;BERT-MRC+DSC&quot;">
+  <data key="d3">9.0</data>
+  <data key="d4">"BERT-MRC+DSC achieves the highest F1 of 92.07 on English OntoNotes 5.0."</data>
+  <data key="d5">examples/example_working/images/image_18.jpg</data>
+  <data key="d6">1</data>
+</edge>
+<edge source="&quot;CHINESE MSRA&quot;" target="&quot;LATTICE-LSTM (ZHANG AND YANG, 2018)&quot;">
+  <data key="d3">7.0</data>
+  <data key="d4">"Lattice-LSTM is evaluated on Chinese MSRA, achieving an F1 of 93.18."</data>
+  <data key="d5">examples/example_working/images/image_18.jpg</data>
+  <data key="d6">1</data>
+</edge>
+<edge source="&quot;CHINESE MSRA&quot;" target="&quot;BERT-TAGGER (DEVLIN ET AL., 2018)&quot;">
+  <data key="d3">7.0</data>
+  <data key="d4">"BERT-Tagger achieves an F1 of 94.80 on Chinese MSRA."</data>
+  <data key="d5">examples/example_working/images/image_18.jpg</data>
+  <data key="d6">1</data>
+</edge>
+<edge source="&quot;CHINESE MSRA&quot;" target="&quot;GLYCE-BERT (WU ET AL., 2019)&quot;">
+  <data key="d3">8.0</data>
+  <data key="d4">"Glyce-BERT achieves an F1 of 95.54 on Chinese MSRA."</data>
+  <data key="d5">examples/example_working/images/image_18.jpg</data>
+  <data key="d6">1</data>
+</edge>
+<edge source="&quot;CHINESE MSRA&quot;" target="&quot;BERT-MRC (LI ET AL., 2019)&quot;">
+  <data key="d3">9.0</data>
+  <data key="d4">"BERT-MRC achieves an F1 of 95.75 on Chinese MSRA, the highest among baseline models."</data>
+  <data key="d5">examples/example_working/images/image_18.jpg</data>
+  <data key="d6">1</data>
+</edge>
+<edge source="&quot;CHINESE MSRA&quot;" target="&quot;BERT-MRC+FL&quot;">
+  <data key="d3">7.0</data>
+  <data key="d4">"BERT-MRC+FL slightly underperforms with an F1 of 95.67 on Chinese MSRA."</data>
+  <data key="d5">examples/example_working/images/image_18.jpg</data>
+  <data key="d6">1</data>
+</edge>
+<edge source="&quot;CHINESE MSRA&quot;" target="&quot;BERT-MRC+DL&quot;">
+  <data key="d3">8.0</data>
+  <data key="d4">"BERT-MRC+DL achieves an F1 of 96.44 on Chinese MSRA, showing strong improvement."</data>
+  <data key="d5">examples/example_working/images/image_18.jpg</data>
+  <data key="d6">1</data>
+</edge>
+<edge source="&quot;CHINESE MSRA&quot;" target="&quot;BERT-MRC+DSC&quot;">
+  <data key="d3">9.0</data>
+  <data key="d4">"BERT-MRC+DSC achieves the best performance on Chinese MSRA with an F1 of 96.72."</data>
+  <data key="d5">examples/example_working/images/image_18.jpg</data>
+  <data key="d6">1</data>
+</edge>
+<edge source="&quot;CHINESE ONTONOTES 4.0&quot;" target="&quot;LATTICE-LSTM (ZHANG AND YANG, 2018)&quot;">
+  <data key="d3">7.0</data>
+  <data key="d4">"Lattice-LSTM is evaluated on Chinese OntoNotes 4.0, achieving an F1 of 73.88."</data>
+  <data key="d5">examples/example_working/images/image_18.jpg</data>
+  <data key="d6">1</data>
+</edge>
+<edge source="&quot;CHINESE ONTONOTES 4.0&quot;" target="&quot;BERT-TAGGER (DEVLIN ET AL., 2018)&quot;">
+  <data key="d3">7.0</data>
+  <data key="d4">"BERT-Tagger achieves an F1 of 79.16 on Chinese OntoNotes 4.0."</data>
+  <data key="d5">examples/example_working/images/image_18.jpg</data>
+  <data key="d6">1</data>
+</edge>
+<edge source="&quot;CHINESE ONTONOTES 4.0&quot;" target="&quot;GLYCE-BERT (WU ET AL., 2019)&quot;">
+  <data key="d3">8.0</data>
+  <data key="d4">"Glyce-BERT achieves an F1 of 80.62 on Chinese OntoNotes 4.0."</data>
+  <data key="d5">examples/example_working/images/image_18.jpg</data>
+  <data key="d6">1</data>
+</edge>
+<edge source="&quot;CHINESE ONTONOTES 4.0&quot;" target="&quot;BERT-MRC (LI ET AL., 2019)&quot;">
+  <data key="d3">8.0</data>
+  <data key="d4">"BERT-MRC achieves an F1 of 82.11 on Chinese OntoNotes 4.0."</data>
+  <data key="d5">examples/example_working/images/image_18.jpg</data>
+  <data key="d6">1</data>
+</edge>
+<edge source="&quot;CHINESE ONTONOTES 4.0&quot;" target="&quot;BERT-MRC+FL&quot;">
+  <data key="d3">8.0</data>
+  <data key="d4">"BERT-MRC+FL improves to an F1 of 83.30 on Chinese OntoNotes 4.0."</data>
+  <data key="d5">examples/example_working/images/image_18.jpg</data>
+  <data key="d6">1</data>
+</edge>
+<edge source="&quot;CHINESE ONTONOTES 4.0&quot;" target="&quot;BERT-MRC+DL&quot;">
+  <data key="d3">8.0</data>
+  <data key="d4">"BERT-MRC+DL achieves an F1 of 84.01 on Chinese OntoNotes 4.0."</data>
+  <data key="d5">examples/example_working/images/image_18.jpg</data>
+  <data key="d6">1</data>
+</edge>
+<edge source="&quot;CHINESE ONTONOTES 4.0&quot;" target="&quot;BERT-MRC+DSC&quot;">
+  <data key="d3">9.0</data>
+  <data key="d4">"BERT-MRC+DSC achieves the highest F1 of 84.47 on Chinese OntoNotes 4.0."</data>
+  <data key="d5">examples/example_working/images/image_18.jpg</data>
+  <data key="d6">1</data>
+</edge>
+</graph></graphml>

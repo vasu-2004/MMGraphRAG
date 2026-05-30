@@ -1,0 +1,92 @@
+<?xml version='1.0' encoding='utf-8'?>
+<graphml xmlns="http://graphml.graphdrawing.org/xmlns" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://graphml.graphdrawing.org/xmlns http://graphml.graphdrawing.org/xmlns/1.0/graphml.xsd">
+  <key id="d6" for="edge" attr.name="order" attr.type="long" />
+  <key id="d5" for="edge" attr.name="source_id" attr.type="string" />
+  <key id="d4" for="edge" attr.name="description" attr.type="string" />
+  <key id="d3" for="edge" attr.name="weight" attr.type="double" />
+  <key id="d2" for="node" attr.name="source_id" attr.type="string" />
+  <key id="d1" for="node" attr.name="description" attr.type="string" />
+  <key id="d0" for="node" attr.name="entity_type" attr.type="string" />
+  <graph edgedefault="undirected">
+    <node id="&quot;YELLOWSTONE NATIONAL PARK&quot;">
+      <data key="d0">"GEO"</data>
+      <data key="d1">"A national park located in Wyoming that requires reservations for certain group sizes and RV campsites. It is also the location for contact addresses of Xanterra Parks and Resorts and the National Park Service."&lt;SEP&gt;"Yellowstone National Park is a federal recreation site where entrance fees are charged, offering various pass options, camping facilities, and subject to seasonal weather changes and visitor access reviews."&lt;SEP&gt;"Yellowstone National Park is a major national park in the US, providing various services and subject to specific road schedules and closures."&lt;SEP&gt;"Yellowstone National Park is a national park with specific regulations for visitors, including fishing, boating, and camping."&lt;SEP&gt;"Yellowstone National Park is an organization and a geographic location, providing visitor information, activities, and road schedules. It is the first national park in America."&lt;SEP&gt;"Yellowstone National Park is the primary location described in the trip planner, known for its high altitude, unpredictable weather, busy roads, dangerous hydrothermal features, and diverse wildlife."</data>
+      <data key="d2">chunk-47639910c915bafe8d80a13752ccb8ee&lt;SEP&gt;chunk-2b3cdc79954b41510d5ae0999ef6daf3&lt;SEP&gt;chunk-4c35ba44e693c85e6206ade502e115d5&lt;SEP&gt;chunk-88e5c2ce20f231e3a806b09b6cab2c4d&lt;SEP&gt;chunk-e22ff6904de7a8eef70b8467d191a104&lt;SEP&gt;chunk-7351b12b3e5ac87b530aa3bf02ecf8cc</data>
+    </node>
+    <node id="&quot;MAMMOTH HOT SPRINGS&quot;">
+      <data key="d0">"GEO"</data>
+      <data key="d1">"Mammoth Hot Springs is a specific location in Yellowstone National Park known for its hot springs and other hydrothermal features."</data>
+      <data key="d2">chunk-8f0e2c09fcd8882a570819d4a5395ca3</data>
+    </node>
+    <node id="&quot;NORRIS GEYSER BASIN&quot;">
+      <data key="d0">"GEO"</data>
+      <data key="d1">"Norris Geyser Basin is a specific location in Yellowstone National Park known for its geysers and other hydrothermal features."</data>
+      <data key="d2">chunk-8f0e2c09fcd8882a570819d4a5395ca3</data>
+    </node>
+    <node id="&quot;XANTERRA PARKS AND RESORTS&quot;">
+      <data key="d0">"ORGANIZATION"</data>
+      <data key="d1">"An organization that manages reservations for Yellowstone National Park, providing contact details and a mailing address."</data>
+      <data key="d2">chunk-4c35ba44e693c85e6206ade502e115d5</data>
+    </node>
+    <node id="&quot;WYOMING&quot;">
+      <data key="d0">"GEO"</data>
+      <data key="d1">"A U.S. state where Yellowstone National Park is situated, and the location from which official mail is processed."</data>
+      <data key="d2">chunk-4c35ba44e693c85e6206ade502e115d5</data>
+    </node>
+    <node id="&quot;UNITED STATES DEPARTMENT OF THE INTERIOR&quot;">
+      <data key="d0">"ORGANIZATION"</data>
+      <data key="d1">"A U.S. federal department that oversees the National Park Service, as indicated by its association with the Yellowstone Trip Planner document."</data>
+      <data key="d2">chunk-4c35ba44e693c85e6206ade502e115d5</data>
+    </node>
+    <node id="&quot;NATIONAL PARK SERVICE&quot;">
+      <data key="d0">"ORGANIZATION"</data>
+      <data key="d1">"An organization responsible for managing Yellowstone National Park, providing an official address within the park and maintaining its website for updates."</data>
+      <data key="d2">chunk-4c35ba44e693c85e6206ade502e115d5</data>
+    </node>
+    <node id="&quot;REVISED NOV 2009&quot;">
+      <data key="d0">"EVENT"</data>
+      <data key="d1">"The date in November 2009 when the Yellowstone Trip Planner document was updated or revised."</data>
+      <data key="d2">chunk-4c35ba44e693c85e6206ade502e115d5</data>
+    </node>
+    <node id="&quot;USGS&quot;">
+      <data key="d0">"ORGANIZATION"</data>
+      <data key="d1">"USGS (U.S. Geological Survey</data>
+      <data key="d2">chunk-2b3cdc79954b41510d5ae0999ef6daf3</data>
+    </node>
+    <node id="&quot;COAST GUARD&quot;">
+      <data key="d0">"ORGANIZATION"</data>
+      <data key="d1">"The Coast Guard is a federal organization whose approval is required for personal flotation devices for boating."</data>
+      <data key="d2">chunk-e22ff6904de7a8eef70b8467d191a104</data>
+    </node>
+    <edge source="&quot;YELLOWSTONE NATIONAL PARK&quot;" target="&quot;XANTERRA PARKS AND RESORTS&quot;">
+      <data key="d3">9.0</data>
+      <data key="d4">"Xanterra Parks and Resorts handles reservations and provides services for Yellowstone National Park."</data>
+      <data key="d5">chunk-4c35ba44e693c85e6206ade502e115d5</data>
+      <data key="d6">1</data>
+    </edge>
+    <edge source="&quot;YELLOWSTONE NATIONAL PARK&quot;" target="&quot;WYOMING&quot;">
+      <data key="d3">9.0</data>
+      <data key="d4">"Yellowstone National Park is geographically located within the state of Wyoming."</data>
+      <data key="d5">chunk-4c35ba44e693c85e6206ade502e115d5</data>
+      <data key="d6">1</data>
+    </edge>
+    <edge source="&quot;YELLOWSTONE NATIONAL PARK&quot;" target="&quot;NATIONAL PARK SERVICE&quot;">
+      <data key="d3">10.0</data>
+      <data key="d4">"The National Park Service is the managing authority for Yellowstone National Park and has an official presence there."</data>
+      <data key="d5">chunk-4c35ba44e693c85e6206ade502e115d5</data>
+      <data key="d6">1</data>
+    </edge>
+    <edge source="&quot;UNITED STATES DEPARTMENT OF THE INTERIOR&quot;" target="&quot;NATIONAL PARK SERVICE&quot;">
+      <data key="d3">9.0</data>
+      <data key="d4">"The National Park Service operates under the purview of the United States Department of the Interior."</data>
+      <data key="d5">chunk-4c35ba44e693c85e6206ade502e115d5</data>
+      <data key="d6">1</data>
+    </edge>
+    <edge source="&quot;NATIONAL PARK SERVICE&quot;" target="&quot;REVISED NOV 2009&quot;">
+      <data key="d3">7.0</data>
+      <data key="d4">"A document associated with the National Park Service (the Yellowstone Trip Planner) was revised in November 2009."</data>
+      <data key="d5">chunk-4c35ba44e693c85e6206ade502e115d5</data>
+      <data key="d6">1</data>
+    </edge>
+  </graph>
+</graphml>

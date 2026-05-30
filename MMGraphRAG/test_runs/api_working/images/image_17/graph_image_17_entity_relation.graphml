@@ -1,0 +1,25 @@
+<?xml version='1.0' encoding='utf-8'?>
+<graphml xmlns="http://graphml.graphdrawing.org/xmlns" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://graphml.graphdrawing.org/xmlns http://graphml.graphdrawing.org/xmlns/1.0/graphml.xsd"><key id="d6" for="edge" attr.name="order" attr.type="long"/>
+<key id="d5" for="edge" attr.name="source_id" attr.type="string"/>
+<key id="d4" for="edge" attr.name="description" attr.type="string"/>
+<key id="d3" for="edge" attr.name="weight" attr.type="double"/>
+<key id="d2" for="node" attr.name="source_id" attr.type="string"/>
+<key id="d1" for="node" attr.name="description" attr.type="string"/>
+<key id="d0" for="node" attr.name="entity_type" attr.type="string"/>
+<graph edgedefault="undirected"><node id="&quot;IMAGE_17&quot;">
+  <data key="d0">"ORI_IMG"</data>
+  <data key="d1">"The image displays a small, pixelated, black and white icon set against a solid black background. The icon itself is rendered in shades of white and light gray, creating a stark contrast. It depicts a stylized representation of a recreational vehicle or trailer, resembling a camper van or a caravan. The main body of the vehicle is a horizontal rectangle with softened corners. Within this main body, towards the front, there are two smaller, distinct rectangular shapes, which appear to represent windows. Below the main body, centered, is a small circular or oval shape, likely indicating a wheel or a hitch for the trailer. The overall impression is that of a simple, symbolic graphic."</data>
+  <data key="d2">C:/MMGraphRAG/MMGraphRAG/test_runs/api_working\images\image_17.jpg</data>
+</node>
+<node id="&quot;HOUSE ICON&quot;">
+  <data key="d0">"OBJECT"</data>
+  <data key="d1">"A very low-resolution, pixelated black and white icon resembling a simple house or building. It features a rectangular base and a triangular or peaked roof, with two small square shapes that could represent windows or doors on its front face. The icon is rendered in white against a black background."</data>
+  <data key="d2">C:/MMGraphRAG/MMGraphRAG/test_runs/api_working\images\image_17.jpg</data>
+</node>
+<edge source="&quot;IMAGE_17&quot;" target="&quot;HOUSE ICON&quot;">
+  <data key="d3">10.0</data>
+  <data key="d4">"House Icon是从image_17中提取的实体。"</data>
+  <data key="d5">C:/MMGraphRAG/MMGraphRAG/test_runs/api_working\images\image_17.jpg</data>
+  <data key="d6">1</data>
+</edge>
+</graph></graphml>

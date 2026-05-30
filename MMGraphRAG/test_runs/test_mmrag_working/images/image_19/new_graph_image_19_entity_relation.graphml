@@ -1,0 +1,50 @@
+<?xml version='1.0' encoding='utf-8'?>
+<graphml xmlns="http://graphml.graphdrawing.org/xmlns" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://graphml.graphdrawing.org/xmlns http://graphml.graphdrawing.org/xmlns/1.0/graphml.xsd">
+  <key id="d6" for="edge" attr.name="order" attr.type="long" />
+  <key id="d5" for="edge" attr.name="source_id" attr.type="string" />
+  <key id="d4" for="edge" attr.name="description" attr.type="string" />
+  <key id="d3" for="edge" attr.name="weight" attr.type="double" />
+  <key id="d2" for="node" attr.name="source_id" attr.type="string" />
+  <key id="d1" for="node" attr.name="description" attr.type="string" />
+  <key id="d0" for="node" attr.name="entity_type" attr.type="string" />
+  <graph edgedefault="undirected">
+    <node id="&quot;IMAGE_19&quot;">
+      <data key="d0">"ORI_IMG"</data>
+      <data key="d1">"The image is a low-resolution, grayscale graphic depicting two abstract, white, blob-like shapes against a solid black background. These shapes are stylized representations that strongly resemble hands. The shape on the left is angled slightly upwards and to the right, while the shape on the right is angled downwards and to the left, creating an impression of two hands positioned opposite each other, possibly in a gesture or sign. Each shape has some internal dark areas, which could be interpreted as fingers or parts of the palm, though the resolution is too low for clear detail. The overall appearance is that of a pictogram or icon, commonly used to symbolize sign language or an interpreter service. The image is highly pixelated due to its low resolution."</data>
+      <data key="d2">test_runs/test_mmrag_working\images\image_19.jpg</data>
+    </node>
+    <node id="&quot;LEFT ABSTRACT SHAPE&quot;">
+      <data key="d0">"OBJECT"</data>
+      <data key="d1">A pixelated, abstract white shape positioned on the left side of the image. It features a central dark area and a curved outline, resembling a highly stylized or blurred letter 'b' or a specific hand gesture, rendered in low resolution.</data>
+      <data key="d2">test_runs/test_mmrag_working\images\image_19.jpg</data>
+    </node>
+    <node id="&quot;RIGHT ABSTRACT SHAPE&quot;">
+      <data key="d2">test_runs/test_mmrag_working\images\image_19.jpg</data>
+      <data key="d1">Right Abstract Shape是从image_19中提取的实体。</data>
+      <data key="d0">"UNKNOWN"</data>
+    </node>
+    <node id="Sign Language Interpreters">
+      <data key="d0">IMG_ENTITY</data>
+      <data key="d1">The image displays a graphic commonly associated with sign language or interpreter services, directly correlating with the 'Sign Language Interpreters' mentioned in the text as individuals providing interpretive programs for the National Park Service.</data>
+      <data key="d2">test_runs/test_mmrag_working\images\image_19.jpg</data>
+    </node>
+    <edge source="&quot;IMAGE_19&quot;" target="&quot;LEFT ABSTRACT SHAPE&quot;">
+      <data key="d3">10.0</data>
+      <data key="d4">"Left Abstract Shape是从image_19中提取的实体。"</data>
+      <data key="d5">test_runs/test_mmrag_working\images\image_19.jpg</data>
+      <data key="d6">1</data>
+    </edge>
+    <edge source="&quot;IMAGE_19&quot;" target="&quot;RIGHT ABSTRACT SHAPE&quot;">
+      <data key="d3">10.0</data>
+      <data key="d4">"Right Abstract Shape是从image_19中提取的实体。"</data>
+      <data key="d5">test_runs/test_mmrag_working\images\image_19.jpg</data>
+      <data key="d6">1</data>
+    </edge>
+    <edge source="&quot;IMAGE_19&quot;" target="Sign Language Interpreters">
+      <data key="d3">10.0</data>
+      <data key="d4">"IMAGE_19" is the image of Sign Language Interpreters.</data>
+      <data key="d5">test_runs/test_mmrag_working\images\image_19.jpg</data>
+      <data key="d6">1</data>
+    </edge>
+  </graph>
+</graphml>

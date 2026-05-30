@@ -1,0 +1,162 @@
+<?xml version='1.0' encoding='utf-8'?>
+<graphml xmlns="http://graphml.graphdrawing.org/xmlns" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://graphml.graphdrawing.org/xmlns http://graphml.graphdrawing.org/xmlns/1.0/graphml.xsd"><key id="d6" for="edge" attr.name="order" attr.type="long"/>
+<key id="d5" for="edge" attr.name="source_id" attr.type="string"/>
+<key id="d4" for="edge" attr.name="description" attr.type="string"/>
+<key id="d3" for="edge" attr.name="weight" attr.type="double"/>
+<key id="d2" for="node" attr.name="source_id" attr.type="string"/>
+<key id="d1" for="node" attr.name="description" attr.type="string"/>
+<key id="d0" for="node" attr.name="entity_type" attr.type="string"/>
+<graph edgedefault="undirected"><node id="&quot;IMAGE_4&quot;">
+  <data key="d0">"ORI_IMG"</data>
+  <data key="d1">"The image displays a mathematical formula representing the Sørensen–Dice coefficient (DSC), a statistical measure used to quantify the similarity between two sets. The formula is written in LaTeX-style mathematical notation and reads: DSC(A, B) = 2|A ∩ B| / (|A| + |B|). Here, A and B are sets, |A ∩ B| denotes the cardinality (number of elements) in the intersection of sets A and B, and |A| and |B| represent the cardinalities of sets A and B, respectively. The coefficient ranges from 0 to 1, where 1 indicates perfect overlap between the two sets and 0 indicates no overlap. In the context provided, set A corresponds to the set of positive examples predicted by a model, and set B corresponds to the set of true positive examples in the dataset (ground truth). This formulation is commonly used in evaluation metrics for segmentation tasks, particularly in medical imaging or natural language processing, where it serves as an F1-oriented metric. The expression is presented in a clean, centered format using standard mathematical typography, with clear use of absolute value bars, set notation, and division symbols."</data>
+  <data key="d2">examples/example_working/images/image_4.jpg</data>
+</node>
+<node id="&quot;DSC(A, B)&quot;">
+  <data key="d0">"ORGANIZATION"</data>
+  <data key="d1">"The Dice Similarity Coefficient formula, used to measure the similarity between two sets A and B."</data>
+  <data key="d2">examples/example_working/images/image_4.jpg</data>
+</node>
+<node id="&quot;Set A (Predicted Positive Examples)&quot;">
+  <data key="d0">"GEO"</data>
+  <data key="d1">In the context of the Dice Similarity Coefficient (DSC), Set A represents the set of all positive examples predicted by a specific model. It is one of the two sets compared to evaluate segmentation or classification performance, particularly in tasks with class imbalance such as medical image segmentation or NLP.</data>
+  <data key="d2">examples/example_working/images/image_4.jpg</data>
+</node>
+<node id="&quot;Set B (Ground Truth Positive Examples)&quot;">
+  <data key="d0">"GEO"</data>
+  <data key="d1">In the DSC formula, Set B denotes the set of all golden (ground truth) positive examples in the dataset. This set serves as the reference against which the model’s predictions (Set A) are compared to compute similarity, commonly used in evaluating binary or multi-class segmentation and classification tasks.</data>
+  <data key="d2">examples/example_working/images/image_4.jpg</data>
+</node>
+<node id="&quot;|A ∩ B| (True Positives)&quot;">
+  <data key="d0">"GEO"</data>
+  <data key="d1">The cardinality of the intersection of sets A and B, |A ∩ B|, corresponds to the number of true positive predictions—elements correctly identified as positive by the model that also appear in the ground truth. In probabilistic formulations, this term is often represented as the sum of element-wise products between predicted probabilities and ground truth labels.</data>
+  <data key="d2">examples/example_working/images/image_4.jpg</data>
+</node>
+<node id="&quot;|A| (Total Predicted Positives)&quot;">
+  <data key="d0">"GEO"</data>
+  <data key="d1">The cardinality of set A, |A|, represents the total number of elements predicted as positive by the model. In soft (probabilistic) Dice formulations used in deep learning, this is often replaced by the sum of squared predicted probabilities (∑p_i1²) to ensure differentiability and smoother optimization.</data>
+  <data key="d2">examples/example_working/images/image_4.jpg</data>
+</node>
+<node id="&quot;|B| (Total Ground Truth Positives)&quot;">
+  <data key="d0">"GEO"</data>
+  <data key="d1">The cardinality of set B, |B|, indicates the total number of actual positive examples in the ground truth. In soft Dice loss implementations, this is typically represented as the sum of squared ground truth labels (∑y_i1²), although since y_i1 is binary, this equals the count of true positives.</data>
+  <data key="d2">examples/example_working/images/image_4.jpg</data>
+</node>
+<node id="&quot;Constant Multiplier 2 in DSC Numerator&quot;">
+  <data key="d0">"ORGANIZATION"</data>
+  <data key="d1">The constant '2' in the numerator of the Dice Similarity Coefficient (DSC) formula serves to scale the intersection term so that the coefficient aligns with the F1-score. Specifically, DSC = 2|A ∩ B| / (|A| + |B|) ensures that the metric equally balances precision and recall, making it particularly effective for evaluating performance in imbalanced datasets common in computer vision and NLP.</data>
+  <data key="d2">examples/example_working/images/image_4.jpg</data>
+</node>
+<node id="&quot;DICE COEFFICIENT&quot;">
+  <data key="d0">"CONCEPT"</data>
+  <data key="d1">"The Dice Coefficient (DSC) is an F1-oriented statistic used to measure the similarity between two sets, commonly applied in evaluating model predictions against ground truth in machine learning contexts. It is mathematically defined and discussed with variants including smoothing and loss formulations."</data>
+  <data key="d2">examples/example_working/images/image_4.jpg</data>
+</node>
+<edge source="&quot;IMAGE_4&quot;" target="&quot;DSC(A, B)&quot;">
+  <data key="d3">10.0</data>
+  <data key="d4">"DSC(A, B)是从image_4中提取的实体。"</data>
+  <data key="d5">examples/example_working/images/image_4.jpg</data>
+  <data key="d6">1</data>
+</edge>
+<edge source="&quot;IMAGE_4&quot;" target="&quot;Set A (Predicted Positive Examples)&quot;">
+  <data key="d3">10.0</data>
+  <data key="d4">"A是从image_4中提取的实体。"</data>
+  <data key="d5">examples/example_working/images/image_4.jpg</data>
+  <data key="d6">1</data>
+</edge>
+<edge source="&quot;IMAGE_4&quot;" target="&quot;Set B (Ground Truth Positive Examples)&quot;">
+  <data key="d3">10.0</data>
+  <data key="d4">"B是从image_4中提取的实体。"</data>
+  <data key="d5">examples/example_working/images/image_4.jpg</data>
+  <data key="d6">1</data>
+</edge>
+<edge source="&quot;IMAGE_4&quot;" target="&quot;|A ∩ B| (True Positives)&quot;">
+  <data key="d3">10.0</data>
+  <data key="d4">"|A ∩ B|是从image_4中提取的实体。"</data>
+  <data key="d5">examples/example_working/images/image_4.jpg</data>
+  <data key="d6">1</data>
+</edge>
+<edge source="&quot;IMAGE_4&quot;" target="&quot;|A| (Total Predicted Positives)&quot;">
+  <data key="d3">10.0</data>
+  <data key="d4">"|A|是从image_4中提取的实体。"</data>
+  <data key="d5">examples/example_working/images/image_4.jpg</data>
+  <data key="d6">1</data>
+</edge>
+<edge source="&quot;IMAGE_4&quot;" target="&quot;|B| (Total Ground Truth Positives)&quot;">
+  <data key="d3">10.0</data>
+  <data key="d4">"|B|是从image_4中提取的实体。"</data>
+  <data key="d5">examples/example_working/images/image_4.jpg</data>
+  <data key="d6">1</data>
+</edge>
+<edge source="&quot;IMAGE_4&quot;" target="&quot;Constant Multiplier 2 in DSC Numerator&quot;">
+  <data key="d3">10.0</data>
+  <data key="d4">"2是从image_4中提取的实体。"</data>
+  <data key="d5">examples/example_working/images/image_4.jpg</data>
+  <data key="d6">1</data>
+</edge>
+<edge source="&quot;IMAGE_4&quot;" target="&quot;DICE COEFFICIENT&quot;">
+  <data key="d3">10.0</data>
+  <data key="d4">"IMAGE_4" is the image of "DICE COEFFICIENT".</data>
+  <data key="d5">examples/example_working/images/image_4.jpg</data>
+  <data key="d6">1</data>
+</edge>
+<edge source="&quot;DSC(A, B)&quot;" target="&quot;Set A (Predicted Positive Examples)&quot;">
+  <data key="d3">9.0</data>
+  <data key="d4">"The DSC formula computes the similarity between set A and set B."</data>
+  <data key="d5">examples/example_working/images/image_4.jpg</data>
+  <data key="d6">1</data>
+</edge>
+<edge source="&quot;DSC(A, B)&quot;" target="&quot;Set B (Ground Truth Positive Examples)&quot;">
+  <data key="d3">9.0</data>
+  <data key="d4">"The DSC formula computes the similarity between set A and set B."</data>
+  <data key="d5">examples/example_working/images/image_4.jpg</data>
+  <data key="d6">1</data>
+</edge>
+<edge source="&quot;DSC(A, B)&quot;" target="&quot;|A ∩ B| (True Positives)&quot;">
+  <data key="d3">8.0</data>
+  <data key="d4">"The DSC formula uses the intersection size |A ∩ B| as part of its numerator."</data>
+  <data key="d5">examples/example_working/images/image_4.jpg</data>
+  <data key="d6">1</data>
+</edge>
+<edge source="&quot;DSC(A, B)&quot;" target="&quot;|A| (Total Predicted Positives)&quot;">
+  <data key="d3">7.0</data>
+  <data key="d4">"The DSC formula uses the size of set A, |A|, in its denominator."</data>
+  <data key="d5">examples/example_working/images/image_4.jpg</data>
+  <data key="d6">1</data>
+</edge>
+<edge source="&quot;DSC(A, B)&quot;" target="&quot;|B| (Total Ground Truth Positives)&quot;">
+  <data key="d3">7.0</data>
+  <data key="d4">"The DSC formula uses the size of set B, |B|, in its denominator."</data>
+  <data key="d5">examples/example_working/images/image_4.jpg</data>
+  <data key="d6">1</data>
+</edge>
+<edge source="&quot;DSC(A, B)&quot;" target="&quot;Constant Multiplier 2 in DSC Numerator&quot;">
+  <data key="d3">8.0</data>
+  <data key="d4">"The constant 2 scales the intersection term in the numerator of the DSC formula."</data>
+  <data key="d5">examples/example_working/images/image_4.jpg</data>
+  <data key="d6">1</data>
+</edge>
+<edge source="&quot;Set A (Predicted Positive Examples)&quot;" target="&quot;|A ∩ B| (True Positives)&quot;">
+  <data key="d3">8.0</data>
+  <data key="d4">"The intersection |A ∩ B| is derived from the elements common to set A."</data>
+  <data key="d5">examples/example_working/images/image_4.jpg</data>
+  <data key="d6">1</data>
+</edge>
+<edge source="&quot;Set A (Predicted Positive Examples)&quot;" target="&quot;|A| (Total Predicted Positives)&quot;">
+  <data key="d3">9.0</data>
+  <data key="d4">"The cardinality |A| represents the total number of elements in set A."</data>
+  <data key="d5">examples/example_working/images/image_4.jpg</data>
+  <data key="d6">1</data>
+</edge>
+<edge source="&quot;Set B (Ground Truth Positive Examples)&quot;" target="&quot;|A ∩ B| (True Positives)&quot;">
+  <data key="d3">8.0</data>
+  <data key="d4">"The intersection |A ∩ B| is derived from the elements common to set B."</data>
+  <data key="d5">examples/example_working/images/image_4.jpg</data>
+  <data key="d6">1</data>
+</edge>
+<edge source="&quot;Set B (Ground Truth Positive Examples)&quot;" target="&quot;|B| (Total Ground Truth Positives)&quot;">
+  <data key="d3">9.0</data>
+  <data key="d4">"The cardinality |B| represents the total number of elements in set B."</data>
+  <data key="d5">examples/example_working/images/image_4.jpg</data>
+  <data key="d6">1</data>
+</edge>
+</graph></graphml>

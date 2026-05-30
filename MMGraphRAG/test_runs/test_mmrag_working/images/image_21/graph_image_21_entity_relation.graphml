@@ -1,0 +1,119 @@
+<?xml version='1.0' encoding='utf-8'?>
+<graphml xmlns="http://graphml.graphdrawing.org/xmlns" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://graphml.graphdrawing.org/xmlns http://graphml.graphdrawing.org/xmlns/1.0/graphml.xsd">
+  <key id="d6" for="edge" attr.name="order" attr.type="long" />
+  <key id="d5" for="edge" attr.name="source_id" attr.type="string" />
+  <key id="d4" for="edge" attr.name="description" attr.type="string" />
+  <key id="d3" for="edge" attr.name="weight" attr.type="double" />
+  <key id="d2" for="node" attr.name="source_id" attr.type="string" />
+  <key id="d1" for="node" attr.name="description" attr.type="string" />
+  <key id="d0" for="node" attr.name="entity_type" attr.type="string" />
+  <graph edgedefault="undirected">
+    <node id="&quot;IMAGE_21_BIRD-0.JPG&quot;">
+      <data key="d0">"IMG"</data>
+      <data key="d1">"The category of this image feature block is 'organism'. The entity features are as follows:Organism Features:- **Species/Type:** An aquatic bird, most likely a cormorant or a similar species.- **Color:** The plumage is predominantly very dark, appearing almost black or dark charcoal grey. There is a lighter, yellowish or light brown coloration visible on the throat and possibly extending to the base of the beak.- **Shape:** The bird has an elongated body, a long and slender S-shaped neck that is stretched upwards, and a relatively small head with a pointed, slightly hooked beak. Its body appears somewhat stout, and visible legs suggest it is standing.- **Posture:** The bird is standing upright, with its long neck fully extended and tilted sharply upwards, pointing its beak towards the sky. This posture is characteristic of cormorants often seen drying their wings or vocalizing. Its legs are visible at the bottom, supporting its weight.- **Structural characteristics:** Key features include the long, flexible neck, a distinct head shape, and dark, dense feathers. The visible part of the legs appears sturdy."</data>
+      <data key="d2">test_runs/test_mmrag_working\images\image_21.jpg</data>
+    </node>
+    <node id="&quot;IMAGE_21_BIRD-1.JPG&quot;">
+      <data key="d0">"IMG"</data>
+      <data key="d1">"The category of this image feature block is 'organism'. The entity features are as follows:Organism Features:-   **Type:** Two birds, likely cranes or a similar species of large wading bird.-   **Number:** Two individual birds.-   **Color:** The plumage of both birds is predominantly dark, appearing black or very dark grey. Their beaks or the upper part of their heads show a lighter, possibly brownish or yellowish, coloration.-   **Shape/Build:** They possess long, slender necks, elongated bodies, and long, thin legs, characteristic of wading birds.-   **Posture:** Both birds are standing upright with their long necks extended upwards and slightly angled outwards, as if in a synchronized display or interaction. One bird is positioned slightly behind or to the side of the other, with some overlap in their bodies. Their legs are visible, extending downwards.-   **Activity:** They appear to be engaged in a coordinated movement, possibly a courtship dance or a ritualistic display, given their mirroring postures and upward-stretching necks."</data>
+      <data key="d2">test_runs/test_mmrag_working\images\image_21.jpg</data>
+    </node>
+    <node id="&quot;IMAGE_21&quot;">
+      <data key="d0">"ORI_IMG"</data>
+      <data key="d1">"The image is a vertical photograph featuring a group of four birds, likely cranes or similar wading birds, standing in shallow water, rendered as dark silhouettes against a vibrant, luminous golden-orange background. This warm background color suggests either a sunrise or sunset, casting a glow over the water. The water itself shows subtle ripples and reflections, particularly around the birds' legs, adding depth to the scene."</data>
+      <data key="d2">test_runs/test_mmrag_working\images\image_21.jpg</data>
+    </node>
+    <node id="&quot;ANNUAL PASS TEXT&quot;">
+      <data key="d0">"OBJECT"</data>
+      <data key="d1">"The words 'ANNUAL PASS' are prominently displayed in white capital letters within a dark red rectangular banner at the very top of the image. This text indicates the nature of the item depicted, likely a pass for an attraction or park."</data>
+      <data key="d2">test_runs/test_mmrag_working\images\image_21.jpg</data>
+    </node>
+    <node id="&quot;CRANES&quot;">
+      <data key="d0">"OBJECT"</data>
+      <data key="d1">"Four large birds, likely cranes or sandhill cranes, are depicted in silhouette, standing in shallow water. Three of the birds have their long necks extended upwards with their beaks open, appearing to call out, while one bird has its head lowered. Their dark forms are sharply contrasted against the bright, warm-toned background."</data>
+      <data key="d2">test_runs/test_mmrag_working\images\image_21.jpg</data>
+    </node>
+    <node id="&quot;WATER&quot;">
+      <data key="d0">"GEO"</data>
+      <data key="d1">"Shallow, calm water in which the cranes are standing. The water's surface is reflective, showing the silhouettes of the birds and shimmering with the warm glow from the background, creating subtle ripples."</data>
+      <data key="d2">test_runs/test_mmrag_working\images\image_21.jpg</data>
+    </node>
+    <node id="&quot;GOLDEN BACKGROUND&quot;">
+      <data key="d0">"GEO"</data>
+      <data key="d1">"A vibrant and warm-toned background, ranging from golden yellow to soft orange, which appears to be a sky during sunrise or sunset. It provides a striking silhouette effect for the birds and the water, suggesting an outdoor natural environment."</data>
+      <data key="d2">test_runs/test_mmrag_working\images\image_21.jpg</data>
+    </node>
+    <edge source="&quot;IMAGE_21_BIRD-0.JPG&quot;" target="&quot;CRANES&quot;">
+      <data key="d3">9.0</data>
+      <data key="d4">"The image feature block image_21_bird-0.jpg is a picture of a crane."</data>
+      <data key="d5">test_runs/test_mmrag_working\images\image_21.jpg</data>
+      <data key="d6">1</data>
+    </edge>
+    <edge source="&quot;IMAGE_21_BIRD-0.JPG&quot;" target="&quot;IMAGE_21&quot;">
+      <data key="d3">10.0</data>
+      <data key="d4">"image_21_bird-0.jpg是image_21的图像特征块。"</data>
+      <data key="d5">test_runs/test_mmrag_working\images\image_21.jpg</data>
+      <data key="d6">1</data>
+    </edge>
+    <edge source="&quot;IMAGE_21_BIRD-1.JPG&quot;" target="&quot;CRANES&quot;">
+      <data key="d3">9.0</data>
+      <data key="d4">"The image feature block image_21_bird-1.jpg is a picture of cranes."</data>
+      <data key="d5">test_runs/test_mmrag_working\images\image_21.jpg</data>
+      <data key="d6">1</data>
+    </edge>
+    <edge source="&quot;IMAGE_21_BIRD-1.JPG&quot;" target="&quot;IMAGE_21&quot;">
+      <data key="d3">10.0</data>
+      <data key="d4">"image_21_bird-1.jpg是image_21的图像特征块。"</data>
+      <data key="d5">test_runs/test_mmrag_working\images\image_21.jpg</data>
+      <data key="d6">1</data>
+    </edge>
+    <edge source="&quot;IMAGE_21&quot;" target="&quot;ANNUAL PASS TEXT&quot;">
+      <data key="d3">10.0</data>
+      <data key="d4">"Annual Pass Text是从image_21中提取的实体。"</data>
+      <data key="d5">test_runs/test_mmrag_working\images\image_21.jpg</data>
+      <data key="d6">1</data>
+    </edge>
+    <edge source="&quot;IMAGE_21&quot;" target="&quot;CRANES&quot;">
+      <data key="d3">10.0</data>
+      <data key="d4">"Cranes是从image_21中提取的实体。"</data>
+      <data key="d5">test_runs/test_mmrag_working\images\image_21.jpg</data>
+      <data key="d6">1</data>
+    </edge>
+    <edge source="&quot;IMAGE_21&quot;" target="&quot;WATER&quot;">
+      <data key="d3">10.0</data>
+      <data key="d4">"Water是从image_21中提取的实体。"</data>
+      <data key="d5">test_runs/test_mmrag_working\images\image_21.jpg</data>
+      <data key="d6">1</data>
+    </edge>
+    <edge source="&quot;IMAGE_21&quot;" target="&quot;GOLDEN BACKGROUND&quot;">
+      <data key="d3">10.0</data>
+      <data key="d4">"Golden Background是从image_21中提取的实体。"</data>
+      <data key="d5">test_runs/test_mmrag_working\images\image_21.jpg</data>
+      <data key="d6">1</data>
+    </edge>
+    <edge source="&quot;ANNUAL PASS TEXT&quot;" target="&quot;CRANES&quot;">
+      <data key="d3">8.0</data>
+      <data key="d4">"The 'ANNUAL PASS' text is displayed above the image of the cranes, suggesting that the cranes are a featured attraction or subject related to the pass."</data>
+      <data key="d5">test_runs/test_mmrag_working\images\image_21.jpg</data>
+      <data key="d6">1</data>
+    </edge>
+    <edge source="&quot;CRANES&quot;" target="&quot;WATER&quot;">
+      <data key="d3">9.0</data>
+      <data key="d4">"The cranes are standing directly in the shallow water."</data>
+      <data key="d5">test_runs/test_mmrag_working\images\image_21.jpg</data>
+      <data key="d6">1</data>
+    </edge>
+    <edge source="&quot;CRANES&quot;" target="&quot;GOLDEN BACKGROUND&quot;">
+      <data key="d3">8.0</data>
+      <data key="d4">"The cranes are silhouetted against the bright, golden background, indicating their position relative to the light source."</data>
+      <data key="d5">test_runs/test_mmrag_working\images\image_21.jpg</data>
+      <data key="d6">1</data>
+    </edge>
+    <edge source="&quot;WATER&quot;" target="&quot;GOLDEN BACKGROUND&quot;">
+      <data key="d3">7.0</data>
+      <data key="d4">"The water reflects the golden light from the background, contributing to the warm color palette of the scene."</data>
+      <data key="d5">test_runs/test_mmrag_working\images\image_21.jpg</data>
+      <data key="d6">1</data>
+    </edge>
+  </graph>
+</graphml>

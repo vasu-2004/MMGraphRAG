@@ -1,0 +1,28 @@
+<?xml version='1.0' encoding='utf-8'?>
+<graphml xmlns="http://graphml.graphdrawing.org/xmlns" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://graphml.graphdrawing.org/xmlns http://graphml.graphdrawing.org/xmlns/1.0/graphml.xsd">
+  <key id="d6" for="edge" attr.name="order" attr.type="long" />
+  <key id="d5" for="edge" attr.name="source_id" attr.type="string" />
+  <key id="d4" for="edge" attr.name="description" attr.type="string" />
+  <key id="d3" for="edge" attr.name="weight" attr.type="double" />
+  <key id="d2" for="node" attr.name="source_id" attr.type="string" />
+  <key id="d1" for="node" attr.name="description" attr.type="string" />
+  <key id="d0" for="node" attr.name="entity_type" attr.type="string" />
+  <graph edgedefault="undirected">
+    <node id="&quot;IMAGE_11&quot;">
+      <data key="d0">"ORI_IMG"</data>
+      <data key="d1">"The image displays a simple, dark gray, almost black, rounded rectangular shape, acting as a container or background for a logo. Inside this dark shape, two prominent capital letters, 'FS', are centrally positioned. These letters are rendered in a lighter shade of gray, appearing metallic or silver, with a subtle gradient that gives them a slightly three-dimensional or embossed effect. The letters are sans-serif and bold, standing out against the darker background. The overall icon is set against a plain white background, making the 'FS' logo the sole focus of the image."</data>
+      <data key="d2">test_runs/test_mmrag_working\images\image_11.jpg</data>
+    </node>
+    <node id="&quot;FS LOGO&quot;">
+      <data key="d0">"OBJECT"</data>
+      <data key="d1">"A stylized logo featuring the capital letters 'FS' in a bold, sans-serif font. The letters are set within a rectangular shape with rounded corners. The design is monochrome, displaying gradients of gray that give it a three-dimensional, metallic, or glossy appearance. The letters 'FS' are prominent in the center of the emblem."</data>
+      <data key="d2">test_runs/test_mmrag_working\images\image_11.jpg</data>
+    </node>
+    <edge source="&quot;IMAGE_11&quot;" target="&quot;FS LOGO&quot;">
+      <data key="d3">10.0</data>
+      <data key="d4">"FS Logo是从image_11中提取的实体。"</data>
+      <data key="d5">test_runs/test_mmrag_working\images\image_11.jpg</data>
+      <data key="d6">1</data>
+    </edge>
+  </graph>
+</graphml>

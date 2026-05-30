@@ -1,0 +1,233 @@
+{
+  "image_1": {
+    "image_id": 1,
+    "image_path": "test_runs/test_mmrag_working\\images\\image_1.jpg",
+    "caption": [],
+    "footnote": [],
+    "context": " 1   Safety Tips 2   Highlights \t Visitor Centers\t Museums 3  ",
+    "chunk_order_index": 0,
+    "chunk_id": "chunk-47639910c915bafe8d80a13752ccb8ee",
+    "description": "The image captures a breathtaking natural landscape featuring an erupting geyser under a clear blue sky, highlighted by a vibrant rainbow. In the central foreground, a large geyser vigorously erupts, sending a towering column of dense, white steam and water vapor high into the air. The steam plume is thick and billows upwards, then spreads out and drifts towards the right side of the frame, forming a soft, cloud-like mass against the sky. The geyser emerges from a textured, light grey to off-white mineral formation, which appears rocky and uneven, indicative of geothermal deposits. The ground immediately surrounding the geyser is also a light, earthy tone, with scattered rocks and what appears to be wet or reflective patches, suggesting pools of water or damp soil. \n\nArched gracefully through the rising steam and against the bright blue sky is a prominent and vivid rainbow. Its full spectrum of colors—red, orange, yellow, green, blue, and violet—is clearly visible, creating a striking contrast with the white steam and blue sky. The rainbow originates near the base of the steam column on the left and extends downwards towards the right, seemingly touching the distant tree line. \n\nIn the mid-ground, a dense forest of dark green coniferous trees stretches across the horizon, forming a natural backdrop behind the geyser and the rainbow. The trees are tall and appear to be evergreen, providing a rich, dark contrast to the lighter elements of the geyser and sky. The sky itself is a brilliant, unblemished blue, with only faint, wispy clouds present, primarily interacting with the geyser's steam. The overall atmosphere of the image is one of natural wonder, power, and serene beauty, showcasing a unique and awe-inspiring moment where geothermal activity meets atmospheric optics.",
+    "segmentation": true
+  },
+  "image_2": {
+    "image_id": 2,
+    "image_path": "test_runs/test_mmrag_working\\images\\image_2.jpg",
+    "caption": [],
+    "footnote": [],
+    "context": "Do not allow them access  to your food.  Do not feed any animals.   It harms them and it is illegal. Bicycling  Wear safety gear,  including helmet and high  visibility clothing. Park  roads are narrow",
+    "chunk_order_index": 0,
+    "chunk_id": "chunk-47639910c915bafe8d80a13752ccb8ee",
+    "description": "The image is a black and white photograph capturing an intense moment between two large elk, likely engaged in a sparring match or a dominance display. Both elk are depicted in profile, with their heads lowered and antlers intricately locked together at the center of the frame. The elk on the left is positioned with its body facing towards the left edge of the image and its head turned sharply to the right, engaging with the other elk. Its dark, muscular neck and shoulder are visible. The elk on the right is positioned with its body facing towards the right edge of the image, and its head turned towards the left, meeting the other animal. Both animals possess impressive, multi-tined antlers that appear strong and robust as they intertwine. The fur of both elk appears dark and textured due to the black and white rendering. The background is softly blurred, providing a shallow depth of field that keeps the focus sharply on the two animals and their interaction. The blurred background suggests a natural outdoor environment, possibly a grassy or rocky terrain, but it is indistinct enough not to distract from the main subjects. The overall atmosphere of the image is one of raw power, natural instinct, and dynamic confrontation.",
+    "segmentation": true
+  },
+  "image_3": {
+    "image_id": 3,
+    "image_path": "test_runs/test_mmrag_working\\images\\image_3.jpg",
+    "caption": [],
+    "footnote": [],
+    "context": " 2 H ighlights to walk the self-guiding trail around Fort  Yellowstone, which chronicles the U.S.  Ar",
+    "chunk_order_index": 0,
+    "chunk_id": "chunk-47639910c915bafe8d80a13752ccb8ee",
+    "description": "The image is a black and white photograph depicting a grand and powerful waterfall cascading down a rugged, mountainous landscape. Dominating the center of the frame, the waterfall appears as a bright, frothy torrent of water, plunging from a high cliff face into a misty pool below. The force of the water creates a visible spray at its base, contributing to the ethereal quality of the scene in grayscale. The waterfall is flanked by steep, heavily forested slopes. On the right side, a prominent, jagged rock formation with distinct vertical striations rises sharply, providing a dramatic contrast to the smooth flow of the water. On the left, dense coniferous trees cling to the rocky terrain, extending upwards and receding into the background, hinting at a vast wilderness. At the very bottom of the gorge, partially obscured by the mist and surrounding foliage, a winding river or stream can be faintly discerned. The overall perspective suggests the photograph was taken from a high vantage point, looking down into the deep canyon. The grayscale palette enhances the dramatic contrast between the bright, dynamic water and the dark, textured rocks and dense foliage, conveying a sense of immense natural power and untamed beauty.",
+    "segmentation": true
+  },
+  "image_4": {
+    "image_id": 4,
+    "image_path": "test_runs/test_mmrag_working\\images\\image_4.jpg",
+    "caption": [],
+    "footnote": [],
+    "context": "stone   volcano, its geysers and hot springs, and  geologic history influence all life found  here.  Winter use in Yellowstone is being reviewed.   For updates, go to www.nps.gov/yell/planyourvisit/win",
+    "chunk_order_index": 1,
+    "chunk_id": "chunk-8f0e2c09fcd8882a570819d4a5395ca3",
+    "description": "The image is a black and white photograph depicting an indoor scene with a young child interacting with a large, dark, spherical sculpture or fountain. The child, positioned on the right side of the frame, appears to be a young girl, dressed in a dark short-sleeved top and light-colored shorts or pants, with a cap or hat on her head. She is leaning forward, extending both hands to touch the surface of the large sphere. The sphere itself is perfectly round, very dark in tone (appearing black or dark grey in the monochrome image), and has a somewhat reflective surface, suggesting it might be wet or highly polished. It rests on a cylindrical or drum-shaped base, which is lighter in tone and appears to be made of stone or concrete. Around the base of the sphere, there are visible indications of water, possibly flowing or bubbling, creating a fountain effect. The sphere is quite large, reaching approximately chest height for the child. In the soft-focused background, several other people are visible, mostly adults, suggesting a public indoor setting such as a museum, science center, or visitor center. The overall atmosphere is one of curiosity and engagement, common in an interactive exhibit.",
+    "segmentation": true
+  },
+  "image_5": {
+    "image_id": 5,
+    "image_path": "test_runs/test_mmrag_working\\images\\image_5.jpg",
+    "caption": [],
+    "footnote": [],
+    "context": "s of activities, consult the park website  (www.nps.gov/yell) or the park newspaper when you arrive. P rograms  & T ours NPS photo/Peaco D riving   the  P",
+    "chunk_order_index": 1,
+    "chunk_id": "chunk-8f0e2c09fcd8882a570819d4a5395ca3",
+    "description": "The image is a black and white close-up photograph depicting a group of people, primarily adults and children, engaged in an outdoor activity. In the foreground, slightly to the left, is a young child with light-colored hair, possibly blonde, wearing a light-colored top. This child is looking towards the right with a curious expression. To the right of this child and slightly behind, another child with darker hair and glasses is visible, also looking towards the right. Dominating the central and right portions of the image is an adult wearing a light-colored ranger-style hat with a dark band. This adult's face is partially obscured by the hat brim, but they appear to be looking down and interacting with the children, suggesting a supervisory or educational role. Another adult figure is partially visible on the far right, with a forearm and hand visible, wearing a watch on the wrist. This adult also seems to be part of the interaction, possibly holding or assisting one of the children. The background is somewhat blurred but shows elements of an outdoor setting, including what appear to be wooden logs or structures, suggesting a park, camp, or natural environment. The overall atmosphere conveyed is one of positive interaction, possibly an educational program or recreational activity, with the adults engaging with the children in a natural setting.",
+    "segmentation": true
+  },
+  "image_6": {
+    "image_id": 6,
+    "image_path": "test_runs/test_mmrag_working\\images\\image_6.jpg",
+    "caption": [],
+    "footnote": [],
+    "context": "1.30 if purchased separately). To order, call  877-967-0090 or visit www.YellowstoneAssociation.org. ",
+    "chunk_order_index": 2,
+    "chunk_id": "chunk-7351b12b3e5ac87b530aa3bf02ecf8cc",
+    "description": "The image is a grayscale photograph showcasing a collection of five different books or brochures, likely related to national parks, arranged in a slightly fanned-out and overlapping manner against a plain white background. The items appear to be educational or guide materials. \n\nFrom left to right and top to bottom:\n\n1.  **Top left:** A small, rectangular item, possibly a folded brochure or map, is partially visible. It has some text and what appears to be a graphic or map section on its surface, but specific details are obscured.\n2.  **Bottom left:** A book with a horizontally oriented cover features a landscape scene with what looks like several large animals (possibly bison or elk) grazing in a field. The title, though partly unreadable, seems to include the word \"TRAILS\" or similar, suggesting a focus on hiking or exploration.\n3.  **Middle left:** A taller, narrower guide book stands upright. Its cover displays a prominent image of a geyser or hot spring erupting, with steam rising into the sky. The title is clearly visible and reads \"Yellowstone and Grand Teton National Parks Road Guide\", indicating its purpose as a travel resource for these specific parks.\n4.  **Center top/right:** The largest item is a prominent, vertically oriented book or large brochure. Its cover features the word \"YELLOWSTONE\" in large, bold letters at the top. Below this, there's additional text that appears to say \"THE OFFICIAL GUIDE TO AMERICA'S FIRST NATIONAL PARK\". The lower portion of the cover shows silhouettes of multiple bison in a vast, open landscape, emphasizing the iconic wildlife of Yellowstone.\n5.  **Far right:** A book with a darker-toned cover is positioned on the right. While the title is somewhat obscured by glare or lighting, it appears to feature an image of a large animal, possibly a bear or another bison, in a natural setting. The text on the cover seems to be related to wildlife or fauna.\n\nThe overall arrangement suggests a display of complementary resources. The grayscale format gives the image a classic, somewhat archival feel. The context provided (ordering information for the Yellowstone Association) strongly supports the interpretation that these are publications related to Yellowstone National Park.",
+    "segmentation": true
+  },
+  "image_7": {
+    "image_id": 7,
+    "image_path": "test_runs/test_mmrag_working\\images\\image_7.jpg",
+    "caption": [],
+    "footnote": [],
+    "context": "? ? ? ? ? ? ? ? ? ? ? ? ? ? North Entrance Mammoth Hot Springs Roosevelt Northeast Entrance",
+    "chunk_order_index": 2,
+    "chunk_id": "chunk-7351b12b3e5ac87b530aa3bf02ecf8cc",
+    "description": "The image is a small, monochrome, pixelated graphic featuring the letters \"FS\". The letters are rendered in a bold, blocky, sans-serif font, appearing in a light gray or white color against a dark gray or black background. The letters \"F\" and \"S\" are clearly distinguishable, with the \"F\" having a strong vertical stem and two horizontal bars, and the \"S\" forming a characteristic curved shape. The edges of both the letters and the background show visible pixelation, giving the graphic a distinct low-resolution or retro digital aesthetic. The overall shape of the graphic is rectangular, and the letters are centrally placed within this frame. It appears to be an icon, a logo, or a small graphic identifier.",
+    "segmentation": false
+  },
+  "image_8": {
+    "image_id": 8,
+    "image_path": "test_runs/test_mmrag_working\\images\\image_8.jpg",
+    "caption": [],
+    "footnote": [],
+    "context": "? ? ? ? ? ? ? ? ? ? ? ? ? ? North Entrance Mammoth Hot Springs Roosevelt Northeast Entrance Cooke City, MT",
+    "chunk_order_index": 2,
+    "chunk_id": "chunk-7351b12b3e5ac87b530aa3bf02ecf8cc",
+    "description": "The image is a very low-resolution, pixelated graphic, predominantly in grayscale. It features two stylized, blocky characters, which appear to be either 'rs' or 'fs', rendered in a light gray or white color against a dark gray or black background. The pixelation is extremely prominent, with individual square pixels clearly visible, giving the characters a jagged, digital appearance rather than smooth curves. The overall shape of the graphic is rectangular, with the characters occupying the central area.",
+    "segmentation": false
+  },
+  "image_9": {
+    "image_id": 9,
+    "image_path": "test_runs/test_mmrag_working\\images\\image_9.jpg",
+    "caption": [],
+    "footnote": [],
+    "context": "? ? ? ? ? ? ? ? ? ? ? ? ? North Entrance Mammoth Hot Springs Roosevelt Northeast Entrance Cooke City, MT Fishing Bridge ",
+    "chunk_order_index": 2,
+    "chunk_id": "chunk-7351b12b3e5ac87b530aa3bf02ecf8cc",
+    "description": "The image is a grayscale icon depicting two stylized human figures, typically used to signify public restrooms. On the left, there is a silhouette of a female figure, characterized by a wider upper body or dress-like shape. To the right, separated by a distinct vertical line or partition, is the silhouette of a male figure, depicted with a more rectangular torso. Both figures are enclosed within a larger, dark rectangular outline, which could represent a doorway or an entrance to a facility. The overall appearance is simple, clear, and highly symbolic, designed for universal recognition.",
+    "segmentation": true
+  },
+  "image_10": {
+    "image_id": 10,
+    "image_path": "test_runs/test_mmrag_working\\images\\image_10.jpg",
+    "caption": [],
+    "footnote": [],
+    "context": "? ? ? ? ? ? ? ? ? ? ? ? North Entrance Mammoth Hot Springs Roosevelt Northeast Entrance Cooke City, MT Fishing Bridge  E",
+    "chunk_order_index": 2,
+    "chunk_id": "chunk-7351b12b3e5ac87b530aa3bf02ecf8cc",
+    "description": "The image displays a stylized icon of an anchor, rendered in a light grey or white color against a solid black square background. The anchor is centrally positioned and occupies a significant portion of the frame. It features a classic design, including a vertical shank with a ring at the top, two curved arms extending outward from the bottom of the shank, and flukes at the end of each arm. The lines forming the anchor are clean and smooth, giving it a somewhat metallic or polished appearance against the dark backdrop. The overall impression is that of a simple, clear, and universally recognizable symbol.",
+    "segmentation": false
+  },
+  "image_11": {
+    "image_id": 11,
+    "image_path": "test_runs/test_mmrag_working\\images\\image_11.jpg",
+    "caption": [],
+    "footnote": [],
+    "context": "? ? ? ? ? ? ? ? ? ? ? North Entrance Mammoth Hot Springs Roosevelt Northeast Entrance Cooke City, MT Fishing Bridge  Eas",
+    "chunk_order_index": 2,
+    "chunk_id": "chunk-7351b12b3e5ac87b530aa3bf02ecf8cc",
+    "description": "The image displays a simple, dark gray, almost black, rounded rectangular shape, acting as a container or background for a logo. Inside this dark shape, two prominent capital letters, 'FS', are centrally positioned. These letters are rendered in a lighter shade of gray, appearing metallic or silver, with a subtle gradient that gives them a slightly three-dimensional or embossed effect. The letters are sans-serif and bold, standing out against the darker background. The overall icon is set against a plain white background, making the 'FS' logo the sole focus of the image.",
+    "segmentation": true
+  },
+  "image_12": {
+    "image_id": 12,
+    "image_path": "test_runs/test_mmrag_working\\images\\image_12.jpg",
+    "caption": [],
+    "footnote": [],
+    "context": "? ? ? ? ? ? ? ? ? ? North Entrance Mammoth Hot Springs Roosevelt Northeast Entrance Cooke City, MT Fishing Bridge  East ",
+    "chunk_order_index": 2,
+    "chunk_id": "chunk-7351b12b3e5ac87b530aa3bf02ecf8cc",
+    "description": "The image displays a single, prominent character, which is the uppercase Greek letter Delta (Δ). The character is rendered in a grayscale or metallic-looking texture, giving it a somewhat three-dimensional and slightly reflective appearance. It is set against a dark, possibly black, background, which provides strong contrast and makes the white/gray character stand out clearly. The symbol itself is a triangle with its base at the bottom and its apex pointing upwards, characteristic of the Delta symbol. The edges of the symbol appear somewhat blurred or softened, suggesting a slight glow or a low-resolution rendering.",
+    "segmentation": false
+  },
+  "image_13": {
+    "image_id": 13,
+    "image_path": "test_runs/test_mmrag_working\\images\\image_13.jpg",
+    "caption": [],
+    "footnote": [],
+    "context": "d WORK  schedules change.  For updates, check at a visitor center or  entrance station upon arrival. Full service (lodging, food service,  general store, restroom) Visitor Center or   information stati",
+    "chunk_order_index": 3,
+    "chunk_id": "chunk-88e5c2ce20f231e3a806b09b6cab2c4d",
+    "description": "The image is a small, square, monochrome icon. It features a black background with a white inner square border, and centrally placed within this white bordered area is a bold, black plus sign (+). The icon is simple and graphic, designed for clear symbolic representation. Given the context provided, which mentions 'Visitor Center or information station' and 'Full service', this icon likely represents a location offering full services or an information point, possibly on a map or guide.",
+    "segmentation": false
+  },
+  "image_14": {
+    "image_id": 14,
+    "image_path": "test_runs/test_mmrag_working\\images\\image_14.jpg",
+    "caption": [],
+    "footnote": [],
+    "context": "d WORK  schedules change.  For updates, check at a visitor center or  entrance station upon arrival. Full service (lodging, food service,  general store, restroom) Visitor Center or   information stati",
+    "chunk_order_index": 3,
+    "chunk_id": "chunk-88e5c2ce20f231e3a806b09b6cab2c4d",
+    "description": "The image is a simple, monochromatic icon featuring a stylized gas pump or fuel dispenser. The icon is rendered in shades of white and light gray against a solid black background. The main body of the pump is a vertical rectangle, with a smaller rectangular base at the bottom. Extending from the upper right side of the pump's body is a handle or nozzle, depicted with a slight curve and a distinct shape. Above the nozzle, at the top right corner of the pump, there is a small, rectangular shape resembling a sheet of paper or a flag, commonly associated with a receipt or a sign at a gas station. The overall design is clean and minimalist, clearly representing a fuel station or gasoline service.",
+    "segmentation": false
+  },
+  "image_15": {
+    "image_id": 15,
+    "image_path": "test_runs/test_mmrag_working\\images\\image_15.jpg",
+    "caption": [],
+    "footnote": [],
+    "context": "d WORK  schedules change.  For updates, check at a visitor center or  entrance station upon arrival. Full service (lodging, food service,  general store, restroom) Visitor Center or   information stati",
+    "chunk_order_index": 3,
+    "chunk_id": "chunk-88e5c2ce20f231e3a806b09b6cab2c4d",
+    "description": "The image is a placeholder, depicted as a large, stylized white question mark centered against a solid black background. The question mark appears to have a slightly glowing or embossed effect, giving it a three-dimensional quality, though the overall image is simple and monochromatic. This placeholder typically indicates that the intended image content is missing or could not be loaded.",
+    "segmentation": false
+  },
+  "image_16": {
+    "image_id": 16,
+    "image_path": "test_runs/test_mmrag_working\\images\\image_16.jpg",
+    "caption": [],
+    "footnote": [],
+    "context": "d WORK  schedules change.  For updates, check at a visitor center or  entrance station upon arrival. Full service (lodging, food service,  general store, restroom) Visitor Center or   information stati",
+    "chunk_order_index": 3,
+    "chunk_id": "chunk-88e5c2ce20f231e3a806b09b6cab2c4d",
+    "description": "The image displays a small, pixelated icon, predominantly in shades of gray and white. It features a circular shape with a thick black outline, enclosing a white interior. Inside this white circle, there are two distinct, vertically oriented black figures. The figure on the left is thinner and appears to be a stylized representation of a fork, while the figure on the right is slightly wider and resembles a knife. Both figures are simple, linear forms. The overall impression is that of a universal symbol, likely indicating a dining facility or food service.",
+    "segmentation": false
+  },
+  "image_17": {
+    "image_id": 17,
+    "image_path": "test_runs/test_mmrag_working\\images\\image_17.jpg",
+    "caption": [],
+    "footnote": [],
+    "context": "d WORK  schedules change.  For updates, check at a visitor center or  entrance station upon arrival. Full service (lodging, food service,  general store, restroom) Visitor Center or   information stati",
+    "chunk_order_index": 3,
+    "chunk_id": "chunk-88e5c2ce20f231e3a806b09b6cab2c4d",
+    "description": "The image displays a small, low-resolution, pixelated icon set against a solid black background. The icon itself is rendered in shades of white and light gray, creating a stark contrast. It depicts a simplified, front-facing representation of what appears to be a vehicle, possibly a bus, van, or trailer. The main body of the vehicle is a horizontal rectangle, slightly wider than it is tall. Within this larger rectangle, two smaller, squarish or rectangular shapes are centrally placed, side-by-side, which could represent windows or headlights. Below the main body, a small, dark, circular or oval shape is visible, suggesting a wheel or a hitch point. The overall design is highly stylized and abstract, typical of a pictogram or symbol, lacking fine details due to its limited resolution.",
+    "segmentation": false
+  },
+  "image_18": {
+    "image_id": 18,
+    "image_path": "test_runs/test_mmrag_working\\images\\image_18.jpg",
+    "caption": [],
+    "footnote": [],
+    "context": "d WORK  schedules change.  For updates, check at a visitor center or  entrance station upon arrival. Full service (lodging, food service,  general store, restroom) Visitor Center or   information stati",
+    "chunk_order_index": 3,
+    "chunk_id": "chunk-88e5c2ce20f231e3a806b09b6cab2c4d",
+    "description": "The image is an extremely small, low-resolution, grayscale graphic or icon, heavily pixelated and blurry. It features two distinct, light-colored shapes against a dark, almost black, background. The shape on the left is vertically elongated, appearing somewhat rectangular or cylindrical with a slightly rounded or pointed top, rendered in white and light gray tones. To its right, there is a shorter, wider, light-colored shape that could be interpreted as an arch or a squat, distorted rectangle, also in white and light gray. The boundaries and internal details of these shapes are indistinct due to the severe pixelation and blur, making it impossible to identify specific objects or fine features. The overall impression is that of a highly abstract or stylized symbol, possibly a pictogram, but its exact meaning or represented object cannot be definitively identified from the image quality alone.",
+    "segmentation": false
+  },
+  "image_19": {
+    "image_id": 19,
+    "image_path": "test_runs/test_mmrag_working\\images\\image_19.jpg",
+    "caption": [],
+    "footnote": [],
+    "context": "d WORK  schedules change.  For updates, check at a visitor center or  entrance station upon arrival. Full service (lodging, food service,  general store, restroom) Visitor Center or   information stati",
+    "chunk_order_index": 3,
+    "chunk_id": "chunk-88e5c2ce20f231e3a806b09b6cab2c4d",
+    "description": "The image is a low-resolution, grayscale graphic depicting two abstract, white, blob-like shapes against a solid black background. These shapes are stylized representations that strongly resemble hands. The shape on the left is angled slightly upwards and to the right, while the shape on the right is angled downwards and to the left, creating an impression of two hands positioned opposite each other, possibly in a gesture or sign. Each shape has some internal dark areas, which could be interpreted as fingers or parts of the palm, though the resolution is too low for clear detail. The overall appearance is that of a pictogram or icon, commonly used to symbolize sign language or an interpreter service. The image is highly pixelated due to its low resolution.",
+    "segmentation": false
+  },
+  "image_20": {
+    "image_id": 20,
+    "image_path": "test_runs/test_mmrag_working\\images\\image_20.jpg",
+    "caption": [],
+    "footnote": [],
+    "context": "d WORK  schedules change.  For updates, check at a visitor center or  entrance station upon arrival. Full service (lodging, food service,  general store, restroom) Visitor Center or   information stati",
+    "chunk_order_index": 3,
+    "chunk_id": "chunk-88e5c2ce20f231e3a806b09b6cab2c4d",
+    "description": "The image displays a white accessibility symbol, commonly known as the International Symbol of Access, set against a solid black background. The symbol is a stylized representation of a person seated in a wheelchair, rendered in a crisp, clean white outline. The figure is depicted with a head, torso, and arms, positioned within the frame of a wheelchair that includes two large wheels and a smaller front wheel. The lines of the symbol are distinct and clear, contrasting sharply with the dark background, making it highly visible. The symbol occupies the majority of the image frame, centered and prominent.",
+    "segmentation": true
+  },
+  "image_21": {
+    "image_id": 21,
+    "image_path": "test_runs/test_mmrag_working\\images\\image_21.jpg",
+    "caption": [],
+    "footnote": [],
+    "context": "d WORK  schedules change.  For updates, check at a visitor center or  entrance station upon arrival. Full service (lodging, food service,  general store, restroom) Visitor Center or   information stati",
+    "chunk_order_index": 3,
+    "chunk_id": "chunk-88e5c2ce20f231e3a806b09b6cab2c4d",
+    "description": "The image is a vertical photograph featuring a group of four birds, likely cranes or similar wading birds, standing in shallow water, rendered as dark silhouettes against a vibrant, luminous golden-orange background. This warm background color suggests either a sunrise or sunset, casting a glow over the water. The water itself shows subtle ripples and reflections, particularly around the birds' legs, adding depth to the scene.",
+    "segmentation": true
+  }
+}

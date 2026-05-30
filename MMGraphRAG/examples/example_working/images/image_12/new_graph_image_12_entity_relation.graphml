@@ -1,0 +1,207 @@
+<?xml version='1.0' encoding='utf-8'?>
+<graphml xmlns="http://graphml.graphdrawing.org/xmlns" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://graphml.graphdrawing.org/xmlns http://graphml.graphdrawing.org/xmlns/1.0/graphml.xsd"><key id="d6" for="edge" attr.name="order" attr.type="long"/>
+<key id="d5" for="edge" attr.name="source_id" attr.type="string"/>
+<key id="d4" for="edge" attr.name="description" attr.type="string"/>
+<key id="d3" for="edge" attr.name="weight" attr.type="double"/>
+<key id="d2" for="node" attr.name="source_id" attr.type="string"/>
+<key id="d1" for="node" attr.name="description" attr.type="string"/>
+<key id="d0" for="node" attr.name="entity_type" attr.type="string"/>
+<graph edgedefault="undirected"><node id="&quot;IMAGE_12&quot;">
+  <data key="d0">"ORI_IMG"</data>
+  <data key="d1">"The image displays a mathematical formula representing the Tversky Loss (TL), which is a loss function used in machine learning, particularly in segmentation tasks. The formula is written in LaTeX-style mathematical notation and reads: TL = \frac{1}{N} \sum_{i} \left[ 1 - \frac{p_{i1} y_{i1} + \gamma}{p_{i1} y_{i1} + \alpha \, p_{i1} y_{i0} + \beta \, p_{i0} y_{i1} + \gamma} \right]. In this equation, TL denotes the Tversky Loss, N is the total number of samples, and the summation is over individual samples i. The terms p_{i1} and p_{i0} represent the predicted probabilities for class 1 and class 0, respectively, for sample i. Similarly, y_{i1} and y_{i0} are the true labels for class 1 and class 0, respectively. The parameters \alpha and \beta control the trade-off between false positives and false negatives, with \gamma being a small constant added to avoid division by zero. When \alpha = \beta = 0.5, the Tversky loss reduces to the Dice Similarity Coefficient (DSC). The context indicates that this loss function is part of a discussion on self-adjusting Dice loss, where the behavior of the model under specific conditions (e.g., binary classification) is analyzed. The formula is presented in a clean, black-on-white format typical of academic or technical documents."</data>
+  <data key="d2">examples/example_working/images/image_12.jpg</data>
+</node>
+<node id="&quot;TL&quot;">
+  <data key="d0">"OBJECT"</data>
+  <data key="d1">"Mathematical expression representing a metric, likely a form of loss or evaluation score in machine learning, defined as the average over N terms involving probabilities and labels."</data>
+  <data key="d2">examples/example_working/images/image_12.jpg</data>
+</node>
+<node id="&quot;N&quot;">
+  <data key="d0">"OBJECT"</data>
+  <data key="d1">A positive integer representing the total number of samples or data points used in the summation, commonly appearing in loss functions like Dice Loss (DL) and Tversky Loss (TL) as a normalization factor (e.g., $\frac{1}{N} \sum_i$).</data>
+  <data key="d2">examples/example_working/images/image_12.jpg</data>
+</node>
+<node id="&quot;i&quot;">
+  <data key="d0">"OBJECT"</data>
+  <data key="d1">An index variable ranging from 1 to N, used to iterate over individual data points in the summation. In the context of Dice and Tversky losses, it refers to the i-th sample $x_i$ for which predictions and labels are evaluated.</data>
+  <data key="d2">examples/example_working/images/image_12.jpg</data>
+</node>
+<node id="&quot;p_{i1}&quot;">
+  <data key="d0">"OBJECT"</data>
+  <data key="d1">Probability assigned to class 1 for the i-th sample, part of a probability distribution over classes in binary classification. It appears in Dice Coefficient (DSC), Dice Loss (DL), and Tversky Loss (TL) formulations, where it represents the model's predicted confidence for the positive class.</data>
+  <data key="d2">examples/example_working/images/image_12.jpg</data>
+</node>
+<node id="&quot;y_{i1}&quot;">
+  <data key="d0">"OBJECT"</data>
+  <data key="d1">Binary label indicating whether the i-th sample belongs to class 1 (value 1) or not (value 0). In Dice-based metrics, it denotes the ground-truth positive label and is used alongside $p_{i1}$ to compute similarity or loss at the sample level.</data>
+  <data key="d2">examples/example_working/images/image_12.jpg</data>
+</node>
+<node id="&quot;\gamma&quot;">
+  <data key="d0">"OBJECT"</data>
+  <data key="d1">A small positive constant (often set to 1 in practice) added to both numerator and denominator of Dice and Tversky formulations to avoid division by zero and ensure numerical stability, especially when dealing with negative examples or sparse predictions.</data>
+  <data key="d2">examples/example_working/images/image_12.jpg</data>
+</node>
+<node id="&quot;\alpha&quot;">
+  <data key="d0">"OBJECT"</data>
+  <data key="d1">A scaling hyperparameter in the Tversky Loss (TL) that weights the contribution of false positives (specifically the term $p_{i1} y_{i0}$) in the denominator. It controls the penalty for false positives and allows tuning the trade-off between precision and recall.</data>
+  <data key="d2">examples/example_working/images/image_12.jpg</data>
+</node>
+<node id="&quot;\beta&quot;">
+  <data key="d0">"OBJECT"</data>
+  <data key="d1">A scaling hyperparameter in the Tversky Loss (TL) that weights the contribution of false negatives (specifically the term $p_{i0} y_{i1}$) in the denominator. Like $\alpha$, it enables flexible control over the balance between false negatives and false positives; when $\alpha = \beta = 0.5$, Tversky reduces to the Dice coefficient.</data>
+  <data key="d2">examples/example_working/images/image_12.jpg</data>
+</node>
+<node id="&quot;p_{i0}&quot;">
+  <data key="d0">"OBJECT"</data>
+  <data key="d1">Probability assigned to class 0 for the i-th sample, complementary to $p_{i1}$ under a binary classification assumption (i.e., $p_{i0} = 1 - p_{i1}$). It appears in Tversky Loss to model the predicted negative class probability.</data>
+  <data key="d2">examples/example_working/images/image_12.jpg</data>
+</node>
+<node id="&quot;y_{i0}&quot;">
+  <data key="d0">"OBJECT"</data>
+  <data key="d1">Binary label indicating whether the i-th sample belongs to class 0 (value 1) or not (value 0), complementary to $y_{i1}$ (i.e., $y_{i0} = 1 - y_{i1}$). It is used in Tversky Loss to represent ground-truth negative labels.</data>
+  <data key="d2">examples/example_working/images/image_12.jpg</data>
+</node>
+<node id="&quot;TVERSKY LOSS&quot;">
+  <data key="d0">"EVENT"</data>
+  <data key="d1">"Tversky Loss (TL) is a loss function derived from the Tversky Index, designed to improve model training by adjusting penalties for false positives and false negatives."</data>
+  <data key="d2">examples/example_working/images/image_12.jpg</data>
+</node>
+<edge source="&quot;IMAGE_12&quot;" target="&quot;TL&quot;">
+  <data key="d3">10.0</data>
+  <data key="d4">"TL是从image_12中提取的实体。"</data>
+  <data key="d5">examples/example_working/images/image_12.jpg</data>
+  <data key="d6">1</data>
+</edge>
+<edge source="&quot;IMAGE_12&quot;" target="&quot;N&quot;">
+  <data key="d3">10.0</data>
+  <data key="d4">"N是从image_12中提取的实体。"</data>
+  <data key="d5">examples/example_working/images/image_12.jpg</data>
+  <data key="d6">1</data>
+</edge>
+<edge source="&quot;IMAGE_12&quot;" target="&quot;i&quot;">
+  <data key="d3">10.0</data>
+  <data key="d4">"i是从image_12中提取的实体。"</data>
+  <data key="d5">examples/example_working/images/image_12.jpg</data>
+  <data key="d6">1</data>
+</edge>
+<edge source="&quot;IMAGE_12&quot;" target="&quot;p_{i1}&quot;">
+  <data key="d3">10.0</data>
+  <data key="d4">"p_i1是从image_12中提取的实体。"</data>
+  <data key="d5">examples/example_working/images/image_12.jpg</data>
+  <data key="d6">1</data>
+</edge>
+<edge source="&quot;IMAGE_12&quot;" target="&quot;y_{i1}&quot;">
+  <data key="d3">10.0</data>
+  <data key="d4">"y_i1是从image_12中提取的实体。"</data>
+  <data key="d5">examples/example_working/images/image_12.jpg</data>
+  <data key="d6">1</data>
+</edge>
+<edge source="&quot;IMAGE_12&quot;" target="&quot;\gamma&quot;">
+  <data key="d3">10.0</data>
+  <data key="d4">"γ是从image_12中提取的实体。"</data>
+  <data key="d5">examples/example_working/images/image_12.jpg</data>
+  <data key="d6">1</data>
+</edge>
+<edge source="&quot;IMAGE_12&quot;" target="&quot;\alpha&quot;">
+  <data key="d3">10.0</data>
+  <data key="d4">"α是从image_12中提取的实体。"</data>
+  <data key="d5">examples/example_working/images/image_12.jpg</data>
+  <data key="d6">1</data>
+</edge>
+<edge source="&quot;IMAGE_12&quot;" target="&quot;\beta&quot;">
+  <data key="d3">10.0</data>
+  <data key="d4">"β是从image_12中提取的实体。"</data>
+  <data key="d5">examples/example_working/images/image_12.jpg</data>
+  <data key="d6">1</data>
+</edge>
+<edge source="&quot;IMAGE_12&quot;" target="&quot;p_{i0}&quot;">
+  <data key="d3">10.0</data>
+  <data key="d4">"p_i0是从image_12中提取的实体。"</data>
+  <data key="d5">examples/example_working/images/image_12.jpg</data>
+  <data key="d6">1</data>
+</edge>
+<edge source="&quot;IMAGE_12&quot;" target="&quot;y_{i0}&quot;">
+  <data key="d3">10.0</data>
+  <data key="d4">"y_i0是从image_12中提取的实体。"</data>
+  <data key="d5">examples/example_working/images/image_12.jpg</data>
+  <data key="d6">1</data>
+</edge>
+<edge source="&quot;IMAGE_12&quot;" target="&quot;TVERSKY LOSS&quot;">
+  <data key="d3">10.0</data>
+  <data key="d4">"IMAGE_12" is the image of "TVERSKY LOSS".</data>
+  <data key="d5">examples/example_working/images/image_12.jpg</data>
+  <data key="d6">1</data>
+</edge>
+<edge source="&quot;TL&quot;" target="&quot;N&quot;">
+  <data key="d3">9.0</data>
+  <data key="d4">"The TL metric is computed as an average over N terms, making N a fundamental parameter in determining its value."</data>
+  <data key="d5">examples/example_working/images/image_12.jpg</data>
+  <data key="d6">1</data>
+</edge>
+<edge source="&quot;TL&quot;" target="&quot;i&quot;">
+  <data key="d3">8.0</data>
+  <data key="d4">"The summation in the definition of TL iterates over each index i from 1 to N, indicating that i defines the scope of the computation."</data>
+  <data key="d5">examples/example_working/images/image_12.jpg</data>
+  <data key="d6">1</data>
+</edge>
+<edge source="&quot;TL&quot;" target="&quot;p_{i1}&quot;">
+  <data key="d3">8.0</data>
+  <data key="d4">"The probability p_i1 influences the numerator and denominator of each term in the summation contributing to TL."</data>
+  <data key="d5">examples/example_working/images/image_12.jpg</data>
+  <data key="d6">1</data>
+</edge>
+<edge source="&quot;TL&quot;" target="&quot;y_{i1}&quot;">
+  <data key="d3">8.0</data>
+  <data key="d4">"The label y_i1 directly affects the numerator and denominator of each term in the summation contributing to TL."</data>
+  <data key="d5">examples/example_working/images/image_12.jpg</data>
+  <data key="d6">1</data>
+</edge>
+<edge source="&quot;TL&quot;" target="&quot;\gamma&quot;">
+  <data key="d3">7.0</data>
+  <data key="d4">"The constant γ is added to both numerator and denominator to stabilize the computation and prevent division by zero."</data>
+  <data key="d5">examples/example_working/images/image_12.jpg</data>
+  <data key="d6">1</data>
+</edge>
+<edge source="&quot;TL&quot;" target="&quot;\alpha&quot;">
+  <data key="d3">7.0</data>
+  <data key="d4">"The hyperparameter α scales the influence of p_i0*y_i0 in the denominator, thereby modulating how much weight is given to incorrect predictions."</data>
+  <data key="d5">examples/example_working/images/image_12.jpg</data>
+  <data key="d6">1</data>
+</edge>
+<edge source="&quot;TL&quot;" target="&quot;\beta&quot;">
+  <data key="d3">7.0</data>
+  <data key="d4">"The hyperparameter β scales the influence of p_i0*y_i1 in the denominator, affecting the penalty for misclassification."</data>
+  <data key="d5">examples/example_working/images/image_12.jpg</data>
+  <data key="d6">1</data>
+</edge>
+<edge source="&quot;TL&quot;" target="&quot;p_{i0}&quot;">
+  <data key="d3">7.0</data>
+  <data key="d4">"The probability p_i0 contributes to the denominator through interactions with y_i0 and y_i1, influencing the overall value of each term."</data>
+  <data key="d5">examples/example_working/images/image_12.jpg</data>
+  <data key="d6">1</data>
+</edge>
+<edge source="&quot;TL&quot;" target="&quot;y_{i0}&quot;">
+  <data key="d3">6.0</data>
+  <data key="d4">"The label y_i0 interacts with p_i0 in the denominator, affecting the magnitude of the term in the summation."</data>
+  <data key="d5">examples/example_working/images/image_12.jpg</data>
+  <data key="d6">1</data>
+</edge>
+<edge source="&quot;p_{i1}&quot;" target="&quot;y_{i1}&quot;">
+  <data key="d3">8.0</data>
+  <data key="d4">"The probability p_i1 and label y_i1 are paired together in the numerator and denominator, reflecting their joint role in evaluating prediction accuracy."</data>
+  <data key="d5">examples/example_working/images/image_12.jpg</data>
+  <data key="d6">1</data>
+</edge>
+<edge source="&quot;y_{i1}&quot;" target="&quot;p_{i0}&quot;">
+  <data key="d3">7.0</data>
+  <data key="d4">"The probability p_i0 and label y_i1 are combined in the denominator, representing the penalty for assigning high confidence to the wrong class."</data>
+  <data key="d5">examples/example_working/images/image_12.jpg</data>
+  <data key="d6">1</data>
+</edge>
+<edge source="&quot;p_{i0}&quot;" target="&quot;y_{i0}&quot;">
+  <data key="d3">7.0</data>
+  <data key="d4">"The probability p_i0 and label y_i0 are combined in the denominator, representing the confidence in predicting the negative class."</data>
+  <data key="d5">examples/example_working/images/image_12.jpg</data>
+  <data key="d6">1</data>
+</edge>
+</graph></graphml>
