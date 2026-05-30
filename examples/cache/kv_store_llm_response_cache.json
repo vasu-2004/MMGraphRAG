@@ -1,0 +1,30 @@
+{
+  "20ac7dc21432e7ebe3262c603232e82b": {
+    "return": "(\"entity\"<|>\"Xanterra Parks and Resorts\"<|>\"organization\"<|>\"An organization that handles reservations for Yellowstone National Park, providing contact information including a P.O. Box and phone numbers.\")##\n(\"entity\"<|>\"P.O. Box 165\"<|>\"geo\"<|>\"A postal address associated with Xanterra Parks and Resorts in Yellowstone National Park",
+    "model": "gemini-2.5-flash"
+  },
+  "e7589205214351393e35669efef6c705": {
+    "return": "(\"entity\"<|>\"Mammoth Hot Springs\"<|>\"geo\"<|>\"A specific location within Yellowstone National Park known for its geothermal features and a visitor center.\")##\n(\"entity\"<|>\"Norris Geyser Basin\"<|>\"geo\"<|>\"A specific location within Yellowstone National Park known for its geothermal features and a museum.\")##\n(\"entity\"<|>\"Fountain Paint Pot & Firehole",
+    "model": "gemini-2.5-flash"
+  },
+  "143fa74f1f5c18443a7f39a4ce122372": {
+    "return": "(\"entity\"<|>\"Yellowstone National Park\"<|>\"geo\"<|>\"A prominent national park in Wyoming, serving as the main location for various activities, camping, and pass usage described in the text. Its visitor access in winter is under review, and it experiences distinct seasonal weather patterns.\")##\n(\"entity\"<|>\"Yellowstone's Entrance Stations\"<|>\"geo\"<",
+    "model": "gemini-2.5-flash"
+  },
+  "a26b0bb516f73edb203d4213564e05a5": {
+    "return": "(\"entity\"<|>\"Coast Guard\"<|>\"organization\"<|>\"The Coast Guard is a government organization whose approved 'wearable' personal flotation devices are required for each person boating.\")##\n(\"entity\"<|>\"Yellowstone National Park\"<|>\"geo\"<|>\"Yellowstone National Park is a national park in Wyoming where various regulations, permits, and passes apply for activities like fishing, boating",
+    "model": "gemini-2.5-flash"
+  },
+  "909460c477276a40570b6ceedb7580aa": {
+    "return": "(\"entity\"<|>\"Yellowstone National Park\"<|>\"organization\"<|>\"Yellowstone National Park is the primary organization managing the park, providing services, setting regulations, and offering various facilities and activities. It also refers to the geographical area itself.\")##\n(\"entity\"<|>\"Yellowstone Association\"<|>\"organization\"<|>\"The Yellowstone Association is an organization that provides maps, books",
+    "model": "gemini-2.5-flash"
+  },
+  "7174d7a68f7695a6a723106a88a838bc": {
+    "return": "(\"entity\"<|>\"Yellowstone National Park\"<|>\"geo\"<|>\"Yellowstone National Park is a large national park, mostly above 7,500 feet (2,275 m), known for unpredictable weather, busy roads, dangerous hydrothermal features, and diverse wildlife. This document is a trip planner for the park in 2010.\")##\n(\"entity\"<|>\"",
+    "model": "gemini-2.5-flash"
+  },
+  "ffe0208638108e970940e3ac49942660": {
+    "return": "(\"entity\"<|>\"Yellowstone National Park\"<|>\"geo\"<|>\"Yellowstone National Park is a major national park primarily located in Wyoming, with parts extending into Montana and Idaho, known for its various features, roads, and visitor activities. It is also referred to as a destination for inquiries regarding authorized providers.\")##\n(\"entity\"<|>\"Yellowstone National Park (Organization)\"<|>\"",
+    "model": "gemini-2.5-flash"
+  }
+}
